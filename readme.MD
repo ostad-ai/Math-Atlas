@@ -2,32 +2,36 @@
 
 ### An Open Mathematics Knowledge Base with Python Implementations
 
-**انگارش‌نامه (Math-Atlas)** یک پروژهٔ خودبسنده و پیش‌بردپذیر برای فراهم‌آوری، سامان‌دهی، آموزش و پیاده‌سازی شمارشیِ دانش انگارش (Mathematics) است.
+---
 
-این پروژه می‌کوشد پلی میان سه زمینه بسازد:
+## دیباچه | Preface
 
-- **Mathematics:** همیافته‌های انگارشی، شناسانش‌ها (Definitions)، دیسوله‌ها (Formulas)، نگرینه‌ها (Theorems) و برهان‌های انگارشی
-- **Algorithms:** الگوریتم‌ها و روش‌های شمارشیِ برآمده از انگارش
-- **Python:** پیاده‌سازی کاربُردیِ همیافته‌ها و الگوریتم‌ها با Python
+### فارسی
 
-آماج (Goal)، ساختن یک سرچشمهٔ ساخت‌یافته است که هم برای یادگیری و خواندن انگارش شایسته باشد و هم توانمندیِ آزمایش، گرداندن و وارسیِ شمارشیِ ایده‌های انگارشی را فراهم کند.
+**انگارش‌نامه (Math-Atlas)** یک پروژهٔ خودبسنده و پیش‌بردپذیر برای فراهم‌آوری، سامان‌دهی، آموزش و پیاده‌سازی رایانشی دانش انگارش است. این پروژه میکوشد پلی میان سه زمینه بسازد: همیافته‌های انگارشی و شناسانش‌ها و دیسوله‌ها و نگرینه‌ها و برهان‌ها؛ الگوریتم‌ها و روش‌های رایانشی؛ و پیاده‌سازی کاربُردی با Python. آماج، ساختن یک سرچشمهٔ ساخت‌یافته است که هم برای یادگیری انگارش شایسته باشد و هم توانمندیِ آزمایش، دوان کردن، و وارسیِ رایانشی ویده‌های انگارشی را فراهم کند.
+
+### English
+
+**Math-Atlas** is an independent and extensible project for gathering, organizing, teaching and computationally implementing mathematical knowledge. The project seeks to build a bridge between three domains: mathematical concepts, definitions, formulas, theorems and proofs; algorithms and computational methods; and practical implementation in Python. The goal is to build a structured resource suitable both for learning mathematics and for experimenting, running and computationally verifying mathematical ideas.
 
 ---
 
-## 🌱 Vision | بینش
+## 🌱 Vision
 
-بینش Math-Atlas ساختن یک سرچشمهٔ دانشی و آموزشیِ فراگیر است که دانش انگارش را از بنیادهای نخستین تا سخن‌سارهای (Topics) پیشرفته، همراه با کاربُردهای شمارشیِ آن پیشکش کند.
+The vision of Math-Atlas is to build a comprehensive scientific and educational resource that presents mathematical knowledge from its earliest foundations to advanced topics, together with its computational applications.
 
-در این پروژه، انگارش تنها به هنگتی (Set) از دیسوله‌ها کرانمند نمی‌شود؛ بساکه می‌کوشد پیوند میان همیافته‌های نظری، روش‌های گشایش پرسمان (Problem Solving)، الگوریتم‌ها و پیاده‌سازی کاربُردیِ آن‌ها را آشکار کند.
+In this project, mathematics is not limited to a set of formulas; rather, it seeks to reveal the connections between theoretical concepts (همیافته‌ها), problem-solving methods, algorithms (الگوریتم‌ها) and their practical implementations.
 
-## 📚 Mathematical Domains | دامنه‌های انگارشی
+---
 
-پروژه کم‌کم دامنه‌های گوناگون انگارش را پوشش خواهد داد:
+## 📚 Mathematical Domains
 
-| Domain | دامنه |
+The project will gradually cover various mathematical domains:
+
+| Domain | Persian |
 |---|---|
 | Foundations | بنیادها |
-| Arithmetic | شمار |
+| Arithmetic | همارش |
 | Algebra | جبر |
 | Geometry | هندسه |
 | Trigonometry | سکنج‌سنجی |
@@ -37,64 +41,58 @@
 | Probability | شکیبمندی |
 | Statistics | آمار |
 | Discrete Mathematics | انگارش گسسته |
-| Number Theory | نگرهٔ شماره‌ها |
+| Number Theory | نگرهٔ شماره‌ |
 | Mathematical Logic | سخنگاه انگارشی |
 | Optimization | بهینه‌سازی |
 | Machine Learning Mathematics | انگارش یادگیری دستگاه |
 
-این رمک‌بندی (Categorization) در درازای پیش‌برد پروژه گسترش خواهد یافت.
+This categorization will expand as the project develops.
 
-## 🐍 Python Implementations | پیاده‌سازی با Python
+---
 
-یکی از ویژگی‌های بنیادی Math-Atlas پیشکشانیِ پیاده‌سازی کاربُردیِ همیافته‌ها و الگوریتم‌های انگارشی با Python است.
+## 🐍 Python Implementations
 
-تا حد توانمندی، هر سخن‌سار افزون بر روشنگری‌های نظری، دربردارندهٔ شناسه‌های (Codes) پساختی و نمونه‌های شمارشی خواهد بود.
+One of the core features of Math-Atlas is providing practical implementations of mathematical concepts (همیافته‌ها) and algorithms (الگوریتم‌ها) in Python.
 
-پیاده‌سازی‌ها در سه پایه دنباله‌روی می‌شوند:
+Wherever practical, each topic (سخن‌سار) includes, in addition to theoretical explanations, executable (پساختی) code (شناسه) and computational examples.
 
-### Level 1 — From Scratch
+Implementations follow three levels:
 
-پیاده‌سازی آموزشی الگوریتم‌ها با Python و در رخ‌آمد نیاز NumPy، با هموندساری (Focus) بر دانستن سخنگاه انگارشی و گام‌های شمارش.
+**Level 1 — From Scratch**  
+Educational implementation of algorithms (الگوریتم‌ها) in Python, with NumPy where needed, focusing on understanding the mathematical logic and computational steps.
 
-### Level 2 — Modular Implementation
+**Level 2 — Modular Implementation**  
+Structured, reusable and extensible implementations following programming principles.
 
-پیاده‌سازی ساخت‌یافته، بازکاربُردپذیر و پیش‌بردپذیر با دنباله‌روی از پایه‌های برنامه‌نویسی.
+**Level 3 — Scientific Libraries**  
+Use of specialized libraries (نسکخانه‌ها) such as NumPy, SciPy, SymPy, Matplotlib, Pandas and Scikit-learn.
 
-### Level 3 — Scientific Libraries
+The goal is for readers to understand algorithms (الگوریتم‌ها) from the ground up while also becoming familiar with standard scientific computing tools.
 
-بهره‌گیری از نسکخانه‌های (Libraries) کارشناسی مانند:
+---
 
-- NumPy
-- SciPy
-- SymPy
-- Matplotlib
-- Pandas
-- Scikit-learn
+## 🧩 Standard Topic Structure
 
-آماج این است که خواننده هم بتواند الگوریتم را از پایه دریابد و هم با ابزارهای استاندارد شمارش دانشی آشنا شود.
+Where appropriate to the subject (جستار), each topic (سخن‌سار) will consist of the following sections:
 
-## 🧩 Standard Topic Structure | ساختار استاندارد سخن‌سار
+1. **Introduction:** overview and application of the topic
+2. **Mathematical Definitions (شناسانش‌ها):** precise definitions
+3. **Properties (داشتارها):** features and characteristics
+4. **Formulas (دیسوله‌ها):** mathematical relations and formulas
+5. **Theorems and Proofs (نگرینه‌ها و برهان‌ها):** theorems and their proofs
+6. **Derivations (برگرفتگی‌ها):** derivation and inference of relations
+7. **Algorithms (الگوریتم‌ها):** related algorithms
+8. **Python Implementation:** practical implementation
+9. **Worked Examples (نمونه‌های کار‌شده):** solved examples
+10. **Experiments and Visualization (آزمایش‌ها و نمودارها):** computational experiments and plots
+11. **Exercises (ورزه‌ها):** practice problems
+12. **References (سرچشمه‌ها):** sources and references
 
-در رخ‌آمد همسنگی با سخن‌سار، هر جستار (Subject) از بخش‌های زیر ساخته خواهد شد:
+Not all topics (سخن‌سارها) necessarily require all sections; the structure will be adapted to the nature of each subject (جستار).
 
-1. **Introduction:** آشنایی و کاربُرد سخن‌سار
-2. **Mathematical Definitions:** شناسانش‌های انگارشی
-3. **Properties:** داشتارها
-4. **Formulas:** دیسوله‌ها
-5. **Theorems and Proofs:** نگرینه‌ها و برهان‌ها
-6. **Derivations:** برآیی‌ها
-7. **Algorithms:** الگوریتم‌های مرتبط
-8. **Python Implementation:** پیاده‌سازی کاربُردی با Python
-9. **Worked Examples:** نمونه‌های گشوده‌شده
-10. **Experiments and Visualization:** آزمایش‌های شمارشی و نمودارها
-11. **Exercises:** ورزه‌ها
-12. **References:** سرچشمه‌ها
+---
 
-همهٔ سخن‌سارها به‌ناچار به همهٔ این بخش‌ها نیاز ندارند؛ ساختار همسنگ با سرشت هر جستار پیشکش خواهد شد.
-
-## 🗂️ Repository Structure | ساختار گنجینه
-
-ساختار پیشنهادی نخستین:
+## 🗂️ Repository Structure
 
 ```text
 Math-Atlas/
