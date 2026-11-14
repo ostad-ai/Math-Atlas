@@ -84,7 +84,7 @@ Where appropriate to the subject (جستار), each topic (سخن‌سار) will
 7. **Algorithms (الگوریتم‌ها):** related algorithms
 8. **Python Implementation:** practical implementation
 9. **Worked Examples (نمونه‌های کار‌شده):** solved examples
-10. **Experiments and Visualization (آزمایش‌ها و نمودارها):** computational experiments and plots
+10. **Experiments and Visualization (آزمایش‌ها و دیدآوری):** computational experiments and plots
 11. **Exercises (ورزه‌ها):** practice problems
 12. **References (سرچشمه‌ها):** sources and references
 
