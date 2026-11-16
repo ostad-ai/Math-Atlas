@@ -44,9 +44,9 @@ For example, suppose we want to model the distance traveled by an object moving 
 
 Let:
 
-- \(d\): distance.
-- \(v\): constant speed.
-- \(t\): elapsed time.
+- $d$: distance.
+- $v$: constant speed.
+- $t$: elapsed time.
 
 ### Stage 3: State Assumptions
 
@@ -64,19 +64,19 @@ Assumptions define the conditions under which the model is meaningful.
 
 The relationship between distance, speed, and time is
 
-\[
+$$
 d=vt.
-\]
+$$
 
 This equation is the mathematical model.
 
 ### Stage 5: Solve or Analyze the Model
 
-If an object moves at \(5\) meters per second for \(8\) seconds,
+If an object moves at $5$ meters per second for $8$ seconds,
 
-\[
+$$
 d=5\times8=40.
-\]
+$$
 
 The predicted distance is 40 meters.
 
@@ -112,13 +112,13 @@ Decision variables represent quantities that can be chosen or controlled.
 
 For example, a company deciding how many units of two products to manufacture may use
 
-\[
+$$
 x=\text{number of units of product A}
-\]
+$$
 
-\[
+$$
 y=\text{number of units of product B}.
-\]
+$$
 
 ### 3.2 Parameters
 
@@ -137,17 +137,17 @@ Constraints (محدودیت‌ها) describe conditions that possible solutions 
 
 For example,
 
-\[
+$$
 x\geq0,\qquad y\geq0
-\]
+$$
 
 means that negative production quantities are not allowed.
 
 If production capacity is limited to 100 units,
 
-\[
+$$
 x+y\leq100.
-\]
+$$
 
 A complete mathematical model must distinguish between quantities that can change and quantities that are fixed.
 
@@ -163,15 +163,15 @@ A deterministic model produces the same output whenever its inputs are the same.
 
 For example,
 
-\[
+$$
 y=3x+2.
-\]
+$$
 
-For \(x=4\),
+For $x=4$,
 
-\[
+$$
 y=14.
-\]
+$$
 
 There is no randomness in this relationship.
 
@@ -183,15 +183,15 @@ For example, the number of customers arriving at a service station during a fixe
 
 A Poisson model is one possible choice:
 
-\[
+$$
 P(X=k)=\frac{\lambda^k e^{-\lambda}}{k!},
-\]
+$$
 
 where:
 
-- \(X\) is the number of arrivals.
-- \(\lambda\) is the expected number of arrivals during the interval.
-- \(k\) is a nonnegative integer.
+- $X$ is the number of arrivals.
+- $\lambda$ is the expected number of arrivals during the interval.
+- $k$ is a nonnegative integer.
 
 The appropriateness of this model depends on assumptions about arrival behavior.
 
@@ -201,11 +201,11 @@ A static model describes a system without explicitly representing its evolution 
 
 Example:
 
-\[
+$$
 C=100+5q,
-\]
+$$
 
-where \(C\) is total cost and \(q\) is production quantity.
+where $C$ is total cost and $q$ is production quantity.
 
 ### 4.4 Dynamic Models
 
@@ -213,9 +213,9 @@ A dynamic model describes how a system changes over time.
 
 For example,
 
-\[
+$$
 x_{t+1}=1.05x_t.
-\]
+$$
 
 This represents a quantity that increases by 5% per time step.
 
@@ -225,9 +225,9 @@ Continuous models use variables that can take values from continuous domains, su
 
 Example:
 
-\[
+$$
 f(t)=10e^{-0.2t}.
-\]
+$$
 
 ### 4.6 Discrete Models
 
@@ -235,9 +235,9 @@ Discrete models use countable or finite states.
 
 Example:
 
-\[
+$$
 a_{n+1}=2a_n+1.
-\]
+$$
 
 This recurrence defines a sequence indexed by integers.
 
@@ -245,19 +245,19 @@ This recurrence defines a sequence indexed by integers.
 
 A linear relationship in one variable has the form
 
-\[
+$$
 y=ax+b.
-\]
+$$
 
 A nonlinear relationship may contain powers, products of variables, exponentials, or other nonlinear expressions.
 
 For example,
 
-\[
+$$
 y=x^2+3x+1
-\]
+$$
 
-is nonlinear in \(x\).
+is nonlinear in $x$.
 
 ---
 
@@ -272,51 +272,51 @@ Suppose a production process has:
 - Fixed cost: 200 units of currency.
 - Variable cost: 15 units per product.
 
-Let \(q\) be the number of products.
+Let $q$ be the number of products.
 
 The total cost is
 
-\[
+$$
 C(q)=200+15q.
-\]
+$$
 
-For \(q=30\),
+For $q=30$,
 
-\[
+$$
 C(30)=200+15(30)=650.
-\]
+$$
 
 ### Example 2: Distance and Time
 
-Suppose a vehicle moves at constant speed \(v\).
+Suppose a vehicle moves at constant speed $v$.
 
-The distance after time \(t\) is
+The distance after time $t$ is
 
-\[
+$$
 d(t)=vt.
-\]
+$$
 
-If the vehicle starts at position \(d_0\), the model becomes
+If the vehicle starts at position $d_0$, the model becomes
 
-\[
+$$
 d(t)=d_0+vt.
-\]
+$$
 
 ### Example 3: Population Growth
 
-Suppose a population grows by a constant percentage \(r\) per year.
+Suppose a population grows by a constant percentage $r$ per year.
 
 A discrete model is
 
-\[
+$$
 P_{n+1}=(1+r)P_n.
-\]
+$$
 
-Starting from \(P_0\), the solution is
+Starting from $P_0$, the solution is
 
-\[
+$$
 P_n=P_0(1+r)^n.
-\]
+$$
 
 This model assumes the same proportional growth rate in every time period.
 
@@ -338,35 +338,35 @@ Suppose a workshop produces two products.
 
 Let:
 
-\[
+$$
 x=\text{units of product A}
-\]
+$$
 
-\[
+$$
 y=\text{units of product B}.
-\]
+$$
 
 Assume the profit per unit is 30 for A and 20 for B.
 
 The objective is
 
-\[
+$$
 \max Z=30x+20y.
-\]
+$$
 
 Suppose the resource constraints are
 
-\[
+$$
 2x+y\leq100,
-\]
+$$
 
-\[
+$$
 x+2y\leq80,
-\]
+$$
 
-\[
+$$
 x\geq0,\qquad y\geq0.
-\]
+$$
 
 This is a linear programming model.
 
@@ -398,41 +398,41 @@ Functions provide a natural way to describe dependencies between quantities.
 
 A function
 
-\[
+$$
 f:X\to Y
-\]
+$$
 
-maps an input from domain \(X\) to an output in codomain \(Y\).
+maps an input from domain $X$ to an output in codomain $Y$.
 
 ### 7.1 Linear Model
 
-\[
+$$
 f(x)=ax+b.
-\]
+$$
 
 This model describes a constant rate of change.
 
 ### 7.2 Quadratic Model
 
-\[
+$$
 f(x)=ax^2+bx+c.
-\]
+$$
 
 Quadratic models can describe curved relationships, such as idealized projectile trajectories under simplified physical assumptions.
 
 ### 7.3 Exponential Model
 
-\[
+$$
 f(t)=Ae^{kt}.
-\]
+$$
 
 This model describes proportional continuous growth or decay.
 
 ### 7.4 Logarithmic Model
 
-\[
+$$
 f(x)=a\ln(x)+b,\qquad x>0.
-\]
+$$
 
 Logarithmic models appear in several areas, including information theory, scientific measurements, and statistical modeling.
 
@@ -446,40 +446,40 @@ Dimensional analysis (تحلیل ابعادی) checks whether mathematical equat
 
 Common dimensions include:
 
-- Length: \(L\).
-- Time: \(T\).
-- Mass: \(M\).
-- Temperature: \(\Theta\).
+- Length: $L$.
+- Time: $T$.
+- Mass: $M$.
+- Temperature: $\Theta$.
 
 For example, speed has dimension
 
-\[
+$$
 [v]=LT^{-1}.
-\]
+$$
 
 Distance has dimension
 
-\[
+$$
 [d]=L.
-\]
+$$
 
 Time has dimension
 
-\[
+$$
 [t]=T.
-\]
+$$
 
 In the equation
 
-\[
+$$
 d=vt,
-\]
+$$
 
 the right-hand side has dimension
 
-\[
+$$
 [v][t]=LT^{-1}\cdot T=L.
-\]
+$$
 
 This agrees with the dimension of distance.
 
@@ -512,40 +512,40 @@ A model should be evaluated by comparing its predictions with observations.
 
 Let:
 
-- \(y_i\) be an observed value.
-- \(\hat{y}_i\) be the model's predicted value.
+- $y_i$ be an observed value.
+- $\hat{y}_i$ be the model's predicted value.
 
 The prediction error is
 
-\[
+$$
 e_i=y_i-\hat{y}_i.
-\]
+$$
 
 ### 9.1 Absolute Error
 
-\[
+$$
 AE_i=|y_i-\hat{y}_i|.
-\]
+$$
 
 ### 9.2 Squared Error
 
-\[
+$$
 SE_i=(y_i-\hat{y}_i)^2.
-\]
+$$
 
 ### 9.3 Mean Absolute Error
 
-For \(n\) observations,
+For $n$ observations,
 
-\[
+$$
 MAE=\frac1n\sum_{i=1}^{n}|y_i-\hat{y}_i|.
-\]
+$$
 
 ### 9.4 Mean Squared Error
 
-\[
+$$
 MSE=\frac1n\sum_{i=1}^{n}(y_i-\hat{y}_i)^2.
-\]
+$$
 
 These metrics are common in predictive modeling.
 
@@ -603,43 +603,43 @@ Numerical methods approximate solutions using finite computational procedures.
 
 Consider the equation
 
-\[
+$$
 x^2-2=0.
-\]
+$$
 
 Its positive solution is
 
-\[
+$$
 x=\sqrt2.
-\]
+$$
 
 Newton's method generates approximations using
 
-\[
+$$
 x_{n+1}
 =
 x_n-\frac{f(x_n)}{f'(x_n)}.
-\]
+$$
 
 For
 
-\[
+$$
 f(x)=x^2-2,
-\]
+$$
 
 we have
 
-\[
+$$
 f'(x)=2x.
-\]
+$$
 
 Therefore,
 
-\[
+$$
 x_{n+1}
 =
 \frac12\left(x_n+\frac2{x_n}\right).
-\]
+$$
 
 Python implementation:
 
@@ -668,31 +668,31 @@ A full treatment of convergence, numerical stability, and error analysis belongs
 
 Suppose an electricity customer pays:
 
-- A fixed monthly charge \(F\).
-- A variable charge \(r\) per unit of energy consumed.
+- A fixed monthly charge $F$.
+- A variable charge $r$ per unit of energy consumed.
 
 Let:
 
-- \(E\) be monthly energy consumption.
-- \(C\) be total monthly cost.
+- $E$ be monthly energy consumption.
+- $C$ be total monthly cost.
 
 The model is
 
-\[
+$$
 C(E)=F+rE.
-\]
+$$
 
 Assume:
 
-\[
+$$
 F=12,\qquad r=0.25.
-\]
+$$
 
 For consumption of 160 units,
 
-\[
+$$
 C(160)=12+0.25(160)=52.
-\]
+$$
 
 ### Python Implementation
 
@@ -775,24 +775,24 @@ The company has 120 labor hours available.
 
 Determine whether the following equations are dimensionally consistent:
 
-1. \(d=vt\)
-2. \(v=at\)
-3. \(d=v+t\)
-4. \(A=lw\), where \(l\) and \(w\) are lengths.
+1. $d=vt$
+2. $v=at$
+3. $d=v+t$
+4. $A=lw$, where $l$ and $w$ are lengths.
 
 ### Exercise 4 — Model Validation
 
 Given
 
-\[
+$$
 y=[10,20,30,40]
-\]
+$$
 
 and
 
-\[
+$$
 \hat y=[12,18,29,43],
-\]
+$$
 
 calculate:
 
@@ -807,9 +807,9 @@ Verify your results using Python.
 
 Consider the model
 
-\[
+$$
 P(t)=P_0(1+r)^t.
-\]
+$$
 
 Explain:
 
@@ -850,7 +850,7 @@ Mathematical modeling connects abstract mathematical concepts to practical probl
 
 The central process is:
 
-\[
+$$
 \text{Real Problem}
 \rightarrow
 \text{Assumptions}
@@ -862,7 +862,7 @@ The central process is:
 \text{Interpretation}
 \rightarrow
 \text{Validation}.
-\]
+$$
 
 A good mathematical model should be:
 

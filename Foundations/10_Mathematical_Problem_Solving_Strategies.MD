@@ -93,33 +93,33 @@ When a problem contains unknown quantities, represent them using variables.
 
 The sum of three consecutive integers is 75. Find the integers.
 
-Let the first integer be \(x\). The next two are \(x+1\) and \(x+2\).
+Let the first integer be $x$. The next two are $x+1$ and $x+2$.
 
 Therefore,
 
-\[
+$$
 x+(x+1)+(x+2)=75
-\]
+$$
 
 Simplifying,
 
-\[
+$$
 3x+3=75
-\]
+$$
 
-\[
+$$
 3x=72
-\]
+$$
 
-\[
+$$
 x=24
-\]
+$$
 
 The integers are:
 
-\[
+$$
 \boxed{24,\ 25,\ 26}
-\]
+$$
 
 Introducing variables converts a verbal description into an algebraic representation.
 
@@ -134,31 +134,31 @@ This strategy is useful when:
 - The relationships are not immediately obvious.
 - We suspect a pattern exists.
 
-**Example: Sum of the first \(n\) positive odd integers**
+**Example: Sum of the first $n$ positive odd integers**
 
 Consider the first few cases:
 
-\[
+$$
 1=1^2
-\]
+$$
 
-\[
+$$
 1+3=2^2
-\]
+$$
 
-\[
+$$
 1+3+5=3^2
-\]
+$$
 
-\[
+$$
 1+3+5+7=4^2
-\]
+$$
 
 These examples suggest the conjecture:
 
-\[
+$$
 1+3+5+\cdots +(2n-1)=n^2
-\]
+$$
 
 The examples help us discover the formula. They do not, by themselves, prove that it holds for every positive integer.
 
@@ -170,23 +170,23 @@ Patterns can reveal relationships that are difficult to see directly.
 
 Consider the sequence:
 
-\[
+$$
 2,\ 5,\ 8,\ 11,\ 14,\ldots
-\]
+$$
 
 The difference between consecutive terms is always 3.
 
 This suggests the general formula:
 
-\[
+$$
 a_n=2+3(n-1)
-\]
+$$
 
 or
 
-\[
+$$
 \boxed{a_n=3n-1}
-\]
+$$
 
 Pattern recognition is particularly useful in:
 
@@ -210,21 +210,21 @@ Instead of guessing the original number, reverse the operations.
 
 First subtract 6:
 
-\[
+$$
 20-6=14
-\]
+$$
 
 Then divide by 2:
 
-\[
+$$
 14/2=7
-\]
+$$
 
 Therefore, the original number was:
 
-\[
+$$
 \boxed{7}
-\]
+$$
 
 Working backward is useful in:
 
@@ -248,9 +248,9 @@ We can divide the task into:
 
 Mathematically,
 
-\[
+$$
 \bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}
-\]
+$$
 
 This strategy is also fundamental in algorithm design, particularly in divide-and-conquer algorithms.
 
@@ -264,35 +264,35 @@ Recognizing symmetry can reduce the number of cases that need to be considered.
 
 Suppose two numbers satisfy:
 
-\[
+$$
 x+y=10
-\]
+$$
 
-\[
+$$
 xy=21
-\]
+$$
 
-The equations are symmetric in \(x\) and \(y\). Exchanging the two variables does not change either equation.
+The equations are symmetric in $x$ and $y$. Exchanging the two variables does not change either equation.
 
 We can form the quadratic equation whose roots are the two numbers:
 
-\[
+$$
 t^2-10t+21=0
-\]
+$$
 
 Factoring,
 
-\[
+$$
 (t-3)(t-7)=0
-\]
+$$
 
 Thus,
 
-\[
+$$
 \boxed{\{x,y\}=\{3,7\}}
-\]
+$$
 
-The unordered pair is determined without needing to decide which number must be \(x\) or \(y\).
+The unordered pair is determined without needing to decide which number must be $x$ or $y$.
 
 ### 3.8 Introduce Auxiliary Variables
 
@@ -300,35 +300,35 @@ An auxiliary variable (متغیر کمکی) is a new variable introduced to simp
 
 For example, suppose:
 
-\[
+$$
 x+y=12
-\]
+$$
 
 and
 
-\[
+$$
 x-y=4
-\]
+$$
 
-Adding the equations eliminates \(y\):
+Adding the equations eliminates $y$:
 
-\[
+$$
 2x=16
-\]
+$$
 
 Therefore,
 
-\[
+$$
 x=8,\qquad y=4
-\]
+$$
 
 In more complicated problems, a suitable substitution can turn a difficult expression into a simpler one.
 
-For example, if an expression repeatedly contains \(x^2+1\), introducing
+For example, if an expression repeatedly contains $x^2+1$, introducing
 
-\[
+$$
 u=x^2+1
-\]
+$$
 
 may simplify subsequent calculations.
 
@@ -352,15 +352,15 @@ Consider the parity of the number of heads.
 
 Initially, the number of heads is:
 
-\[
+$$
 1
-\]
+$$
 
 Flipping two coins can change the number of heads by:
 
-\[
+$$
 -2,\quad 0,\quad \text{or}\quad +2
-\]
+$$
 
 Therefore, the parity of the number of heads never changes.
 
@@ -370,9 +370,9 @@ But the all-tails state contains zero heads, which is even.
 
 Therefore:
 
-\[
+$$
 \boxed{\text{The all-tails state is unreachable.}}
-\]
+$$
 
 We did not need to examine every possible sequence of operations. The invariant was sufficient to establish impossibility.
 
@@ -380,11 +380,11 @@ We did not need to examine every possible sequence of operations. The invariant 
 
 Testing extreme or special cases can reveal mistakes and suggest a general solution.
 
-For example, if a formula is claimed to hold for every positive integer \(n\), test:
+For example, if a formula is claimed to hold for every positive integer $n$, test:
 
-\[
+$$
 n=1,\quad n=2,\quad n=3
-\]
+$$
 
 For inequalities, consider values near zero, very large values, or boundary conditions.
 
@@ -406,9 +406,9 @@ Useful techniques include:
 
 For example, the square of an integer is always nonnegative. Therefore, an equation of the form
 
-\[
+$$
 x^2=-9
-\]
+$$
 
 has no integer solution.
 
@@ -420,13 +420,13 @@ A table can organize possible values and reveal relationships.
 
 Suppose we want to find all nonnegative integer solutions of:
 
-\[
+$$
 x+y=6
-\]
+$$
 
 A systematic table is:
 
-| \(x\) | \(y\) |
+| $x$ | $y$ |
 |---:|---:|
 | 0 | 6 |
 | 1 | 5 |
@@ -450,13 +450,13 @@ A mathematical proof establishes that the conjecture follows logically from acce
 
 Consider the statement:
 
-\[
+$$
 1+3+5+\cdots +(2n-1)=n^2
-\]
+$$
 
 We may test several values:
 
-| \(n\) | Sum of first \(n\) odd numbers | \(n^2\) |
+| $n$ | Sum of first $n$ odd numbers | $n^2$ |
 |---:|---:|---:|
 | 1 | 1 | 1 |
 | 2 | 4 | 4 |
@@ -483,7 +483,7 @@ However, computational testing must not be confused with mathematical proof.
 
 ### 5.1 Testing a Conjecture
 
-We can investigate the sum of the first \(n\) positive odd integers.
+We can investigate the sum of the first $n$ positive odd integers.
 
 ```python
 def sum_first_n_odds(n):
@@ -514,9 +514,9 @@ A successful result provides computational evidence for those tested values. It 
 
 Consider:
 
-\[
+$$
 x^2+y^2=25
-\]
+$$
 
 We can search for nonnegative integer solutions.
 
@@ -577,13 +577,13 @@ Consider the following problem:
 
 Find all nonnegative integer pairs satisfying:
 
-\[
+$$
 x+y=10
-\]
+$$
 
-\[
+$$
 x^2+y^2=58
-\]
+$$
 
 **Step 1 — Understand the conditions**
 
@@ -593,27 +593,27 @@ We know the sum and the sum of squares.
 
 Square the first equation:
 
-\[
+$$
 (x+y)^2=100
-\]
+$$
 
 Expand:
 
-\[
+$$
 x^2+2xy+y^2=100
-\]
+$$
 
 Using the second equation:
 
-\[
+$$
 58+2xy=100
-\]
+$$
 
 Therefore:
 
-\[
+$$
 xy=21
-\]
+$$
 
 **Step 3 — Use symmetry and a quadratic equation**
 
@@ -621,21 +621,21 @@ The two numbers have sum 10 and product 21.
 
 They are the roots of:
 
-\[
+$$
 t^2-10t+21=0
-\]
+$$
 
 Factoring:
 
-\[
+$$
 (t-3)(t-7)=0
-\]
+$$
 
 Thus:
 
-\[
+$$
 \boxed{(x,y)=(3,7)\text{ or }(7,3)}
-\]
+$$
 
 This solution combines algebraic transformation, auxiliary reasoning, and symmetry.
 
@@ -675,29 +675,29 @@ A program can test thousands or millions of examples. Unless the problem is expl
 
 Find four consecutive integers whose sum is 86.
 
-Let the first integer be \(x\).
+Let the first integer be $x$.
 
-\[
+$$
 x+(x+1)+(x+2)+(x+3)=86
-\]
+$$
 
-\[
+$$
 4x+6=86
-\]
+$$
 
-\[
+$$
 4x=80
-\]
+$$
 
-\[
+$$
 x=20
-\]
+$$
 
 Therefore:
 
-\[
+$$
 \boxed{20,\ 21,\ 22,\ 23}
-\]
+$$
 
 **Strategies used:** introducing variables and translating a verbal problem into an equation.
 
@@ -705,29 +705,29 @@ Therefore:
 
 A number is first increased by 4, then multiplied by 3. The final result is 30.
 
-Let the original number be \(x\).
+Let the original number be $x$.
 
-\[
+$$
 3(x+4)=30
-\]
+$$
 
-\[
+$$
 x+4=10
-\]
+$$
 
-\[
+$$
 x=6
-\]
+$$
 
 Alternatively, reverse the operations:
 
-\[
+$$
 30/3=10
-\]
+$$
 
-\[
+$$
 10-4=6
-\]
+$$
 
 **Strategies used:** working backward and algebraic representation.
 
@@ -747,7 +747,7 @@ Therefore, at least two people must share a birth month.
 
 This is an application of the pigeonhole principle (اصل لانه‌کبوتری).
 
-More generally, if \(n+1\) objects are distributed among \(n\) categories, at least one category must contain two or more objects.
+More generally, if $n+1$ objects are distributed among $n$ categories, at least one category must contain two or more objects.
 
 ## 9. Exercises
 
@@ -759,11 +759,11 @@ The sum of five consecutive integers is 120. Find the integers.
 
 Consider the sequence:
 
-\[
+$$
 1,\ 4,\ 9,\ 16,\ 25,\ldots
-\]
+$$
 
-Find a general formula for its \(n\)-th term and justify your answer.
+Find a general formula for its $n$-th term and justify your answer.
 
 ### Exercise 3 — Working Backward
 
@@ -783,13 +783,13 @@ Is it possible to reach a state in which all three coins show tails? Justify you
 
 Write a Python program that searches for all nonnegative integer pairs satisfying:
 
-\[
+$$
 x+y=15
-\]
+$$
 
-\[
+$$
 xy=44
-\]
+$$
 
 Then solve the problem algebraically and compare the results.
 
@@ -797,9 +797,9 @@ Then solve the problem algebraically and compare the results.
 
 Investigate the sum:
 
-\[
+$$
 1+2+3+\cdots+n
-\]
+$$
 
 Use small cases to formulate a conjecture for its general formula. Then prove the formula mathematically.
 

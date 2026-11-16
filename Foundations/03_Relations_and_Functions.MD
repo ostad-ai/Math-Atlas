@@ -12,125 +12,125 @@ These concepts appear throughout mathematics, including algebra, calculus, discr
 
 ### 2.1 Definition
 
-Let \(A\) and \(B\) be two sets.
+Let $A$ and $B$ be two sets.
 
-A **binary relation** (رابطهٔ دوتایی) from \(A\) to \(B\) is any subset of their Cartesian product:
+A **binary relation** (رابطهٔ دوتایی) from $A$ to $B$ is any subset of their Cartesian product:
 
-\[
+$$
 R \subseteq A\times B
-\]
+$$
 
-If \((a,b)\in R\), we write:
+If $(a,b)\in R$, we write:
 
-\[
+$$
 aRb
-\]
+$$
 
-This means that \(a\) is related to \(b\) through relation \(R\).
+This means that $a$ is related to $b$ through relation $R$.
 
 ### 2.2 Example
 
 Let:
 
-\[
+$$
 A=\{1,2,3\}
-\]
+$$
 
-\[
+$$
 B=\{2,4,6\}
-\]
+$$
 
 Define a relation:
 
-\[
+$$
 R=\{(1,2),(2,4),(3,6)\}
-\]
+$$
 
-This relation connects each element of \(A\) to twice its value in \(B\).
+This relation connects each element of $A$ to twice its value in $B$.
 
 ### 2.3 Domain and Range of a Relation
 
 The **domain** (دامنه) of a relation is the set of all first components of its ordered pairs.
 
-\[
+$$
 \operatorname{Dom}(R)
 =
 \{a\in A\mid \exists b\in B:(a,b)\in R\}
-\]
+$$
 
 The **range** (برد) is the set of all second components:
 
-\[
+$$
 \operatorname{Ran}(R)
 =
 \{b\in B\mid \exists a\in A:(a,b)\in R\}
-\]
+$$
 
 For the previous example:
 
-\[
+$$
 \operatorname{Dom}(R)=\{1,2,3\}
-\]
+$$
 
-\[
+$$
 \operatorname{Ran}(R)=\{2,4,6\}
-\]
+$$
 
 ## 3. Relations on a Set
 
-A relation on \(A\) is a relation from \(A\) to itself:
+A relation on $A$ is a relation from $A$ to itself:
 
-\[
+$$
 R\subseteq A\times A
-\]
+$$
 
 Certain properties are particularly important.
 
 ### 3.1 Reflexivity
 
-A relation \(R\) on \(A\) is **reflexive** (بازتابی) if every element is related to itself:
+A relation $R$ on $A$ is **reflexive** (بازتابی) if every element is related to itself:
 
-\[
+$$
 \forall a\in A,\quad aRa
-\]
+$$
 
 Example: equality.
 
-\[
+$$
 a=a
-\]
+$$
 
 ### 3.2 Symmetry
 
 A relation is **symmetric** (تقارنی) if:
 
-\[
+$$
 \forall a,b\in A,\quad
 aRb\Rightarrow bRa
-\]
+$$
 
 Example: on the integers, define:
 
-\[
+$$
 aRb\iff a-b\text{ is even}
-\]
+$$
 
-If \(a-b\) is even, then \(b-a\) is also even.
+If $a-b$ is even, then $b-a$ is also even.
 
 ### 3.3 Antisymmetry
 
 A relation is **antisymmetric** (پادتقارنی) if:
 
-\[
+$$
 \forall a,b\in A,\quad
 (aRb\land bRa)\Rightarrow a=b
-\]
+$$
 
 Example: the usual less-than-or-equal relation on integers.
 
-\[
+$$
 a\leq b\land b\leq a\Rightarrow a=b
-\]
+$$
 
 Antisymmetry does not mean that the relation cannot contain pairs in both directions. It means that such pairs can occur only when the two elements are equal.
 
@@ -138,16 +138,16 @@ Antisymmetry does not mean that the relation cannot contain pairs in both direct
 
 A relation is **transitive** (تعدی‌پذیر) if:
 
-\[
+$$
 \forall a,b,c\in A,\quad
 (aRb\land bRc)\Rightarrow aRc
-\]
+$$
 
 Example: the usual less-than-or-equal relation.
 
-\[
+$$
 a\leq b\land b\leq c\Rightarrow a\leq c
-\]
+$$
 
 ## 4. Equivalence Relations and Partitions
 
@@ -161,35 +161,35 @@ An **equivalence relation** (رابطهٔ هم‌ارزی) is a relation that is
 
 For example, define a relation on the integers:
 
-\[
+$$
 a\sim b
 \iff
 a-b\text{ is divisible by }3
-\]
+$$
 
 This is an equivalence relation.
 
 ### 4.2 Equivalence Classes
 
-The **equivalence class** (ردهٔ هم‌ارزی) of an element \(a\) is the set of all elements related to \(a\):
+The **equivalence class** (ردهٔ هم‌ارزی) of an element $a$ is the set of all elements related to $a$:
 
-\[
+$$
 [a]=\{x\in A\mid x\sim a\}
-\]
+$$
 
 For congruence modulo 3, the integers are divided into three equivalence classes:
 
-\[
+$$
 [0]=\{\ldots,-6,-3,0,3,6,\ldots\}
-\]
+$$
 
-\[
+$$
 [1]=\{\ldots,-5,-2,1,4,7,\ldots\}
-\]
+$$
 
-\[
+$$
 [2]=\{\ldots,-4,-1,2,5,8,\ldots\}
-\]
+$$
 
 ### 4.3 Partitions
 
@@ -209,77 +209,77 @@ A set together with a partial order is called a **partially ordered set**, or **
 
 Examples include:
 
-- The subset relation \(\subseteq\) on the power set of a given set.
+- The subset relation $\subseteq$ on the power set of a given set.
 - Divisibility on the positive integers.
-- The usual \(\leq\) relation on integers.
+- The usual $\leq$ relation on integers.
 
 A partial order does not require every pair of elements to be comparable.
 
-For example, neither \(\{1\}\subseteq\{2\}\) nor \(\{2\}\subseteq\{1\}\) holds.
+For example, neither $\{1\}\subseteq\{2\}$ nor $\{2\}\subseteq\{1\}$ holds.
 
 ## 6. Functions
 
 ### 6.1 Definition
 
-A **function** (تابع) from set \(A\) to set \(B\) is a relation that assigns exactly one element of \(B\) to every element of \(A\).
+A **function** (تابع) from set $A$ to set $B$ is a relation that assigns exactly one element of $B$ to every element of $A$.
 
 We write:
 
-\[
+$$
 f:A\to B
-\]
+$$
 
-For every \(a\in A\), there must exist exactly one \(b\in B\) such that:
+For every $a\in A$, there must exist exactly one $b\in B$ such that:
 
-\[
+$$
 f(a)=b
-\]
+$$
 
-The set \(A\) is the domain, and \(B\) is the codomain (هم‌دامنه).
+The set $A$ is the domain, and $B$ is the codomain (هم‌دامنه).
 
 The range is the set of outputs actually produced:
 
-\[
+$$
 \operatorname{Ran}(f)
 =
 \{f(a)\mid a\in A\}
-\]
+$$
 
 Therefore:
 
-\[
+$$
 \operatorname{Ran}(f)\subseteq B
-\]
+$$
 
 ### 6.2 Example
 
 Consider:
 
-\[
+$$
 f:\mathbb{R}\to\mathbb{R}
-\]
+$$
 
-\[
+$$
 f(x)=x^2
-\]
+$$
 
 Its domain is:
 
-\[
+$$
 \operatorname{Dom}(f)=\mathbb{R}
-\]
+$$
 
 Its codomain is:
 
-\[
+$$
 B=\mathbb{R}
-\]
+$$
 
 Its range is:
 
-\[
+$$
 \operatorname{Ran}(f)=[0,\infty)
-\]
+$$
 
 The codomain and range are not necessarily equal.
 
@@ -287,19 +287,19 @@ The codomain and range are not necessarily equal.
 
 Consider:
 
-\[
+$$
 R=\{(1,2),(2,3),(3,4)\}
-\]
+$$
 
 This is a function because every input has exactly one output.
 
 However:
 
-\[
+$$
 S=\{(1,2),(1,3),(2,4)\}
-\]
+$$
 
-is not a function because input \(1\) has two different outputs.
+is not a function because input $1$ has two different outputs.
 
 An input cannot have multiple outputs in a function, although different inputs may have the same output.
 
@@ -311,22 +311,22 @@ A function is **injective** (یک‌به‌یک) if different inputs always prod
 
 Formally:
 
-\[
+$$
 f(a_1)=f(a_2)\Rightarrow a_1=a_2
-\]
+$$
 
 An equivalent statement is:
 
-\[
+$$
 a_1\neq a_2\Rightarrow f(a_1)\neq f(a_2)
-\]
+$$
 
 Example:
 
-\[
+$$
 f:\mathbb{R}\to\mathbb{R},
 \quad f(x)=2x+1
-\]
+$$
 
 This function is injective.
 
@@ -334,17 +334,17 @@ This function is injective.
 
 A function is **surjective** (پوشا) if every element of the codomain is the output of at least one input.
 
-\[
+$$
 \forall y\in B,\quad
 \exists x\in A:f(x)=y
-\]
+$$
 
 Example:
 
-\[
+$$
 f:\mathbb{R}\to\mathbb{R},
 \quad f(x)=x^3
-\]
+$$
 
 This function is surjective.
 
@@ -356,10 +356,10 @@ A bijection establishes a one-to-one correspondence between its domain and codom
 
 Example:
 
-\[
+$$
 f:\mathbb{R}\to\mathbb{R},
 \quad f(x)=2x+1
-\]
+$$
 
 This function is bijective.
 
@@ -371,79 +371,79 @@ The **composition** (ترکیب) of functions applies one function after another
 
 Given:
 
-\[
+$$
 f:A\to B
-\]
+$$
 
-\[
+$$
 g:B\to C
-\]
+$$
 
 their composition is:
 
-\[
+$$
 g\circ f:A\to C
-\]
+$$
 
 defined by:
 
-\[
+$$
 (g\circ f)(x)=g(f(x))
-\]
+$$
 
 Example:
 
-\[
+$$
 f(x)=x+2
-\]
+$$
 
-\[
+$$
 g(x)=3x
-\]
+$$
 
 Then:
 
-\[
+$$
 (g\circ f)(x)=3(x+2)=3x+6
-\]
+$$
 
 In general:
 
-\[
+$$
 g\circ f\neq f\circ g
-\]
+$$
 
 Function composition is associative:
 
-\[
+$$
 h\circ(g\circ f)=(h\circ g)\circ f
-\]
+$$
 
 ### 8.2 Identity Function
 
-The **identity function** (تابع همانی) on \(A\) is:
+The **identity function** (تابع همانی) on $A$ is:
 
-\[
+$$
 I_A:A\to A
-\]
+$$
 
-\[
+$$
 I_A(x)=x
-\]
+$$
 
 It satisfies:
 
-\[
+$$
 f\circ I_A=f
-\]
+$$
 
 and:
 
-\[
+$$
 I_B\circ f=f
-\]
+$$
 
-for \(f:A\to B\).
+for $f:A\to B$.
 
 ### 8.3 Inverse Function
 
@@ -451,120 +451,120 @@ A function has an inverse (تابع وارون) if it is bijective.
 
 For a bijection:
 
-\[
+$$
 f:A\to B
-\]
+$$
 
 the inverse is:
 
-\[
+$$
 f^{-1}:B\to A
-\]
+$$
 
 It satisfies:
 
-\[
+$$
 f^{-1}(f(x))=x
-\]
+$$
 
 and:
 
-\[
+$$
 f(f^{-1}(y))=y
-\]
+$$
 
 Example:
 
-\[
+$$
 f(x)=2x+3
-\]
+$$
 
 Let:
 
-\[
+$$
 y=2x+3
-\]
+$$
 
-Solving for \(x\):
+Solving for $x$:
 
-\[
+$$
 x=\frac{y-3}{2}
-\]
+$$
 
 Therefore:
 
-\[
+$$
 f^{-1}(x)=\frac{x-3}{2}
-\]
+$$
 
 ## 9. Images and Preimages
 
-For a function \(f:A\to B\):
+For a function $f:A\to B$:
 
 ### 9.1 Image of a Set
 
-For \(S\subseteq A\), its image is:
+For $S\subseteq A$, its image is:
 
-\[
+$$
 f(S)=\{f(x)\mid x\in S\}
-\]
+$$
 
 ### 9.2 Preimage of a Set
 
-For \(T\subseteq B\), its preimage is:
+For $T\subseteq B$, its preimage is:
 
-\[
+$$
 f^{-1}(T)=\{x\in A\mid f(x)\in T\}
-\]
+$$
 
-The preimage is defined for every function, even if the function is not invertible. In this context, \(f^{-1}(T)\) means the preimage of a set, not necessarily an inverse function.
+The preimage is defined for every function, even if the function is not invertible. In this context, $f^{-1}(T)$ means the preimage of a set, not necessarily an inverse function.
 
 ## 10. Important Theorems
 
 ### Theorem 1: Inverse Function Criterion
 
-A function \(f:A\to B\) has an inverse function \(f^{-1}:B\to A\) if and only if \(f\) is bijective.
+A function $f:A\to B$ has an inverse function $f^{-1}:B\to A$ if and only if $f$ is bijective.
 
 **Proof:**
 
-Suppose \(f\) has an inverse.
+Suppose $f$ has an inverse.
 
-If \(f(a_1)=f(a_2)\), applying \(f^{-1}\) to both sides gives:
+If $f(a_1)=f(a_2)$, applying $f^{-1}$ to both sides gives:
 
-\[
+$$
 a_1=a_2
-\]
+$$
 
-Therefore, \(f\) is injective.
+Therefore, $f$ is injective.
 
-For every \(b\in B\), the inverse provides an element \(a=f^{-1}(b)\) such that:
+For every $b\in B$, the inverse provides an element $a=f^{-1}(b)$ such that:
 
-\[
+$$
 f(a)=b
-\]
+$$
 
-Therefore, \(f\) is surjective.
+Therefore, $f$ is surjective.
 
-Conversely, suppose \(f\) is bijective.
+Conversely, suppose $f$ is bijective.
 
-Surjectivity guarantees that every \(b\in B\) has at least one preimage. Injectivity guarantees that this preimage is unique.
+Surjectivity guarantees that every $b\in B$ has at least one preimage. Injectivity guarantees that this preimage is unique.
 
 We can therefore define:
 
-\[
+$$
 f^{-1}(b)=a
 \quad\text{where }f(a)=b
-\]
+$$
 
 Thus, the inverse function exists.
 
 ### Theorem 2: Composition of Injective Functions
 
-If \(f:A\to B\) and \(g:B\to C\) are injective, then:
+If $f:A\to B$ and $g:B\to C$ are injective, then:
 
-\[
+$$
 g\circ f:A\to C
-\]
+$$
 
 is injective.
 
@@ -572,57 +572,57 @@ is injective.
 
 Suppose:
 
-\[
+$$
 (g\circ f)(a_1)=(g\circ f)(a_2)
-\]
+$$
 
 Then:
 
-\[
+$$
 g(f(a_1))=g(f(a_2))
-\]
+$$
 
-Since \(g\) is injective:
+Since $g$ is injective:
 
-\[
+$$
 f(a_1)=f(a_2)
-\]
+$$
 
-Since \(f\) is injective:
+Since $f$ is injective:
 
-\[
+$$
 a_1=a_2
-\]
+$$
 
-Therefore, \(g\circ f\) is injective.
+Therefore, $g\circ f$ is injective.
 
 ### Theorem 3: Composition of Surjective Functions
 
-If \(f:A\to B\) and \(g:B\to C\) are surjective, then \(g\circ f\) is surjective.
+If $f:A\to B$ and $g:B\to C$ are surjective, then $g\circ f$ is surjective.
 
 **Proof:**
 
-Take any \(c\in C\).
+Take any $c\in C$.
 
-Since \(g\) is surjective, there exists \(b\in B\) such that:
+Since $g$ is surjective, there exists $b\in B$ such that:
 
-\[
+$$
 g(b)=c
-\]
+$$
 
-Since \(f\) is surjective, there exists \(a\in A\) such that:
+Since $f$ is surjective, there exists $a\in A$ such that:
 
-\[
+$$
 f(a)=b
-\]
+$$
 
 Consequently:
 
-\[
+$$
 (g\circ f)(a)=g(f(a))=g(b)=c
-\]
+$$
 
-Thus, every element of \(C\) has a preimage, so \(g\circ f\) is surjective.
+Thus, every element of $C$ has a preimage, so $g\circ f$ is surjective.
 
 ## 11. Python Implementation
 
@@ -689,7 +689,7 @@ print("Antisymmetric:", is_antisymmetric(A, R))
 print("Transitive:", is_transitive(A, R))
 ```
 
-These functions assume that every pair in `R` belongs to \(A\times A\).
+These functions assume that every pair in `R` belongs to $A\times A$.
 
 ### 11.3 Representing a Finite Function
 
@@ -813,59 +813,59 @@ print(composition)
 
 On the integers, define:
 
-\[
+$$
 aRb\iff a-b\text{ is divisible by }5
-\]
+$$
 
-Show that \(R\) is an equivalence relation.
+Show that $R$ is an equivalence relation.
 
 **Solution:**
 
 Reflexivity:
 
-\[
+$$
 a-a=0
-\]
+$$
 
-Since 0 is divisible by 5, \(aRa\).
+Since 0 is divisible by 5, $aRa$.
 
 Symmetry:
 
 If:
 
-\[
+$$
 a-b=5k
-\]
+$$
 
 then:
 
-\[
+$$
 b-a=-5k
-\]
+$$
 
-Therefore, \(bRa\).
+Therefore, $bRa$.
 
 Transitivity:
 
 Suppose:
 
-\[
+$$
 a-b=5k
-\]
+$$
 
 and:
 
-\[
+$$
 b-c=5m
-\]
+$$
 
 Adding:
 
-\[
+$$
 a-c=5(k+m)
-\]
+$$
 
-Therefore, \(aRc\).
+Therefore, $aRc$.
 
 The relation is reflexive, symmetric, and transitive. Hence, it is an equivalence relation.
 
@@ -873,13 +873,13 @@ The relation is reflexive, symmetric, and transitive. Hence, it is an equivalenc
 
 Consider:
 
-\[
+$$
 f:\mathbb{R}\to\mathbb{R}
-\]
+$$
 
-\[
+$$
 f(x)=x^2
-\]
+$$
 
 Is this function injective? Is it surjective?
 
@@ -887,11 +887,11 @@ Is this function injective? Is it surjective?
 
 It is not injective because:
 
-\[
+$$
 f(2)=f(-2)=4
-\]
+$$
 
-It is not surjective onto \(\mathbb{R}\) because negative real numbers are not in its range.
+It is not surjective onto $\mathbb{R}$ because negative real numbers are not in its range.
 
 Therefore, it is neither injective nor surjective.
 
@@ -899,9 +899,9 @@ Therefore, it is neither injective nor surjective.
 
 Given:
 
-\[
+$$
 f(x)=5x-7
-\]
+$$
 
 Find its inverse.
 
@@ -909,21 +909,21 @@ Find its inverse.
 
 Start with:
 
-\[
+$$
 y=5x-7
-\]
+$$
 
-Solve for \(x\):
+Solve for $x$:
 
-\[
+$$
 x=\frac{y+7}{5}
-\]
+$$
 
 Thus:
 
-\[
+$$
 f^{-1}(x)=\frac{x+7}{5}
-\]
+$$
 
 ## 13. Computational Experiments
 
@@ -934,29 +934,29 @@ f^{-1}(x)=\frac{x+7}{5}
 5. Compare a function with its inverse when it is bijective.
 6. Verify associativity of function composition for several finite mappings.
 
-For finite sets with \(m\) elements in the domain and \(n\) elements in the codomain, the total number of functions is:
+For finite sets with $m$ elements in the domain and $n$ elements in the codomain, the total number of functions is:
 
-\[
+$$
 n^m
-\]
+$$
 
-If \(m=n\), the number of bijections is:
+If $m=n$, the number of bijections is:
 
-\[
+$$
 n!
-\]
+$$
 
 ## 14. Exercises
 
-1. Let \(A=\{1,2,3\}\). Give an example of a reflexive relation on \(A\).
+1. Let $A=\{1,2,3\}$. Give an example of a reflexive relation on $A$.
 2. Give an example of a symmetric relation that is not transitive.
-3. Determine whether the relation \(\leq\) on integers is reflexive, symmetric, antisymmetric, and transitive.
+3. Determine whether the relation $\leq$ on integers is reflexive, symmetric, antisymmetric, and transitive.
 4. Prove that equality is an equivalence relation.
 5. Find the equivalence classes of congruence modulo 4 on the integers.
-6. Determine whether \(f:\mathbb{R}\to\mathbb{R}\), defined by \(f(x)=3x+2\), is injective and surjective.
-7. Determine whether \(f:\mathbb{R}\to[0,\infty)\), defined by \(f(x)=x^2\), is surjective.
-8. Calculate \(g\circ f\) and \(f\circ g\), where \(f(x)=x+1\) and \(g(x)=x^2\).
-9. Find the inverse of \(f(x)=4x-9\).
+6. Determine whether $f:\mathbb{R}\to\mathbb{R}$, defined by $f(x)=3x+2$, is injective and surjective.
+7. Determine whether $f:\mathbb{R}\to[0,\infty)$, defined by $f(x)=x^2$, is surjective.
+8. Calculate $g\circ f$ and $f\circ g$, where $f(x)=x+1$ and $g(x)=x^2$.
+9. Find the inverse of $f(x)=4x-9$.
 10. Write a Python program that enumerates all functions between two finite sets.
 11. Write a Python program that checks whether a finite relation is an equivalence relation.
 12. Explain the difference between the codomain and the range of a function.

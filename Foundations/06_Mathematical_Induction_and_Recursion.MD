@@ -22,21 +22,21 @@ A recursive definition (تعریف بازگشتی) specifies an object using:
 
 ### 2.1 Example: Factorial
 
-The factorial of a nonnegative integer \(n\) is defined by
+The factorial of a nonnegative integer $n$ is defined by
 
-\[
+$$
 0! = 1
-\]
+$$
 
 and
 
-\[
+$$
 n! = n(n-1)! \qquad n\geq 1.
-\]
+$$
 
 The first few values are
 
-\[
+$$
 \begin{aligned}
 0! &= 1,\\
 1! &= 1\cdot 0! = 1,\\
@@ -44,7 +44,7 @@ The first few values are
 3! &= 3\cdot 2! = 6,\\
 4! &= 4\cdot 3! = 24.
 \end{aligned}
-\]
+$$
 
 The definition is recursive because each factorial is expressed in terms of a smaller factorial.
 
@@ -52,21 +52,21 @@ The definition is recursive because each factorial is expressed in terms of a sm
 
 The Fibonacci sequence is defined by
 
-\[
+$$
 F_0=0,\qquad F_1=1
-\]
+$$
 
 and
 
-\[
+$$
 F_n=F_{n-1}+F_{n-2},\qquad n\geq 2.
-\]
+$$
 
 Its first terms are
 
-\[
+$$
 0,1,1,2,3,5,8,13,21,\ldots
-\]
+$$
 
 Each term after the first two is the sum of the preceding two terms.
 
@@ -76,9 +76,9 @@ A recursive definition must eventually reach its base case.
 
 For example,
 
-\[
+$$
 f(n)=n f(n-1)
-\]
+$$
 
 is not a complete definition unless an initial value and a suitable domain are specified.
 
@@ -96,77 +96,77 @@ A recurrence relation generally requires initial conditions to determine a uniqu
 
 ### 3.1 Arithmetic Sequences
 
-An arithmetic sequence has a constant difference \(d\) between consecutive terms.
+An arithmetic sequence has a constant difference $d$ between consecutive terms.
 
 Its recurrence relation is
 
-\[
+$$
 a_0=c
-\]
+$$
 
-\[
+$$
 a_n=a_{n-1}+d,\qquad n\geq 1.
-\]
+$$
 
 Expanding the recurrence gives
 
-\[
+$$
 a_n=c+nd.
-\]
+$$
 
 **Example**
 
-Let \(a_0=3\) and \(d=4\).
+Let $a_0=3$ and $d=4$.
 
-\[
+$$
 a_n=a_{n-1}+4.
-\]
+$$
 
 The sequence is
 
-\[
+$$
 3,7,11,15,19,\ldots
-\]
+$$
 
 and its closed-form expression is
 
-\[
+$$
 a_n=3+4n.
-\]
+$$
 
 ### 3.2 Geometric Sequences
 
-A geometric sequence has a constant ratio \(r\) between consecutive terms.
+A geometric sequence has a constant ratio $r$ between consecutive terms.
 
 Its recurrence relation is
 
-\[
+$$
 a_0=c
-\]
+$$
 
-\[
+$$
 a_n=ra_{n-1},\qquad n\geq 1.
-\]
+$$
 
 The closed-form expression is
 
-\[
+$$
 a_n=cr^n.
-\]
+$$
 
 **Example**
 
-For \(a_0=2\) and \(r=3\),
+For $a_0=2$ and $r=3$,
 
-\[
+$$
 a_n=3a_{n-1}
-\]
+$$
 
 produces
 
-\[
+$$
 2,6,18,54,162,\ldots
-\]
+$$
 
 ### 3.3 Linear Recurrence Relations
 
@@ -174,77 +174,77 @@ A linear recurrence relation expresses each term as a linear combination of prev
 
 A second-order homogeneous linear recurrence with constant coefficients has the form
 
-\[
+$$
 a_n=pa_{n-1}+qa_{n-2}.
-\]
+$$
 
-The coefficients \(p\) and \(q\) are constants.
+The coefficients $p$ and $q$ are constants.
 
 The Fibonacci recurrence is a special case:
 
-\[
+$$
 F_n=F_{n-1}+F_{n-2}.
-\]
+$$
 
 ### 3.4 Characteristic Equations
 
 For a recurrence of the form
 
-\[
+$$
 a_n=pa_{n-1}+qa_{n-2},
-\]
+$$
 
 we try a solution of the form
 
-\[
+$$
 a_n=r^n.
-\]
+$$
 
 Substitution gives
 
-\[
+$$
 r^n=pr^{n-1}+qr^{n-2}.
-\]
+$$
 
-Dividing by \(r^{n-2}\), when \(r\neq 0\), gives the characteristic equation
+Dividing by $r^{n-2}$, when $r\neq 0$, gives the characteristic equation
 
-\[
+$$
 r^2-pr-q=0.
-\]
+$$
 
-If the characteristic equation has two distinct roots \(r_1\) and \(r_2\), the general solution is
+If the characteristic equation has two distinct roots $r_1$ and $r_2$, the general solution is
 
-\[
+$$
 a_n=Ar_1^n+Br_2^n.
-\]
+$$
 
-The constants \(A\) and \(B\) are determined by the initial conditions.
+The constants $A$ and $B$ are determined by the initial conditions.
 
 **Example: Fibonacci Sequence**
 
 Its recurrence is
 
-\[
+$$
 F_n=F_{n-1}+F_{n-2}.
-\]
+$$
 
 The characteristic equation is
 
-\[
+$$
 r^2-r-1=0.
-\]
+$$
 
 Its roots are
 
-\[
+$$
 r_1=\frac{1+\sqrt5}{2},
 \qquad
 r_2=\frac{1-\sqrt5}{2}.
-\]
+$$
 
-Using \(F_0=0\) and \(F_1=1\), we obtain
+Using $F_0=0$ and $F_1=1$, we obtain
 
-\[
+$$
 F_n=
 \frac{1}{\sqrt5}
 \left[
@@ -252,7 +252,7 @@ F_n=
 -
 \left(\frac{1-\sqrt5}{2}\right)^n
 \right].
-\]
+$$
 
 This is called the **closed-form expression** (فرمول بسته) of the Fibonacci sequence.
 
@@ -264,24 +264,24 @@ Recursion is not limited to numerical sequences. It can also define structures s
 
 ### 4.1 Recursive Definition of Strings
 
-Consider strings over an alphabet \(\Sigma\).
+Consider strings over an alphabet $\Sigma$.
 
 A simple recursive definition is:
 
-1. The empty string \(\varepsilon\) is a string.
-2. If \(s\) is a string and \(a\in\Sigma\), then \(sa\) is also a string.
+1. The empty string $\varepsilon$ is a string.
+2. If $s$ is a string and $a\in\Sigma$, then $sa$ is also a string.
 
 For example, with
 
-\[
+$$
 \Sigma=\{0,1\},
-\]
+$$
 
 the following are valid strings:
 
-\[
+$$
 \varepsilon,\quad 0,\quad 1,\quad 00,\quad 01,\quad 10,\quad 11.
-\]
+$$
 
 ### 4.2 Recursive Definition of Binary Trees
 
@@ -298,16 +298,16 @@ Structural recursion (بازگشت ساختاری) means defining a function by 
 
 For example, to calculate the number of nodes in a binary tree:
 
-\[
+$$
 \operatorname{size}(T)=
 \begin{cases}
 0 & \text{if }T\text{ is empty},\\
 1+\operatorname{size}(L)+\operatorname{size}(R)
 & \text{otherwise}.
 \end{cases}
-\]
+$$
 
-Here, \(L\) and \(R\) are the left and right subtrees.
+Here, $L$ and $R$ are the left and right subtrees.
 
 ---
 
@@ -359,15 +359,15 @@ def factorial_iterative(n):
 print(factorial_iterative(5))  # 120
 ```
 
-Both implementations calculate \(n!\).
+Both implementations calculate $n!$.
 
 Their time complexity is
 
-\[
+$$
 O(n).
-\]
+$$
 
-The iterative implementation uses constant auxiliary space, while the recursive implementation uses a call stack whose depth is proportional to \(n\).
+The iterative implementation uses constant auxiliary space, while the recursive implementation uses a call stack whose depth is proportional to $n$.
 
 ---
 
@@ -399,19 +399,19 @@ print(fibonacci_recursive(10))  # 55
 
 This implementation repeatedly calculates the same values.
 
-For example, calculating \(F_5\) requires calculating \(F_3\) more than once.
+For example, calculating $F_5$ requires calculating $F_3$ more than once.
 
 Its time complexity grows exponentially:
 
-\[
+$$
 O(\varphi^n),
-\]
+$$
 
 where
 
-\[
+$$
 \varphi=\frac{1+\sqrt5}{2}.
-\]
+$$
 
 ### 6.2 Recursive Implementation with Memoization
 
@@ -443,15 +443,15 @@ Each Fibonacci value is calculated only once.
 
 The time complexity becomes
 
-\[
+$$
 O(n),
-\]
+$$
 
 and the storage requirement is also
 
-\[
+$$
 O(n).
-\]
+$$
 
 ### 6.3 Iterative Fibonacci
 
@@ -473,15 +473,15 @@ print(fibonacci_iterative(10))  # 55
 
 This implementation has
 
-\[
+$$
 O(n)
-\]
+$$
 
 time complexity and
 
-\[
+$$
 O(1)
-\]
+$$
 
 auxiliary space complexity.
 
@@ -489,9 +489,9 @@ auxiliary space complexity.
 
 | Method | Time Complexity | Auxiliary Space |
 |---|---:|---:|
-| Naive recursion | Exponential | \(O(n)\) stack depth |
-| Memoized recursion | \(O(n)\) | \(O(n)\) |
-| Iteration | \(O(n)\) | \(O(1)\) |
+| Naive recursion | Exponential | $O(n)$ stack depth |
+| Memoized recursion | $O(n)$ | $O(n)$ |
+| Iteration | $O(n)$ | $O(1)$ |
 
 The comparison demonstrates an important principle:
 
@@ -510,55 +510,55 @@ Recursion and mathematical induction (استقرای ریاضی) are closely con
 
 Recall the recursive definition:
 
-\[
+$$
 0!=1
-\]
+$$
 
-\[
+$$
 n!=n(n-1)!,\qquad n\geq1.
-\]
+$$
 
 We prove that the recursive algorithm calculates the factorial correctly.
 
 **Base case**
 
-For \(n=0\), the algorithm returns \(1\).
+For $n=0$, the algorithm returns $1$.
 
 This agrees with
 
-\[
+$$
 0!=1.
-\]
+$$
 
 **Inductive hypothesis**
 
 Assume that the algorithm correctly calculates
 
-\[
+$$
 (n-1)!.
-\]
+$$
 
 **Inductive step**
 
-For input \(n\), the algorithm returns
+For input $n$, the algorithm returns
 
-\[
+$$
 n\cdot\operatorname{factorial}(n-1).
-\]
+$$
 
 By the inductive hypothesis, this equals
 
-\[
+$$
 n(n-1)!.
-\]
+$$
 
 By the factorial definition,
 
-\[
+$$
 n(n-1)!=n!.
-\]
+$$
 
-Therefore, the algorithm correctly calculates \(n!\) for every nonnegative integer \(n\).
+Therefore, the algorithm correctly calculates $n!$ for every nonnegative integer $n$.
 
 ### 7.2 Strong Induction and Recursive Algorithms
 
@@ -566,9 +566,9 @@ Some recursive algorithms reduce a problem into several smaller problems whose s
 
 Strong induction (استقرای نیرومند) is useful in these cases.
 
-For example, consider an algorithm that divides an integer \(n\) by one of its proper divisors and recursively processes the resulting smaller integer.
+For example, consider an algorithm that divides an integer $n$ by one of its proper divisors and recursively processes the resulting smaller integer.
 
-To prove correctness, we may assume the property holds for every smaller positive integer, rather than only for \(n-1\).
+To prove correctness, we may assume the property holds for every smaller positive integer, rather than only for $n-1$.
 
 This is precisely the assumption used in strong induction.
 
@@ -588,13 +588,13 @@ A decreasing measure must:
 
 ### Example: Factorial
 
-The recursive call changes the argument from \(n\) to \(n-1\).
+The recursive call changes the argument from $n$ to $n-1$.
 
-For every positive integer \(n\),
+For every positive integer $n$,
 
-\[
+$$
 n-1<n.
-\]
+$$
 
 Since the input is a nonnegative integer, repeated decreases must eventually reach zero.
 
@@ -637,19 +637,19 @@ The running time of a recursive algorithm can itself be described by a recurrenc
 
 ### 10.1 Linear Recursion
 
-Suppose an algorithm performs a constant amount of work and makes one recursive call on an input of size \(n-1\).
+Suppose an algorithm performs a constant amount of work and makes one recursive call on an input of size $n-1$.
 
 Its running time satisfies
 
-\[
+$$
 T(n)=T(n-1)+c,
-\]
+$$
 
-where \(c\) is a constant.
+where $c$ is a constant.
 
 Expanding:
 
-\[
+$$
 \begin{aligned}
 T(n)&=T(n-1)+c\\
 &=T(n-2)+2c\\
@@ -657,39 +657,39 @@ T(n)&=T(n-1)+c\\
 &\ \vdots\\
 &=T(0)+nc.
 \end{aligned}
-\]
+$$
 
 Therefore,
 
-\[
+$$
 T(n)=O(n).
-\]
+$$
 
 ### 10.2 Divide-and-Conquer Recursion
 
-Suppose an algorithm divides a problem into two subproblems of size \(n/2\), solves both recursively, and performs \(cn\) additional operations.
+Suppose an algorithm divides a problem into two subproblems of size $n/2$, solves both recursively, and performs $cn$ additional operations.
 
 Its recurrence is
 
-\[
+$$
 T(n)=2T(n/2)+cn.
-\]
+$$
 
-For simplicity, assume \(n\) is a power of two.
+For simplicity, assume $n$ is a power of two.
 
-At each recursion level, the total work outside recursive calls is proportional to \(n\).
+At each recursion level, the total work outside recursive calls is proportional to $n$.
 
 The number of levels is approximately
 
-\[
+$$
 \log_2 n.
-\]
+$$
 
 Therefore,
 
-\[
+$$
 T(n)=O(n\log n).
-\]
+$$
 
 This recurrence appears in algorithms such as merge sort.
 
@@ -699,45 +699,45 @@ A systematic study of recurrence solving and algorithmic complexity belongs to t
 
 ## 11. Worked Examples
 
-### Example 1: Sum of the First \(n\) Positive Integers
+### Example 1: Sum of the First $n$ Positive Integers
 
 Define
 
-\[
+$$
 S(0)=0
-\]
+$$
 
 and
 
-\[
+$$
 S(n)=n+S(n-1),\qquad n\geq1.
-\]
+$$
 
 The closed-form expression is
 
-\[
+$$
 S(n)=\frac{n(n+1)}{2}.
-\]
+$$
 
-For \(n=5\),
+For $n=5$,
 
-\[
+$$
 S(5)=1+2+3+4+5=15.
-\]
+$$
 
 ### Example 2: A Recursive Power Function
 
 For a nonnegative integer exponent, define
 
-\[
+$$
 a^0=1
-\]
+$$
 
 and
 
-\[
+$$
 a^n=a\cdot a^{n-1},\qquad n\geq1.
-\]
+$$
 
 ```python
 def power_recursive(a, n):
@@ -753,7 +753,7 @@ def power_recursive(a, n):
 print(power_recursive(2, 5))  # 32
 ```
 
-This implementation performs \(n\) multiplications, giving \(O(n)\) time complexity.
+This implementation performs $n$ multiplications, giving $O(n)$ time complexity.
 
 A more efficient approach, called exponentiation by squaring, is studied later in the Algorithms section.
 
@@ -792,7 +792,7 @@ numbers = [2, 4, 6, 8]
 print(recursive_sum_indexed(numbers))  # 20
 ```
 
-The indexed implementation performs \(O(n)\) total work and uses \(O(n)\) call-stack space.
+The indexed implementation performs $O(n)$ total work and uses $O(n)$ call-stack space.
 
 ---
 
@@ -894,24 +894,24 @@ Questions:
 
 Define the following recursively:
 
-1. The sum of the first \(n\) nonnegative integers.
+1. The sum of the first $n$ nonnegative integers.
 2. The powers of 3.
-3. The sequence \(2,5,8,11,\ldots\).
+3. The sequence $2,5,8,11,\ldots$.
 
 ### Exercise 2 — Recurrence Relations
 
 Find the first six terms of each sequence.
 
-1. \(a_0=4,\quad a_n=a_{n-1}+3\).
-2. \(b_0=2,\quad b_n=2b_{n-1}\).
-3. \(c_0=1,\quad c_1=2,\quad c_n=c_{n-1}+c_{n-2}\).
+1. $a_0=4,\quad a_n=a_{n-1}+3$.
+2. $b_0=2,\quad b_n=2b_{n-1}$.
+3. $c_0=1,\quad c_1=2,\quad c_n=c_{n-1}+c_{n-2}$.
 
 ### Exercise 3 — Closed Forms
 
 Find a closed-form expression for:
 
-1. \(a_0=5,\quad a_n=a_{n-1}+2\).
-2. \(b_0=3,\quad b_n=4b_{n-1}\).
+1. $a_0=5,\quad a_n=a_{n-1}+2$.
+2. $b_0=3,\quad b_n=4b_{n-1}$.
 
 ### Exercise 4 — Recursive Programming
 
@@ -926,27 +926,27 @@ Implement recursive functions for:
 
 Prove by mathematical induction that
 
-\[
+$$
 1+2+\cdots+n=\frac{n(n+1)}{2}
-\]
+$$
 
-for every positive integer \(n\).
+for every positive integer $n$.
 
 ### Exercise 6 — Termination
 
 For each recursive function, identify a decreasing measure and explain whether termination is guaranteed.
 
-1. \(f(n)=f(n-1)\), with \(f(0)=1\).
-2. \(g(n)=g(n+1)\), with no base case.
-3. \(h(n)=h(\lfloor n/2\rfloor)\), with a base case at \(n\leq1\).
+1. $f(n)=f(n-1)$, with $f(0)=1$.
+2. $g(n)=g(n+1)$, with no base case.
+3. $h(n)=h(\lfloor n/2\rfloor)$, with a base case at $n\leq1$.
 
 ### Exercise 7 — Algorithm Analysis
 
 Solve the following recurrences:
 
-1. \(T(n)=T(n-1)+2\), with \(T(0)=1\).
-2. \(T(n)=T(n/2)+1\), with \(T(1)=1\).
-3. \(T(n)=2T(n/2)+n\), with \(T(1)=1\).
+1. $T(n)=T(n-1)+2$, with $T(0)=1$.
+2. $T(n)=T(n/2)+1$, with $T(1)=1$.
+3. $T(n)=2T(n/2)+n$, with $T(1)=1$.
 
 Assume suitable integer input sizes, such as powers of two, where necessary.
 
