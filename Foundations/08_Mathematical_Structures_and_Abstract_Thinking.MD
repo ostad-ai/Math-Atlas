@@ -248,7 +248,7 @@ $$
 (\mathbb{N},+),
 $$
 
-using the convention $\mathbb{N}=\{0,1,2,\ldots\}$.
+using the convention $\mathbb{N}=\lbrace 0,1,2,\ldots\rbrace$.
 
 The identity is zero because
 
@@ -392,7 +392,7 @@ $$
 For example, if
 
 $$
-A=\{1,2\},
+A=\lbrace 1,2\rbrace,
 $$
 
 then
@@ -400,7 +400,7 @@ then
 $$
 \mathcal{P}(A)
 =
-\{\varnothing,\{1\},\{2\},\{1,2\}\}.
+\lbrace \varnothing,\lbrace 1\rbrace,\lbrace 2\rbrace,\lbrace 1,2\rbrace\rbrace.
 $$
 
 The relation $\subseteq$ is a partial order on this collection.
@@ -408,13 +408,13 @@ The relation $\subseteq$ is a partial order on this collection.
 Not every pair of subsets is comparable. For example,
 
 $$
-\{1\}\nsubseteq\{2\}
+\lbrace 1\rbrace\nsubseteq\lbrace 2\rbrace
 $$
 
 and
 
 $$
-\{2\}\nsubseteq\{1\}.
+\lbrace 2\rbrace\nsubseteq\lbrace 1\rbrace.
 $$
 
 ### 5.1 Total Orders
@@ -569,7 +569,7 @@ $$
 and
 
 $$
-\{\ldots,-4,-2,0,2,4,\ldots\}
+\lbrace \ldots,-4,-2,0,2,4,\ldots\rbrace
 $$
 
 are isomorphic under addition through
@@ -701,7 +701,7 @@ def check_group(elements, operation):
 The set is
 
 $$
-\mathbb{Z}_5=\{0,1,2,3,4\}.
+\mathbb{Z}_5=\lbrace 0,1,2,3,4\rbrace.
 $$
 
 Addition is performed modulo 5.
@@ -799,7 +799,7 @@ However, there is no additive identity in the positive integers because zero is 
 
 Therefore, this structure is not a monoid and cannot be a group.
 
-### Example 3: Is $(\mathbb{R}\setminus\{0\},\cdot)$ a Group?
+### Example 3: Is $(\mathbb{R}\setminus\lbrace 0\rbrace,\cdot)$ a Group?
 
 Consider the nonzero real numbers under multiplication.
 
@@ -811,7 +811,7 @@ Consider the nonzero real numbers under multiplication.
 Therefore,
 
 $$
-(\mathbb{R}\setminus\{0\},\cdot)
+(\mathbb{R}\setminus\lbrace 0\rbrace,\cdot)
 $$
 
 is an Abelian group.
@@ -912,8 +912,8 @@ Classify each structure as a semigroup, monoid, group, or Abelian group whenever
 1. $(\mathbb{Z},+)$
 2. $(\mathbb{N},+)$, with zero included.
 3. $(\mathbb{Z}_{>0},+)$
-4. $(\mathbb{R}\setminus\{0\},\cdot)$
-5. $(\mathbb{Q}\setminus\{0\},\cdot)$
+4. $(\mathbb{R}\setminus\lbrace 0\rbrace,\cdot)$
+5. $(\mathbb{Q}\setminus\lbrace 0\rbrace,\cdot)$
 
 ### Exercise 3 — Equivalence Relations
 
@@ -932,7 +932,7 @@ Prove that it is an equivalence relation and describe its equivalence classes.
 Let
 
 $$
-A=\{1,2,3,6\}
+A=\lbrace 1,2,3,6\rbrace
 $$
 
 and define

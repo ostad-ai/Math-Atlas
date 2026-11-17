@@ -25,13 +25,13 @@ $$
 A set can be described by listing its elements:
 
 $$
-A = \{1,2,3,4\}
+A = \lbrace 1,2,3,4\rbrace
 $$
 
 Or by specifying a property that its elements satisfy:
 
 $$
-A = \{x \in \mathbb{N} \mid x < 5\}
+A = \lbrace x \in \mathbb{N} \mid x < 5\rbrace
 $$
 
 The symbol $\mid$ means "such that."
@@ -55,7 +55,7 @@ The convention for whether $0$ belongs to $\mathbb{N}$ varies between mathematic
 The **empty set** (مجموعهٔ تهی) contains no elements:
 
 $$
-\varnothing = \{\}
+\varnothing = \lbrace \rbrace
 $$
 
 For every set $A$:
@@ -77,7 +77,7 @@ $$
 The order of elements and the number of times an element is written do not affect a set:
 
 $$
-\{1,2,3\} = \{3,2,1\} = \{1,1,2,3\}
+\lbrace 1,2,3\rbrace = \lbrace 3,2,1\rbrace = \lbrace 1,1,2,3\rbrace
 $$
 
 ## 3. Subsets and Set Relationships
@@ -95,7 +95,7 @@ $$
 For example:
 
 $$
-\{1,2\} \subseteq \{1,2,3\}
+\lbrace 1,2\rbrace \subseteq \lbrace 1,2,3\rbrace
 $$
 
 ### 3.2 Proper Subset
@@ -131,11 +131,11 @@ Set operations (عملگرهای مجموعه‌ای) produce new sets from exis
 Let:
 
 $$
-A = \{1,2,3,4\}
+A = \lbrace 1,2,3,4\rbrace
 $$
 
 $$
-B = \{3,4,5,6\}
+B = \lbrace 3,4,5,6\rbrace
 $$
 
 ### 4.1 Union
@@ -143,13 +143,13 @@ $$
 The **union** (اجتماع) contains all elements that belong to at least one of the sets:
 
 $$
-A \cup B = \{x \mid x \in A \lor x \in B\}
+A \cup B = \lbrace x \mid x \in A \lor x \in B\rbrace
 $$
 
 Example:
 
 $$
-A \cup B = \{1,2,3,4,5,6\}
+A \cup B = \lbrace 1,2,3,4,5,6\rbrace
 $$
 
 ### 4.2 Intersection
@@ -157,13 +157,13 @@ $$
 The **intersection** (اشتراک) contains elements common to both sets:
 
 $$
-A \cap B = \{x \mid x \in A \land x \in B\}
+A \cap B = \lbrace x \mid x \in A \land x \in B\rbrace
 $$
 
 Example:
 
 $$
-A \cap B = \{3,4\}
+A \cap B = \lbrace 3,4\rbrace
 $$
 
 ### 4.3 Difference
@@ -171,13 +171,13 @@ $$
 The **set difference** (تفاضل مجموعه‌ای) contains elements belonging to the first set but not the second:
 
 $$
-A - B = \{x \mid x \in A \land x \notin B\}
+A - B = \lbrace x \mid x \in A \land x \notin B\rbrace
 $$
 
 Example:
 
 $$
-A-B = \{1,2\}
+A-B = \lbrace 1,2\rbrace
 $$
 
 In general:
@@ -275,12 +275,12 @@ The **power set** (مجموعهٔ توانی) of $A$, denoted by $\mathcal{P}(A)
 For example:
 
 $$
-A=\{1,2\}
+A=\lbrace 1,2\rbrace
 $$
 
 $$
 \mathcal{P}(A)=
-\{\varnothing,\{1\},\{2\},\{1,2\}\}
+\lbrace \varnothing,\lbrace 1\rbrace,\lbrace 2\rbrace,\lbrace 1,2\rbrace\rbrace
 $$
 
 If a finite set has $n$ elements, its power set contains:
@@ -295,18 +295,18 @@ The **Cartesian product** (ضرب دکارتی) of two sets is the set of all or
 
 $$
 A\times B =
-\{(a,b)\mid a\in A,\ b\in B\}
+\lbrace (a,b)\mid a\in A,\ b\in B\rbrace
 $$
 
 For example:
 
 $$
-A=\{1,2\},\quad B=\{x,y\}
+A=\lbrace 1,2\rbrace,\quad B=\lbrace x,y\rbrace
 $$
 
 $$
 A\times B =
-\{(1,x),(1,y),(2,x),(2,y)\}
+\lbrace (1,x),(1,y),(2,x),(2,y)\rbrace
 $$
 
 For finite sets:
@@ -330,7 +330,7 @@ $$
 For example:
 
 $$
-A=\{2,4,6,8\}
+A=\lbrace 2,4,6,8\rbrace
 \quad\Rightarrow\quad
 |A|=4
 $$
@@ -493,11 +493,11 @@ print("Both De Morgan's laws are verified.")
 Given:
 
 $$
-A=\{1,2,3,4,5\}
+A=\lbrace 1,2,3,4,5\rbrace
 $$
 
 $$
-B=\{4,5,6,7\}
+B=\lbrace 4,5,6,7\rbrace
 $$
 
 Find the union, intersection, and both differences.
@@ -505,19 +505,19 @@ Find the union, intersection, and both differences.
 **Solution:**
 
 $$
-A\cup B=\{1,2,3,4,5,6,7\}
+A\cup B=\lbrace 1,2,3,4,5,6,7\rbrace
 $$
 
 $$
-A\cap B=\{4,5\}
+A\cap B=\lbrace 4,5\rbrace
 $$
 
 $$
-A-B=\{1,2,3\}
+A-B=\lbrace 1,2,3\rbrace
 $$
 
 $$
-B-A=\{6,7\}
+B-A=\lbrace 6,7\rbrace
 $$
 
 ### Example 2: Power Set Cardinality
@@ -560,7 +560,7 @@ For every experiment, distinguish between computational verification and mathema
 
 ## 12. Exercises
 
-1. Let $A=\{1,2,3,4\}$ and $B=\{3,4,5,6\}$. Calculate all four basic set operations.
+1. Let $A=\lbrace 1,2,3,4\rbrace$ and $B=\lbrace 3,4,5,6\rbrace$. Calculate all four basic set operations.
 2. Prove that $A\cap B\subseteq A$.
 3. Prove the distributive law:
 
@@ -568,7 +568,7 @@ For every experiment, distinguish between computational verification and mathema
    A\cap(B\cup C)=(A\cap B)\cup(A\cap C)
    $$
 
-4. Find the power set of $\{a,b,c\}$.
+4. Find the power set of $\lbrace a,b,c\rbrace$.
 5. If $|A|=8$, calculate $|\mathcal{P}(A)|$.
 6. If $|A|=30$, $|B|=25$, and $|A\cap B|=10$, calculate $|A\cup B|$.
 7. Explain why $A\times B$ is not necessarily equal to $B\times A$.

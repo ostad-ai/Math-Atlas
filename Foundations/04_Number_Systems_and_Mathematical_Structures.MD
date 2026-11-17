@@ -13,7 +13,7 @@ This chapter introduces the principal number systems and the algebraic structure
 The natural numbers (اعداد طبیعی) are commonly denoted by:
 
 $$
-\mathbb{N}=\{0,1,2,3,\ldots\}
+\mathbb{N}=\lbrace 0,1,2,3,\ldots\rbrace
 $$
 
 Some mathematical conventions begin the natural numbers at 1. We use the convention that includes zero.
@@ -97,7 +97,7 @@ Therefore, the identity holds for all natural numbers.
 The integers (اعداد صحیح) are:
 
 $$
-\mathbb{Z}=\{\ldots,-2,-1,0,1,2,\ldots\}
+\mathbb{Z}=\lbrace \ldots,-2,-1,0,1,2,\ldots\rbrace
 $$
 
 Integers extend the natural numbers by including negative numbers.
@@ -169,11 +169,11 @@ The rational numbers (اعداد گویا) are numbers that can be expressed as 
 $$
 \mathbb{Q}
 =
-\left\{
+\left\lbrace
 \frac{a}{b}
 \mid
 a,b\in\mathbb{Z},\ b\neq0
-\right\}
+\right\rbrace
 $$
 
 Examples:
@@ -272,7 +272,7 @@ Every nonempty subset of $\mathbb{R}$ that is bounded above has a least upper bo
 For example, consider:
 
 $$
-S=\{x\in\mathbb{R}\mid x^2<2,\ x\geq0\}
+S=\lbrace x\in\mathbb{R}\mid x^2<2,\ x\geq0\rbrace
 $$
 
 Its least upper bound is:
@@ -760,7 +760,7 @@ $$
 Consider the set:
 
 $$
-G=\{0,1,2\}
+G=\lbrace 0,1,2\rbrace
 $$
 
 with addition modulo 3.

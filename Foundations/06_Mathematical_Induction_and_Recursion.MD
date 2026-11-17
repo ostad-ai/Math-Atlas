@@ -274,7 +274,7 @@ A simple recursive definition is:
 For example, with
 
 $$
-\Sigma=\{0,1\},
+\Sigma=\lbrace 0,1\rbrace,
 $$
 
 the following are valid strings:

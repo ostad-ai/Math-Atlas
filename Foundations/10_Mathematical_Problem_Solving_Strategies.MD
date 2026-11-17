@@ -289,7 +289,7 @@ $$
 Thus,
 
 $$
-\boxed{\{x,y\}=\{3,7\}}
+\boxed{\lbrace x,y\rbrace=\lbrace 3,7\rbrace}
 $$
 
 The unordered pair is determined without needing to decide which number must be $x$ or $y$.

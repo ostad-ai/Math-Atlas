@@ -89,7 +89,7 @@ The following symbols describe common number systems.
 A common convention is
 
 $$
-\mathbb{N}=\{0,1,2,3,\ldots\}.
+\mathbb{N}=\lbrace 0,1,2,3,\ldots\rbrace.
 $$
 
 Some textbooks instead define natural numbers starting from 1. Math-Atlas uses the convention that includes zero unless a topic explicitly states otherwise.
@@ -166,25 +166,25 @@ This means that 17 and 2 have the same remainder when divided by 5.
 For example,
 
 $$
-2\in\{1,2,3\}
+2\in\lbrace 1,2,3\rbrace
 $$
 
 and
 
 $$
-\{1,2\}\subseteq\{1,2,3\}.
+\lbrace 1,2\rbrace\subseteq\lbrace 1,2,3\rbrace.
 $$
 
 The distinction between an element and a subset is important:
 
 $$
-2\in\{1,2,3\}
+2\in\lbrace 1,2,3\rbrace
 $$
 
 but
 
 $$
-\{2\}\subseteq\{1,2,3\}.
+\lbrace 2\rbrace\subseteq\lbrace 1,2,3\rbrace.
 $$
 
 ---
@@ -701,13 +701,13 @@ When the starting index matters, it must be stated explicitly.
 Set definitions will use braces:
 
 $$
-A=\{1,2,3,4\}.
+A=\lbrace 1,2,3,4\rbrace.
 $$
 
 Set-builder notation will use:
 
 $$
-A=\{x\in\mathbb{Z}:x>0\}.
+A=\lbrace x\in\mathbb{Z}:x>0\rbrace.
 $$
 
 ### 13.5 Approximation and Equality

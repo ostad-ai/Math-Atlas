@@ -33,17 +33,17 @@ This means that $a$ is related to $b$ through relation $R$.
 Let:
 
 $$
-A=\{1,2,3\}
+A=\lbrace 1,2,3\rbrace
 $$
 
 $$
-B=\{2,4,6\}
+B=\lbrace 2,4,6\rbrace
 $$
 
 Define a relation:
 
 $$
-R=\{(1,2),(2,4),(3,6)\}
+R=\lbrace (1,2),(2,4),(3,6)\rbrace
 $$
 
 This relation connects each element of $A$ to twice its value in $B$.
@@ -55,7 +55,7 @@ The **domain** (دامنه) of a relation is the set of all first components of 
 $$
 \operatorname{Dom}(R)
 =
-\{a\in A\mid \exists b\in B:(a,b)\in R\}
+\lbrace a\in A\mid \exists b\in B:(a,b)\in R\rbrace
 $$
 
 The **range** (برد) is the set of all second components:
@@ -63,17 +63,17 @@ The **range** (برد) is the set of all second components:
 $$
 \operatorname{Ran}(R)
 =
-\{b\in B\mid \exists a\in A:(a,b)\in R\}
+\lbrace b\in B\mid \exists a\in A:(a,b)\in R\rbrace
 $$
 
 For the previous example:
 
 $$
-\operatorname{Dom}(R)=\{1,2,3\}
+\operatorname{Dom}(R)=\lbrace 1,2,3\rbrace
 $$
 
 $$
-\operatorname{Ran}(R)=\{2,4,6\}
+\operatorname{Ran}(R)=\lbrace 2,4,6\rbrace
 $$
 
 ## 3. Relations on a Set
@@ -174,21 +174,21 @@ This is an equivalence relation.
 The **equivalence class** (ردهٔ هم‌ارزی) of an element $a$ is the set of all elements related to $a$:
 
 $$
-[a]=\{x\in A\mid x\sim a\}
+[a]=\lbrace x\in A\mid x\sim a\rbrace
 $$
 
 For congruence modulo 3, the integers are divided into three equivalence classes:
 
 $$
-[0]=\{\ldots,-6,-3,0,3,6,\ldots\}
+[0]=\lbrace \ldots,-6,-3,0,3,6,\ldots\rbrace
 $$
 
 $$
-[1]=\{\ldots,-5,-2,1,4,7,\ldots\}
+[1]=\lbrace \ldots,-5,-2,1,4,7,\ldots\rbrace
 $$
 
 $$
-[2]=\{\ldots,-4,-1,2,5,8,\ldots\}
+[2]=\lbrace \ldots,-4,-1,2,5,8,\ldots\rbrace
 $$
 
 ### 4.3 Partitions
@@ -215,7 +215,7 @@ Examples include:
 
 A partial order does not require every pair of elements to be comparable.
 
-For example, neither $\{1\}\subseteq\{2\}$ nor $\{2\}\subseteq\{1\}$ holds.
+For example, neither $\lbrace 1\rbrace\subseteq\lbrace 2\rbrace$ nor $\lbrace 2\rbrace\subseteq\lbrace 1\rbrace$ holds.
 
 ## 6. Functions
 
@@ -242,7 +242,7 @@ The range is the set of outputs actually produced:
 $$
 \operatorname{Ran}(f)
 =
-\{f(a)\mid a\in A\}
+\lbrace f(a)\mid a\in A\rbrace
 $$
 
 Therefore:
@@ -288,7 +288,7 @@ The codomain and range are not necessarily equal.
 Consider:
 
 $$
-R=\{(1,2),(2,3),(3,4)\}
+R=\lbrace (1,2),(2,3),(3,4)\rbrace
 $$
 
 This is a function because every input has exactly one output.
@@ -296,7 +296,7 @@ This is a function because every input has exactly one output.
 However:
 
 $$
-S=\{(1,2),(1,3),(2,4)\}
+S=\lbrace (1,2),(1,3),(2,4)\rbrace
 $$
 
 is not a function because input $1$ has two different outputs.
@@ -506,7 +506,7 @@ For a function $f:A\to B$:
 For $S\subseteq A$, its image is:
 
 $$
-f(S)=\{f(x)\mid x\in S\}
+f(S)=\lbrace f(x)\mid x\in S\rbrace
 $$
 
 ### 9.2 Preimage of a Set
@@ -514,7 +514,7 @@ $$
 For $T\subseteq B$, its preimage is:
 
 $$
-f^{-1}(T)=\{x\in A\mid f(x)\in T\}
+f^{-1}(T)=\lbrace x\in A\mid f(x)\in T\rbrace
 $$
 
 The preimage is defined for every function, even if the function is not invertible. In this context, $f^{-1}(T)$ means the preimage of a set, not necessarily an inverse function.
@@ -948,7 +948,7 @@ $$
 
 ## 14. Exercises
 
-1. Let $A=\{1,2,3\}$. Give an example of a reflexive relation on $A$.
+1. Let $A=\lbrace 1,2,3\rbrace$. Give an example of a reflexive relation on $A$.
 2. Give an example of a symmetric relation that is not transitive.
 3. Determine whether the relation $\leq$ on integers is reflexive, symmetric, antisymmetric, and transitive.
 4. Prove that equality is an equivalence relation.

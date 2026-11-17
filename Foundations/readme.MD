@@ -21,16 +21,16 @@ Each chapter below links directly to its corresponding Markdown file.
 
 | No. | Chapter | Description |
 |---:|---|---|
-| 01 | [Propositional Logic](01_Propositional_Logic.MD) | Propositions, logical operators, truth tables, predicates, quantifiers, and inference rules. |
-| 02 | [Set Theory](02_Set_Theory.MD) | Sets, subsets, set operations, power sets, Cartesian products, and cardinality. |
-| 03 | [Relations and Functions](03_Relations_and_Functions.MD) | Binary relations, equivalence relations, partial orders, functions, and mappings. |
-| 04 | [Number Systems and Mathematical Structures](04_Number_Systems_and_Mathematical_Structures.MD) | Natural, integer, rational, real, and complex numbers, along with algebraic structures. |
-| 05 | [Mathematical Proof Techniques](05_Mathematical_Proof_Techniques.MD) | Direct proof, contradiction, contrapositive, cases, existence, and uniqueness. |
-| 06 | [Mathematical Induction and Recursion](06_Mathematical_Induction_and_Recursion.MD) | Mathematical induction, recursive definitions, recurrence relations, and recursive algorithms. |
-| 07 | [Mathematical Notation, Symbols, and Language](07_Mathematical_Notation_and_Symbols.MD) | Mathematical symbols, expressions, conventions, and notation across mathematical domains. |
-| 08 | [Mathematical Structures and Abstract Thinking](08_Mathematical_Structures_and_Abstract_Thinking.MD) | Abstract structures, algebraic systems, homomorphisms, isomorphisms, and mathematical abstraction. |
-| 09 | [Mathematical Modeling and Problem Solving](09_Mathematical_Modeling_and_Problem_Solving.MD) | Mathematical models, assumptions, variables, constraints, validation, and numerical methods. |
-| 10 | [Mathematical Problem-Solving Strategies](10_Mathematical_Problem_Solving_Strategies.MD) | Problem-solving heuristics, pattern recognition, invariants, symmetry, decomposition, and computational exploration. |
+| 01 | [Propositional Logic](01_Propositional_Logic.md) | Propositions, logical operators, truth tables, predicates, quantifiers, and inference rules. |
+| 02 | [Set Theory](02_Set_Theory.md) | Sets, subsets, set operations, power sets, Cartesian products, and cardinality. |
+| 03 | [Relations and Functions](03_Relations_and_Functions.md) | Binary relations, equivalence relations, partial orders, functions, and mappings. |
+| 04 | [Number Systems and Mathematical Structures](04_Number_Systems_and_Mathematical_Structures.md) | Natural, integer, rational, real, and complex numbers, along with algebraic structures. |
+| 05 | [Mathematical Proof Techniques](05_Mathematical_Proof_Techniques.md) | Direct proof, contradiction, contrapositive, cases, existence, and uniqueness. |
+| 06 | [Mathematical Induction and Recursion](06_Mathematical_Induction_and_Recursion.md) | Mathematical induction, recursive definitions, recurrence relations, and recursive algorithms. |
+| 07 | [Mathematical Notation, Symbols, and Language](07_Mathematical_Notation_and_Symbols.md) | Mathematical symbols, expressions, conventions, and notation across mathematical domains. |
+| 08 | [Mathematical Structures and Abstract Thinking](08_Mathematical_Structures_and_Abstract_Thinking.md) | Abstract structures, algebraic systems, homomorphisms, isomorphisms, and mathematical abstraction. |
+| 09 | [Mathematical Modeling and Problem Solving](09_Mathematical_Modeling_and_Problem_Solving.md) | Mathematical models, assumptions, variables, constraints, validation, and numerical methods. |
+| 10 | [Mathematical Problem-Solving Strategies](10_Mathematical_Problem_Solving_Strategies.md) | Problem-solving heuristics, pattern recognition, invariants, symmetry, decomposition, and computational exploration. |
 
 ## Chapter Structure
 
