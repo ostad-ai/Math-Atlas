@@ -564,9 +564,7 @@ For every experiment, distinguish between computational verification and mathema
 2. Prove that $A\cap B\subseteq A$.
 3. Prove the distributive law:
 
-   $$
-   A\cap(B\cup C)=(A\cap B)\cup(A\cap C)
-   $$
+   $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$
 
 4. Find the power set of $\lbrace a,b,c\rbrace$.
 5. If $|A|=8$, calculate $|\mathcal{P}(A)|$.

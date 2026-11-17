@@ -828,15 +828,11 @@ For every experiment, explain what the computation establishes and what still re
 5. Disprove the statement "Every odd integer is prime."
 6. Prove by induction:
 
-   $$
-   1+3+5+\cdots+(2n-1)=n^2
-   $$
+   $1+3+5+\cdots+(2n-1)=n^2$
 
 7. Prove by induction:
 
-   $$
-   1+2+\cdots+n=\frac{n(n+1)}2
-   $$
+   $1+2+\cdots+n=\frac{n(n+1)}2$
 
 8. Use strong induction to prove that every integer greater than 1 has a prime factor.
 9. Explain the difference between a proof by contradiction and a proof by contrapositive.

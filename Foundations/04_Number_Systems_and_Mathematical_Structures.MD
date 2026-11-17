@@ -821,15 +821,11 @@ Thus, the integers do not contain multiplicative inverses for all nonzero elemen
 4. Prove that the product of two rational numbers is rational.
 5. Calculate:
 
-   $$
-   (3+2i)(1-4i)
-   $$
+   $(3+2i)(1-4i)$
 
 6. Find the conjugate and modulus of:
 
-   $$
-   z=5-12i
-   $$
+   $z=5-12i$
 
 7. Explain why $\mathbb{Z}$ is a ring but not a field.
 8. Determine whether the nonzero rational numbers form a group under multiplication.
