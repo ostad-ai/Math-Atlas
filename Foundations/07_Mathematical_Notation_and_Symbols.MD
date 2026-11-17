@@ -29,11 +29,13 @@ $$
 x\in\mathbb{R}
 $$
 
+
 means that $x$ is a real number.
 
 $$
 n\in\mathbb{N}
 $$
+
 
 means that $n$ is a natural number.
 
@@ -62,6 +64,7 @@ $$
 \pi,\quad e,\quad \sqrt{2}.
 $$
 
+
 A parameter (پارامتر) is a quantity that remains fixed within a particular analysis but may vary between different models or problems.
 
 For example:
@@ -69,6 +72,7 @@ For example:
 $$
 f(x)=ax^2+bx+c
 $$
+
 
 uses $a,b,c$ as parameters and $x$ as the variable.
 
@@ -92,16 +96,15 @@ $$
 \mathbb{N}=\lbrace 0,1,2,3,\ldots\rbrace.
 $$
 
+
 Some textbooks instead define natural numbers starting from 1. Math-Atlas uses the convention that includes zero unless a topic explicitly states otherwise.
 
 The number systems are related by
 
 $$
-\mathbb{N}\subseteq\mathbb{Z}
-\subseteq\mathbb{Q}
-\subseteq\mathbb{R}
-\subseteq\mathbb{C}.
+\mathbb{N}\subseteq\mathbb{Z} \subseteq\mathbb{Q} \subseteq\mathbb{R} \subseteq\mathbb{C}.
 $$
+
 
 Examples:
 
@@ -109,17 +112,21 @@ $$
 -3\in\mathbb{Z}
 $$
 
+
 $$
 \frac{2}{5}\in\mathbb{Q}
 $$
+
 
 $$
 \sqrt{2}\in\mathbb{R}\setminus\mathbb{Q}
 $$
 
+
 $$
 3+2i\in\mathbb{C}.
 $$
+
 
 ---
 
@@ -146,6 +153,7 @@ $$
 17\equiv 2\pmod 5.
 $$
 
+
 This means that 17 and 2 have the same remainder when divided by 5.
 
 ### 4.2 Membership and Set Relations
@@ -169,11 +177,13 @@ $$
 2\in\lbrace 1,2,3\rbrace
 $$
 
+
 and
 
 $$
 \lbrace 1,2\rbrace\subseteq\lbrace 1,2,3\rbrace.
 $$
+
 
 The distinction between an element and a subset is important:
 
@@ -181,11 +191,13 @@ $$
 2\in\lbrace 1,2,3\rbrace
 $$
 
+
 but
 
 $$
 \lbrace 2\rbrace\subseteq\lbrace 1,2,3\rbrace.
 $$
+
 
 ---
 
@@ -214,6 +226,7 @@ $$
 \forall x\in\mathbb{R},\quad x^2\geq0
 $$
 
+
 means that every real number has a nonnegative square.
 
 ### 5.2 Existential Quantification
@@ -224,6 +237,7 @@ $$
 \exists x\in\mathbb{Z},\quad x^2=9
 $$
 
+
 means that there exists an integer whose square is 9.
 
 ### 5.3 Unique Existence
@@ -233,6 +247,7 @@ The statement
 $$
 \exists!x\in\mathbb{R},\quad x+2=5
 $$
+
 
 means that exactly one real number satisfies the equation.
 
@@ -246,6 +261,7 @@ $$
 P\Rightarrow Q
 $$
 
+
 states that if $P$ is true, then $Q$ is true.
 
 A biconditional
@@ -254,11 +270,13 @@ $$
 P\Leftrightarrow Q
 $$
 
+
 states that both implications hold:
 
 $$
 (P\Rightarrow Q)\land(Q\Rightarrow P).
 $$
+
 
 ---
 
@@ -286,19 +304,20 @@ $$
 \sum_{k=1}^{n}k
 $$
 
+
 means
 
 $$
 1+2+\cdots+n.
 $$
 
+
 More generally,
 
 $$
-\sum_{k=m}^{n}a_k
-=
-a_m+a_{m+1}+\cdots+a_n.
+\sum_{k=m}^{n}a_k = a_m+a_{m+1}+\cdots+a_n.
 $$
+
 
 ### 6.2 Product Notation
 
@@ -308,23 +327,22 @@ $$
 \prod_{k=1}^{n}k
 $$
 
+
 means
 
 $$
 1\cdot2\cdot\ldots\cdot n=n!.
 $$
 
+
 ### 6.3 Absolute Value
 
 For a real number $x$,
 
 $$
-|x|=
-\begin{cases}
-x & x\geq0,\\
--x & x<0.
-\end{cases}
+|x|= \begin{cases} x & x\geq0,\\ -x & x<0. \end{cases}
 $$
+
 
 Absolute value represents distance from zero on the real number line.
 
@@ -333,6 +351,7 @@ For example,
 $$
 |-7|=7.
 $$
+
 
 ---
 
@@ -346,6 +365,7 @@ $$
 f:A\to B
 $$
 
+
 indicates a function from set $A$ to set $B$.
 
 For an element $x\in A$, its image is written as
@@ -354,21 +374,25 @@ $$
 f(x).
 $$
 
+
 Example:
 
 $$
 f:\mathbb{R}\to\mathbb{R}
 $$
 
+
 $$
 f(x)=x^2.
 $$
+
 
 Then
 
 $$
 f(3)=9.
 $$
+
 
 Important function-related notation includes:
 
@@ -396,6 +420,7 @@ $$
 \lim_{x\to a}f(x)=L
 $$
 
+
 means that $f(x)$ approaches $L$ as $x$ approaches $a$.
 
 ### 8.2 Derivatives
@@ -403,10 +428,9 @@ means that $f(x)$ approaches $L$ as $x$ approaches $a$.
 The derivative of $f$ can be written as
 
 $$
-f'(x),\qquad
-\frac{df}{dx},\qquad
-\frac{d}{dx}f(x).
+f'(x),\qquad \frac{df}{dx},\qquad \frac{d}{dx}f(x).
 $$
+
 
 For example, if
 
@@ -414,11 +438,13 @@ $$
 f(x)=x^2,
 $$
 
+
 then
 
 $$
 f'(x)=2x.
 $$
+
 
 ### 8.3 Integrals
 
@@ -428,17 +454,20 @@ $$
 \int f(x)\,dx.
 $$
 
+
 The definite integral is written as
 
 $$
 \int_a^b f(x)\,dx.
 $$
 
+
 For example,
 
 $$
 \int_0^1 x^2\,dx=\frac13.
 $$
+
 
 ### 8.4 Partial Derivatives
 
@@ -448,13 +477,13 @@ $$
 f(x,y)=x^2+3xy+y^2,
 $$
 
+
 the partial derivatives are written as
 
 $$
-\frac{\partial f}{\partial x},
-\qquad
-\frac{\partial f}{\partial y}.
+\frac{\partial f}{\partial x}, \qquad \frac{\partial f}{\partial y}.
 $$
+
 
 They describe differentiation with respect to one variable while holding the other variables constant.
 
@@ -480,33 +509,23 @@ Linear algebra uses conventions that distinguish scalars, vectors, and matrices.
 For example,
 
 $$
-A=
-\begin{bmatrix}
-1&2\\
-3&4
-\end{bmatrix}
+A= \begin{bmatrix} 1&2\\ 3&4 \end{bmatrix}
 $$
+
 
 and
 
 $$
-\mathbf{x}=
-\begin{bmatrix}
-5\\
-6
-\end{bmatrix}.
+\mathbf{x}= \begin{bmatrix} 5\\ 6 \end{bmatrix}.
 $$
+
 
 Their matrix product is
 
 $$
-A\mathbf{x}
-=
-\begin{bmatrix}
-17\\
-39
-\end{bmatrix}.
+A\mathbf{x} = \begin{bmatrix} 17\\ 39 \end{bmatrix}.
 $$
+
 
 ---
 
@@ -533,6 +552,7 @@ For example,
 $$
 X\sim\mathcal{N}(\mu,\sigma^2)
 $$
+
 
 means that random variable $X$ follows a normal distribution with mean $\mu$ and variance $\sigma^2$.
 
@@ -593,6 +613,7 @@ $$
 S=\sum_{k=1}^{n}k^2.
 $$
 
+
 Python implementation:
 
 ```python
@@ -621,6 +642,7 @@ Mathematical definition:
 $$
 f(x)=x^2+2x+1.
 $$
+
 
 Python implementation:
 
@@ -669,9 +691,9 @@ To maintain consistency across the repository, the following conventions will be
 Examples:
 
 $$
-x,\quad A,\quad \mathbf{v},\quad
-\theta,\quad a_n.
+x,\quad A,\quad \mathbf{v},\quad \theta,\quad a_n.
 $$
+
 
 ### 13.2 Function Definitions
 
@@ -680,9 +702,9 @@ Functions should explicitly specify their domain and codomain whenever these are
 Preferred:
 
 $$
-f:\mathbb{R}\to\mathbb{R},
-\qquad f(x)=x^2.
+f:\mathbb{R}\to\mathbb{R}, \qquad f(x)=x^2.
 $$
+
 
 Avoid leaving the domain and codomain ambiguous when they affect the mathematical properties being discussed.
 
@@ -694,6 +716,7 @@ $$
 (a_n)_{n=0}^{\infty}.
 $$
 
+
 When the starting index matters, it must be stated explicitly.
 
 ### 13.4 Sets
@@ -704,11 +727,13 @@ $$
 A=\lbrace 1,2,3,4\rbrace.
 $$
 
+
 Set-builder notation will use:
 
 $$
 A=\lbrace x\in\mathbb{Z}:x>0\rbrace.
 $$
+
 
 ### 13.5 Approximation and Equality
 
@@ -721,6 +746,7 @@ For example,
 $$
 \sqrt{2}\approx1.4142.
 $$
+
 
 ### 13.6 Definitions and Theorems
 

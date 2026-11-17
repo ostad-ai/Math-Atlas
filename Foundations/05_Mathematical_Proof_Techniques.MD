@@ -20,11 +20,13 @@ $$
 \forall x\in A,\ P(x)
 $$
 
+
 Example:
 
 $$
 \forall n\in\mathbb{Z},\quad n+n=2n
 $$
+
 
 To prove a universal statement, we consider an arbitrary element of the domain and establish the required property.
 
@@ -36,11 +38,13 @@ $$
 \exists x\in A,\ P(x)
 $$
 
+
 Example:
 
 $$
 \exists n\in\mathbb{Z},\quad n^2=9
 $$
+
 
 A single valid example is sufficient to establish an existential statement.
 
@@ -49,18 +53,16 @@ A single valid example is sufficient to establish an existential statement.
 The negation of a universal statement is existential:
 
 $$
-\neg(\forall x\in A,\ P(x))
-\iff
-\exists x\in A,\ \neg P(x)
+\neg(\forall x\in A,\ P(x)) \iff \exists x\in A,\ \neg P(x)
 $$
+
 
 The negation of an existential statement is universal:
 
 $$
-\neg(\exists x\in A,\ P(x))
-\iff
-\forall x\in A,\ \neg P(x)
+\neg(\exists x\in A,\ P(x)) \iff \forall x\in A,\ \neg P(x)
 $$
+
 
 These equivalences are essential when constructing counterexamples.
 
@@ -73,6 +75,7 @@ To prove:
 $$
 P\Rightarrow Q
 $$
+
 
 we assume $P$ and derive $Q$.
 
@@ -90,15 +93,18 @@ $$
 a=2k,\qquad b=2m
 $$
 
+
 Then:
 
 $$
 a+b=2k+2m
 $$
 
+
 $$
 =2(k+m)
 $$
+
 
 Since $k+m\in\mathbb{Z}$, the sum is divisible by 2.
 
@@ -116,18 +122,15 @@ $$
 a=2k+1,\qquad b=2m+1
 $$
 
+
 where $k,m\in\mathbb{Z}$.
 
 Then:
 
 $$
-\begin{aligned}
-ab
-&=(2k+1)(2m+1)\\
-&=4km+2k+2m+1\\
-&=2(2km+k+m)+1
-\end{aligned}
+\begin{aligned} ab &=(2k+1)(2m+1)\\ &=4km+2k+2m+1\\ &=2(2km+k+m)+1 \end{aligned}
 $$
+
 
 The expression $2km+k+m$ is an integer.
 
@@ -143,11 +146,13 @@ $$
 P\Rightarrow Q
 $$
 
+
 the contrapositive is:
 
 $$
 \neg Q\Rightarrow\neg P
 $$
+
 
 Sometimes proving the contrapositive is easier than proving the original statement.
 
@@ -167,18 +172,15 @@ $$
 n=2k+1
 $$
 
+
 for some $k\in\mathbb{Z}$.
 
 Then:
 
 $$
-\begin{aligned}
-n^2
-&=(2k+1)^2\\
-&=4k^2+4k+1\\
-&=2(2k^2+2k)+1
-\end{aligned}
+\begin{aligned} n^2 &=(2k+1)^2\\ &=4k^2+4k+1\\ &=2(2k^2+2k)+1 \end{aligned}
 $$
+
 
 Thus $n^2$ is odd.
 
@@ -193,6 +195,7 @@ To prove $P$, we assume:
 $$
 \neg P
 $$
+
 
 and show that this assumption leads to an impossibility.
 
@@ -210,11 +213,13 @@ $$
 M+1\in\mathbb{Z}
 $$
 
+
 But:
 
 $$
 M+1>M
 $$
+
 
 This contradicts the assumption that $M$ is the greatest integer.
 
@@ -228,6 +233,7 @@ $$
 \sqrt2\notin\mathbb{Q}
 $$
 
+
 **Proof:**
 
 Suppose:
@@ -235,6 +241,7 @@ Suppose:
 $$
 \sqrt2=\frac{a}{b}
 $$
+
 
 where $a,b\in\mathbb{Z}$, $b\neq0$, and the fraction is in lowest terms.
 
@@ -244,11 +251,13 @@ $$
 2=\frac{a^2}{b^2}
 $$
 
+
 Therefore:
 
 $$
 a^2=2b^2
 $$
+
 
 Hence $a^2$ is even, so $a$ is even.
 
@@ -258,17 +267,20 @@ $$
 a=2k
 $$
 
+
 Substituting:
 
 $$
 4k^2=2b^2
 $$
 
+
 Thus:
 
 $$
 b^2=2k^2
 $$
+
 
 Therefore $b$ is also even.
 
@@ -279,6 +291,7 @@ Consequently:
 $$
 \sqrt2\notin\mathbb{Q}
 $$
+
 
 ## 6. Proof by Cases
 
@@ -291,6 +304,7 @@ A **proof by cases** (اثبات حالت‌به‌حالت) divides a problem i
 $$
 n^2\geq0
 $$
+
 
 for every integer $n$.
 
@@ -306,6 +320,7 @@ $$
 n^2\geq0
 $$
 
+
 **Case 2:** $n<0$.
 
 Then $-n>0$, and:
@@ -314,6 +329,7 @@ $$
 n^2=(-n)^2\geq0
 $$
 
+
 Both cases establish the required inequality.
 
 Therefore:
@@ -321,6 +337,7 @@ Therefore:
 $$
 n^2\geq0
 $$
+
 
 for every integer $n$.
 
@@ -333,6 +350,7 @@ Suppose we want to prove:
 $$
 P(n)
 $$
+
 
 for all $n\geq n_0$.
 
@@ -350,6 +368,7 @@ $$
 1+2+\cdots+n=\frac{n(n+1)}2
 $$
 
+
 for $n\geq1$.
 
 **Base case:**
@@ -360,6 +379,7 @@ $$
 1=\frac{1(2)}2
 $$
 
+
 **Inductive hypothesis:**
 
 Assume:
@@ -367,6 +387,7 @@ Assume:
 $$
 1+2+\cdots+k=\frac{k(k+1)}2
 $$
+
 
 **Inductive step:**
 
@@ -376,17 +397,20 @@ $$
 1+2+\cdots+k+(k+1)
 $$
 
+
 Using the inductive hypothesis:
 
 $$
 =\frac{k(k+1)}2+(k+1)
 $$
 
+
 Factor:
 
 $$
 =\frac{(k+1)(k+2)}2
 $$
+
 
 This is the required expression for $k+1$.
 
@@ -400,6 +424,7 @@ $$
 1+3+5+\cdots+(2n-1)=n^2
 $$
 
+
 **Base case:**
 
 For $n=1$:
@@ -407,6 +432,7 @@ For $n=1$:
 $$
 1=1^2
 $$
+
 
 **Inductive hypothesis:**
 
@@ -416,17 +442,15 @@ $$
 1+3+\cdots+(2k-1)=k^2
 $$
 
+
 **Inductive step:**
 
 Add the next odd number:
 
 $$
-\begin{aligned}
-1+3+\cdots+(2k-1)+(2k+1)
-&=k^2+2k+1\\
-&=(k+1)^2
-\end{aligned}
+\begin{aligned} 1+3+\cdots+(2k-1)+(2k+1) &=k^2+2k+1\\ &=(k+1)^2 \end{aligned}
 $$
+
 
 Therefore, the statement holds for all positive integers $n$.
 
@@ -439,6 +463,7 @@ Instead of assuming only $P(k)$, we assume that all previous statements are true
 $$
 P(n_0),P(n_0+1),\ldots,P(k)
 $$
+
 
 We then prove $P(k+1)$.
 
@@ -468,11 +493,13 @@ $$
 k+1=ab
 $$
 
+
 where:
 
 $$
 1<a<k+1,\qquad 1<b<k+1
 $$
+
 
 By the inductive hypothesis, both $a$ and $b$ can be expressed as products of primes.
 
@@ -495,6 +522,7 @@ This statement is false because:
 $$
 2
 $$
+
 
 is prime and even.
 
@@ -526,6 +554,7 @@ $$
 e+e'=e'
 $$
 
+
 because $e$ is an identity.
 
 Also:
@@ -534,6 +563,7 @@ $$
 e+e'=e
 $$
 
+
 because $e'$ is an identity.
 
 Therefore:
@@ -541,6 +571,7 @@ Therefore:
 $$
 e=e'
 $$
+
 
 The additive identity is unique.
 
@@ -556,13 +587,16 @@ $$
 P\Rightarrow Q
 $$
 
+
 $$
 Q
 $$
 
+
 $$
 \therefore P
 $$
+
 
 For example:
 
@@ -582,13 +616,16 @@ $$
 P\Rightarrow Q
 $$
 
+
 $$
 \neg P
 $$
 
+
 $$
 \therefore\neg Q
 $$
+
 
 For example:
 
@@ -733,15 +770,18 @@ $$
 a=2k+1,\qquad b=2m+1
 $$
 
+
 Then:
 
 $$
 a-b=2k+1-(2m+1)
 $$
 
+
 $$
 =2(k-m)
 $$
+
 
 Since $k-m$ is an integer, the difference is even.
 
@@ -761,11 +801,13 @@ $$
 n=2k
 $$
 
+
 Then:
 
 $$
 n^2=4k^2=2(2k^2)
 $$
+
 
 Therefore, $n^2$ is even.
 
@@ -779,6 +821,7 @@ $$
 1+2+4+\cdots+2^n=2^{n+1}-1
 $$
 
+
 for $n\geq0$.
 
 **Solution:**
@@ -789,21 +832,20 @@ $$
 1=2^1-1
 $$
 
+
 Inductive hypothesis:
 
 $$
 1+2+\cdots+2^k=2^{k+1}-1
 $$
 
+
 Inductive step:
 
 $$
-\begin{aligned}
-1+2+\cdots+2^k+2^{k+1}
-&=2^{k+1}-1+2^{k+1}\\
-&=2^{k+2}-1
-\end{aligned}
+\begin{aligned} 1+2+\cdots+2^k+2^{k+1} &=2^{k+1}-1+2^{k+1}\\ &=2^{k+2}-1 \end{aligned}
 $$
+
 
 Therefore, the identity holds for all $n\geq0$.
 

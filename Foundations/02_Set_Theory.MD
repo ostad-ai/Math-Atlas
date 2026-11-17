@@ -16,11 +16,13 @@ $$
 x \in A
 $$
 
+
 If it does not belong to $A$, we write:
 
 $$
 x \notin A
 $$
+
 
 A set can be described by listing its elements:
 
@@ -28,11 +30,13 @@ $$
 A = \lbrace 1,2,3,4\rbrace
 $$
 
+
 Or by specifying a property that its elements satisfy:
 
 $$
 A = \lbrace x \in \mathbb{N} \mid x < 5\rbrace
 $$
+
 
 The symbol $\mid$ means "such that."
 
@@ -58,27 +62,29 @@ $$
 \varnothing = \lbrace \rbrace
 $$
 
+
 For every set $A$:
 
 $$
 \varnothing \subseteq A
 $$
 
+
 ### 2.3 Equality of Sets
 
 Two sets are equal if and only if they contain exactly the same elements:
 
 $$
-A = B
-\iff
-(\forall x)(x \in A \iff x \in B)
+A = B \iff (\forall x)(x \in A \iff x \in B)
 $$
+
 
 The order of elements and the number of times an element is written do not affect a set:
 
 $$
 \lbrace 1,2,3\rbrace = \lbrace 3,2,1\rbrace = \lbrace 1,1,2,3\rbrace
 $$
+
 
 ## 3. Subsets and Set Relationships
 
@@ -87,16 +93,16 @@ $$
 A set $A$ is a **subset** (زیرمجموعه) of $B$ if every element of $A$ also belongs to $B$:
 
 $$
-A \subseteq B
-\iff
-(\forall x)(x \in A \Rightarrow x \in B)
+A \subseteq B \iff (\forall x)(x \in A \Rightarrow x \in B)
 $$
+
 
 For example:
 
 $$
 \lbrace 1,2\rbrace \subseteq \lbrace 1,2,3\rbrace
 $$
+
 
 ### 3.2 Proper Subset
 
@@ -105,6 +111,7 @@ A is a **proper subset** (زیرمجموعهٔ سره) of B if:
 $$
 A \subseteq B \quad \text{and} \quad A \neq B
 $$
+
 
 It is sometimes written as $A \subsetneq B$.
 
@@ -116,6 +123,7 @@ $$
 B \supseteq A
 $$
 
+
 ### 3.4 Disjoint Sets
 
 Two sets are **disjoint** (مجموعه‌های جدا از هم) if they have no common elements:
@@ -123,6 +131,7 @@ Two sets are **disjoint** (مجموعه‌های جدا از هم) if they have 
 $$
 A \cap B = \varnothing
 $$
+
 
 ## 4. Set Operations
 
@@ -134,9 +143,11 @@ $$
 A = \lbrace 1,2,3,4\rbrace
 $$
 
+
 $$
 B = \lbrace 3,4,5,6\rbrace
 $$
+
 
 ### 4.1 Union
 
@@ -146,11 +157,13 @@ $$
 A \cup B = \lbrace x \mid x \in A \lor x \in B\rbrace
 $$
 
+
 Example:
 
 $$
 A \cup B = \lbrace 1,2,3,4,5,6\rbrace
 $$
+
 
 ### 4.2 Intersection
 
@@ -160,11 +173,13 @@ $$
 A \cap B = \lbrace x \mid x \in A \land x \in B\rbrace
 $$
 
+
 Example:
 
 $$
 A \cap B = \lbrace 3,4\rbrace
 $$
+
 
 ### 4.3 Difference
 
@@ -174,17 +189,20 @@ $$
 A - B = \lbrace x \mid x \in A \land x \notin B\rbrace
 $$
 
+
 Example:
 
 $$
 A-B = \lbrace 1,2\rbrace
 $$
 
+
 In general:
 
 $$
 A-B \neq B-A
 $$
+
 
 ### 4.4 Complement
 
@@ -193,6 +211,7 @@ Given a universal set $U$, the **complement** (متمم) of $A$ contains all ele
 $$
 A^c = U-A
 $$
+
 
 The universal set must be specified because the complement depends on the chosen universe.
 
@@ -206,9 +225,11 @@ $$
 A \cup B = B \cup A
 $$
 
+
 $$
 A \cap B = B \cap A
 $$
+
 
 ### 5.2 Associative Laws
 
@@ -216,23 +237,23 @@ $$
 (A \cup B)\cup C = A\cup(B\cup C)
 $$
 
+
 $$
 (A \cap B)\cap C = A\cap(B\cap C)
 $$
 
+
 ### 5.3 Distributive Laws
 
 $$
-A\cap(B\cup C)
-=
-(A\cap B)\cup(A\cap C)
+A\cap(B\cup C) = (A\cap B)\cup(A\cap C)
 $$
 
+
 $$
-A\cup(B\cap C)
-=
-(A\cup B)\cap(A\cup C)
+A\cup(B\cap C) = (A\cup B)\cap(A\cup C)
 $$
+
 
 ### 5.4 Identity Laws
 
@@ -240,9 +261,11 @@ $$
 A\cup\varnothing=A
 $$
 
+
 $$
 A\cap U=A
 $$
+
 
 ### 5.5 Complement Laws
 
@@ -250,9 +273,11 @@ $$
 A\cup A^c=U
 $$
 
+
 $$
 A\cap A^c=\varnothing
 $$
+
 
 ### 5.6 De Morgan's Laws
 
@@ -260,9 +285,11 @@ $$
 (A\cup B)^c=A^c\cap B^c
 $$
 
+
 $$
 (A\cap B)^c=A^c\cup B^c
 $$
+
 
 These laws connect set theory with propositional logic.
 
@@ -278,10 +305,11 @@ $$
 A=\lbrace 1,2\rbrace
 $$
 
+
 $$
-\mathcal{P}(A)=
-\lbrace \varnothing,\lbrace 1\rbrace,\lbrace 2\rbrace,\lbrace 1,2\rbrace\rbrace
+\mathcal{P}(A)= \lbrace \varnothing,\lbrace 1\rbrace,\lbrace 2\rbrace,\lbrace 1,2\rbrace\rbrace
 $$
+
 
 If a finite set has $n$ elements, its power set contains:
 
@@ -289,14 +317,15 @@ $$
 |\mathcal{P}(A)|=2^n
 $$
 
+
 ### 6.2 Cartesian Product
 
 The **Cartesian product** (ضرب دکارتی) of two sets is the set of all ordered pairs whose first element belongs to $A$ and second element belongs to $B$:
 
 $$
-A\times B =
-\lbrace (a,b)\mid a\in A,\ b\in B\rbrace
+A\times B = \lbrace (a,b)\mid a\in A,\ b\in B\rbrace
 $$
+
 
 For example:
 
@@ -304,16 +333,18 @@ $$
 A=\lbrace 1,2\rbrace,\quad B=\lbrace x,y\rbrace
 $$
 
+
 $$
-A\times B =
-\lbrace (1,x),(1,y),(2,x),(2,y)\rbrace
+A\times B = \lbrace (1,x),(1,y),(2,x),(2,y)\rbrace
 $$
+
 
 For finite sets:
 
 $$
 |A\times B|=|A|\cdot|B|
 $$
+
 
 In general, $A\times B$ is not equal to $B\times A$.
 
@@ -327,21 +358,20 @@ $$
 |A|
 $$
 
+
 For example:
 
 $$
-A=\lbrace 2,4,6,8\rbrace
-\quad\Rightarrow\quad
-|A|=4
+A=\lbrace 2,4,6,8\rbrace \quad\Rightarrow\quad |A|=4
 $$
+
 
 For two finite sets, the inclusion-exclusion principle (اصل شمول و عدم شمول) states:
 
 $$
-|A\cup B|
-=
-|A|+|B|-|A\cap B|
+|A\cup B| = |A|+|B|-|A\cap B|
 $$
+
 
 This formula prevents common elements from being counted twice.
 
@@ -352,10 +382,9 @@ This formula prevents common elements from being counted twice.
 For any two sets $A$ and $B$:
 
 $$
-A=B
-\iff
-(A\subseteq B \land B\subseteq A)
+A=B \iff (A\subseteq B \land B\subseteq A)
 $$
+
 
 **Proof:**
 
@@ -365,11 +394,13 @@ $$
 A\subseteq B,\quad B\subseteq A
 $$
 
+
 Conversely, assume both inclusions hold. Every element of $A$ belongs to $B$, and every element of $B$ belongs to $A$. Thus, the sets contain exactly the same elements:
 
 $$
 A=B
 $$
+
 
 ### Theorem 2: Cardinality of a Union
 
@@ -378,6 +409,7 @@ For finite sets $A$ and $B$:
 $$
 |A\cup B|=|A|+|B|-|A\cap B|
 $$
+
 
 **Explanation:**
 
@@ -496,9 +528,11 @@ $$
 A=\lbrace 1,2,3,4,5\rbrace
 $$
 
+
 $$
 B=\lbrace 4,5,6,7\rbrace
 $$
+
 
 Find the union, intersection, and both differences.
 
@@ -508,17 +542,21 @@ $$
 A\cup B=\lbrace 1,2,3,4,5,6,7\rbrace
 $$
 
+
 $$
 A\cap B=\lbrace 4,5\rbrace
 $$
+
 
 $$
 A-B=\lbrace 1,2,3\rbrace
 $$
 
+
 $$
 B-A=\lbrace 6,7\rbrace
 $$
+
 
 ### Example 2: Power Set Cardinality
 
@@ -530,6 +568,7 @@ $$
 |\mathcal{P}(A)|=2^5=32
 $$
 
+
 ### Example 3: Inclusion-Exclusion
 
 Suppose:
@@ -538,6 +577,7 @@ $$
 |A|=20,\quad |B|=15,\quad |A\cap B|=7
 $$
 
+
 Find the cardinality of their union.
 
 **Solution:**
@@ -545,6 +585,7 @@ Find the cardinality of their union.
 $$
 |A\cup B|=20+15-7=28
 $$
+
 
 ## 11. Computational Experiments
 

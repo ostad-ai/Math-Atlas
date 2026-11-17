@@ -20,11 +20,13 @@ $$
 R \subseteq A\times B
 $$
 
+
 If $(a,b)\in R$, we write:
 
 $$
 aRb
 $$
+
 
 This means that $a$ is related to $b$ through relation $R$.
 
@@ -36,15 +38,18 @@ $$
 A=\lbrace 1,2,3\rbrace
 $$
 
+
 $$
 B=\lbrace 2,4,6\rbrace
 $$
+
 
 Define a relation:
 
 $$
 R=\lbrace (1,2),(2,4),(3,6)\rbrace
 $$
+
 
 This relation connects each element of $A$ to twice its value in $B$.
 
@@ -53,18 +58,16 @@ This relation connects each element of $A$ to twice its value in $B$.
 The **domain** (دامنه) of a relation is the set of all first components of its ordered pairs.
 
 $$
-\operatorname{Dom}(R)
-=
-\lbrace a\in A\mid \exists b\in B:(a,b)\in R\rbrace
+\operatorname{Dom}(R) = \lbrace a\in A\mid \exists b\in B:(a,b)\in R\rbrace
 $$
+
 
 The **range** (برد) is the set of all second components:
 
 $$
-\operatorname{Ran}(R)
-=
-\lbrace b\in B\mid \exists a\in A:(a,b)\in R\rbrace
+\operatorname{Ran}(R) = \lbrace b\in B\mid \exists a\in A:(a,b)\in R\rbrace
 $$
+
 
 For the previous example:
 
@@ -72,9 +75,11 @@ $$
 \operatorname{Dom}(R)=\lbrace 1,2,3\rbrace
 $$
 
+
 $$
 \operatorname{Ran}(R)=\lbrace 2,4,6\rbrace
 $$
+
 
 ## 3. Relations on a Set
 
@@ -83,6 +88,7 @@ A relation on $A$ is a relation from $A$ to itself:
 $$
 R\subseteq A\times A
 $$
+
 
 Certain properties are particularly important.
 
@@ -94,26 +100,29 @@ $$
 \forall a\in A,\quad aRa
 $$
 
+
 Example: equality.
 
 $$
 a=a
 $$
 
+
 ### 3.2 Symmetry
 
 A relation is **symmetric** (تقارنی) if:
 
 $$
-\forall a,b\in A,\quad
-aRb\Rightarrow bRa
+\forall a,b\in A,\quad aRb\Rightarrow bRa
 $$
+
 
 Example: on the integers, define:
 
 $$
 aRb\iff a-b\text{ is even}
 $$
+
 
 If $a-b$ is even, then $b-a$ is also even.
 
@@ -122,15 +131,16 @@ If $a-b$ is even, then $b-a$ is also even.
 A relation is **antisymmetric** (پادتقارنی) if:
 
 $$
-\forall a,b\in A,\quad
-(aRb\land bRa)\Rightarrow a=b
+\forall a,b\in A,\quad (aRb\land bRa)\Rightarrow a=b
 $$
+
 
 Example: the usual less-than-or-equal relation on integers.
 
 $$
 a\leq b\land b\leq a\Rightarrow a=b
 $$
+
 
 Antisymmetry does not mean that the relation cannot contain pairs in both directions. It means that such pairs can occur only when the two elements are equal.
 
@@ -139,15 +149,16 @@ Antisymmetry does not mean that the relation cannot contain pairs in both direct
 A relation is **transitive** (تعدی‌پذیر) if:
 
 $$
-\forall a,b,c\in A,\quad
-(aRb\land bRc)\Rightarrow aRc
+\forall a,b,c\in A,\quad (aRb\land bRc)\Rightarrow aRc
 $$
+
 
 Example: the usual less-than-or-equal relation.
 
 $$
 a\leq b\land b\leq c\Rightarrow a\leq c
 $$
+
 
 ## 4. Equivalence Relations and Partitions
 
@@ -162,10 +173,9 @@ An **equivalence relation** (رابطهٔ هم‌ارزی) is a relation that is
 For example, define a relation on the integers:
 
 $$
-a\sim b
-\iff
-a-b\text{ is divisible by }3
+a\sim b \iff a-b\text{ is divisible by }3
 $$
+
 
 This is an equivalence relation.
 
@@ -177,19 +187,23 @@ $$
 [a]=\lbrace x\in A\mid x\sim a\rbrace
 $$
 
+
 For congruence modulo 3, the integers are divided into three equivalence classes:
 
 $$
 [0]=\lbrace \ldots,-6,-3,0,3,6,\ldots\rbrace
 $$
 
+
 $$
 [1]=\lbrace \ldots,-5,-2,1,4,7,\ldots\rbrace
 $$
 
+
 $$
 [2]=\lbrace \ldots,-4,-1,2,5,8,\ldots\rbrace
 $$
+
 
 ### 4.3 Partitions
 
@@ -229,27 +243,29 @@ $$
 f:A\to B
 $$
 
+
 For every $a\in A$, there must exist exactly one $b\in B$ such that:
 
 $$
 f(a)=b
 $$
 
+
 The set $A$ is the domain, and $B$ is the codomain (هم‌دامنه).
 
 The range is the set of outputs actually produced:
 
 $$
-\operatorname{Ran}(f)
-=
-\lbrace f(a)\mid a\in A\rbrace
+\operatorname{Ran}(f) = \lbrace f(a)\mid a\in A\rbrace
 $$
+
 
 Therefore:
 
 $$
 \operatorname{Ran}(f)\subseteq B
 $$
+
 
 ### 6.2 Example
 
@@ -259,9 +275,11 @@ $$
 f:\mathbb{R}\to\mathbb{R}
 $$
 
+
 $$
 f(x)=x^2
 $$
+
 
 Its domain is:
 
@@ -269,17 +287,20 @@ $$
 \operatorname{Dom}(f)=\mathbb{R}
 $$
 
+
 Its codomain is:
 
 $$
 B=\mathbb{R}
 $$
 
+
 Its range is:
 
 $$
 \operatorname{Ran}(f)=[0,\infty)
 $$
+
 
 The codomain and range are not necessarily equal.
 
@@ -291,6 +312,7 @@ $$
 R=\lbrace (1,2),(2,3),(3,4)\rbrace
 $$
 
+
 This is a function because every input has exactly one output.
 
 However:
@@ -298,6 +320,7 @@ However:
 $$
 S=\lbrace (1,2),(1,3),(2,4)\rbrace
 $$
+
 
 is not a function because input $1$ has two different outputs.
 
@@ -315,18 +338,20 @@ $$
 f(a_1)=f(a_2)\Rightarrow a_1=a_2
 $$
 
+
 An equivalent statement is:
 
 $$
 a_1\neq a_2\Rightarrow f(a_1)\neq f(a_2)
 $$
 
+
 Example:
 
 $$
-f:\mathbb{R}\to\mathbb{R},
-\quad f(x)=2x+1
+f:\mathbb{R}\to\mathbb{R}, \quad f(x)=2x+1
 $$
+
 
 This function is injective.
 
@@ -335,16 +360,16 @@ This function is injective.
 A function is **surjective** (پوشا) if every element of the codomain is the output of at least one input.
 
 $$
-\forall y\in B,\quad
-\exists x\in A:f(x)=y
+\forall y\in B,\quad \exists x\in A:f(x)=y
 $$
+
 
 Example:
 
 $$
-f:\mathbb{R}\to\mathbb{R},
-\quad f(x)=x^3
+f:\mathbb{R}\to\mathbb{R}, \quad f(x)=x^3
 $$
+
 
 This function is surjective.
 
@@ -357,9 +382,9 @@ A bijection establishes a one-to-one correspondence between its domain and codom
 Example:
 
 $$
-f:\mathbb{R}\to\mathbb{R},
-\quad f(x)=2x+1
+f:\mathbb{R}\to\mathbb{R}, \quad f(x)=2x+1
 $$
+
 
 This function is bijective.
 
@@ -375,9 +400,11 @@ $$
 f:A\to B
 $$
 
+
 $$
 g:B\to C
 $$
+
 
 their composition is:
 
@@ -385,11 +412,13 @@ $$
 g\circ f:A\to C
 $$
 
+
 defined by:
 
 $$
 (g\circ f)(x)=g(f(x))
 $$
+
 
 Example:
 
@@ -397,9 +426,11 @@ $$
 f(x)=x+2
 $$
 
+
 $$
 g(x)=3x
 $$
+
 
 Then:
 
@@ -407,17 +438,20 @@ $$
 (g\circ f)(x)=3(x+2)=3x+6
 $$
 
+
 In general:
 
 $$
 g\circ f\neq f\circ g
 $$
 
+
 Function composition is associative:
 
 $$
 h\circ(g\circ f)=(h\circ g)\circ f
 $$
+
 
 ### 8.2 Identity Function
 
@@ -427,9 +461,11 @@ $$
 I_A:A\to A
 $$
 
+
 $$
 I_A(x)=x
 $$
+
 
 It satisfies:
 
@@ -437,11 +473,13 @@ $$
 f\circ I_A=f
 $$
 
+
 and:
 
 $$
 I_B\circ f=f
 $$
+
 
 for $f:A\to B$.
 
@@ -455,11 +493,13 @@ $$
 f:A\to B
 $$
 
+
 the inverse is:
 
 $$
 f^{-1}:B\to A
 $$
+
 
 It satisfies:
 
@@ -467,11 +507,13 @@ $$
 f^{-1}(f(x))=x
 $$
 
+
 and:
 
 $$
 f(f^{-1}(y))=y
 $$
+
 
 Example:
 
@@ -479,11 +521,13 @@ $$
 f(x)=2x+3
 $$
 
+
 Let:
 
 $$
 y=2x+3
 $$
+
 
 Solving for $x$:
 
@@ -491,11 +535,13 @@ $$
 x=\frac{y-3}{2}
 $$
 
+
 Therefore:
 
 $$
 f^{-1}(x)=\frac{x-3}{2}
 $$
+
 
 ## 9. Images and Preimages
 
@@ -509,6 +555,7 @@ $$
 f(S)=\lbrace f(x)\mid x\in S\rbrace
 $$
 
+
 ### 9.2 Preimage of a Set
 
 For $T\subseteq B$, its preimage is:
@@ -516,6 +563,7 @@ For $T\subseteq B$, its preimage is:
 $$
 f^{-1}(T)=\lbrace x\in A\mid f(x)\in T\rbrace
 $$
+
 
 The preimage is defined for every function, even if the function is not invertible. In this context, $f^{-1}(T)$ means the preimage of a set, not necessarily an inverse function.
 
@@ -535,6 +583,7 @@ $$
 a_1=a_2
 $$
 
+
 Therefore, $f$ is injective.
 
 For every $b\in B$, the inverse provides an element $a=f^{-1}(b)$ such that:
@@ -542,6 +591,7 @@ For every $b\in B$, the inverse provides an element $a=f^{-1}(b)$ such that:
 $$
 f(a)=b
 $$
+
 
 Therefore, $f$ is surjective.
 
@@ -552,9 +602,9 @@ Surjectivity guarantees that every $b\in B$ has at least one preimage. Injectivi
 We can therefore define:
 
 $$
-f^{-1}(b)=a
-\quad\text{where }f(a)=b
+f^{-1}(b)=a \quad\text{where }f(a)=b
 $$
+
 
 Thus, the inverse function exists.
 
@@ -566,6 +616,7 @@ $$
 g\circ f:A\to C
 $$
 
+
 is injective.
 
 **Proof:**
@@ -576,11 +627,13 @@ $$
 (g\circ f)(a_1)=(g\circ f)(a_2)
 $$
 
+
 Then:
 
 $$
 g(f(a_1))=g(f(a_2))
 $$
+
 
 Since $g$ is injective:
 
@@ -588,11 +641,13 @@ $$
 f(a_1)=f(a_2)
 $$
 
+
 Since $f$ is injective:
 
 $$
 a_1=a_2
 $$
+
 
 Therefore, $g\circ f$ is injective.
 
@@ -610,17 +665,20 @@ $$
 g(b)=c
 $$
 
+
 Since $f$ is surjective, there exists $a\in A$ such that:
 
 $$
 f(a)=b
 $$
 
+
 Consequently:
 
 $$
 (g\circ f)(a)=g(f(a))=g(b)=c
 $$
+
 
 Thus, every element of $C$ has a preimage, so $g\circ f$ is surjective.
 
@@ -817,6 +875,7 @@ $$
 aRb\iff a-b\text{ is divisible by }5
 $$
 
+
 Show that $R$ is an equivalence relation.
 
 **Solution:**
@@ -826,6 +885,7 @@ Reflexivity:
 $$
 a-a=0
 $$
+
 
 Since 0 is divisible by 5, $aRa$.
 
@@ -837,11 +897,13 @@ $$
 a-b=5k
 $$
 
+
 then:
 
 $$
 b-a=-5k
 $$
+
 
 Therefore, $bRa$.
 
@@ -853,17 +915,20 @@ $$
 a-b=5k
 $$
 
+
 and:
 
 $$
 b-c=5m
 $$
 
+
 Adding:
 
 $$
 a-c=5(k+m)
 $$
+
 
 Therefore, $aRc$.
 
@@ -877,9 +942,11 @@ $$
 f:\mathbb{R}\to\mathbb{R}
 $$
 
+
 $$
 f(x)=x^2
 $$
+
 
 Is this function injective? Is it surjective?
 
@@ -890,6 +957,7 @@ It is not injective because:
 $$
 f(2)=f(-2)=4
 $$
+
 
 It is not surjective onto $\mathbb{R}$ because negative real numbers are not in its range.
 
@@ -903,6 +971,7 @@ $$
 f(x)=5x-7
 $$
 
+
 Find its inverse.
 
 **Solution:**
@@ -913,17 +982,20 @@ $$
 y=5x-7
 $$
 
+
 Solve for $x$:
 
 $$
 x=\frac{y+7}{5}
 $$
 
+
 Thus:
 
 $$
 f^{-1}(x)=\frac{x+7}{5}
 $$
+
 
 ## 13. Computational Experiments
 
@@ -940,11 +1012,13 @@ $$
 n^m
 $$
 
+
 If $m=n$, the number of bijections is:
 
 $$
 n!
 $$
+
 
 ## 14. Exercises
 

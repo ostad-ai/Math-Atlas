@@ -28,23 +28,20 @@ $$
 0! = 1
 $$
 
+
 and
 
 $$
 n! = n(n-1)! \qquad n\geq 1.
 $$
 
+
 The first few values are
 
 $$
-\begin{aligned}
-0! &= 1,\\
-1! &= 1\cdot 0! = 1,\\
-2! &= 2\cdot 1! = 2,\\
-3! &= 3\cdot 2! = 6,\\
-4! &= 4\cdot 3! = 24.
-\end{aligned}
+\begin{aligned} 0! &= 1,\\ 1! &= 1\cdot 0! = 1,\\ 2! &= 2\cdot 1! = 2,\\ 3! &= 3\cdot 2! = 6,\\ 4! &= 4\cdot 3! = 24. \end{aligned}
 $$
+
 
 The definition is recursive because each factorial is expressed in terms of a smaller factorial.
 
@@ -56,17 +53,20 @@ $$
 F_0=0,\qquad F_1=1
 $$
 
+
 and
 
 $$
 F_n=F_{n-1}+F_{n-2},\qquad n\geq 2.
 $$
 
+
 Its first terms are
 
 $$
 0,1,1,2,3,5,8,13,21,\ldots
 $$
+
 
 Each term after the first two is the sum of the preceding two terms.
 
@@ -79,6 +79,7 @@ For example,
 $$
 f(n)=n f(n-1)
 $$
+
 
 is not a complete definition unless an initial value and a suitable domain are specified.
 
@@ -104,15 +105,18 @@ $$
 a_0=c
 $$
 
+
 $$
 a_n=a_{n-1}+d,\qquad n\geq 1.
 $$
+
 
 Expanding the recurrence gives
 
 $$
 a_n=c+nd.
 $$
+
 
 **Example**
 
@@ -122,17 +126,20 @@ $$
 a_n=a_{n-1}+4.
 $$
 
+
 The sequence is
 
 $$
 3,7,11,15,19,\ldots
 $$
 
+
 and its closed-form expression is
 
 $$
 a_n=3+4n.
 $$
+
 
 ### 3.2 Geometric Sequences
 
@@ -144,15 +151,18 @@ $$
 a_0=c
 $$
 
+
 $$
 a_n=ra_{n-1},\qquad n\geq 1.
 $$
+
 
 The closed-form expression is
 
 $$
 a_n=cr^n.
 $$
+
 
 **Example**
 
@@ -162,11 +172,13 @@ $$
 a_n=3a_{n-1}
 $$
 
+
 produces
 
 $$
 2,6,18,54,162,\ldots
 $$
+
 
 ### 3.3 Linear Recurrence Relations
 
@@ -178,6 +190,7 @@ $$
 a_n=pa_{n-1}+qa_{n-2}.
 $$
 
+
 The coefficients $p$ and $q$ are constants.
 
 The Fibonacci recurrence is a special case:
@@ -185,6 +198,7 @@ The Fibonacci recurrence is a special case:
 $$
 F_n=F_{n-1}+F_{n-2}.
 $$
+
 
 ### 3.4 Characteristic Equations
 
@@ -194,11 +208,13 @@ $$
 a_n=pa_{n-1}+qa_{n-2},
 $$
 
+
 we try a solution of the form
 
 $$
 a_n=r^n.
 $$
+
 
 Substitution gives
 
@@ -206,17 +222,20 @@ $$
 r^n=pr^{n-1}+qr^{n-2}.
 $$
 
+
 Dividing by $r^{n-2}$, when $r\neq 0$, gives the characteristic equation
 
 $$
 r^2-pr-q=0.
 $$
 
+
 If the characteristic equation has two distinct roots $r_1$ and $r_2$, the general solution is
 
 $$
 a_n=Ar_1^n+Br_2^n.
 $$
+
 
 The constants $A$ and $B$ are determined by the initial conditions.
 
@@ -228,31 +247,27 @@ $$
 F_n=F_{n-1}+F_{n-2}.
 $$
 
+
 The characteristic equation is
 
 $$
 r^2-r-1=0.
 $$
 
+
 Its roots are
 
 $$
-r_1=\frac{1+\sqrt5}{2},
-\qquad
-r_2=\frac{1-\sqrt5}{2}.
+r_1=\frac{1+\sqrt5}{2}, \qquad r_2=\frac{1-\sqrt5}{2}.
 $$
+
 
 Using $F_0=0$ and $F_1=1$, we obtain
 
 $$
-F_n=
-\frac{1}{\sqrt5}
-\left[
-\left(\frac{1+\sqrt5}{2}\right)^n
--
-\left(\frac{1-\sqrt5}{2}\right)^n
-\right].
+F_n= \frac{1}{\sqrt5} \left[ \left(\frac{1+\sqrt5}{2}\right)^n - \left(\frac{1-\sqrt5}{2}\right)^n \right].
 $$
+
 
 This is called the **closed-form expression** (فرمول بسته) of the Fibonacci sequence.
 
@@ -277,11 +292,13 @@ $$
 \Sigma=\lbrace 0,1\rbrace,
 $$
 
+
 the following are valid strings:
 
 $$
 \varepsilon,\quad 0,\quad 1,\quad 00,\quad 01,\quad 10,\quad 11.
 $$
+
 
 ### 4.2 Recursive Definition of Binary Trees
 
@@ -299,13 +316,9 @@ Structural recursion (بازگشت ساختاری) means defining a function by 
 For example, to calculate the number of nodes in a binary tree:
 
 $$
-\operatorname{size}(T)=
-\begin{cases}
-0 & \text{if }T\text{ is empty},\\
-1+\operatorname{size}(L)+\operatorname{size}(R)
-& \text{otherwise}.
-\end{cases}
+\operatorname{size}(T)= \begin{cases} 0 & \text{if }T\text{ is empty},\\ 1+\operatorname{size}(L)+\operatorname{size}(R) & \text{otherwise}. \end{cases}
 $$
+
 
 Here, $L$ and $R$ are the left and right subtrees.
 
@@ -367,6 +380,7 @@ $$
 O(n).
 $$
 
+
 The iterative implementation uses constant auxiliary space, while the recursive implementation uses a call stack whose depth is proportional to $n$.
 
 ---
@@ -407,11 +421,13 @@ $$
 O(\varphi^n),
 $$
 
+
 where
 
 $$
 \varphi=\frac{1+\sqrt5}{2}.
 $$
+
 
 ### 6.2 Recursive Implementation with Memoization
 
@@ -447,11 +463,13 @@ $$
 O(n),
 $$
 
+
 and the storage requirement is also
 
 $$
 O(n).
 $$
+
 
 ### 6.3 Iterative Fibonacci
 
@@ -477,11 +495,13 @@ $$
 O(n)
 $$
 
+
 time complexity and
 
 $$
 O(1)
 $$
+
 
 auxiliary space complexity.
 
@@ -514,9 +534,11 @@ $$
 0!=1
 $$
 
+
 $$
 n!=n(n-1)!,\qquad n\geq1.
 $$
+
 
 We prove that the recursive algorithm calculates the factorial correctly.
 
@@ -530,6 +552,7 @@ $$
 0!=1.
 $$
 
+
 **Inductive hypothesis**
 
 Assume that the algorithm correctly calculates
@@ -537,6 +560,7 @@ Assume that the algorithm correctly calculates
 $$
 (n-1)!.
 $$
+
 
 **Inductive step**
 
@@ -546,17 +570,20 @@ $$
 n\cdot\operatorname{factorial}(n-1).
 $$
 
+
 By the inductive hypothesis, this equals
 
 $$
 n(n-1)!.
 $$
 
+
 By the factorial definition,
 
 $$
 n(n-1)!=n!.
 $$
+
 
 Therefore, the algorithm correctly calculates $n!$ for every nonnegative integer $n$.
 
@@ -595,6 +622,7 @@ For every positive integer $n$,
 $$
 n-1<n.
 $$
+
 
 Since the input is a nonnegative integer, repeated decreases must eventually reach zero.
 
@@ -645,25 +673,22 @@ $$
 T(n)=T(n-1)+c,
 $$
 
+
 where $c$ is a constant.
 
 Expanding:
 
 $$
-\begin{aligned}
-T(n)&=T(n-1)+c\\
-&=T(n-2)+2c\\
-&=T(n-3)+3c\\
-&\ \vdots\\
-&=T(0)+nc.
-\end{aligned}
+\begin{aligned} T(n)&=T(n-1)+c\\ &=T(n-2)+2c\\ &=T(n-3)+3c\\ &\ \vdots\\ &=T(0)+nc. \end{aligned}
 $$
+
 
 Therefore,
 
 $$
 T(n)=O(n).
 $$
+
 
 ### 10.2 Divide-and-Conquer Recursion
 
@@ -675,6 +700,7 @@ $$
 T(n)=2T(n/2)+cn.
 $$
 
+
 For simplicity, assume $n$ is a power of two.
 
 At each recursion level, the total work outside recursive calls is proportional to $n$.
@@ -685,11 +711,13 @@ $$
 \log_2 n.
 $$
 
+
 Therefore,
 
 $$
 T(n)=O(n\log n).
 $$
+
 
 This recurrence appears in algorithms such as merge sort.
 
@@ -707,11 +735,13 @@ $$
 S(0)=0
 $$
 
+
 and
 
 $$
 S(n)=n+S(n-1),\qquad n\geq1.
 $$
+
 
 The closed-form expression is
 
@@ -719,11 +749,13 @@ $$
 S(n)=\frac{n(n+1)}{2}.
 $$
 
+
 For $n=5$,
 
 $$
 S(5)=1+2+3+4+5=15.
 $$
+
 
 ### Example 2: A Recursive Power Function
 
@@ -733,11 +765,13 @@ $$
 a^0=1
 $$
 
+
 and
 
 $$
 a^n=a\cdot a^{n-1},\qquad n\geq1.
 $$
+
 
 ```python
 def power_recursive(a, n):
@@ -929,6 +963,7 @@ Prove by mathematical induction that
 $$
 1+2+\cdots+n=\frac{n(n+1)}{2}
 $$
+
 
 for every positive integer $n$.
 

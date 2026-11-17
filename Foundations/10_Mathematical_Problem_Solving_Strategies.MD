@@ -101,25 +101,30 @@ $$
 x+(x+1)+(x+2)=75
 $$
 
+
 Simplifying,
 
 $$
 3x+3=75
 $$
 
+
 $$
 3x=72
 $$
 
+
 $$
 x=24
 $$
+
 
 The integers are:
 
 $$
 \boxed{24,\ 25,\ 26}
 $$
+
 
 Introducing variables converts a verbal description into an algebraic representation.
 
@@ -142,23 +147,28 @@ $$
 1=1^2
 $$
 
+
 $$
 1+3=2^2
 $$
+
 
 $$
 1+3+5=3^2
 $$
 
+
 $$
 1+3+5+7=4^2
 $$
+
 
 These examples suggest the conjecture:
 
 $$
 1+3+5+\cdots +(2n-1)=n^2
 $$
+
 
 The examples help us discover the formula. They do not, by themselves, prove that it holds for every positive integer.
 
@@ -174,6 +184,7 @@ $$
 2,\ 5,\ 8,\ 11,\ 14,\ldots
 $$
 
+
 The difference between consecutive terms is always 3.
 
 This suggests the general formula:
@@ -182,11 +193,13 @@ $$
 a_n=2+3(n-1)
 $$
 
+
 or
 
 $$
 \boxed{a_n=3n-1}
 $$
+
 
 Pattern recognition is particularly useful in:
 
@@ -214,17 +227,20 @@ $$
 20-6=14
 $$
 
+
 Then divide by 2:
 
 $$
 14/2=7
 $$
 
+
 Therefore, the original number was:
 
 $$
 \boxed{7}
 $$
+
 
 Working backward is useful in:
 
@@ -252,6 +268,7 @@ $$
 \bar{x}=\frac{x_1+x_2+\cdots+x_n}{n}
 $$
 
+
 This strategy is also fundamental in algorithm design, particularly in divide-and-conquer algorithms.
 
 ### 3.7 Use Symmetry
@@ -268,9 +285,11 @@ $$
 x+y=10
 $$
 
+
 $$
 xy=21
 $$
+
 
 The equations are symmetric in $x$ and $y$. Exchanging the two variables does not change either equation.
 
@@ -280,17 +299,20 @@ $$
 t^2-10t+21=0
 $$
 
+
 Factoring,
 
 $$
 (t-3)(t-7)=0
 $$
 
+
 Thus,
 
 $$
 \boxed{\lbrace x,y\rbrace=\lbrace 3,7\rbrace}
 $$
+
 
 The unordered pair is determined without needing to decide which number must be $x$ or $y$.
 
@@ -304,11 +326,13 @@ $$
 x+y=12
 $$
 
+
 and
 
 $$
 x-y=4
 $$
+
 
 Adding the equations eliminates $y$:
 
@@ -316,11 +340,13 @@ $$
 2x=16
 $$
 
+
 Therefore,
 
 $$
 x=8,\qquad y=4
 $$
+
 
 In more complicated problems, a suitable substitution can turn a difficult expression into a simpler one.
 
@@ -329,6 +355,7 @@ For example, if an expression repeatedly contains $x^2+1$, introducing
 $$
 u=x^2+1
 $$
+
 
 may simplify subsequent calculations.
 
@@ -356,11 +383,13 @@ $$
 1
 $$
 
+
 Flipping two coins can change the number of heads by:
 
 $$
 -2,\quad 0,\quad \text{or}\quad +2
 $$
+
 
 Therefore, the parity of the number of heads never changes.
 
@@ -374,6 +403,7 @@ $$
 \boxed{\text{The all-tails state is unreachable.}}
 $$
 
+
 We did not need to examine every possible sequence of operations. The invariant was sufficient to establish impossibility.
 
 ### 3.10 Examine Extreme and Special Cases
@@ -385,6 +415,7 @@ For example, if a formula is claimed to hold for every positive integer $n$, tes
 $$
 n=1,\quad n=2,\quad n=3
 $$
+
 
 For inequalities, consider values near zero, very large values, or boundary conditions.
 
@@ -410,6 +441,7 @@ $$
 x^2=-9
 $$
 
+
 has no integer solution.
 
 This simple observation eliminates the possibility without solving the equation through trial and error.
@@ -423,6 +455,7 @@ Suppose we want to find all nonnegative integer solutions of:
 $$
 x+y=6
 $$
+
 
 A systematic table is:
 
@@ -453,6 +486,7 @@ Consider the statement:
 $$
 1+3+5+\cdots +(2n-1)=n^2
 $$
+
 
 We may test several values:
 
@@ -518,6 +552,7 @@ $$
 x^2+y^2=25
 $$
 
+
 We can search for nonnegative integer solutions.
 
 ```python
@@ -581,9 +616,11 @@ $$
 x+y=10
 $$
 
+
 $$
 x^2+y^2=58
 $$
+
 
 **Step 1 — Understand the conditions**
 
@@ -597,11 +634,13 @@ $$
 (x+y)^2=100
 $$
 
+
 Expand:
 
 $$
 x^2+2xy+y^2=100
 $$
+
 
 Using the second equation:
 
@@ -609,11 +648,13 @@ $$
 58+2xy=100
 $$
 
+
 Therefore:
 
 $$
 xy=21
 $$
+
 
 **Step 3 — Use symmetry and a quadratic equation**
 
@@ -625,17 +666,20 @@ $$
 t^2-10t+21=0
 $$
 
+
 Factoring:
 
 $$
 (t-3)(t-7)=0
 $$
 
+
 Thus:
 
 $$
 \boxed{(x,y)=(3,7)\text{ or }(7,3)}
 $$
+
 
 This solution combines algebraic transformation, auxiliary reasoning, and symmetry.
 
@@ -681,23 +725,28 @@ $$
 x+(x+1)+(x+2)+(x+3)=86
 $$
 
+
 $$
 4x+6=86
 $$
+
 
 $$
 4x=80
 $$
 
+
 $$
 x=20
 $$
+
 
 Therefore:
 
 $$
 \boxed{20,\ 21,\ 22,\ 23}
 $$
+
 
 **Strategies used:** introducing variables and translating a verbal problem into an equation.
 
@@ -711,13 +760,16 @@ $$
 3(x+4)=30
 $$
 
+
 $$
 x+4=10
 $$
 
+
 $$
 x=6
 $$
+
 
 Alternatively, reverse the operations:
 
@@ -725,9 +777,11 @@ $$
 30/3=10
 $$
 
+
 $$
 10-4=6
 $$
+
 
 **Strategies used:** working backward and algebraic representation.
 
@@ -763,6 +817,7 @@ $$
 1,\ 4,\ 9,\ 16,\ 25,\ldots
 $$
 
+
 Find a general formula for its $n$-th term and justify your answer.
 
 ### Exercise 3 — Working Backward
@@ -787,9 +842,11 @@ $$
 x+y=15
 $$
 
+
 $$
 xy=44
 $$
+
 
 Then solve the problem algebraically and compare the results.
 
@@ -800,6 +857,7 @@ Investigate the sum:
 $$
 1+2+3+\cdots+n
 $$
+
 
 Use small cases to formulate a conjecture for its general formula. Then prove the formula mathematically.
 
@@ -830,4 +888,3 @@ These strategies are not isolated techniques. They often work together and provi
 2. Zeitz, Paul. *The Art and Craft of Problem Solving*. Wiley.
 3. Engel, Arthur. *Problem-Solving Strategies*. Springer.
 4. Schoenfeld, Alan H. *Mathematical Problem Solving*. Academic Press, 1985.
-

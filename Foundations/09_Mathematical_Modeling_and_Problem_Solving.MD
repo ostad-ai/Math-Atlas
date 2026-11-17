@@ -68,6 +68,7 @@ $$
 d=vt.
 $$
 
+
 This equation is the mathematical model.
 
 ### Stage 5: Solve or Analyze the Model
@@ -77,6 +78,7 @@ If an object moves at $5$ meters per second for $8$ seconds,
 $$
 d=5\times8=40.
 $$
+
 
 The predicted distance is 40 meters.
 
@@ -116,9 +118,11 @@ $$
 x=\text{number of units of product A}
 $$
 
+
 $$
 y=\text{number of units of product B}.
 $$
+
 
 ### 3.2 Parameters
 
@@ -141,6 +145,7 @@ $$
 x\geq0,\qquad y\geq0
 $$
 
+
 means that negative production quantities are not allowed.
 
 If production capacity is limited to 100 units,
@@ -148,6 +153,7 @@ If production capacity is limited to 100 units,
 $$
 x+y\leq100.
 $$
+
 
 A complete mathematical model must distinguish between quantities that can change and quantities that are fixed.
 
@@ -167,11 +173,13 @@ $$
 y=3x+2.
 $$
 
+
 For $x=4$,
 
 $$
 y=14.
 $$
+
 
 There is no randomness in this relationship.
 
@@ -186,6 +194,7 @@ A Poisson model is one possible choice:
 $$
 P(X=k)=\frac{\lambda^k e^{-\lambda}}{k!},
 $$
+
 
 where:
 
@@ -205,6 +214,7 @@ $$
 C=100+5q,
 $$
 
+
 where $C$ is total cost and $q$ is production quantity.
 
 ### 4.4 Dynamic Models
@@ -216,6 +226,7 @@ For example,
 $$
 x_{t+1}=1.05x_t.
 $$
+
 
 This represents a quantity that increases by 5% per time step.
 
@@ -229,6 +240,7 @@ $$
 f(t)=10e^{-0.2t}.
 $$
 
+
 ### 4.6 Discrete Models
 
 Discrete models use countable or finite states.
@@ -238,6 +250,7 @@ Example:
 $$
 a_{n+1}=2a_n+1.
 $$
+
 
 This recurrence defines a sequence indexed by integers.
 
@@ -249,6 +262,7 @@ $$
 y=ax+b.
 $$
 
+
 A nonlinear relationship may contain powers, products of variables, exponentials, or other nonlinear expressions.
 
 For example,
@@ -256,6 +270,7 @@ For example,
 $$
 y=x^2+3x+1
 $$
+
 
 is nonlinear in $x$.
 
@@ -280,11 +295,13 @@ $$
 C(q)=200+15q.
 $$
 
+
 For $q=30$,
 
 $$
 C(30)=200+15(30)=650.
 $$
+
 
 ### Example 2: Distance and Time
 
@@ -296,11 +313,13 @@ $$
 d(t)=vt.
 $$
 
+
 If the vehicle starts at position $d_0$, the model becomes
 
 $$
 d(t)=d_0+vt.
 $$
+
 
 ### Example 3: Population Growth
 
@@ -312,11 +331,13 @@ $$
 P_{n+1}=(1+r)P_n.
 $$
 
+
 Starting from $P_0$, the solution is
 
 $$
 P_n=P_0(1+r)^n.
 $$
+
 
 This model assumes the same proportional growth rate in every time period.
 
@@ -342,9 +363,11 @@ $$
 x=\text{units of product A}
 $$
 
+
 $$
 y=\text{units of product B}.
 $$
+
 
 Assume the profit per unit is 30 for A and 20 for B.
 
@@ -354,19 +377,23 @@ $$
 \max Z=30x+20y.
 $$
 
+
 Suppose the resource constraints are
 
 $$
 2x+y\leq100,
 $$
 
+
 $$
 x+2y\leq80,
 $$
 
+
 $$
 x\geq0,\qquad y\geq0.
 $$
+
 
 This is a linear programming model.
 
@@ -402,6 +429,7 @@ $$
 f:X\to Y
 $$
 
+
 maps an input from domain $X$ to an output in codomain $Y$.
 
 ### 7.1 Linear Model
@@ -409,6 +437,7 @@ maps an input from domain $X$ to an output in codomain $Y$.
 $$
 f(x)=ax+b.
 $$
+
 
 This model describes a constant rate of change.
 
@@ -418,6 +447,7 @@ $$
 f(x)=ax^2+bx+c.
 $$
 
+
 Quadratic models can describe curved relationships, such as idealized projectile trajectories under simplified physical assumptions.
 
 ### 7.3 Exponential Model
@@ -426,6 +456,7 @@ $$
 f(t)=Ae^{kt}.
 $$
 
+
 This model describes proportional continuous growth or decay.
 
 ### 7.4 Logarithmic Model
@@ -433,6 +464,7 @@ This model describes proportional continuous growth or decay.
 $$
 f(x)=a\ln(x)+b,\qquad x>0.
 $$
+
 
 Logarithmic models appear in several areas, including information theory, scientific measurements, and statistical modeling.
 
@@ -457,11 +489,13 @@ $$
 [v]=LT^{-1}.
 $$
 
+
 Distance has dimension
 
 $$
 [d]=L.
 $$
+
 
 Time has dimension
 
@@ -469,17 +503,20 @@ $$
 [t]=T.
 $$
 
+
 In the equation
 
 $$
 d=vt,
 $$
 
+
 the right-hand side has dimension
 
 $$
 [v][t]=LT^{-1}\cdot T=L.
 $$
+
 
 This agrees with the dimension of distance.
 
@@ -521,17 +558,20 @@ $$
 e_i=y_i-\hat{y}_i.
 $$
 
+
 ### 9.1 Absolute Error
 
 $$
 AE_i=|y_i-\hat{y}_i|.
 $$
 
+
 ### 9.2 Squared Error
 
 $$
 SE_i=(y_i-\hat{y}_i)^2.
 $$
+
 
 ### 9.3 Mean Absolute Error
 
@@ -541,11 +581,13 @@ $$
 MAE=\frac1n\sum_{i=1}^{n}|y_i-\hat{y}_i|.
 $$
 
+
 ### 9.4 Mean Squared Error
 
 $$
 MSE=\frac1n\sum_{i=1}^{n}(y_i-\hat{y}_i)^2.
 $$
+
 
 These metrics are common in predictive modeling.
 
@@ -607,19 +649,20 @@ $$
 x^2-2=0.
 $$
 
+
 Its positive solution is
 
 $$
 x=\sqrt2.
 $$
 
+
 Newton's method generates approximations using
 
 $$
-x_{n+1}
-=
-x_n-\frac{f(x_n)}{f'(x_n)}.
+x_{n+1} = x_n-\frac{f(x_n)}{f'(x_n)}.
 $$
+
 
 For
 
@@ -627,19 +670,20 @@ $$
 f(x)=x^2-2,
 $$
 
+
 we have
 
 $$
 f'(x)=2x.
 $$
 
+
 Therefore,
 
 $$
-x_{n+1}
-=
-\frac12\left(x_n+\frac2{x_n}\right).
+x_{n+1} = \frac12\left(x_n+\frac2{x_n}\right).
 $$
+
 
 Python implementation:
 
@@ -682,17 +726,20 @@ $$
 C(E)=F+rE.
 $$
 
+
 Assume:
 
 $$
 F=12,\qquad r=0.25.
 $$
 
+
 For consumption of 160 units,
 
 $$
 C(160)=12+0.25(160)=52.
 $$
+
 
 ### Python Implementation
 
@@ -788,11 +835,13 @@ $$
 y=[10,20,30,40]
 $$
 
+
 and
 
 $$
 \hat y=[12,18,29,43],
 $$
+
 
 calculate:
 
@@ -810,6 +859,7 @@ Consider the model
 $$
 P(t)=P_0(1+r)^t.
 $$
+
 
 Explain:
 
@@ -851,18 +901,9 @@ Mathematical modeling connects abstract mathematical concepts to practical probl
 The central process is:
 
 $$
-\text{Real Problem}
-\rightarrow
-\text{Assumptions}
-\rightarrow
-\text{Mathematical Model}
-\rightarrow
-\text{Analysis}
-\rightarrow
-\text{Interpretation}
-\rightarrow
-\text{Validation}.
+\text{Real Problem} \rightarrow \text{Assumptions} \rightarrow \text{Mathematical Model} \rightarrow \text{Analysis} \rightarrow \text{Interpretation} \rightarrow \text{Validation}.
 $$
+
 
 A good mathematical model should be:
 

@@ -23,11 +23,13 @@ $$
 P: 2+3=5
 $$
 
+
 This proposition is true.
 
 $$
 Q: 7<4
 $$
+
 
 This proposition is false.
 
@@ -47,15 +49,18 @@ $$
 P: 8>3
 $$
 
+
 $$
 Q: 8<10
 $$
+
 
 The compound proposition
 
 $$
 P\land Q
 $$
+
 
 states that both $P$ and $Q$ are true.
 
@@ -71,6 +76,7 @@ $$
 \neg P
 $$
 
+
 | $P$ | $\neg P$ |
 |---|---|
 | T | F |
@@ -82,11 +88,13 @@ $$
 P: 5>2
 $$
 
+
 Its negation is:
 
 $$
 \neg P: 5\leq2
 $$
+
 
 ### 3.2 Conjunction
 
@@ -97,6 +105,7 @@ Symbol:
 $$
 P\land Q
 $$
+
 
 It is true only when both propositions are true.
 
@@ -116,6 +125,7 @@ Symbol:
 $$
 P\lor Q
 $$
+
 
 In classical logic, it is true when at least one proposition is true.
 
@@ -138,6 +148,7 @@ $$
 P\Rightarrow Q
 $$
 
+
 The proposition $P$ is called the antecedent (مقدم), and $Q$ is called the consequent (تالی).
 
 | $P$ | $Q$ | $P\Rightarrow Q$ |
@@ -159,6 +170,7 @@ $$
 P\Leftrightarrow Q
 $$
 
+
 It is true when both propositions have the same truth value.
 
 | $P$ | $Q$ | $P\Leftrightarrow Q$ |
@@ -171,10 +183,9 @@ It is true when both propositions have the same truth value.
 An important equivalence is:
 
 $$
-P\Leftrightarrow Q
-\equiv
-(P\Rightarrow Q)\land(Q\Rightarrow P)
+P\Leftrightarrow Q \equiv (P\Rightarrow Q)\land(Q\Rightarrow P)
 $$
+
 
 ## 4. Truth Tables
 
@@ -186,11 +197,13 @@ $$
 2^n
 $$
 
+
 For example, three propositions have:
 
 $$
 2^3=8
 $$
+
 
 possible truth-value combinations.
 
@@ -211,21 +224,20 @@ $$
 P\equiv Q
 $$
 
+
 ### 5.1 De Morgan's Laws
 
 De Morgan's laws (قوانین دمورگان) state:
 
 $$
-\neg(P\land Q)
-\equiv
-(\neg P\lor\neg Q)
+\neg(P\land Q) \equiv (\neg P\lor\neg Q)
 $$
 
+
 $$
-\neg(P\lor Q)
-\equiv
-(\neg P\land\neg Q)
+\neg(P\lor Q) \equiv (\neg P\land\neg Q)
 $$
+
 
 ### 5.2 Double Negation
 
@@ -233,13 +245,13 @@ $$
 \neg(\neg P)\equiv P
 $$
 
+
 ### 5.3 Implication Equivalence
 
 $$
-P\Rightarrow Q
-\equiv
-\neg P\lor Q
+P\Rightarrow Q \equiv \neg P\lor Q
 $$
+
 
 ### 5.4 Commutative Laws
 
@@ -247,23 +259,23 @@ $$
 P\land Q\equiv Q\land P
 $$
 
+
 $$
 P\lor Q\equiv Q\lor P
 $$
 
+
 ### 5.5 Associative Laws
 
 $$
-(P\land Q)\land R
-\equiv
-P\land(Q\land R)
+(P\land Q)\land R \equiv P\land(Q\land R)
 $$
 
+
 $$
-(P\lor Q)\lor R
-\equiv
-P\lor(Q\lor R)
+(P\lor Q)\lor R \equiv P\lor(Q\lor R)
 $$
+
 
 ## 6. Tautologies, Contradictions, and Contingencies
 
@@ -275,6 +287,7 @@ $$
 P\lor\neg P
 $$
 
+
 A contradiction (تناقض منطقی) is false under every possible truth assignment.
 
 Example:
@@ -283,6 +296,7 @@ $$
 P\land\neg P
 $$
 
+
 A contingency (گزارهٔ وابسته به حالت) is neither a tautology nor a contradiction.
 
 Example:
@@ -290,6 +304,7 @@ Example:
 $$
 P\land Q
 $$
+
 
 Its truth value depends on the values of $P$ and $Q$.
 
@@ -303,15 +318,18 @@ $$
 P\Rightarrow Q
 $$
 
+
 $$
 P
 $$
+
 
 Therefore:
 
 $$
 Q
 $$
+
 
 Example:
 
@@ -325,15 +343,18 @@ $$
 P\Rightarrow Q
 $$
 
+
 $$
 \neg Q
 $$
+
 
 Therefore:
 
 $$
 \neg P
 $$
+
 
 ### 7.3 Hypothetical Syllogism
 
@@ -341,9 +362,11 @@ $$
 P\Rightarrow Q
 $$
 
+
 $$
 Q\Rightarrow R
 $$
+
 
 Therefore:
 
@@ -351,21 +374,25 @@ $$
 P\Rightarrow R
 $$
 
+
 ### 7.4 Disjunctive Syllogism
 
 $$
 P\lor Q
 $$
 
+
 $$
 \neg P
 $$
+
 
 Therefore:
 
 $$
 Q
 $$
+
 
 ## 8. Predicates and Quantifiers
 
@@ -376,6 +403,7 @@ For example:
 $$
 P(x): x>5
 $$
+
 
 For $x=8$, the predicate is true. For $x=3$, it is false.
 
@@ -389,6 +417,7 @@ $$
 \forall x\in A,\ P(x)
 $$
 
+
 It means that $P(x)$ is true for every element of $A$.
 
 Example:
@@ -396,6 +425,7 @@ Example:
 $$
 \forall x\in\mathbb{R},\quad x^2\geq0
 $$
+
 
 This statement is true.
 
@@ -407,6 +437,7 @@ $$
 \exists x\in A:\ P(x)
 $$
 
+
 It means that at least one element of $A$ satisfies $P(x)$.
 
 Example:
@@ -415,6 +446,7 @@ $$
 \exists x\in\mathbb{Z}:\quad x^2=9
 $$
 
+
 This statement is true because $x=3$ and $x=-3$ satisfy it.
 
 ### 8.3 Negation of Quantifiers
@@ -422,16 +454,14 @@ This statement is true because $x=3$ and $x=-3$ satisfy it.
 The following equivalences are fundamental:
 
 $$
-\neg(\forall x\in A,\ P(x))
-\equiv
-\exists x\in A:\neg P(x)
+\neg(\forall x\in A,\ P(x)) \equiv \exists x\in A:\neg P(x)
 $$
 
+
 $$
-\neg(\exists x\in A,\ P(x))
-\equiv
-\forall x\in A:\neg P(x)
+\neg(\exists x\in A,\ P(x)) \equiv \forall x\in A:\neg P(x)
 $$
+
 
 ## 9. Mathematical Proof Techniques
 
@@ -447,11 +477,13 @@ $$
 n=2k,\qquad k\in\mathbb{Z}
 $$
 
+
 Then:
 
 $$
 n^2=(2k)^2=4k^2=2(2k^2)
 $$
+
 
 Since $2k^2$ is an integer, $n^2$ is even.
 
@@ -463,11 +495,13 @@ $$
 P\Rightarrow Q
 $$
 
+
 is:
 
 $$
 \neg Q\Rightarrow\neg P
 $$
+
 
 An implication is logically equivalent to its contrapositive. Therefore, proving the contrapositive is sufficient.
 
@@ -492,11 +526,13 @@ $$
 1+2+\cdots+n=\frac{n(n+1)}{2}
 $$
 
+
 The base case $n=1$ gives:
 
 $$
 1=\frac{1(1+1)}{2}=1
 $$
+
 
 Assume the formula holds for $n=k$:
 
@@ -504,15 +540,13 @@ $$
 1+2+\cdots+k=\frac{k(k+1)}{2}
 $$
 
+
 Then:
 
 $$
-\begin{aligned}
-1+2+\cdots+k+(k+1)
-&=\frac{k(k+1)}{2}+(k+1)\\
-&=\frac{(k+1)(k+2)}{2}
-\end{aligned}
+\begin{aligned} 1+2+\cdots+k+(k+1) &=\frac{k(k+1)}{2}+(k+1)\\ &=\frac{(k+1)(k+2)}{2} \end{aligned}
 $$
+
 
 Thus, the formula holds for $k+1$, completing the proof.
 
@@ -631,6 +665,7 @@ $$
 P\Rightarrow Q
 $$
 
+
 when $P=F$ and $Q=F$.
 
 Using the truth table:
@@ -638,6 +673,7 @@ Using the truth table:
 $$
 F\Rightarrow F=T
 $$
+
 
 The implication is true.
 
@@ -649,11 +685,13 @@ $$
 \forall x\in\mathbb{R},\quad x^2\geq0
 $$
 
+
 Applying the quantifier negation rule:
 
 $$
 \exists x\in\mathbb{R}:\quad x^2<0
 $$
+
 
 This negation is false over the real numbers.
 
@@ -665,11 +703,13 @@ $$
 P\Rightarrow Q
 $$
 
+
 and
 
 $$
 \neg P\lor Q
 $$
+
 
 are logically equivalent.
 
@@ -687,6 +727,7 @@ Therefore:
 $$
 P\Rightarrow Q\equiv\neg P\lor Q
 $$
+
 
 ## 12. Computational Experiments
 
@@ -717,17 +758,20 @@ $$
 (P\land Q)\Rightarrow R
 $$
 
+
 6. Prove the following equivalence using a truth table:
 
 $$
 \neg(P\Rightarrow Q)\equiv P\land\neg Q
 $$
 
+
 7. Find the negation of:
 
 $$
 \forall x\in\mathbb{Z},\quad x^2\geq x
 $$
+
 
 8. Prove that the sum of two even integers is even.
 
@@ -736,6 +780,7 @@ $$
 $$
 1+2+\cdots+n=\frac{n(n+1)}{2}
 $$
+
 
 ### Programming Exercises
 
@@ -757,4 +802,3 @@ $$
 **Chapter status:** Initial educational draft.
 
 **Next chapter:** Predicate Logic and Quantifiers (منطق محمول‌ها و سورها).
-

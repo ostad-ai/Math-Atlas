@@ -16,6 +16,7 @@ $$
 \mathbb{N}=\lbrace 0,1,2,3,\ldots\rbrace
 $$
 
+
 Some mathematical conventions begin the natural numbers at 1. We use the convention that includes zero.
 
 Natural numbers are used for counting and ordering.
@@ -38,11 +39,13 @@ $$
 S(n)
 $$
 
+
 For example:
 
 $$
 S(0)=1,\quad S(1)=2
 $$
+
 
 ### 2.2 Mathematical Induction
 
@@ -62,6 +65,7 @@ $$
 0+1+\cdots+n=\frac{n(n+1)}{2}
 $$
 
+
 **Base case:**
 
 For $n=0$:
@@ -69,6 +73,7 @@ For $n=0$:
 $$
 0=\frac{0(0+1)}{2}=0
 $$
+
 
 **Inductive hypothesis:**
 
@@ -78,15 +83,13 @@ $$
 0+1+\cdots+k=\frac{k(k+1)}{2}
 $$
 
+
 **Inductive step:**
 
 $$
-\begin{aligned}
-0+1+\cdots+k+(k+1)
-&=\frac{k(k+1)}{2}+k+1\\
-&=\frac{(k+1)(k+2)}{2}
-\end{aligned}
+\begin{aligned} 0+1+\cdots+k+(k+1) &=\frac{k(k+1)}{2}+k+1\\ &=\frac{(k+1)(k+2)}{2} \end{aligned}
 $$
+
 
 This is the required formula for $k+1$.
 
@@ -100,6 +103,7 @@ $$
 \mathbb{Z}=\lbrace \ldots,-2,-1,0,1,2,\ldots\rbrace
 $$
 
+
 Integers extend the natural numbers by including negative numbers.
 
 They allow subtraction without leaving the number system.
@@ -110,11 +114,13 @@ $$
 3-7=-4
 $$
 
+
 The natural numbers are contained in the integers:
 
 $$
 \mathbb{N}\subseteq\mathbb{Z}
 $$
+
 
 ### 3.1 Properties of Integer Operations
 
@@ -126,9 +132,11 @@ $$
 a+b\in\mathbb{Z}
 $$
 
+
 $$
 a\cdot b\in\mathbb{Z}
 $$
+
 
 **Commutativity:**
 
@@ -136,9 +144,11 @@ $$
 a+b=b+a
 $$
 
+
 $$
 ab=ba
 $$
+
 
 **Associativity:**
 
@@ -146,9 +156,11 @@ $$
 (a+b)+c=a+(b+c)
 $$
 
+
 $$
 (ab)c=a(bc)
 $$
+
 
 **Distributivity:**
 
@@ -156,25 +168,22 @@ $$
 a(b+c)=ab+ac
 $$
 
+
 However, integer division does not always produce an integer:
 
 $$
 1\div 2=\frac12\notin\mathbb{Z}
 $$
 
+
 ## 4. Rational Numbers
 
 The rational numbers (اعداد گویا) are numbers that can be expressed as a ratio of two integers:
 
 $$
-\mathbb{Q}
-=
-\left\lbrace
-\frac{a}{b}
-\mid
-a,b\in\mathbb{Z},\ b\neq0
-\right\rbrace
+\mathbb{Q} = \left\lbrace \frac{a}{b} \mid a,b\in\mathbb{Z},\ b\neq0 \right\rbrace
 $$
+
 
 Examples:
 
@@ -182,11 +191,13 @@ $$
 \frac12,\quad -\frac34,\quad 5,\quad 0
 $$
 
+
 Every integer is rational because:
 
 $$
 a=\frac{a}{1}
 $$
+
 
 Therefore:
 
@@ -194,15 +205,15 @@ $$
 \mathbb{Z}\subseteq\mathbb{Q}
 $$
 
+
 ### 4.1 Equivalent Fractions
 
 Two fractions represent the same rational number if:
 
 $$
-\frac{a}{b}=\frac{c}{d}
-\iff
-ad=bc
+\frac{a}{b}=\frac{c}{d} \iff ad=bc
 $$
+
 
 where $b,d\neq0$.
 
@@ -211,6 +222,7 @@ For example:
 $$
 \frac12=\frac24
 $$
+
 
 ### 4.2 Decimal Representations
 
@@ -222,9 +234,11 @@ $$
 \frac14=0.25
 $$
 
+
 $$
 \frac13=0.3333\ldots
 $$
+
 
 A non-terminating, non-repeating decimal cannot represent a rational number.
 
@@ -240,6 +254,7 @@ $$
 \sqrt2,\quad \pi,\quad e
 $$
 
+
 The decimal expansions of irrational numbers are non-terminating and non-repeating.
 
 ### 5.2 Real Numbers
@@ -250,14 +265,13 @@ $$
 \mathbb{R}=\mathbb{Q}\cup(\mathbb{R}\setminus\mathbb{Q})
 $$
 
+
 The number systems are nested:
 
 $$
-\mathbb{N}\subseteq
-\mathbb{Z}\subseteq
-\mathbb{Q}\subseteq
-\mathbb{R}
+\mathbb{N}\subseteq \mathbb{Z}\subseteq \mathbb{Q}\subseteq \mathbb{R}
 $$
+
 
 The real numbers form a complete ordered field (میدان مرتب کامل).
 
@@ -275,11 +289,13 @@ $$
 S=\lbrace x\in\mathbb{R}\mid x^2<2,\ x\geq0\rbrace
 $$
 
+
 Its least upper bound is:
 
 $$
 \sup S=\sqrt2
 $$
+
 
 This property distinguishes the real numbers from the rational numbers.
 
@@ -291,11 +307,13 @@ $$
 i^2=-1
 $$
 
+
 A complex number has the form:
 
 $$
 z=a+bi
 $$
+
 
 where:
 
@@ -303,11 +321,13 @@ $$
 a,b\in\mathbb{R}
 $$
 
+
 The set of complex numbers is denoted by:
 
 $$
 \mathbb{C}
 $$
+
 
 ### 6.1 Real and Imaginary Parts
 
@@ -317,17 +337,20 @@ $$
 z=a+bi
 $$
 
+
 the real part is:
 
 $$
 \operatorname{Re}(z)=a
 $$
 
+
 The imaginary part is:
 
 $$
 \operatorname{Im}(z)=b
 $$
+
 
 ### 6.2 Complex Arithmetic
 
@@ -337,11 +360,13 @@ $$
 z_1=a+bi,\quad z_2=c+di
 $$
 
+
 Addition:
 
 $$
 z_1+z_2=(a+c)+(b+d)i
 $$
+
 
 Multiplication:
 
@@ -349,17 +374,20 @@ $$
 z_1z_2=(ac-bd)+(ad+bc)i
 $$
 
+
 Conjugation:
 
 $$
 \overline{z_1}=a-bi
 $$
 
+
 Modulus:
 
 $$
 |z_1|=\sqrt{a^2+b^2}
 $$
+
 
 ### 6.3 Complex Numbers and Polynomial Equations
 
@@ -373,21 +401,20 @@ $$
 x^2+1=0
 $$
 
+
 has no real solutions, but has two complex solutions:
 
 $$
 x=i,\quad x=-i
 $$
 
+
 The number systems are now nested as:
 
 $$
-\mathbb{N}\subseteq
-\mathbb{Z}\subseteq
-\mathbb{Q}\subseteq
-\mathbb{R}\subseteq
-\mathbb{C}
+\mathbb{N}\subseteq \mathbb{Z}\subseteq \mathbb{Q}\subseteq \mathbb{R}\subseteq \mathbb{C}
 $$
+
 
 ## 7. Algebraic Structures
 
@@ -400,6 +427,7 @@ A binary operation (عمل دوتایی) on a set $S$ is a function:
 $$
 *:S\times S\to S
 $$
+
 
 It combines any two elements of $S$ to produce another element of $S$.
 
@@ -415,6 +443,7 @@ $$
 (a*b)*c=a*(b*c)
 $$
 
+
 ### 7.3 Monoids
 
 A monoid (تک‌وار) is a semigroup with an identity element $e$:
@@ -423,11 +452,13 @@ $$
 a*e=e*a=a
 $$
 
+
 For example:
 
 $$
 (\mathbb{N},+,0)
 $$
+
 
 is a monoid under our convention that $\mathbb{N}$ includes zero.
 
@@ -446,11 +477,13 @@ $$
 a*a^{-1}=a^{-1}*a=e
 $$
 
+
 Example:
 
 $$
 (\mathbb{Z},+,0)
 $$
+
 
 is a group because every integer $a$ has additive inverse $-a$.
 
@@ -461,6 +494,7 @@ An Abelian group (گروه آبلی) is a group whose operation is also commutat
 $$
 a*b=b*a
 $$
+
 
 The integers under addition form an Abelian group.
 
@@ -486,6 +520,7 @@ $$
 \mathbb{Q},\quad\mathbb{R},\quad\mathbb{C}
 $$
 
+
 The integers are not a field because, for example, 2 has no multiplicative inverse in $\mathbb{Z}$.
 
 ## 8. Ordered Fields
@@ -500,11 +535,13 @@ $$
 a<b
 $$
 
+
 then:
 
 $$
 a+c<b+c
 $$
+
 
 for every real $c$.
 
@@ -514,11 +551,13 @@ $$
 0<a,\quad 0<b
 $$
 
+
 then:
 
 $$
 0<ab
 $$
+
 
 The real numbers form an ordered field.
 
@@ -542,17 +581,20 @@ $$
 e*e'=e'
 $$
 
+
 Since $e'$ is an identity:
 
 $$
 e*e'=e
 $$
 
+
 Therefore:
 
 $$
 e=e'
 $$
+
 
 ### Theorem 2: Uniqueness of Inverses
 
@@ -568,29 +610,35 @@ $$
 a*b=e,\quad c*a=e
 $$
 
+
 Using associativity:
 
 $$
 c=c*e
 $$
 
+
 $$
 =c*(a*b)
 $$
+
 
 $$
 =(c*a)*b
 $$
 
+
 $$
 =e*b=b
 $$
+
 
 Thus:
 
 $$
 b=c
 $$
+
 
 ### Theorem 3: Cancellation Law in Groups
 
@@ -600,11 +648,13 @@ $$
 a*b=a*c
 $$
 
+
 then:
 
 $$
 b=c
 $$
+
 
 **Proof:**
 
@@ -614,11 +664,13 @@ $$
 a^{-1}*(a*b)=a^{-1}*(a*c)
 $$
 
+
 Using associativity and the identity property:
 
 $$
 b=c
 $$
+
 
 ## 10. Python Implementation
 
@@ -748,6 +800,7 @@ $$
 -7,\quad \frac{3}{5},\quad \sqrt{2},\quad 4+3i
 $$
 
+
 **Solution:**
 
 - $-7$ belongs to $\mathbb{Z}$.
@@ -762,6 +815,7 @@ Consider the set:
 $$
 G=\lbrace 0,1,2\rbrace
 $$
+
 
 with addition modulo 3.
 
@@ -779,6 +833,7 @@ $$
 0^{-1}=0,\quad 1^{-1}=2,\quad 2^{-1}=1
 $$
 
+
 Therefore, $G$ is a group. Since addition modulo 3 is commutative, it is an Abelian group.
 
 ### Example 3: Why Integers Are Not a Field
@@ -789,17 +844,20 @@ $$
 2x=1
 $$
 
+
 Solving over the rational numbers gives:
 
 $$
 x=\frac12
 $$
 
+
 But:
 
 $$
 \frac12\notin\mathbb{Z}
 $$
+
 
 Thus, the integers do not contain multiplicative inverses for all nonzero elements and are not a field.
 
