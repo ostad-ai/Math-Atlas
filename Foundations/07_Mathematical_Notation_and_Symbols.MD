@@ -401,9 +401,9 @@ Important function-related notation includes:
 | $f(x)$ | Function value at $x$ |
 | $f^{-1}$ | Inverse function, when it exists |
 | $f\circ g$ | Function composition |
-| $\operatorname{dom}(f)$ | Domain |
-| $\operatorname{range}(f)$ | Range |
-| $\operatorname{Im}(f)$ | Image of a function |
+| $\mathop{\text{dom}}(f)$ | Domain |
+| $\mathop{\text{range}}(f)$ | Range |
+| $\mathop{\text{Im}}(f)$ | Image of a function |
 | $f:A\to B$ | Mapping from $A$ to $B$ |
 
 The notation $f^{-1}(x)$ refers to the inverse function when one exists. It does not generally mean $1/f(x)$.
@@ -502,7 +502,7 @@ Linear algebra uses conventions that distinguish scalars, vectors, and matrices.
 | $A^{-1}$ | Matrix inverse, when it exists |
 | $I$ | Identity matrix |
 | $\det(A)$ | Determinant |
-| $\operatorname{rank}(A)$ | Matrix rank |
+| $\mathop{\text{rank}}(A)$ | Matrix rank |
 | $\mathbf{0}$ | Zero vector |
 | $\langle u,v\rangle$ | Inner product |
 
@@ -539,7 +539,7 @@ Probability and statistics use symbols to describe random variables, distributio
 | $P(A\mid B)$ | Conditional probability |
 | $X$ | Random variable |
 | $E[X]$ | Expected value |
-| $\operatorname{Var}(X)$ | Variance |
+| $\mathop{\text{Var}}(X)$ | Variance |
 | $\sigma$ | Population standard deviation |
 | $\mu$ | Population mean |
 | $\bar{x}$ | Sample mean |

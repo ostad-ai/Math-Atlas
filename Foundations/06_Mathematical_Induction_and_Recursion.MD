@@ -316,7 +316,7 @@ Structural recursion (بازگشت ساختاری) means defining a function by 
 For example, to calculate the number of nodes in a binary tree:
 
 $$
-\operatorname{size}(T)= \begin{cases} 0 & \text{if }T\text{ is empty},\\ 1+\operatorname{size}(L)+\operatorname{size}(R) & \text{otherwise}. \end{cases}
+\mathop{\text{size}}(T)= \begin{cases} 0 & \text{if }T\text{ is empty},\\ 1+\mathop{\text{size}}(L)+\mathop{\text{size}}(R) & \text{otherwise}. \end{cases}
 $$
 
 
@@ -567,7 +567,7 @@ $$
 For input $n$, the algorithm returns
 
 $$
-n\cdot\operatorname{factorial}(n-1).
+n\cdot\mathop{\text{factorial}}(n-1).
 $$
 
 

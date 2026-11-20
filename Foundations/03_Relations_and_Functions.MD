@@ -58,26 +58,26 @@ This relation connects each element of $A$ to twice its value in $B$.
 The **domain** (دامنه) of a relation is the set of all first components of its ordered pairs.
 
 $$
-\operatorname{Dom}(R) = \lbrace a\in A\mid \exists b\in B:(a,b)\in R\rbrace
+\mathop{\text{Dom}}(R) = \lbrace a\in A\mid \exists b\in B:(a,b)\in R\rbrace
 $$
 
 
 The **range** (برد) is the set of all second components:
 
 $$
-\operatorname{Ran}(R) = \lbrace b\in B\mid \exists a\in A:(a,b)\in R\rbrace
+\mathop{\text{Ran}}(R) = \lbrace b\in B\mid \exists a\in A:(a,b)\in R\rbrace
 $$
 
 
 For the previous example:
 
 $$
-\operatorname{Dom}(R)=\lbrace 1,2,3\rbrace
+\mathop{\text{Dom}}(R)=\lbrace 1,2,3\rbrace
 $$
 
 
 $$
-\operatorname{Ran}(R)=\lbrace 2,4,6\rbrace
+\mathop{\text{Ran}}(R)=\lbrace 2,4,6\rbrace
 $$
 
 
@@ -256,14 +256,14 @@ The set $A$ is the domain, and $B$ is the codomain (هم‌دامنه).
 The range is the set of outputs actually produced:
 
 $$
-\operatorname{Ran}(f) = \lbrace f(a)\mid a\in A\rbrace
+\mathop{\text{Ran}}(f) = \lbrace f(a)\mid a\in A\rbrace
 $$
 
 
 Therefore:
 
 $$
-\operatorname{Ran}(f)\subseteq B
+\mathop{\text{Ran}}(f)\subseteq B
 $$
 
 
@@ -284,7 +284,7 @@ $$
 Its domain is:
 
 $$
-\operatorname{Dom}(f)=\mathbb{R}
+\mathop{\text{Dom}}(f)=\mathbb{R}
 $$
 
 
@@ -298,7 +298,7 @@ $$
 Its range is:
 
 $$
-\operatorname{Ran}(f)=[0,\infty)
+\mathop{\text{Ran}}(f)=[0,\infty)
 $$
 
 

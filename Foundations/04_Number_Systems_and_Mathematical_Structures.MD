@@ -341,14 +341,14 @@ $$
 the real part is:
 
 $$
-\operatorname{Re}(z)=a
+\mathop{\text{Re}}(z)=a
 $$
 
 
 The imaginary part is:
 
 $$
-\operatorname{Im}(z)=b
+\mathop{\text{Im}}(z)=b
 $$
 
 
