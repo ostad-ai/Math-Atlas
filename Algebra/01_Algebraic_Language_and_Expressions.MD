@@ -342,57 +342,9 @@ This distinction will become important in later chapters on rational expressions
 
 ## 10. Why algebraic transformations are valid
 
-Elementary algebra relies on properties of equality and the operations on real numbers. Some key properties are:
+The simplifications in this chapter rely on properties of addition and multiplication in the real numbers. For example, combining like terms uses associativity and commutativity to regroup addends, while expanding or factoring uses the distributive property. These are not arbitrary symbol-manipulation rules: they preserve the value of an expression for every admissible input.
 
-### 10.1 Commutative properties
-
-$$
-a+b=b+a,\qquad ab=ba.
-$$
-
-The order of addends or factors may be changed without changing the result.
-
-### 10.2 Associative properties
-
-$$
-(a+b)+c=a+(b+c),\qquad (ab)c=a(bc).
-$$
-
-The grouping of addends or factors may be changed without changing the result.
-
-### 10.3 Distributive property
-
-$$
-a(b+c)=ab+ac.
-$$
-
-Multiplication distributes over addition.
-
-### 10.4 Additive and multiplicative identities
-
-$$
-a+0=a,\qquad a\cdot1=a.
-$$
-
-Adding zero or multiplying by one leaves a number unchanged.
-
-### 10.5 Additive inverse and multiplicative inverse
-
-For every real number $a$, there is an additive inverse $-a$ such that
-
-$$
-a+(-a)=0.
-$$
-
-For every nonzero real number $a$, there is a multiplicative inverse $a^{-1}=\frac1a$ such that
-
-$$
-a\cdot\frac1a=1.
-$$
-
-The nonzero condition is essential: division by zero is undefined.
-
-These properties are established within the real-number structure introduced in Foundations. The present volume uses them to justify algebraic transformations.
+The next chapter develops the real-number properties more systematically, including additive and multiplicative inverses, sign rules, order properties, rational arithmetic, and the restrictions attached to division. Foundations, Chapter 04, establishes the underlying number system; Algebra Chapter 02 focuses on using its properties in calculations.
 
 ## 11. Python implementation
 
@@ -563,3 +515,5 @@ The denominator cannot be zero, so $x\ne5$. The domain is $\mathbb{R}\setminus\{
 1. Marecek, L., Anthony-Smith, M., and Mathis, A. H. *Elementary Algebra 2e*. OpenStax, Rice University.
 2. Marecek, L., Anthony-Smith, M., and Mathis, A. H. *Intermediate Algebra 2e*. OpenStax, Rice University.
 3. Math-Atlas, **Foundations**, especially Chapters 03, 04, 05, and 07, and `MATHEMATICAL_CONVENTIONS.MD`.
+
+**Next chapter:** Chapter 02 — Real-Number Properties and Algebraic Simplification.
