@@ -801,7 +801,7 @@ Therefore, at least two people must share a birth month.
 
 This is an application of the pigeonhole principle (اصل لانه‌کبوتری).
 
-More generally, if $n+1$ objects are distributed among $n$ categories, at least one category must contain two or more objects.
+More generally, if $N$ objects are distributed among $k$ categories, at least one category contains at least $\lceil N/k\rceil$ objects. The familiar $n+1$-objects-in-$n$-categories result is the special case that guarantees at least two in one category.
 
 ## 9. Exercises
 
@@ -832,7 +832,9 @@ Two positive integers have a sum of 12 and a product of 35. Find the integers.
 
 Three coins initially show two heads and one tail. At each step, exactly two coins must be flipped.
 
-Is it possible to reach a state in which all three coins show tails? Justify your answer using an invariant.
+Is it possible to reach a state in which all three coins show tails? Identify the parity invariant, then distinguish between what the invariant rules out and what it permits.
+
+**Answer check:** Yes. The parity of the number of heads is invariant because flipping exactly two coins changes the number of heads by $-2$, $0$, or $+2$. The initial state has two heads (even), and the target state has zero heads (also even), so the invariant does not rule out the target. In fact, flipping the two coins that show heads reaches all tails in one move. This example illustrates that an invariant can prove impossibility when the target violates it, but matching invariant values alone do not generally prove reachability.
 
 ### Exercise 6 — Computational Exploration
 

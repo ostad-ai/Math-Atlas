@@ -55,14 +55,14 @@ This relation connects each element of $A$ to twice its value in $B$.
 
 ### 2.3 Domain and Range of a Relation
 
-The **domain** (دامنه) of a relation is the set of all first components of its ordered pairs.
+The **domain** (دامنه) of a relation is the set of all first components that actually occur in its ordered pairs. It is therefore a subset of the source set $A$, not necessarily all of $A$.
 
 $$
 \mathop{\text{Dom}}(R) = \lbrace a\in A\mid \exists b\in B:(a,b)\in R\rbrace
 $$
 
 
-The **range** (برد) is the set of all second components:
+The **range** (برد) is the set of all second components that actually occur. It is therefore a subset of the target set $B$:
 
 $$
 \mathop{\text{Ran}}(R) = \lbrace b\in B\mid \exists a\in A:(a,b)\in R\rbrace
@@ -302,7 +302,7 @@ $$
 $$
 
 
-The codomain and range are not necessarily equal.
+The codomain and range are not necessarily equal. The codomain is part of the function's declared type; the range is determined by the values the function actually attains. Injectivity and surjectivity must therefore always be interpreted relative to the specified domain and codomain.
 
 ### 6.3 When Is a Relation a Function?
 
@@ -565,7 +565,7 @@ f^{-1}(T)=\lbrace x\in A\mid f(x)\in T\rbrace
 $$
 
 
-The preimage is defined for every function, even if the function is not invertible. In this context, $f^{-1}(T)$ means the preimage of a set, not necessarily an inverse function.
+The preimage is defined for every function, even if the function is not invertible. In this context, $f^{-1}(T)$ means the preimage of a set, not necessarily an inverse function. By contrast, the inverse function $f^{-1}:B\to A$ exists only when $f$ is bijective. The notation $f^{-1}(y)$ for a single value is used for that inverse function, not for the reciprocal $1/f(y)$.
 
 ## 10. Important Theorems
 
@@ -703,25 +703,40 @@ print("Relation:", R)
 ### 11.2 Checking Relation Properties
 
 ```python
+def _validated_relation(A, R):
+    """Normalize and validate a finite relation R as a subset of A x A."""
+    A = set(A)
+    R = set(R)
+
+    for pair in R:
+        if not isinstance(pair, tuple) or len(pair) != 2:
+            raise ValueError("Every relation element must be an ordered pair")
+        x, y = pair
+        if x not in A or y not in A:
+            raise ValueError("Every relation pair must belong to A x A")
+
+    return A, R
+
+
 def is_reflexive(A, R):
+    A, R = _validated_relation(A, R)
     return all((x, x) in R for x in A)
 
 
 def is_symmetric(A, R):
-    return all(
-        (y, x) in R
-        for x, y in R
-    )
+    A, R = _validated_relation(A, R)
+    return all((y, x) in R for x, y in R)
 
 
 def is_antisymmetric(A, R):
-    return all(
-        x == y or (y, x) not in R
-        for x, y in R
-    )
+    A, R = _validated_relation(A, R)
+    return all(x == y or (y, x) not in R for x, y in R)
 
 
 def is_transitive(A, R):
+    """Check transitivity for a finite relation R on A."""
+    A, R = _validated_relation(A, R)
+
     for x, y in R:
         for z, w in R:
             if y == z and (x, w) not in R:
@@ -745,6 +760,12 @@ print("Reflexive:", is_reflexive(A, R))
 print("Symmetric:", is_symmetric(A, R))
 print("Antisymmetric:", is_antisymmetric(A, R))
 print("Transitive:", is_transitive(A, R))
+
+# A pair outside A x A is not silently accepted as a relation on A.
+try:
+    is_symmetric(A, {(1, 4)})
+except ValueError as error:
+    print("Invalid relation rejected:", error)
 ```
 
 These functions assume that every pair in `R` belongs to $A\times A$.
@@ -832,16 +853,24 @@ These checks apply to finite mappings represented explicitly by dictionaries.
 
 ```python
 def compose(f, g, domain):
-    """
-    Return g composed with f.
+    """Return g composed with f for explicitly represented finite maps.
 
-    f maps A to B.
-    g maps B to C.
+    f maps A to B and g maps B to C. Both dictionaries must be defined
+    on every input used by the composition.
     """
     result = {}
 
     for x in domain:
-        result[x] = g[f[x]]
+        if x not in f:
+            raise ValueError(f"f is not defined at {x!r}")
+
+        intermediate = f[x]
+        if intermediate not in g:
+            raise ValueError(
+                f"g is not defined at the intermediate value {intermediate!r}"
+            )
+
+        result[x] = g[intermediate]
 
     return result
 

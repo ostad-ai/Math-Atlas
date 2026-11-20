@@ -143,9 +143,10 @@ $$
 | $\leq$ | Less than or equal to |
 | $\geq$ | Greater than or equal to |
 | $\approx$ | Approximately equal to |
-| $\equiv$ | Context-dependent: identical, equivalent, or congruent |
+| $\equiv$ | Context-dependent: logical equivalence or modular congruence; define the intended meaning |
+| $:= $ | Is defined to be (definition) |
 
-The meaning of $\equiv$ must be established by context.
+The meaning of $\equiv$ must be established by context. Math-Atlas uses $\subseteq$ for a subset that may equal the containing set and $\subsetneq$ for a proper subset; we avoid the potentially ambiguous symbol $\subset$.
 
 For example, modular congruence is written as
 
@@ -154,7 +155,7 @@ $$
 $$
 
 
-This means that 17 and 2 have the same remainder when divided by 5.
+This means that 17 and 2 have the same remainder when divided by 5. In logic, $P\equiv Q$ may denote logical equivalence; in number theory, $a\equiv b\pmod n$ denotes congruence modulo $n$. Avoid using $\equiv$ without enough context to distinguish these meanings.
 
 ### 4.2 Membership and Set Relations
 
@@ -162,7 +163,7 @@ This means that 17 and 2 have the same remainder when divided by 5.
 |---|---|
 | $\in$ | Is an element of |
 | $\notin$ | Is not an element of |
-| $\subseteq$ | Is a subset of |
+| $\subseteq$ | Is a subset of (possibly equal) |
 | $\subsetneq$ | Is a proper subset of |
 | $\supseteq$ | Contains as a subset |
 | $\varnothing$ | Empty set |
@@ -406,7 +407,7 @@ Important function-related notation includes:
 | $\mathop{\text{Im}}(f)$ | Image of a function |
 | $f:A\to B$ | Mapping from $A$ to $B$ |
 
-The notation $f^{-1}(x)$ refers to the inverse function when one exists. It does not generally mean $1/f(x)$.
+The notation $f^{-1}(x)$ refers to the inverse function when one exists. It does not generally mean $1/f(x)$. The notation $f^{-1}(T)$ for a set $T$ often denotes its preimage, which is defined even when no inverse function exists; see Chapter 03. The reciprocal of a nonzero function value is written $1/f(x)$ or $(f(x))^{-1}$.
 
 ---
 
@@ -536,6 +537,7 @@ Probability and statistics use symbols to describe random variables, distributio
 | Symbol | Meaning |
 |---|---|
 | $P(A)$ | Probability of event $A$ |
+| $\mathcal{P}(A)$ | Power set of $A$ (all subsets of $A$) |
 | $P(A\mid B)$ | Conditional probability |
 | $X$ | Random variable |
 | $E[X]$ | Expected value |

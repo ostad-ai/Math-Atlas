@@ -6,7 +6,7 @@ Mathematical logic provides a formal framework for expressing mathematical state
 
 It is fundamental to mathematical proof, set theory, computer science, algorithms, and formal verification.
 
-This chapter introduces propositional logic (منطق گزاره‌ای), including propositions, logical operators, truth tables, logical equivalence, and basic inference rules.
+This chapter introduces propositional logic (منطق گزاره‌ای), including propositions, logical operators, truth tables, logical equivalence, predicates, quantifiers, and basic inference rules. Unless stated otherwise, we use **classical two-valued logic**, in which every proposition is either true or false.
 
 ## 2. Propositions and Truth Values
 
@@ -407,7 +407,7 @@ $$
 
 For $x=8$, the predicate is true. For $x=3$, it is false.
 
-A domain (دامنه) specifies the set of possible values for the variables.
+A domain (دامنه) specifies the set of possible values for the variables. The order of quantifiers matters: for example, $\forall x\,\exists y\,P(x,y)$ does not generally mean the same thing as $\exists y\,\forall x\,P(x,y)$. In the first statement, the choice of $y$ may depend on $x$; in the second, one fixed $y$ must work for every $x$.
 
 ### 8.1 Universal Quantifier
 
@@ -463,92 +463,13 @@ $$
 $$
 
 
-## 9. Mathematical Proof Techniques
+## 9. Logic as the Foundation of Mathematical Proof
 
-### 9.1 Direct Proof
+Logical equivalence and valid inference rules provide the formal foundation for mathematical proofs. A typical proof starts from stated assumptions and uses valid deductions to establish a conclusion.
 
-A direct proof (اثبات مستقیم) establishes an implication by assuming its antecedent and logically deriving its consequent.
+For an implication $P\Rightarrow Q$, a direct proof assumes $P$ and derives $Q$. Other proof strategies include contraposition, contradiction, proof by cases, and mathematical induction.
 
-Example: The square of every even integer is even.
-
-Let $n$ be an even integer. By definition:
-
-$$
-n=2k,\qquad k\in\mathbb{Z}
-$$
-
-
-Then:
-
-$$
-n^2=(2k)^2=4k^2=2(2k^2)
-$$
-
-
-Since $2k^2$ is an integer, $n^2$ is even.
-
-### 9.2 Proof by Contrapositive
-
-The contrapositive (عکس نقیض) of:
-
-$$
-P\Rightarrow Q
-$$
-
-
-is:
-
-$$
-\neg Q\Rightarrow\neg P
-$$
-
-
-An implication is logically equivalent to its contrapositive. Therefore, proving the contrapositive is sufficient.
-
-### 9.3 Proof by Contradiction
-
-Proof by contradiction (برهان خلف) begins by assuming that the statement to be proved is false.
-
-If this assumption leads to a logical contradiction, the original statement must be true.
-
-### 9.4 Mathematical Induction
-
-Mathematical induction (استقرای ریاضی) is a proof technique used to establish statements over the natural numbers.
-
-It consists of two essential steps:
-
-1. Base case (پایهٔ استقرا): Prove the statement for the initial value.
-2. Inductive step (گام استقرا): Assume the statement holds for $n=k$, then prove it holds for $n=k+1$.
-
-For example, consider:
-
-$$
-1+2+\cdots+n=\frac{n(n+1)}{2}
-$$
-
-
-The base case $n=1$ gives:
-
-$$
-1=\frac{1(1+1)}{2}=1
-$$
-
-
-Assume the formula holds for $n=k$:
-
-$$
-1+2+\cdots+k=\frac{k(k+1)}{2}
-$$
-
-
-Then:
-
-$$
-\begin{aligned} 1+2+\cdots+k+(k+1) &=\frac{k(k+1)}{2}+(k+1)\\ &=\frac{(k+1)(k+2)}{2} \end{aligned}
-$$
-
-
-Thus, the formula holds for $k+1$, completing the proof.
+The detailed methods and worked proofs are developed in [Chapter 05 — Mathematical Proof Techniques](05_Mathematical_Proof_Techniques.MD). Mathematical induction and its connection with recursive definitions are developed further in [Chapter 06 — Mathematical Induction and Recursion](06_Mathematical_Induction_and_Recursion.MD). Keeping the full treatments there avoids repeating the same proof material in the logic chapter.
 
 ## 10. Python Implementation
 
@@ -630,13 +551,22 @@ from itertools import product
 
 
 def classify(expression, variables):
+    """Classify a Boolean expression over named Boolean variables."""
+    variables = tuple(variables)
+
+    if len(set(variables)) != len(variables):
+        raise ValueError("Variable names must be unique")
 
     results = []
 
     for values in product([False, True], repeat=len(variables)):
-
         assignment = dict(zip(variables, values))
-        results.append(expression(**assignment))
+        value = expression(**assignment)
+
+        if not isinstance(value, bool):
+            raise TypeError("The expression must return a Boolean value")
+
+        results.append(value)
 
     if all(results):
         return "Tautology"
@@ -648,9 +578,11 @@ def classify(expression, variables):
 
 
 result = classify(
-    lambda P, Q: P or not P,
+    lambda P: P or not P,
     ["P"]
 )
+
+assert result == "Tautology"
 
 print(result)
 ```

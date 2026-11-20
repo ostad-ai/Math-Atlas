@@ -237,7 +237,14 @@ a_n=Ar_1^n+Br_2^n.
 $$
 
 
-The constants $A$ and $B$ are determined by the initial conditions.
+The constants $A$ and $B$ are determined by the initial conditions. If the characteristic equation has a repeated nonzero root $r$, the general solution instead has the form
+
+$$
+a_n=(A+Bn)r^n.
+$$
+
+
+When the characteristic polynomial has a zero root, handle the initial terms directly rather than applying a formula involving an ambiguous $0^0$ term. These forms apply to the homogeneous, constant-coefficient, second-order recurrence introduced above.
 
 **Example: Fibonacci Sequence**
 
@@ -338,8 +345,8 @@ A correct recursive algorithm needs:
 
 ```python
 def factorial_recursive(n):
-    if n < 0:
-        raise ValueError("n must be nonnegative")
+    if not isinstance(n, int) or isinstance(n, bool) or n < 0:
+        raise ValueError("n must be a nonnegative integer")
 
     if n == 0:
         return 1
@@ -358,8 +365,8 @@ The same problem can be solved using iteration.
 
 ```python
 def factorial_iterative(n):
-    if n < 0:
-        raise ValueError("n must be nonnegative")
+    if not isinstance(n, int) or isinstance(n, bool) or n < 0:
+        raise ValueError("n must be a nonnegative integer")
 
     result = 1
 
@@ -393,8 +400,8 @@ The Fibonacci sequence illustrates why a mathematically natural recursive defini
 
 ```python
 def fibonacci_recursive(n):
-    if n < 0:
-        raise ValueError("n must be nonnegative")
+    if not isinstance(n, int) or isinstance(n, bool) or n < 0:
+        raise ValueError("n must be a nonnegative integer")
 
     if n == 0:
         return 0
@@ -415,10 +422,10 @@ This implementation repeatedly calculates the same values.
 
 For example, calculating $F_5$ requires calculating $F_3$ more than once.
 
-Its time complexity grows exponentially:
+Its time complexity grows exponentially. A more informative tight bound is
 
 $$
-O(\varphi^n),
+\Theta(\varphi^n),
 $$
 
 
@@ -435,14 +442,19 @@ Memoization (یادسپاری) stores previously calculated results.
 
 ```python
 def fibonacci_memoized(n, memo=None):
-    if n < 0:
-        raise ValueError("n must be nonnegative")
+    if not isinstance(n, int) or isinstance(n, bool) or n < 0:
+        raise ValueError("n must be a nonnegative integer")
 
     if memo is None:
         memo = {0: 0, 1: 1}
 
     if n in memo:
         return memo[n]
+
+    # Keep the function correct even when the caller supplies an empty memo.
+    if n < 2:
+        memo[n] = n
+        return n
 
     memo[n] = (
         fibonacci_memoized(n - 1, memo)
@@ -475,8 +487,8 @@ $$
 
 ```python
 def fibonacci_iterative(n):
-    if n < 0:
-        raise ValueError("n must be nonnegative")
+    if not isinstance(n, int) or isinstance(n, bool) or n < 0:
+        raise ValueError("n must be a nonnegative integer")
 
     a, b = 0, 1
 
@@ -635,9 +647,7 @@ def infinite_recursion(n):
     return infinite_recursion(n + 1)
 ```
 
-This function has no base case and moves farther away from termination.
-
-It will eventually exceed Python's recursion limit.
+This function has no base case and moves farther away from termination. In Python, execution eventually stops with a `RecursionError` because of the interpreter's recursion limit; that runtime exception is not a successful return from the intended recursive computation.
 
 ---
 
@@ -834,10 +844,37 @@ The indexed implementation performs $O(n)$ total work and uses $O(n)$ call-stack
 
 ### Experiment 1: Compare Fibonacci Implementations
 
-Run the following experiment to compare execution times.
+Run the following self-contained experiment to compare execution times. The implementations are repeated here so that this block can be copied and run independently.
 
 ```python
+from functools import lru_cache
 from time import perf_counter
+
+
+def fibonacci_recursive(n):
+    if n < 0:
+        raise ValueError("n must be nonnegative")
+    if n < 2:
+        return n
+    return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
+
+
+@lru_cache(maxsize=None)
+def fibonacci_cached(n):
+    if n < 0:
+        raise ValueError("n must be nonnegative")
+    if n < 2:
+        return n
+    return fibonacci_cached(n - 1) + fibonacci_cached(n - 2)
+
+
+def fibonacci_iterative(n):
+    if n < 0:
+        raise ValueError("n must be nonnegative")
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
 
 
 def measure_time(function, n):
@@ -852,7 +889,7 @@ n = 30
 
 methods = [
     ("Naive recursion", fibonacci_recursive),
-    ("Memoization", fibonacci_memoized),
+    ("Memoization", fibonacci_cached),
     ("Iteration", fibonacci_iterative),
 ]
 
@@ -899,6 +936,24 @@ def generate_sequence(n, first=3, difference=4):
 
 print(generate_sequence(6))
 # [3, 7, 11, 15, 19, 23]
+```
+
+Because the recursive version rebuilds a list at each level, repeated concatenation makes its total copying cost $O(n^2)$. An iterative version runs in $O(n)$ time and uses $O(n)$ space for the output list:
+
+```python
+def generate_sequence_iterative(n, first=3, difference=4):
+    if not isinstance(n, int) or isinstance(n, bool) or n < 0:
+        raise ValueError("n must be a nonnegative integer")
+
+    result = []
+    current = first
+    for _ in range(n):
+        result.append(current)
+        current += difference
+    return result
+
+
+print(generate_sequence_iterative(6))
 ```
 
 Questions:

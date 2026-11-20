@@ -206,14 +206,19 @@ $$
 
 **Distributivity**
 
-An operation $\star$ distributes over another operation $\diamond$ if
+An operation $\star$ is left-distributive over another operation $\diamond$ if
 
 $$
-a\star(b\diamond c) = (a\star b)\diamond(a\star c).
+a\star(b\diamond c)=(a\star b)\diamond(a\star c).
 $$
 
+It is right-distributive if
 
-The precise order and meaning of these operations depend on the structure.
+$$
+(a\diamond b)\star c=(a\star c)\diamond(b\star c).
+$$
+
+In a noncommutative structure, the two laws are logically distinct and must both be stated when both are required.
 
 ---
 
@@ -308,17 +313,14 @@ A general group need not be Abelian.
 
 ### 4.5 Ring
 
-A ring has two operations, conventionally called addition and multiplication.
-
-Under the standard ring axioms:
+A **ring** in Math-Atlas is a ring with multiplicative identity (a unital ring), following the convention set in Chapter 04. Its axioms are:
 
 - The elements form an Abelian group under addition.
 - Multiplication is associative.
-- Multiplication distributes over addition.
+- Both left and right distributive laws hold.
+- A multiplicative identity $1$ exists.
 
-The additive identity is written as $0$.
-
-A multiplicative identity is often included in the definition of a ring, but some mathematical conventions allow rings without one. Math-Atlas will state the convention whenever this distinction matters.
+Multiplication need not be commutative. Some texts allow rings without a multiplicative identity; such structures will be called **non-unital rings** here.
 
 **Example**
 
@@ -331,7 +333,7 @@ $$
 
 ### 4.6 Field
 
-A field is a commutative ring with a multiplicative identity in which every nonzero element has a multiplicative inverse.
+A **field** is a **nontrivial** commutative ring with a multiplicative identity ($0\ne1$) in which every nonzero element has a multiplicative inverse. This excludes the zero ring.
 
 For nonzero $a$,
 
@@ -504,7 +506,7 @@ An equivalence relation divides a set into disjoint equivalence classes. These c
 
 ## 7. Homomorphisms
 
-A homomorphism (همریختی) is a function between mathematical structures that preserves their specified operations.
+A homomorphism (همریختی) is a function between mathematical structures that preserves their specified operations. For a structure with several operations, preservation must be checked for each operation in its signature. For example, a ring homomorphism preserves addition and multiplication; a **unital** ring homomorphism also maps the multiplicative identity to the multiplicative identity.
 
 Suppose two sets $A$ and $B$ have binary operations $\star$ and $\diamond$.
 
@@ -582,9 +584,7 @@ They are important in:
 
 An isomorphism (یکریختی) is a bijective homomorphism whose inverse also preserves the relevant structure.
 
-Two structures connected by an isomorphism are structurally equivalent.
-
-Their elements may have different names or representations, but their relevant mathematical relationships are the same.
+Two structures connected by an isomorphism are structurally equivalent. Their elements may have different names or representations, but their relevant mathematical relationships are the same. For ordinary algebraic structures with finitary operations, a bijective homomorphism has a structure-preserving inverse; stating the inverse condition explicitly makes the intended meaning clear.
 
 ### Example: Two Representations of the Integers
 
@@ -674,9 +674,7 @@ The final statement applies to every structure whose operation satisfies commuta
 
 Python can help investigate finite mathematical structures.
 
-The following implementation checks whether a finite set with a supplied operation forms a group.
-
-It assumes that the set elements are hashable and that the operation is deterministic.
+The following implementation checks whether a finite, explicitly listed set with a supplied operation forms a group. It assumes hashable elements and a deterministic operation. The check is exhaustive for that finite input; it cannot prove a claim about an infinite structure.
 
 ```python
 def check_group(elements, operation):
@@ -684,6 +682,8 @@ def check_group(elements, operation):
     element_set = set(elements)
 
     if not elements:
+        return False
+    if len(element_set) != len(elements):
         return False
 
     # Closure
@@ -921,7 +921,7 @@ $$
 $$
 
 
-The set of nonzero residues is therefore not closed under multiplication.
+The set of nonzero residues is therefore not closed under multiplication. For a general modulus $n$, the correct multiplicative group is the set of **units** $U(n)=\{a\in\{0,1,\ldots,n-1\}:\gcd(a,n)=1\}$ under multiplication modulo $n$. This set is a group for every $n\geq2$; nonzero residues and units coincide when the modulus is prime.
 
 ---
 

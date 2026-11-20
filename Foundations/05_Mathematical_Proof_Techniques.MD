@@ -46,7 +46,7 @@ $$
 $$
 
 
-A single valid example is sufficient to establish an existential statement.
+A single valid example is sufficient to establish an existential statement. Conversely, `find_counterexample` returning `None` for a finite candidate list means only that no counterexample was found in that list; it is not a proof over an infinite domain.
 
 ### 2.3 Negation of Quantified Statements
 
@@ -156,9 +156,9 @@ $$
 
 Sometimes proving the contrapositive is easier than proving the original statement.
 
-### Example
+### Lemma: An Integer with an Even Square Is Even
 
-**Theorem:** If $n^2$ is even, then $n$ is even.
+**Lemma:** For every integer $n$, if $n^2$ is even, then $n$ is even.
 
 **Proof by contrapositive:**
 
@@ -259,7 +259,7 @@ a^2=2b^2
 $$
 
 
-Hence $a^2$ is even, so $a$ is even.
+Hence $a^2$ is even. We use the lemma proved in Section 4: if an integer square is even, then the integer is even. Thus $a$ is even.
 
 Write:
 
@@ -538,15 +538,15 @@ These proofs have two parts.
 
 ### 10.1 Existence
 
-We demonstrate that at least one object satisfies the required conditions.
+We demonstrate that at least one object satisfies the required conditions. For example, the integer $0$ is an additive identity in $\mathbb{Z}$ because $a+0=0+a=a$ for every $a\in\mathbb{Z}$. This proves existence.
 
 ### 10.2 Uniqueness
 
 We assume that two objects satisfy the conditions and prove that they must be equal.
 
-### Example: Uniqueness of the Additive Identity
+### Example: Existence and Uniqueness of the Additive Identity
 
-Suppose $e$ and $e'$ are both additive identities.
+Existence has just been established by exhibiting $0$. To prove uniqueness, suppose $e$ and $e'$ are both additive identities.
 
 Then:
 
@@ -656,6 +656,8 @@ It cannot replace a general proof over an infinite domain.
 ### 12.1 Searching for Counterexamples
 
 ```python
+import math
+
 def find_counterexample(statement, candidates):
     """
     Find the first candidate for which
@@ -671,22 +673,35 @@ def find_counterexample(statement, candidates):
 # Incorrect conjecture:
 # Every prime number is odd.
 
-def is_odd_prime(n):
+def is_prime(n):
+    """Return whether n is prime, for an integer n."""
+    if not isinstance(n, int) or isinstance(n, bool):
+        raise TypeError("n must be an integer")
     if n < 2:
+        return False
+    if n == 2:
         return True
-
     if n % 2 == 0:
         return False
 
-    for divisor in range(3, int(n ** 0.5) + 1, 2):
+    for divisor in range(3, math.isqrt(n) + 1, 2):
         if n % divisor == 0:
             return False
 
     return True
 
+# Trial division takes O(sqrt(n)) time; this is pedagogical, not a
+# high-performance primality test for very large integers.
+
+
+def claim_every_prime_is_odd(n):
+    # An implication is false exactly when its premise is true
+    # and its conclusion is false.
+    return (not is_prime(n)) or (n % 2 == 1)
+
 
 counterexample = find_counterexample(
-    is_odd_prime,
+    claim_every_prime_is_odd,
     range(2, 100)
 )
 

@@ -54,9 +54,11 @@ A model simplifies reality by making assumptions.
 
 For the constant-speed example, we assume:
 
-1. Speed remains constant.
-2. Motion occurs along a straight path.
-3. Time and distance are measured consistently.
+1. The speed (rate of travel along the path) remains constant.
+2. The time interval is measured from the stated starting time.
+3. The units for speed and time are compatible.
+
+A straight path is not required if $d$ means total path length travelled. If $d$ means one-dimensional signed displacement, the model needs a signed velocity and a coordinate direction.
 
 Assumptions define the conditions under which the model is meaningful.
 
@@ -192,17 +194,10 @@ For example, the number of customers arriving at a service station during a fixe
 A Poisson model is one possible choice:
 
 $$
-P(X=k)=\frac{\lambda^k e^{-\lambda}}{k!},
+P(X=k)=\frac{\lambda^k e^{-\lambda}}{k!},\qquad k=0,1,2,\ldots,
 $$
 
-
-where:
-
-- $X$ is the number of arrivals.
-- $\lambda$ is the expected number of arrivals during the interval.
-- $k$ is a nonnegative integer.
-
-The appropriateness of this model depends on assumptions about arrival behavior.
+where $X$ is the number of arrivals during the interval and $\lambda\geq0$ is the expected number of arrivals in that interval. When $\lambda=0$, the model assigns probability 1 to zero arrivals. A Poisson process with constant rate $r\geq0$ over an interval of length $t\geq0$ has parameter $\lambda=rt$. For a homogeneous Poisson process, increments over disjoint intervals are independent, the rate is constant, and for a short interval of length $\Delta t$, the probability of one arrival is $r\Delta t+o(\Delta t)$ while the probability of two or more arrivals is $o(\Delta t)$. These assumptions should be checked for the application; the distribution is not automatic merely because the data count events.
 
 ### 4.3 Static Models
 
@@ -254,16 +249,17 @@ $$
 
 This recurrence defines a sequence indexed by integers.
 
-### 4.7 Linear and Nonlinear Models
+### 4.7 Linear, Affine, and Nonlinear Models
 
-A linear relationship in one variable has the form
+The expression
 
 $$
-y=ax+b.
+y=ax+b
 $$
 
+is an **affine** function of $x$. It is linear in the strict algebraic sense only when $b=0$, so that $f(x)=ax$. In applied modeling, the phrase *linear model* is also commonly used for a model that is linear in its unknown coefficients, even when it includes an intercept; the intended meaning should be stated.
 
-A nonlinear relationship may contain powers, products of variables, exponentials, or other nonlinear expressions.
+A nonlinear relationship may contain nonlinear dependence on the variable or parameters, such as $y=x^2+3x+1$ or $y=ab$ when both $a$ and $b$ are unknown parameters.
 
 For example,
 
@@ -355,7 +351,7 @@ A basic optimization model contains:
 
 ### Example: Maximizing Production Value
 
-Suppose a workshop produces two products.
+Suppose a workshop produces two products. Treat $x$ and $y$ first as nonnegative real decision variables, as in the standard continuous linear-programming model. If products must be manufactured in indivisible units, add integer restrictions $x,y\in\mathbb{Z}_{\geq0}$.
 
 Let:
 
@@ -395,7 +391,13 @@ x\geq0,\qquad y\geq0.
 $$
 
 
-This is a linear programming model.
+This is a linear programming model. Its feasible region has corner points $(0,0)$, $(50,0)$, $(40,20)$, and $(0,40)$. Evaluating $Z=30x+20y$ at these points gives $0$, $1500$, $1600$, and $800$, respectively. Therefore, the continuous model has the maximum
+
+$$
+(x,y)=(40,20),\qquad Z_{\max}=1600.
+$$
+
+This optimum is also feasible when $x$ and $y$ are restricted to nonnegative integers.
 
 ### 6.1 Python Formulation
 
@@ -432,14 +434,13 @@ $$
 
 maps an input from domain $X$ to an output in codomain $Y$.
 
-### 7.1 Linear Model
+### 7.1 Affine Model
 
 $$
 f(x)=ax+b.
 $$
 
-
-This model describes a constant rate of change.
+This affine model has constant rate of change $a$ and intercept $b$. It is a linear map in the strict algebraic sense only when $b=0$. In regression and applied statistics, it is often called a simple linear model because it is linear in the coefficients $a$ and $b$.
 
 ### 7.2 Quadratic Model
 
@@ -596,33 +597,28 @@ The appropriate metric depends on the application and the consequences of differ
 ### 9.5 Python Implementation
 
 ```python
-def mean_absolute_error(actual, predicted):
+def _validated_pairs(actual, predicted):
+    """Return paired values after checking basic input requirements."""
+    actual = list(actual)
+    predicted = list(predicted)
+
     if len(actual) != len(predicted):
         raise ValueError("Input lengths must match")
-
     if not actual:
         raise ValueError("Inputs must not be empty")
 
-    errors = [
-        abs(a - p)
-        for a, p in zip(actual, predicted)
-    ]
+    return actual, predicted
 
+
+def mean_absolute_error(actual, predicted):
+    actual, predicted = _validated_pairs(actual, predicted)
+    errors = [abs(a - p) for a, p in zip(actual, predicted)]
     return sum(errors) / len(errors)
 
 
 def mean_squared_error(actual, predicted):
-    if len(actual) != len(predicted):
-        raise ValueError("Input lengths must match")
-
-    if not actual:
-        raise ValueError("Inputs must not be empty")
-
-    errors = [
-        (a - p) ** 2
-        for a, p in zip(actual, predicted)
-    ]
-
+    actual, predicted = _validated_pairs(actual, predicted)
+    errors = [(a - p) ** 2 for a, p in zip(actual, predicted)]
     return sum(errors) / len(errors)
 
 
@@ -688,9 +684,16 @@ $$
 Python implementation:
 
 ```python
-def newton_sqrt_2(initial=1.0, iterations=6):
-    x = initial
+import math
 
+def newton_sqrt_2(initial=1.0, iterations=6):
+    if (not isinstance(initial, (int, float)) or isinstance(initial, bool)
+            or not math.isfinite(initial) or initial <= 0):
+        raise ValueError("initial must be a finite positive number")
+    if not isinstance(iterations, int) or isinstance(iterations, bool) or iterations < 0:
+        raise ValueError("iterations must be a nonnegative integer")
+
+    x = float(initial)
     for _ in range(iterations):
         x = 0.5 * (x + 2 / x)
 

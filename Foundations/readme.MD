@@ -2,7 +2,7 @@
 
 The **Foundations** section establishes the fundamental mathematical concepts, language, structures, and reasoning methods required for studying advanced mathematics and computational methods.
 
-It provides a common conceptual foundation for the other mathematical domains in **Math-Atlas**.
+It provides a common conceptual foundation for the other mathematical domains in **Math-Atlas**. The shared notation and structural conventions are collected in [Mathematical Conventions](MATHEMATICAL_CONVENTIONS.MD); chapter-specific definitions should follow that document.
 
 ## Objectives
 
@@ -53,7 +53,7 @@ Not every chapter requires every component. The structure is adapted to the subj
 
 ## Python Implementation
 
-Python is used to support mathematical exploration, demonstrate algorithms, and connect mathematical theory with computational practice.
+Python is used to support mathematical exploration, demonstrate algorithms, and connect mathematical theory with computational practice. Code fences within a chapter are intended to be run from top to bottom unless the example explicitly says that it is self-contained. Input domains and limitations are described alongside the examples.
 
 Implementations may include:
 
@@ -65,40 +65,34 @@ Computational experiments are presented as complementary tools for mathematical 
 
 ## Learning Path
 
-The recommended learning sequence is:
+The recommended sequence is a dependency guide, not a rigid prerequisite chain:
 
 ```text
-Propositional Logic
-        |
-        v
-Set Theory
-        |
-        v
-Relations and Functions
-        |
-        v
-Number Systems and Mathematical Structures
-        |
-        v
-Mathematical Proof Techniques
-        |
-        v
-Mathematical Induction and Recursion
-        |
-        v
-Mathematical Notation and Symbols
-        |
-        v
-Mathematical Structures and Abstract Thinking
-        |
-        v
-Mathematical Modeling and Problem Solving
-        |
-        v
-Mathematical Problem-Solving Strategies
+01 Propositional Logic  ---->  02 Set Theory
+                                  |
+                                  v
+                         03 Relations and Functions
+                                  |
+                                  v
+                         04 Number Systems
+                                  |
+                                  v
+                         05 Proof Techniques
+                                  |
+                                  v
+                         06 Induction and Recursion
+                                  |
+                                  v
+                         08 Abstract Structures
+                                  |
+                                  v
+                         09 Mathematical Modeling
+                                  |
+                                  v
+                         10 Problem-Solving Strategies
 ```
 
-Some chapters are interconnected and may be studied in a different order depending on the reader's background.
+Chapter 07 (Notation and Symbols) should be used as a companion reference from the beginning and revisited throughout the path. Chapters 05 and 06 build on the logic and set language from the earlier chapters. Chapter 08 extends the algebraic structures introduced in Chapter 04 rather than replacing that introduction.
 
 ## Prerequisites
 

@@ -8,7 +8,7 @@ Sets provide a common language for describing mathematical structures, defining 
 
 ## 2. Basic Definitions
 
-A **set** is a well-defined collection of distinct objects.
+A **set** is a well-defined collection of distinct objects. In this introductory treatment, sets are described relative to an understood domain or universe when needed. Set-builder notation must specify a domain or a previously defined set; unrestricted comprehension over 'all objects' is not permitted in standard axiomatic set theory.
 
 If an object $x$ belongs to a set $A$, we write:
 
@@ -52,7 +52,7 @@ The following standard sets appear throughout mathematics:
 | $\mathbb{R}$ | Real numbers |
 | $\mathbb{C}$ | Complex numbers |
 
-The convention for whether $0$ belongs to $\mathbb{N}$ varies between mathematical texts. We will state the convention whenever it matters.
+The convention for whether $0$ belongs to $\mathbb{N}$ varies between mathematical texts. **Throughout Math-Atlas, we use $\mathbb{N}=\{0,1,2,\ldots\}$.** If positive natural numbers are intended, we write $\mathbb{N}_{>0}=\{1,2,3,\ldots\}$.
 
 ### 2.2 Empty Set
 
@@ -72,7 +72,7 @@ $$
 
 ### 2.3 Equality of Sets
 
-Two sets are equal if and only if they contain exactly the same elements:
+Two sets are equal if and only if they contain exactly the same elements. The quantified variable is understood to range over the ambient universe in which $A$ and $B$ are being considered:
 
 $$
 A = B \iff (\forall x)(x \in A \iff x \in B)
@@ -348,7 +348,7 @@ $$
 
 In general, $A\times B$ is not equal to $B\times A$.
 
-## 7. Cardinality and Finite Sets
+## 7. Cardinality of Finite and Infinite Sets
 
 The **cardinality** (اندازهٔ مجموعه) of a finite set is the number of its distinct elements.
 
@@ -373,7 +373,9 @@ $$
 $$
 
 
-This formula prevents common elements from being counted twice.
+This formula prevents common elements from being counted twice. It is stated here for finite sets; infinite cardinal arithmetic requires additional care.
+
+For arbitrary sets, $A$ and $B$ have the same cardinality when there is a bijection from $A$ to $B$. A set is **countably infinite** if it can be put in bijection with $\mathbb{N}$. The sets $\mathbb{Z}$ and $\mathbb{Q}$ are countably infinite, whereas $\mathbb{R}$ is uncountable. Proofs of these facts belong to a more advanced treatment of set theory.
 
 ## 8. Theorems and Proofs
 
@@ -417,7 +419,7 @@ Adding $|A|$ and $|B|$ counts every element in the intersection twice. Subtracti
 
 ## 9. Python Implementation
 
-Python provides a built-in `set` type for representing finite sets.
+Python provides a built-in `set` type for representing finite sets. Mathematical sets are unordered, so the display order of a Python set is not guaranteed; sort elements when a stable presentation is required and the elements are mutually orderable.
 
 ### 9.1 Creating Sets
 
@@ -473,11 +475,16 @@ from itertools import combinations
 
 def power_set(items):
     """
-    Return all subsets of a finite collection.
+    Return all subsets of a finite collection of hashable, distinct elements.
 
-    The result is represented as a list of tuples.
+    The result is represented as a list of tuples in the supplied input order.
     """
+    # Preserve the order supplied by the caller. A set has no guaranteed
+    # iteration order, so pass a list for reproducible displayed output.
     items = list(items)
+    if len(set(items)) != len(items):
+        raise ValueError("items must not contain duplicates")
+
     result = []
 
     for r in range(len(items) + 1):
@@ -487,12 +494,13 @@ def power_set(items):
     return result
 
 
-A = {1, 2, 3}
+A = [1, 2, 3]
+subsets = power_set(A)
 
-for subset in power_set(A):
+for subset in subsets:
     print(subset)
 
-print("Number of subsets:", len(power_set(A)))
+print("Number of subsets:", len(subsets))
 ```
 
 ### 9.5 Verifying De Morgan's Laws

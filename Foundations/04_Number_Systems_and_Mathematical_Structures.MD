@@ -23,15 +23,15 @@ Natural numbers are used for counting and ordering.
 
 ### 2.1 Peano Axioms
 
-The natural numbers can be characterized axiomatically using the Peano axioms (اصل‌های پئانو).
+The natural numbers can be characterized axiomatically using the Peano axioms (اصل‌های پئانو). In the formulation used here, the primitive objects are zero and a successor operation $S$. The axioms state:
 
-A common formulation includes:
+1. $0\in\mathbb{N}$.
+2. If $n\in\mathbb{N}$, then $S(n)\in\mathbb{N}$.
+3. $S(n)\neq0$ for every $n\in\mathbb{N}$.
+4. If $S(m)=S(n)$, then $m=n$.
+5. **Induction axiom:** if a subset of $\mathbb{N}$ contains $0$ and contains $S(n)$ whenever it contains $n$, then that subset is all of $\mathbb{N}$.
 
-1. Zero is a natural number.
-2. Every natural number has a successor.
-3. Zero is not the successor of any natural number.
-4. Different natural numbers have different successors.
-5. Mathematical induction holds.
+The fifth axiom is a set-based statement (or, in first-order presentations, an induction axiom schema); it is not simply another arithmetic operation.
 
 The successor of $n$ is denoted by:
 
@@ -49,51 +49,9 @@ $$
 
 ### 2.2 Mathematical Induction
 
-The principle of mathematical induction (استقرای ریاضی) establishes statements about all natural numbers.
+The principle of mathematical induction follows from the induction axiom. To prove $P(n)$ for every $n\in\mathbb{N}$, prove the base case $P(0)$ and show that $P(k)\Rightarrow P(k+1)$ for an arbitrary $k\in\mathbb{N}$. If the statement begins at an integer $n_0>0$, use $P(n_0)$ as the base case instead.
 
-To prove a proposition $P(n)$:
-
-1. **Base case:** Prove $P(0)$.
-2. **Inductive hypothesis:** Assume $P(k)$ holds.
-3. **Inductive step:** Prove $P(k+1)$.
-
-Then $P(n)$ holds for every natural number $n$.
-
-Example: Prove that:
-
-$$
-0+1+\cdots+n=\frac{n(n+1)}{2}
-$$
-
-
-**Base case:**
-
-For $n=0$:
-
-$$
-0=\frac{0(0+1)}{2}=0
-$$
-
-
-**Inductive hypothesis:**
-
-Assume:
-
-$$
-0+1+\cdots+k=\frac{k(k+1)}{2}
-$$
-
-
-**Inductive step:**
-
-$$
-\begin{aligned} 0+1+\cdots+k+(k+1) &=\frac{k(k+1)}{2}+k+1\\ &=\frac{(k+1)(k+2)}{2} \end{aligned}
-$$
-
-
-This is the required formula for $k+1$.
-
-Therefore, the identity holds for all natural numbers.
+The detailed proof method and additional examples are presented in [Chapter 05 — Mathematical Proof Techniques](05_Mathematical_Proof_Techniques.MD). Recursive definitions and correctness proofs are developed in [Chapter 06 — Mathematical Induction and Recursion](06_Mathematical_Induction_and_Recursion.MD).
 
 ## 3. Integers
 
@@ -277,27 +235,21 @@ The real numbers form a complete ordered field (میدان مرتب کامل).
 
 ### 5.3 Completeness
 
-Completeness (کامل‌بودن) is a fundamental property of the real numbers.
+Completeness (کامل‌بودن) is a fundamental property of the real numbers. One important formulation is the **least upper bound property**: every nonempty subset of $\mathbb{R}$ that is bounded above has a least upper bound (supremum) in $\mathbb{R}$.
 
-One important formulation is the least upper bound property:
-
-Every nonempty subset of $\mathbb{R}$ that is bounded above has a least upper bound in $\mathbb{R}$.
-
-For example, consider:
+Consider
 
 $$
-S=\lbrace x\in\mathbb{R}\mid x^2<2,\ x\geq0\rbrace
+S=\{x\in\mathbb{R}:x\geq0\text{ and }x^2<2\}.
 $$
 
-
-Its least upper bound is:
+Then $S=[0,\sqrt2)$ and
 
 $$
-\sup S=\sqrt2
+\sup_{\mathbb{R}} S=\sqrt2.
 $$
 
-
-This property distinguishes the real numbers from the rational numbers.
+The supremum is not an element of $S$, because the defining inequality is strict. If we restrict the same set to rational elements, $S\cap\mathbb{Q}$ has no supremum in $\mathbb{Q}$: any rational number smaller than $\sqrt2$ fails to be an upper bound, while any rational upper bound greater than $\sqrt2$ is not the least one. This illustrates the gap in $\mathbb{Q}$ that completeness fills in $\mathbb{R}$.
 
 ## 6. Complex Numbers
 
@@ -391,9 +343,7 @@ $$
 
 ### 6.3 Complex Numbers and Polynomial Equations
 
-The complex numbers allow every nonconstant polynomial with complex coefficients to have a complete set of roots, counted with multiplicity.
-
-This is the fundamental theorem of algebra (قضیهٔ بنیادی جبر).
+The **fundamental theorem of algebra** (قضیهٔ بنیادی جبر) states that every nonconstant polynomial with coefficients in $\mathbb{C}$ factors completely into linear factors over $\mathbb{C}$. Equivalently, a degree-$n$ polynomial has exactly $n$ complex roots when multiplicities are counted.
 
 For example:
 
@@ -500,19 +450,18 @@ The integers under addition form an Abelian group.
 
 ### 7.6 Rings
 
-A ring (حلقه) is an algebraic structure with two operations, usually called addition and multiplication.
-
-Under the common convention used here:
+A **ring** (حلقه) in Math-Atlas means a ring with multiplicative identity (a unital ring). It has two operations, addition and multiplication, satisfying:
 
 - Addition forms an Abelian group.
 - Multiplication is associative.
-- Multiplication distributes over addition.
+- Both distributive laws hold: $a(b+c)=ab+ac$ and $(a+b)c=ac+bc$.
+- There is a multiplicative identity $1$ such that $1a=a1=a$.
 
-The integers form a commutative ring with identity.
+Multiplication need not be commutative. Some texts allow rings without a multiplicative identity; whenever that convention is relevant, we will say **non-unital ring** explicitly. The integers form a commutative ring with identity.
 
 ### 7.7 Fields
 
-A field (میدان) is a commutative ring with identity in which every nonzero element has a multiplicative inverse.
+A **field** (میدان) is a **nontrivial** commutative ring with identity, so $0\ne1$, in which every nonzero element has a multiplicative inverse. The condition $0\ne1$ excludes the zero ring.
 
 Examples:
 
@@ -525,45 +474,12 @@ The integers are not a field because, for example, 2 has no multiplicative inver
 
 ## 8. Ordered Fields
 
-An ordered field (میدان مرتب) is a field equipped with an order relation compatible with addition and multiplication.
+An **ordered field** (میدان مرتب) is a field equipped with an order $\leq$ that is reflexive, antisymmetric, transitive, and total, and that is compatible with the field operations. Compatibility means:
 
-For real numbers:
+1. **Translation invariance:** if $a\leq b$, then $a+c\leq b+c$ for every $c$.
+2. **Nonnegative products:** if $0\leq a$ and $0\leq b$, then $0\leq ab$.
 
-If:
-
-$$
-a<b
-$$
-
-
-then:
-
-$$
-a+c<b+c
-$$
-
-
-for every real $c$.
-
-If:
-
-$$
-0<a,\quad 0<b
-$$
-
-
-then:
-
-$$
-0<ab
-$$
-
-
-The real numbers form an ordered field.
-
-The complex numbers cannot be given an order compatible with all the usual field operations.
-
-This is one important distinction between $\mathbb{R}$ and $\mathbb{C}$.
+The usual order makes $\mathbb{R}$ an ordered field. The complex numbers cannot be made into an ordered field compatible with their usual operations. In any ordered field every square is nonnegative, but in $\mathbb{C}$ the square of $i$ is $-1$; an ordered field also has $1>0$, hence $-1<0$. This contradiction rules out an ordered-field order on $\mathbb{C}$.
 
 ## 9. Important Theorems
 
@@ -677,8 +593,6 @@ $$
 ### 10.1 Checking Number Membership
 
 ```python
-import numbers
-
 def classify_number(x):
     """
     Classify common Python numeric values.
@@ -726,18 +640,22 @@ print("Modulus:", abs(z1))
 
 ```python
 def check_group(elements, operation):
-    """
-    Check the group axioms for a finite set.
+    """Check group axioms for a finite collection of hashable elements.
 
-    operation(a, b) must return the result
-    of the binary operation.
+    This is an exhaustive finite check, not a proof for an infinite set.
     """
-    elements = list(elements)
+    elements = tuple(elements)
+    element_set = set(elements)
+
+    if not elements:
+        return False, "The underlying set must be nonempty"
+    if len(element_set) != len(elements):
+        return False, "The input contains duplicate elements"
 
     # Closure
     for a in elements:
         for b in elements:
-            if operation(a, b) not in elements:
+            if operation(a, b) not in element_set:
                 return False, "Closure failed"
 
     # Associativity
