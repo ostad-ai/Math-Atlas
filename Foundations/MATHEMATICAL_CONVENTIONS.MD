@@ -33,7 +33,7 @@ This document is the single reference for conventions used across the Foundation
 
 - Use $=$ for exact equality and $\approx$ for numerical approximation.
 - Use $\equiv$ only with context: logical equivalence or congruence modulo a stated integer.
-- Use $:= $ or words such as “define” for definitions.
+- Use $:=$ or words such as “define” for definitions.
 - In displayed formulas intended for GitHub rendering, use constructions such as `\mathop{\text{Dom}}(R)` for named operators rather than `\operatorname{...}` when the latter causes renderer incompatibility.
 
 ## Computation

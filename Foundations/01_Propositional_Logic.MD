@@ -733,4 +733,4 @@ $$
 
 **Chapter status:** Initial educational draft.
 
-**Next chapter:** Predicate Logic and Quantifiers (منطق محمول‌ها و سورها).
+**Next chapter:** Set Theory (نظریهٔ مجموعه‌ها), Chapter 02.

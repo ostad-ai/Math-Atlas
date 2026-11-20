@@ -144,7 +144,7 @@ $$
 | $\geq$ | Greater than or equal to |
 | $\approx$ | Approximately equal to |
 | $\equiv$ | Context-dependent: logical equivalence or modular congruence; define the intended meaning |
-| $:= $ | Is defined to be (definition) |
+| $:=$ | Is defined to be (definition) |
 
 The meaning of $\equiv$ must be established by context. Math-Atlas uses $\subseteq$ for a subset that may equal the containing set and $\subsetneq$ for a proper subset; we avoid the potentially ambiguous symbol $\subset$.
 
@@ -292,7 +292,7 @@ $$
 | $a^n$ | Exponentiation |
 | $\sqrt{x}$ | Square root |
 | $\sqrt[n]{x}$ | $n$-th root |
-| $|x|$ | Absolute value |
+| $\lvert x\rvert$ | Absolute value |
 | $a\bmod b$ | Remainder modulo $b$ |
 | $\sum$ | Summation |
 | $\prod$ | Product |
@@ -598,7 +598,7 @@ Python does not use mathematical notation exactly as written in textbooks. Mathe
 | $a/b$ | `a / b` |
 | $a^b$ | `a ** b` |
 | $\sqrt{x}$ | `math.sqrt(x)` |
-| $|x|$ | `abs(x)` |
+| $\lvert x\rvert$ | `abs(x)` |
 | $a\bmod b$ | `a % b` |
 | $a=b$ | `a == b` |
 | $a\neq b$ | `a != b` |

@@ -100,6 +100,10 @@ No advanced mathematical background is required.
 
 Basic arithmetic and familiarity with elementary algebra are helpful but not mandatory for beginning this section.
 
+## Quality Assurance
+
+The current rendering and notation scan is documented in [Dollar and Table Rendering Audit v3.1.2](DOLLAR_AND_TABLE_RENDERING_AUDIT_v3_1_2.MD). The automated checks are summarized in [QA Summary v3.1.2](QA_SUMMARY_v3_1_2.txt), and can be rerun with `python qa_validate.py` from this folder.
+
 ## Role in Math-Atlas
 
 Foundations provides the conceptual and methodological basis for the remaining domains of Math-Atlas, including:
