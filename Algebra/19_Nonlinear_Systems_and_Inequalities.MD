@@ -334,10 +334,16 @@ $$
 (x+1)(x-3)<0,
 $$
 
-which holds when $-1<x<3$. Thus the region can be written exactly as
+which holds when
 
 $$
-\boxed{-1<x<3,\qquad x^2\leq y<2x+3.}
+-1 < x < 3.
+$$
+
+Thus, the region can be written exactly as
+
+$$
+\boxed{-1 < x < 3,\qquad x^2 \leq y < 2x+3}
 $$
 
 The parabola boundary is included wherever it lies in the region; the line boundary is excluded. The endpoints $x=-1$ and $x=3$ are not included because the two boundaries meet there and the upper inequality is strict.

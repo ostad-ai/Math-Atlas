@@ -1,6 +1,6 @@
 # Algebra
 
-**Math-Atlas — Algebra (working release v0.21.0)**
+**Math-Atlas — Algebra (working release v0.21.1)**
 
 Algebra studies how quantities and relationships can be represented, transformed, and solved symbolically. This volume develops elementary and intermediate algebra from expressions and equations to polynomial, rational, exponential, logarithmic, sequential, and summation models.
 
@@ -106,14 +106,14 @@ Procedures must be accompanied by explanations of why they preserve equality or 
 
 Python examples should prioritize clarity and correctness over cleverness. Standard-library code is preferred for basic arithmetic. SymPy, NumPy, or plotting libraries may be introduced only when they materially improve the lesson. Never use Python's `eval` to evaluate learner-provided algebraic input.
 
-## Current release contents (v0.21.0)
+## Current release contents (v0.21.1)
 
 - `readme.MD` — scope, learning objectives, curriculum map, and quality principles.
 - `ALGEBRA_CONVENTIONS.MD` — notation, polynomial conventions, and rational-expression domain rules.
 - `01_Algebraic_Language_and_Expressions.MD` through `20_Algebraic_Modeling_and_Optimization.MD` — twenty drafted chapters.
 - `RELEASE_NOTES_v0_21_0.md` — Markdown-only packaging change and Python example validation summary.
 
-**Release status:** v0.21.0 contains the curriculum map and twenty drafted chapters. This is a complete first draft of the planned Algebra volume, not a claim of final publication readiness; a separate editorial, mathematical, accessibility, and live-GitHub rendering review is still recommended.
+**Release status:** v0.21.1 contains the curriculum map and twenty drafted chapters. This is a complete first draft of the planned Algebra volume, not a claim of final publication readiness; a separate editorial, mathematical, accessibility, and live-GitHub rendering review is still recommended.
 
 
 ## Running the Python examples
