@@ -213,101 +213,101 @@ A common error is to change only the first term. The sign applies to the entire 
 
 ## 4. Order properties of the real numbers
 
-The order relation $ \mathrel{<} $ compares real numbers. The rules below are consequences of the ordered-field structure established in Foundations, Chapter 04. The same properties apply to the corresponding non-strict and reverse inequalities.
+The order relation $ < $ compares real numbers. The rules below are consequences of the ordered-field structure established in Foundations, Chapter 04. The same properties apply to the corresponding non-strict and reverse inequalities.
 
 ### 4.1 Adding the same number preserves order
 
-If $a \mathrel{<} b$, then for every real number $c$,
+If $a < b$, then for every real number $c$,
 
 $$
-a+c \mathrel{<} b+c.
+a+c < b+c.
 $$
 
 Adding the same signed amount translates both points on the number line equally and does not change which one is greater. More precisely, the transformation is reversible:
 
 $$
-a \mathrel{<} b\quad\Longleftrightarrow\quad a+c \mathrel{<} b+c.
+a < b\quad\Longleftrightarrow\quad a+c < b+c.
 $$
 
-For example, since $-2 \mathrel{<} 5$, adding $7$ to both sides gives
+For example, since $-2 < 5$, adding $7$ to both sides gives
 
 $$
--2+7 \mathrel{<} 5+7,
+-2+7 < 5+7,
 $$
 
 and therefore
 
 $$
-5 \mathrel{<} 12.
+5 < 12.
 $$
 
 ### 4.2 Multiplying by a positive number preserves order
 
-If $a \mathrel{<} b$ and $c \mathrel{>} 0$, then
+If $a < b$ and $c > 0$, then
 
 $$
-ac \mathrel{<} bc.
+ac < bc.
 $$
 
 For a fixed positive multiplier, the transformation is reversible:
 
 $$
-a \mathrel{<} b \quad\Longleftrightarrow\quad ac \mathrel{<} bc \qquad(c \mathrel{>} 0).
+a < b \quad\Longleftrightarrow\quad ac < bc \qquad(c > 0).
 $$
 
-A positive scaling preserves the direction of the order. For example, since $2 \mathrel{<} 6$, multiplying both sides by $3$ gives
+A positive scaling preserves the direction of the order. For example, since $2 < 6$, multiplying both sides by $3$ gives
 
 $$
-2\cdot3 \mathrel{<} 6\cdot3,
+2\cdot3 < 6\cdot3,
 $$
 
-so $6 \mathrel{<} 18$.
+so $6 < 18$.
 
 ### 4.3 Multiplying by a negative number reverses order
 
-If $a \mathrel{<} b$ and $c \mathrel{<} 0$, then
+If $a < b$ and $c < 0$, then
 
 $$
-ac \mathrel{>} bc.
+ac > bc.
 $$
 
 For a fixed negative multiplier, the transformation is reversible with the inequality direction reversed:
 
 $$
-a \mathrel{<} b \quad\Longleftrightarrow\quad ac \mathrel{>} bc \qquad(c \mathrel{<} 0).
+a < b \quad\Longleftrightarrow\quad ac > bc \qquad(c < 0).
 $$
 
-The direction reverses. To see why, write $c=-d$ where $d \mathrel{>} 0$. From $a \mathrel{<} b$, multiplication by $d$ gives $ad \mathrel{<} bd$. Taking additive inverses reverses the order, so $-ad \mathrel{>} -bd$. These are exactly $ac \mathrel{>} bc$.
+The direction reverses. To see why, write $c=-d$ where $d > 0$. From $a < b$, multiplication by $d$ gives $ad < bd$. Taking additive inverses reverses the order, so $-ad > -bd$. These are exactly $ac > bc$.
 
-For example, since $2 \mathrel{<} 6$, multiplying both sides by $-3$ gives
+For example, since $2 < 6$, multiplying both sides by $-3$ gives
 
 $$
-2(-3) \mathrel{>} 6(-3),
+2(-3) > 6(-3),
 $$
 
 and therefore
 
 $$
--6 \mathrel{>} -18.
+-6 > -18.
 $$
 
 This rule is essential when solving inequalities in Chapter 04. It is not valid to multiply an inequality by a negative number while leaving its direction unchanged.
 ### 4.4 Reciprocal order for positive numbers
 
-If $0 \mathrel{<} a \mathrel{<} b$, then
+If $0 < a < b$, then
 
 $$
-\frac{1}{a} \mathrel{>} \frac{1}{b}.
+\frac{1}{a} > \frac{1}{b}.
 $$
 
-The reciprocal function reverses order on the positive real numbers. To see this, multiply $a \mathrel{<} b$ by the positive number $1/(ab)$; the result is $1/b \mathrel{<} 1/a$. This statement requires both numbers to be positive; it should not be applied without checking signs.
+The reciprocal function reverses order on the positive real numbers. To see this, multiply $a < b$ by the positive number $1/(ab)$; the result is $1/b < 1/a$. This statement requires both numbers to be positive; it should not be applied without checking signs.
 
 ### Common error
 
-From $2 \mathrel{<} 7$, a learner writes $-2 \mathrel{<} -7$. This is false. Multiplying by $-1$ reverses the inequality:
+From $2 < 7$, a learner writes $-2 < -7$. This is false. Multiplying by $-1$ reverses the inequality:
 
 $$
--2 \mathrel{>} -7.
+-2 > -7.
 $$
 
 ## 5. Fractions and rational arithmetic
@@ -606,7 +606,7 @@ For a real number $a$, its absolute value is defined by
 $$
 |a|=\begin{cases}
 a,&a\geq0,\\
--a,&a \mathrel{<} 0.
+-a,&a < 0.
 \end{cases}
 $$
 
@@ -691,7 +691,7 @@ When a problem asks for an exact answer, preserve fractions and radicals rather 
 | $(-a)^2=-a^2$ | The negative sign is part of the base on the left. | $(-a)^2=a^2$ and $-a^2=-(a^2)$ |
 | $\frac ab+\frac cd=\frac{a+c}{b+d}$ | Numerators and denominators cannot be added separately. | Use a common denominator. |
 | Cancel a term across addition, as in $\frac{x+3}{x}=3$ | Cancellation applies to common factors, not individual terms in a sum. | For $x\ne0$, write $\frac{x+3}{x}=1+\frac3x$. |
-| Multiply an inequality by a negative number without reversing its direction. | Negative scaling reverses order. | Reverse $ \mathrel{<} $ to $ \mathrel{>} $ (or vice versa). |
+| Multiply an inequality by a negative number without reversing its direction. | Negative scaling reverses order. | Reverse $ < $ to $ > $ (or vice versa). |
 | Replace $\frac{6x}{9x}$ by $\frac23$ and allow $x=0$. | The original expression is undefined at zero. | Retain the original restriction $x\ne0$. |
 | Read $24\div6\cdot2$ as $24\div(6\cdot2)$. | Multiplication and division have equal precedence. | Evaluate left to right unless parentheses state otherwise. |
 
@@ -854,10 +854,10 @@ The simplified formula does not make the original expression defined at $x=2$.
 
 ### Example 8 — Compare order after multiplication
 
-Given $-4 \mathrel{<} 1$, multiply both sides by $-2$. Because the multiplier is negative, reverse the inequality:
+Given $-4 < 1$, multiply both sides by $-2$. Because the multiplier is negative, reverse the inequality:
 
 $$
-8 \mathrel{>} -2.
+8 > -2.
 $$
 
 A quick numerical check confirms the direction. The rule itself follows from the ordered-field properties, not merely from this example.
@@ -885,7 +885,7 @@ This example previews the absolute-value equations developed in Chapter 04; a sy
 1. State the property used in each step: (a) $a+(-a)=0$; (b) $a(b+c)=ab+ac$; (c) $a+0=a$; (d) $a\cdot a^{-1}=1$ for $a\ne0$.
 2. Explain why division by zero is undefined in the real-number system.
 3. Derive $(-a)(-b)=ab$ using additive inverses and distributivity.
-4. If $a \mathrel{<} b$, state what happens to the inequality when both sides are (a) increased by 4, (b) multiplied by 3, and (c) multiplied by -3.
+4. If $a < b$, state what happens to the inequality when both sides are (a) increased by 4, (b) multiplied by 3, and (c) multiplied by -3.
 5. Explain why $\frac{x+4}{x}=4$ is not a valid simplification in general.
 
 ### B. Numerical skills
@@ -910,7 +910,7 @@ This example previews the absolute-value equations developed in Chapter 04; a sy
 ### D. Reasoning and applications
 
 19. A temperature is 6 degrees below zero and then rises by 11 degrees. Represent the calculation with signed numbers and find the final temperature.
-20. A student claims that multiplying both sides of $a \mathrel{<} b$ by $c$ always preserves the inequality direction. Give a counterexample and state the correct conditions.
+20. A student claims that multiplying both sides of $a < b$ by $c$ always preserves the inequality direction. Give a counterexample and state the correct conditions.
 21. A rectangular garden has length $x+4$ metres and width $x$ metres. Write and expand an expression for its area. State a reasonable restriction on $x$.
 22. Explain why exact rational arithmetic is preferable to floating-point arithmetic when verifying that two rational expressions have the same exact value.
 
@@ -935,8 +935,8 @@ This example previews the absolute-value equations developed in Chapter 04; a sy
 17. $\frac23$, with $x\ne0$ inherited from the original denominator.
 18. $-y^2$ means $-(y^2)$; $(-y)^2$ squares the entire negative of $y$ and equals $y^2$.
 19. $-6+11=5$ degrees above zero.
-20. For example, $2 \mathrel{<} 5$ but multiplying by $-2$ gives $-4 \mathrel{>} -10$. Positive multipliers preserve direction; negative multipliers reverse it; zero does not preserve a strict inequality.
-21. $A=x(x+4)=x^2+4x$, with $x \mathrel{>} 0$ for a rectangle with positive width.
+20. For example, $2 < 5$ but multiplying by $-2$ gives $-4 > -10$. Positive multipliers preserve direction; negative multipliers reverse it; zero does not preserve a strict inequality.
+21. $A=x(x+4)=x^2+4x$, with $x > 0$ for a rectangle with positive width.
 22. Exact rational arithmetic avoids rounding error and can decide equality of rational values exactly.
 
 ## 14. Chapter summary
