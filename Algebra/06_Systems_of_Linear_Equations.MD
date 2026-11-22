@@ -38,7 +38,7 @@ An ordered pair $(r,s)$ is a **solution of the system** if substituting $x=r$ an
 The **solution set** is therefore the intersection of the individual equation-solution sets. In set notation,
 
 $$
-S=\{(x,y)\in\mathbb{R}^2: a_1x+b_1y=c_1\text{ and }a_2x+b_2y=c_2\}.
+S=\left\lbrace (x,y)\in\mathbb{R}^2 : a_1x+b_1y=c_1\text{ and }a_2x+b_2y=c_2 \right\rbrace.
 $$
 
 The word *and* is essential: both equations must hold at once.
