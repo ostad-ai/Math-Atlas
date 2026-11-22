@@ -21,10 +21,10 @@ After studying this chapter, you should be able to:
 
 ## 2. Inequalities and solution sets
 
-Let $D\subseteq\mathbb{R}$ be the domain of $x$, and let $L(x)$ and $R(x)$ be real-valued expressions defined on $D$. The inequality $L(x)<R(x)$ has solution set
+Let $D\subseteq\mathbb{R}$ be the domain of $x$, and let $L(x)$ and $R(x)$ be real-valued expressions defined on $D$. The inequality $L(x) \lt R(x)$ has solution set
 
 $$
-S_D=\{\,x\in D\mid L(x)<R(x)\,\}.
+S_D=\{\,x\in D\mid L(x) \lt R(x)\,\}.
 $$
 
 The set-builder notation means that $S_D$ contains exactly those values of $x$ in the domain $D$ for which the inequality is true. The vertical bar means “such that.”
@@ -33,12 +33,12 @@ The symbols have the following meanings:
 
 | Symbol | Meaning | Endpoint included? |
 |---|---|---|
-| $<$ | strictly less than | No |
+| $ \lt $ | strictly less than | No |
 | $\leq$ | less than or equal to | Yes |
-| $>$ | strictly greater than | No |
+| $ \gt $ | strictly greater than | No |
 | $\geq$ | greater than or equal to | Yes |
 
-For example, over $\mathbb{R}$, the solution set of $x<3$ contains every real number to the left of 3, but not 3 itself. The solution set of $x\leq3$ also contains 3.
+For example, over $\mathbb{R}$, the solution set of $x \lt 3$ contains every real number to the left of 3, but not 3 itself. The solution set of $x\leq3$ also contains 3.
 
 An inequality is not an equation: its solution set may be an interval, a union of intervals, a single point, the empty set, or the entire domain. The form of the answer depends on the inequality and on the domain.
 
@@ -51,42 +51,42 @@ The key solving rules follow from the order properties of the real numbers. Let 
 Adding the same real number to both sides preserves the direction and the truth of an inequality:
 
 $$
-a<b\quad\Longleftrightarrow\quad a+c<b+c.
+a \lt b\quad\Longleftrightarrow\quad a+c \lt b+c.
 $$
 
-The reverse implication follows by adding $-c$ to both sides. The same rule holds for $\leq$, $>$, and $\geq$. Subtracting a quantity is simply adding its additive inverse.
+The reverse implication follows by adding $-c$ to both sides. The same rule holds for $\leq$, $ \gt $, and $\geq$. Subtracting a quantity is simply adding its additive inverse.
 
 ### 3.2 Multiplying or dividing by a positive number
 
-If $c>0$, multiplication preserves the direction:
+If $c \gt 0$, multiplication preserves the direction:
 
 $$
-a<b\quad\Longleftrightarrow\quad ac<bc\qquad(c>0).
+a \lt b\quad\Longleftrightarrow\quad ac \lt bc\qquad(c \gt 0).
 $$
 
 Division by a positive number also preserves the direction:
 
 $$
-a<b\quad\Longleftrightarrow\quad \frac{a}{c}<\frac{b}{c}\qquad(c>0).
+a \lt b\quad\Longleftrightarrow\quad \frac{a}{c} \lt \frac{b}{c}\qquad(c \gt 0).
 $$
 
-This is because division by $c$ is multiplication by its positive reciprocal $1/c$. The same rules hold for $\leq$, $>$, and $\geq$.
+This is because division by $c$ is multiplication by its positive reciprocal $1/c$. The same rules hold for $\leq$, $ \gt $, and $\geq$.
 
 ### 3.3 Multiplying or dividing by a negative number
 
-If $c<0$, multiplication reverses the direction:
+If $c \lt 0$, multiplication reverses the direction:
 
 $$
-a<b\quad\Longleftrightarrow\quad ac>bc\qquad(c<0).
+a \lt b\quad\Longleftrightarrow\quad ac \gt bc\qquad(c \lt 0).
 $$
 
 Division by a negative number also reverses the direction:
 
 $$
-a<b\quad\Longleftrightarrow\quad \frac{a}{c}>\frac{b}{c}\qquad(c<0).
+a \lt b\quad\Longleftrightarrow\quad \frac{a}{c} \gt \frac{b}{c}\qquad(c \lt 0).
 $$
 
-**Why does the direction reverse?** Since $c<0$, the number $-c$ is positive. Thus $a<b$ implies $(-c)a<(-c)b$. Multiplying both sides of this last inequality by $-1$ reverses the order, giving $ca>cb$. The reverse implication follows by multiplying by the negative reciprocal $1/c$.
+**Why does the direction reverse?** Since $c \lt 0$, the number $-c$ is positive. Thus $a \lt b$ implies $(-c)a \lt (-c)b$. Multiplying both sides of this last inequality by $-1$ reverses the order, giving $ca \gt cb$. The reverse implication follows by multiplying by the negative reciprocal $1/c$.
 
 For example, dividing both sides of
 
@@ -106,15 +106,15 @@ not $x\leq-3$. The same direction-reversal rule holds for $\leq$ and $\geq$.
 
 Multiplication by zero is not an equivalence-preserving operation. For a strict inequality it may turn a true statement into a false one; for a non-strict inequality it may erase all information. It must not be used as a solving step.
 
-Do not multiply or divide an inequality by an expression whose sign is unknown without first analyzing that sign. For instance, the direction of an inequality cannot be chosen safely when multiplying both sides by $x$ unless the sign of $x$ is known. Split into the cases $x>0$, $x=0$, and $x<0$, or use another method that avoids the sign-unknown operation.
+Do not multiply or divide an inequality by an expression whose sign is unknown without first analyzing that sign. For instance, the direction of an inequality cannot be chosen safely when multiplying both sides by $x$ unless the sign of $x$ is known. Split into the cases $x \gt 0$, $x=0$, and $x \lt 0$, or use another method that avoids the sign-unknown operation.
 
 ### 3.5 A quick rule table
 
 | Operation on both sides | Condition | Direction |
 |---|---|---|
 | Add or subtract $c$ | Any real $c$ | Unchanged |
-| Multiply or divide by $c$ | $c>0$ | Unchanged |
-| Multiply or divide by $c$ | $c<0$ | Reversed |
+| Multiply or divide by $c$ | $c \gt 0$ | Unchanged |
+| Multiply or divide by $c$ | $c \lt 0$ | Reversed |
 | Multiply or divide by $c$ | $c=0$ | Not an equivalent transformation |
 | Multiply or divide by $g(x)$ | Sign not established | Analyze cases first |
 
@@ -123,31 +123,31 @@ Do not multiply or divide an inequality by an expression whose sign is unknown w
 A linear inequality can be rearranged to a form such as
 
 $$
-ax+b<c,
+ax+b \lt c,
 $$
 
 where $a,b,c$ are fixed real numbers and $x\in\mathbb{R}$. The value of $a$ determines the method:
 
-- If $a>0$, then $x<(c-b)/a$.
-- If $a<0$, then $x>(c-b)/a$, because division by $a$ reverses the inequality.
-- If $a=0$, the inequality becomes the numerical statement $b<c$. It is true for every real $x$ when $b<c$, and false for every real $x$ when $b\geq c$.
+- If $a \gt 0$, then $x \lt (c-b)/a$.
+- If $a \lt 0$, then $x \gt (c-b)/a$, because division by $a$ reverses the inequality.
+- If $a=0$, the inequality becomes the numerical statement $b \lt c$. It is true for every real $x$ when $b \lt c$, and false for every real $x$ when $b\geq c$.
 
 For a non-strict inequality $ax+b\leq c$, the same cases apply, with the final comparison $b\leq c$ in the $a=0$ case. This zero-coefficient check is analogous to the classification used for equations in Chapter 03.
 
 ### Example 1 — A positive coefficient
 
-Solve $3x-7<11$.
+Solve $3x-7 \lt 11$.
 
 Add 7 to both sides:
 
 $$
-3x<18.
+3x \lt 18.
 $$
 
 Divide by 3, which is positive:
 
 $$
-x<6.
+x \lt 6.
 $$
 
 The solution set is $(-\infty,6)$.
@@ -194,21 +194,21 @@ The solution set is $[5,\infty)$.
 
 ### Example 4 — Rational coefficients
 
-Solve $\frac{x-1}{2}<\frac{2x+3}{3}$.
+Solve $\frac{x-1}{2} \lt \frac{2x+3}{3}$.
 
 The denominators 2 and 3 are positive constants. Multiplying both sides by 6 preserves the direction:
 
 $$
-3(x-1)<2(2x+3).
+3(x-1) \lt 2(2x+3).
 $$
 
 Expand and simplify:
 
 $$
-3x-3<4x+6,
+3x-3 \lt 4x+6,
 $$
 
-so $-9<x$. The solution set is $(-9,\infty)$.
+so $-9 \lt x$. The solution set is $(-9,\infty)$.
 
 ### Example 5 — A zero coefficient
 
@@ -216,7 +216,7 @@ Solve $0x+4\leq7$ over $\mathbb{R}$.
 
 The statement reduces to $4\leq7$, which is true. Every real number is a solution, so the solution set is $\mathbb{R}$.
 
-By contrast, $0x+4<2$ reduces to the false statement $4<2$ and has no solution. Do not attempt to divide by the zero coefficient.
+By contrast, $0x+4 \lt 2$ reduces to the false statement $4 \lt 2$ and has no solution. Do not attempt to divide by the zero coefficient.
 
 ## 5. Interval notation and number-line representations
 
@@ -224,13 +224,13 @@ An interval is a subset of $\mathbb{R}$ containing every real number between any
 
 | Inequality | Interval notation |
 |---|---|
-| $a<x<b$ | $(a,b)$ |
+| $a \lt x \lt b$ | $(a,b)$ |
 | $a\leq x\leq b$ | $[a,b]$ |
-| $a\leq x<b$ | $[a,b)$ |
-| $a<x\leq b$ | $(a,b]$ |
-| $x>a$ | $(a,\infty)$ |
+| $a\leq x \lt b$ | $[a,b)$ |
+| $a \lt x\leq b$ | $(a,b]$ |
+| $x \gt a$ | $(a,\infty)$ |
 | $x\geq a$ | $[a,\infty)$ |
-| $x<b$ | $(-\infty,b)$ |
+| $x \lt b$ | $(-\infty,b)$ |
 | $x\leq b$ | $(-\infty,b]$ |
 
 Infinity is never an included endpoint, so an interval always uses a parenthesis next to $\infty$ or $-\infty$. For finite endpoints, the bracket type records whether the endpoint satisfies the inequality.
@@ -257,7 +257,7 @@ x >= -1:     <----------------●================>
 The interval $(-2,5]$ means that the variable is greater than $-2$ and at most 5:
 
 $$
--2<x\leq5.
+-2 \lt x\leq5.
 $$
 
 The endpoint $-2$ is excluded and 5 is included.
@@ -274,54 +274,54 @@ A compound inequality combines two comparisons. The words **and** and **or** hav
 A statement such as
 
 $$
-a\leq bx+c<d
+a\leq bx+c \lt d
 $$
 
-means both $a\leq bx+c$ and $bx+c<d$ must be true. The same operation may be applied to all three parts, but multiplication or division by a negative number reverses both comparison signs.
+means both $a\leq bx+c$ and $bx+c \lt d$ must be true. The same operation may be applied to all three parts, but multiplication or division by a negative number reverses both comparison signs.
 
 ### Example 7 — Solve a chained inequality
 
-Solve $-2\leq3x+1<10$.
+Solve $-2\leq3x+1 \lt 10$.
 
 Subtract 1 from all three parts:
 
 $$
--3\leq3x<9.
+-3\leq3x \lt 9.
 $$
 
 Divide all three parts by the positive number 3:
 
 $$
--1\leq x<3.
+-1\leq x \lt 3.
 $$
 
 The solution set is $[-1,3)$.
 
 ### Example 8 — Chained inequality with a negative coefficient
 
-Solve $-2<3-2x\leq9$.
+Solve $-2 \lt 3-2x\leq9$.
 
 Subtract 3 from all three parts:
 
 $$
--5<-2x\leq6.
+-5 \lt -2x\leq6.
 $$
 
 Divide by $-2$. Both inequality signs reverse:
 
 $$
-\frac52>x\geq-3.
+\frac52 \gt x\geq-3.
 $$
 
-Written in increasing order, the solution is $-3\leq x<\frac52$, or $[-3,\frac52)$.
+Written in increasing order, the solution is $-3\leq x \lt \frac52$, or $[-3,\frac52)$.
 
 ### 6.2 Disjunctions (OR)
 
-A statement such as $x<a$ or $x>b$ describes two separated parts of the real line. Its solution set is the union $(-\infty,a)\cup(b,\infty)$.
+A statement such as $x \lt a$ or $x \gt b$ describes two separated parts of the real line. Its solution set is the union $(-\infty,a)\cup(b,\infty)$.
 
 ### Example 9 — Two rays
 
-Solve $x\leq-2$ or $x>3$.
+Solve $x\leq-2$ or $x \gt 3$.
 
 The two parts are already solved. The solution set is
 
@@ -338,7 +338,7 @@ For a real number $x$, its absolute value is
 $$
 \lvert x\rvert=\begin{cases}
 x,&x\geq0,\\
--x,&x<0.
+-x,&x \lt 0.
 \end{cases}
 $$
 
@@ -394,9 +394,9 @@ It follows by applying the triangle inequality to $x=(x-y)+y$ and then interchan
 
 For a real expression $u$ and a real constant $c$, the equation $\lvert u\rvert=c$ has three cases:
 
-- If $c<0$, there is no solution because absolute value cannot be negative.
+- If $c \lt 0$, there is no solution because absolute value cannot be negative.
 - If $c=0$, the equation is equivalent to $u=0$.
-- If $c>0$, the equation is equivalent to $u=c$ **or** $u=-c$.
+- If $c \gt 0$, the equation is equivalent to $u=c$ **or** $u=-c$.
 
 The two branches in the positive case are joined by **or**, because a number can be at distance $c$ from zero on either side.
 
@@ -428,24 +428,24 @@ so the unique solution is $x=2$.
 
 ## 9. Absolute-value inequalities
 
-Let $u$ be a real expression and let $c>0$. The distance interpretation gives four basic equivalences:
+Let $u$ be a real expression and let $c \gt 0$. The distance interpretation gives four basic equivalences:
 
 | Absolute-value inequality | Equivalent statement |
 |---|---|
-| $\lvert u\rvert<c$ | $-c<u<c$ |
+| $\lvert u\rvert \lt c$ | $-c \lt u \lt c$ |
 | $\lvert u\rvert\leq c$ | $-c\leq u\leq c$ |
-| $\lvert u\rvert>c$ | $u<-c$ or $u>c$ |
+| $\lvert u\rvert \gt c$ | $u \lt -c$ or $u \gt c$ |
 | $\lvert u\rvert\geq c$ | $u\leq-c$ or $u\geq c$ |
 
 The distinction is essential: “less than” describes the inside of a distance band and uses **and**; “greater than” describes the outside and uses **or**.
 
 ### 9.1 Edge cases when the threshold is not positive
 
-The table above assumes $c>0$. The remaining cases must be handled explicitly:
+The table above assumes $c \gt 0$. The remaining cases must be handled explicitly:
 
-| Condition | $\lvert u\rvert<c$ | $\lvert u\rvert\leq c$ | $\lvert u\rvert>c$ | $\lvert u\rvert\geq c$ |
+| Condition | $\lvert u\rvert \lt c$ | $\lvert u\rvert\leq c$ | $\lvert u\rvert \gt c$ | $\lvert u\rvert\geq c$ |
 |---|---|---|---|---|
-| $c<0$ | No solutions | No solutions | All real inputs | All real inputs |
+| $c \lt 0$ | No solutions | No solutions | All real inputs | All real inputs |
 | $c=0$ | No solutions | $u=0$ | $u\ne0$ | All real inputs |
 
 These statements follow from $\lvert u\rvert\geq0$.
@@ -474,15 +474,15 @@ The solution set is $[-\frac53,3]$.
 
 ### Example 14 — An absolute value bounded below
 
-Solve $\lvert 2x+1\rvert>5$.
+Solve $\lvert 2x+1\rvert \gt 5$.
 
 Because 5 is positive, split into two branches:
 
 $$
-2x+1<-5\quad\text{or}\quad2x+1>5.
+2x+1 \lt -5\quad\text{or}\quad2x+1 \gt 5.
 $$
 
-The first gives $x<-3$; the second gives $x>2$. The solution set is
+The first gives $x \lt -3$; the second gives $x \gt 2$. The solution set is
 
 $$
 (-\infty,-3)\cup(2,\infty).
@@ -490,7 +490,7 @@ $$
 
 ### Example 15 — A negative threshold
 
-Solve $\lvert x-4\rvert<-1$. This is impossible because an absolute value is nonnegative. The solution set is $\varnothing$.
+Solve $\lvert x-4\rvert \lt -1$. This is impossible because an absolute value is nonnegative. The solution set is $\varnothing$.
 
 ## 10. Absolute value as a tolerance or distance condition
 
@@ -569,11 +569,11 @@ This program checks membership in an interval that has already been found. It do
 |---|---|---|
 | Divide by a negative number without reversing the sign. | Multiplication by a negative reverses real order. | Reverse the inequality when multiplying or dividing by a negative value. |
 | Multiply by a variable expression without checking its sign. | The factor may be positive, zero, or negative. | Establish its sign or split into cases. |
-| Use a square bracket for an excluded endpoint. | The interval then includes a value that does not satisfy the strict inequality. | Match brackets to $<$, $\leq$, $>$, or $\geq$. |
+| Use a square bracket for an excluded endpoint. | The interval then includes a value that does not satisfy the strict inequality. | Match brackets to $ \lt $, $\leq$, $ \gt $, or $\geq$. |
 | Put a parenthesis next to infinity as if infinity were a number. | Infinity is not a real endpoint and is never included. | Always use parentheses at infinite endpoints. |
-| Translate $\lvert u\rvert<c$ into two separate outside rays. | “Less than” means the distance is inside the band. | Use $-c<u<c$ when $c>0$. |
-| Translate $\lvert u\rvert>c$ into a chained inequality. | “Greater than” means outside the band. | Use $u<-c$ or $u>c$ when $c>0$. |
-| Solve $\lvert u\rvert=c$ by dividing into two branches when $c<0$. | Absolute value cannot be negative. | Check the sign of $c$ first. |
+| Translate $\lvert u\rvert \lt c$ into two separate outside rays. | “Less than” means the distance is inside the band. | Use $-c \lt u \lt c$ when $c \gt 0$. |
+| Translate $\lvert u\rvert \gt c$ into a chained inequality. | “Greater than” means outside the band. | Use $u \lt -c$ or $u \gt c$ when $c \gt 0$. |
+| Solve $\lvert u\rvert=c$ by dividing into two branches when $c \lt 0$. | Absolute value cannot be negative. | Check the sign of $c$ first. |
 | Treat an integer-domain problem as a continuous interval answer. | The domain may contain only isolated values. | Intersect the real solution set with the stated domain. |
 
 ## 13. Exercises
@@ -582,19 +582,19 @@ Unless a domain is stated otherwise, solve over $\mathbb{R}$. Give interval nota
 
 ### A. Linear inequalities
 
-1. Solve $x+5<9$.
+1. Solve $x+5 \lt 9$.
 2. Solve $-3x\leq12$.
-3. Solve $2-5x>17$.
+3. Solve $2-5x \gt 17$.
 4. Solve $3(x-2)\geq x+4$.
-5. Solve $\frac{x-1}{2}<\frac{2x+3}{3}$.
+5. Solve $\frac{x-1}{2} \lt \frac{2x+3}{3}$.
 6. Solve $0x+4\leq7$ and explain why the coefficient-zero case is different from division by a nonzero coefficient.
 
 ### B. Compound inequalities and intervals
 
-7. Solve $-2\leq3x+1<10$.
-8. Solve $4<x+5\leq9$.
-9. Write $x\leq-2$ or $x>3$ in interval notation.
-10. Solve $-2<3-2x\leq9$.
+7. Solve $-2\leq3x+1 \lt 10$.
+8. Solve $4 \lt x+5\leq9$.
+9. Write $x\leq-2$ or $x \gt 3$ in interval notation.
+10. Solve $-2 \lt 3-2x\leq9$.
 
 ### C. Absolute-value equations and inequalities
 
@@ -602,14 +602,14 @@ Unless a domain is stated otherwise, solve over $\mathbb{R}$. Give interval nota
 12. Solve $\lvert x-4\rvert=3$.
 13. Solve $\lvert 2x+1\rvert=5$.
 14. Solve $\lvert x+2\rvert\leq4$.
-15. Solve $\lvert 3x-6\rvert<9$.
+15. Solve $\lvert 3x-6\rvert \lt 9$.
 16. Solve $\lvert x-1\rvert\geq2$.
-17. Solve $\lvert 2x+3\rvert>1$.
-18. Solve $\lvert x+2\rvert<-1$ and justify your answer without algebraic manipulation.
+17. Solve $\lvert 2x+3\rvert \gt 1$.
+18. Solve $\lvert x+2\rvert \lt -1$ and justify your answer without algebraic manipulation.
 
 ### D. Applications and challenge problems
 
-19. A temperature conversion is given by $F=\frac95C+32$. Find the Celsius interval corresponding to $50\leq F<68$.
+19. A temperature conversion is given by $F=\frac95C+32$. Find the Celsius interval corresponding to $50\leq F \lt 68$.
 20. A measured value $x$ must be within 0.5 units of 7. Express the condition as an absolute-value inequality and as an interval.
 21. **Challenge:** Solve $\lvert 2x-4\rvert\geq6$ and explain why the answer has two separated intervals.
 
@@ -645,7 +645,7 @@ Unless a domain is stated otherwise, solve over $\mathbb{R}$. Give interval nota
 - Interval brackets record endpoint inclusion; infinity is always written with a parenthesis.
 - “And” corresponds to intersection; “or” corresponds to union.
 - Absolute value measures distance from zero, and $\lvert x-a\rvert$ measures distance from $a$.
-- For $c>0$, $\lvert u\rvert<c$ describes the inside band, while $\lvert u\rvert>c$ describes the two outside rays.
+- For $c \gt 0$, $\lvert u\rvert \lt c$ describes the inside band, while $\lvert u\rvert \gt c$ describes the two outside rays.
 - Check zero and negative thresholds before applying the standard absolute-value templates.
 
 ## 16. References and connections
