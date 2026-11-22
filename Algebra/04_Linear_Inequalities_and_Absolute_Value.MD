@@ -24,7 +24,7 @@ After studying this chapter, you should be able to:
 Let $D\subseteq\mathbb{R}$ be the domain of $x$, and let $L(x)$ and $R(x)$ be real-valued expressions defined on $D$. The inequality $L(x)<R(x)$ has solution set
 
 $$
-S_D=\left\{x\in D\,\middle|\,L(x)<R(x)\right\}.
+S_D=\{\,x\in D\mid L(x)<R(x)\,\}.
 $$
 
 The set-builder notation means that $S_D$ contains exactly those values of $x$ in the domain $D$ for which the inequality is true. The vertical bar means “such that.”
