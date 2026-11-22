@@ -21,11 +21,13 @@ After studying this chapter, you should be able to:
 
 ## 2. Inequalities and solution sets
 
-Let $D\subseteq\mathbb{R}$ be the domain of $x$, and let $L(x)$ and $R(x)$ be expressions defined on $D$. The inequality $L(x)<R(x)$ has solution set
+Let $D\subseteq\mathbb{R}$ be the domain of $x$, and let $L(x)$ and $R(x)$ be real-valued expressions defined on $D$. The inequality $L(x)<R(x)$ has solution set
 
 $$
-S_D=\{x\in D:L(x)<R(x)\}.
+S_D=\left\{x\in D\,\middle|\,L(x)<R(x)\right\}.
 $$
+
+The set-builder notation means that $S_D$ contains exactly those values of $x$ in the domain $D$ for which the inequality is true. The vertical bar means “such that.”
 
 The symbols have the following meanings:
 
@@ -59,34 +61,46 @@ The reverse implication follows by adding $-c$ to both sides. The same rule hold
 If $c>0$, multiplication preserves the direction:
 
 $$
-a<b\quad\Longleftrightarrow\quad ac<bc.
+a<b\quad\Longleftrightarrow\quad ac<bc\qquad(c>0).
 $$
 
-Division by a positive number also preserves the direction, because it is multiplication by the positive reciprocal $1/c$.
+Division by a positive number also preserves the direction:
+
+$$
+a<b\quad\Longleftrightarrow\quad \frac{a}{c}<\frac{b}{c}\qquad(c>0).
+$$
+
+This is because division by $c$ is multiplication by its positive reciprocal $1/c$. The same rules hold for $\leq$, $>$, and $\geq$.
 
 ### 3.3 Multiplying or dividing by a negative number
 
 If $c<0$, multiplication reverses the direction:
 
 $$
-a<b\quad\Longleftrightarrow\quad ac>bc.
+a<b\quad\Longleftrightarrow\quad ac>bc\qquad(c<0).
+$$
+
+Division by a negative number also reverses the direction:
+
+$$
+a<b\quad\Longleftrightarrow\quad \frac{a}{c}>\frac{b}{c}\qquad(c<0).
 $$
 
 **Why does the direction reverse?** Since $c<0$, the number $-c$ is positive. Thus $a<b$ implies $(-c)a<(-c)b$. Multiplying both sides of this last inequality by $-1$ reverses the order, giving $ca>cb$. The reverse implication follows by multiplying by the negative reciprocal $1/c$.
 
-Division by a negative number also reverses the direction. For example,
+For example, dividing both sides of
 
 $$
 -4x\leq12
 $$
 
-becomes
+by $-4$ reverses the inequality and gives
 
 $$
 x\geq-3,
 $$
 
-not $x\leq-3$.
+not $x\leq-3$. The same direction-reversal rule holds for $\leq$ and $\geq$.
 
 ### 3.4 Multiplication by zero and by an expression of unknown sign
 

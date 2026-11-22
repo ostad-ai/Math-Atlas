@@ -213,19 +213,33 @@ A common error is to change only the first term. The sign applies to the entire 
 
 ## 4. Order properties of the real numbers
 
-The order relation $<$ compares real numbers. The rules below are consequences of the ordered-field structure established in Foundations, Chapter 04.
+The order relation $<$ compares real numbers. The rules below are consequences of the ordered-field structure established in Foundations, Chapter 04. The same properties apply to the corresponding non-strict and reverse inequalities.
 
 ### 4.1 Adding the same number preserves order
 
-If $a<b$, then for every real $c$,
+If $a<b$, then for every real number $c$,
 
 $$
 a+c<b+c.
 $$
 
-Adding the same amount shifts both points on the number line by the same distance and does not change which one is greater.
+Adding the same signed amount translates both points on the number line equally and does not change which one is greater. More precisely, the transformation is reversible:
 
-For example, since $-2<5$, adding $7$ gives $5<12$.
+$$
+a<b\quad\Longleftrightarrow\quad a+c<b+c.
+$$
+
+For example, since $-2<5$, adding $7$ to both sides gives
+
+$$
+-2+7<5+7,
+$$
+
+and therefore
+
+$$
+5<12.
+$$
 
 ### 4.2 Multiplying by a positive number preserves order
 
@@ -235,7 +249,19 @@ $$
 ac<bc.
 $$
 
-A positive scaling preserves the direction of the order. For example, $2<6$ and multiplying by $3$ gives $6<18$.
+For a fixed positive multiplier, the transformation is reversible:
+
+$$
+a<b\quad\Longleftrightarrow\quad ac<bc\qquad(c>0).
+$$
+
+A positive scaling preserves the direction of the order. For example, since $2<6$, multiplying both sides by $3$ gives
+
+$$
+2\cdot3<6\cdot3,
+$$
+
+so $6<18$.
 
 ### 4.3 Multiplying by a negative number reverses order
 
@@ -245,9 +271,21 @@ $$
 ac>bc.
 $$
 
+For a fixed negative multiplier, the transformation is reversible with the inequality direction reversed:
+
+$$
+a<b\quad\Longleftrightarrow\quad ac>bc\qquad(c<0).
+$$
+
 The direction reverses. To see why, write $c=-d$ where $d>0$. From $a<b$, multiplication by $d$ gives $ad<bd$. Taking additive inverses reverses the order, so $-ad>-bd$. These are exactly $ac>bc$.
 
-For example, $2<6$, but multiplying by $-3$ gives
+For example, since $2<6$, multiplying both sides by $-3$ gives
+
+$$
+2(-3)>6(-3),
+$$
+
+and therefore
 
 $$
 -6>-18.
@@ -922,5 +960,3 @@ This example previews the absolute-value equations developed in Chapter 04; a sy
 3. Math-Atlas, **Foundations**, Chapter 04 — Number Systems and Mathematical Structures.
 4. Math-Atlas, **Foundations**, `MATHEMATICAL_CONVENTIONS.MD`.
 5. Math-Atlas, **Algebra**, Chapter 01 — Algebraic Language and Expressions.
-
-**Next chapter:** Chapter 03 — Linear Equations and Literal Equations.
