@@ -302,36 +302,17 @@ Stopping at $2x(x^2-9)$ would leave a factor that can still be factored over the
 
 ## 8. Polynomial equations and the zero-product property
 
-The **zero-product property** states that for real numbers $u,v$,
-
-$$
-uv=0\iff u=0\text{ or }v=0.
-$$
+The **zero-product property** states that for real numbers $u,v$, $uv=0$ if and only if $u=0$ or $v=0$.
 
 For a finite product, the product equals zero if and only if at least one factor equals zero. The statement relies on the fact that the real numbers have no zero divisors. The same property holds over the rational and complex numbers.
 
 **Why the two-factor statement is true.** If $uv=0$ and $u=0$, the conclusion already holds. If $u\ne0$, then $u$ has a multiplicative inverse in a field, so multiplying $uv=0$ by $u^{-1}$ gives $v=0$. The converse is immediate: if either factor is zero, the product is zero. Applying this argument repeatedly proves the result for any finite product.
 
-Thus, if
-
-$$
-(x-2)(x+5)=0,
-$$
-then
-
-$$
-x-2=0\quad\text{or}\quad x+5=0,
-$$
-so the real solution set is $\{-5,2\}$.
+Thus, if $(x-2)(x+5)=0$, then $x-2=0$ or $x+5=0$, so the real solution set is $\{-5,2\}$.
 
 ### 8.1 The equation must be equal to zero
 
-The property does **not** allow us to set factors equal to zero when their product is nonzero. From
-
-$$
-(x-2)(x+5)=7,
-$$
-we cannot conclude $x-2=0$ or $x+5=0$. First move all terms to one side and obtain a product equal to zero, if possible.
+The property does **not** allow us to set factors equal to zero when their product is nonzero. From $(x-2)(x+5)=7$, we cannot conclude $x-2=0$ or $x+5=0$. First move all terms to one side and obtain a product equal to zero, if possible.
 
 ### 8.2 Solving by factoring
 
@@ -344,35 +325,17 @@ A reliable procedure is:
 5. Substitute each candidate into the original equation and check it.
 6. State the solution set in the domain specified by the problem.
 
-Example:
-
-$$
-\begin{aligned}
-2x^2-7x+3&=0\\
-(2x-1)(x-3)&=0\\
-2x-1=0&\quad\text{or}\quad x-3=0\\
-x=\frac12&\quad\text{or}\quad x=3.
-\end{aligned}
-$$
+**Example.** Start with $2x^2-7x+3=0$. Factoring gives $(2x-1)(x-3)=0$. By the zero-product property, $2x-1=0$ or $x-3=0$, so $x=\frac12$ or $x=3$.
 
 Both values satisfy the original equation, so the real solution set is $\left\{\frac12,3\right\}$.
 
 ### 8.3 Repeated factors and distinct solutions
 
-If
-
-$$
-(x-4)^2=0,
-$$
-then the only distinct solution is $x=4$. The factor appears twice, but it does not create two different values in the solution set. Chapter 14 will develop multiplicity as a property of polynomial zeros.
+If $(x-4)^2=0$, then the only distinct solution is $x=4$. The factor appears twice, but it does not create two different values in the solution set. Chapter 14 will develop multiplicity as a property of polynomial zeros.
 
 ### 8.4 When factoring does not produce real solutions
 
-Consider
-
-$$
-x^2+4=0.
-$$
+Consider $x^2+4=0$.
 
 Over the reals, $x^2=-4$ has no solution because every real square is nonnegative. Therefore the real solution set is empty. Over the complex numbers, the solutions are $x=2i$ and $x=-2i$; complex numbers are developed in Chapter 13.
 
