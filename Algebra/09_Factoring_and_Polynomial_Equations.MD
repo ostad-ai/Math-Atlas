@@ -304,9 +304,9 @@ Stopping at $2x(x^2-9)$ would leave a factor that can still be factored over the
 
 The **zero-product property** states that for real numbers $u,v$,
 
-\[
+$$
 uv=0\iff u=0\text{ or }v=0.
-\]
+$$
 
 For a finite product, the product equals zero if and only if at least one factor equals zero. The statement relies on the fact that the real numbers have no zero divisors. The same property holds over the rational and complex numbers.
 
@@ -314,24 +314,19 @@ For a finite product, the product equals zero if and only if at least one factor
 
 Thus, if
 
-\[
+$$
 (x-2)(x+5)=0,
-\]
+$$
 then
 
-\[
+$$
 x-2=0\quad\text{or}\quad x+5=0,
-\]
+$$
 so the real solution set is $\{-5,2\}$.
 
 ### 8.1 The equation must be equal to zero
 
-The property does **not** allow us to set factors equal to zero when their product is nonzero. From
-
-\[
-(x-2)(x+5)=7,
-\]
-we cannot conclude $x-2=0$ or $x+5=0$. First move all terms to one side and obtain a product equal to zero, if possible.
+The property does **not** allow us to set factors equal to zero when their product is nonzero. From $(x-2)(x+5)=7$, we cannot conclude $x-2=0$ or $x+5=0$. First move all terms to one side and obtain a product equal to zero, if possible.
 
 ### 8.2 Solving by factoring
 
@@ -346,33 +341,28 @@ A reliable procedure is:
 
 Example:
 
-\[
+$$
 \begin{aligned}
 2x^2-7x+3&=0\\
 (2x-1)(x-3)&=0\\
 2x-1=0&\quad\text{or}\quad x-3=0\\
 x=\frac12&\quad\text{or}\quad x=3.
 \end{aligned}
-\]
+$$
 
 Both values satisfy the original equation, so the real solution set is $\{\frac12,3\}$.
 
 ### 8.3 Repeated factors and distinct solutions
 
-If
-
-\[
-(x-4)^2=0,
-\]
-then the only distinct solution is $x=4$. The factor appears twice, but it does not create two different values in the solution set. Chapter 14 will develop multiplicity as a property of polynomial zeros.
+If $(x-4)^2=0$, then the only distinct solution is $x=4$. The factor appears twice, but it does not create two different values in the solution set. Chapter 14 will develop multiplicity as a property of polynomial zeros.
 
 ### 8.4 When factoring does not produce real solutions
 
 Consider
 
-\[
+$$
 x^2+4=0.
-\]
+$$
 
 Over the reals, $x^2=-4$ has no solution because every real square is nonnegative. Therefore the real solution set is empty. Over the complex numbers, the solutions are $x=2i$ and $x=-2i$; complex numbers are developed in Chapter 13.
 
@@ -842,7 +832,7 @@ This tool is a verification aid, not an automatic general-purpose factorizer. A 
 17. $(x+4)(x^2-4x+16)$.
 18. $x^2+16>0$ for all real $x$, so it has no real zero and no real linear factorization.
 19. $(x-2)(x-3)=0$, so the solution set is $\{2,3\}$.
-20. $\left\{-1,\frac23\right\}$.
+20. $\{-1,\frac{2}{3}\}$.
 21. $\{-3,0,3\}$.
 22. One distinct solution, $x=5$.
 23. $\varnothing$ over $\mathbb R$.
