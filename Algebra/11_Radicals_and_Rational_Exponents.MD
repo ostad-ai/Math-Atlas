@@ -392,12 +392,7 @@ The safe method is:
 
 ### 10.1 Squaring both sides can introduce candidates
 
-For a real equation
-
-$$
-\sqrt{F(x)}=G(x),
-$$
-a useful equivalent system is
+For a real equation $\sqrt{F(x)}=G(x)$, a useful equivalent system is
 
 $$
 F(x)=G(x)^2,\qquad G(x)\geq0.
@@ -421,12 +416,7 @@ x+6=x^2
 (x-3)(x+2)=0.
 $$
 
-The candidates are $x=3$ and $x=-2$. The sign condition $x\geq0$ rejects $-2$. Check $x=3$ in the original equation:
-
-$$
-\sqrt{3+6}=3,
-$$
-so the solution set is $\{3\}$.
+The candidates are $x=3$ and $x=-2$. The sign condition $x\geq0$ rejects $-2$. Check $x=3$ in the original equation: $\sqrt{3+6}=3$, so the solution set is $\{3\}$.
 
 ### Example 14 — Squaring produces an extraneous candidate
 
