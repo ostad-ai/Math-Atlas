@@ -361,13 +361,13 @@ $$
 \sqrt[n]{a}=a^{1/n}.
 $$
 
-For an even index, the radical is the principal nonnegative root. Thus,
+For an even index, the radical is the principal nonnegative root. Thus, for any real number $x$,
 
 $$
-\sqrt{x^2}=\lvert x\rvert=(x^2)^{1/2},
+\sqrt{x^2}=\lvert x\rvert=(x^2)^{1/2}.
 $$
 
-and not $x$ for every real $x$.
+This value equals $x$ if and only if $x\geq0$.
 
 For an odd index, no nonnegativity restriction is needed: every real number $y$, including negative values, has exactly one real root of index $n$. Therefore, for odd $n$,
 
