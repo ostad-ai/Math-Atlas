@@ -312,17 +312,7 @@ For a finite product, the product equals zero if and only if at least one factor
 
 **Why the two-factor statement is true.** If $uv=0$ and $u=0$, the conclusion already holds. If $u\ne0$, then $u$ has a multiplicative inverse in a field, so multiplying $uv=0$ by $u^{-1}$ gives $v=0$. The converse is immediate: if either factor is zero, the product is zero. Applying this argument repeatedly proves the result for any finite product.
 
-Thus, if
-
-$$
-(x-2)(x+5)=0,
-$$
-then
-
-$$
-x-2=0\quad\text{or}\quad x+5=0,
-$$
-so the real solution set is $\lbrace-5,2\rbrace$.
+Thus, if $(x-2)(x+5)=0$, then $x-2=0\quad\text{or}\quad x+5=0$, so the real solution set is $\lbrace-5,2\rbrace$.
 
 ### 8.1 The equation must be equal to zero
 
