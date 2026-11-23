@@ -369,13 +369,12 @@ $$
 
 and not $x$ for every real $x$.
 
-For an odd index, the real-root convention gives
+For an odd index, no nonnegativity restriction is needed: every real number $y$, including negative values, has exactly one real root of index $n$. Therefore, for odd $n$,
 
 $$
-\sqrt[n]{a}=a^{1/n}
+\sqrt[n]{y}=y^{1/n}
+\qquad\text{for every }y\in\mathbb R.
 $$
-
-for negative as well as nonnegative real $a$.
 
 For a positive base, rational exponent notation can make nested-root expressions easier to interpret. However, the power-of-a-power warning in Section 8 still matters when the base is negative.
 
