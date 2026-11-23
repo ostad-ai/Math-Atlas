@@ -507,12 +507,10 @@ represents the zero polynomial. Floating-point coefficients are rejected so
 that exact rational arithmetic is not silently weakened.
 """
 
-
 from fractions import Fraction
 from typing import Mapping
 
 Polynomial = dict[int, Fraction]
-
 
 def _coerce_coefficient(value: object) -> Fraction:
     if isinstance(value, bool):
@@ -522,7 +520,6 @@ def _coerce_coefficient(value: object) -> Fraction:
     if isinstance(value, int):
         return Fraction(value, 1)
     raise TypeError("coefficients must be integers or fractions.Fraction values")
-
 
 def normalize(poly: Mapping[int, object]) -> Polynomial:
     """Validate a sparse polynomial and remove zero coefficients."""
@@ -543,7 +540,6 @@ def normalize(poly: Mapping[int, object]) -> Polynomial:
         key=lambda item: item[0],
     ))
 
-
 def add(left: Mapping[int, object], right: Mapping[int, object]) -> Polynomial:
     """Return the sum of two exact sparse polynomials."""
     a = normalize(left)
@@ -553,7 +549,6 @@ def add(left: Mapping[int, object], right: Mapping[int, object]) -> Polynomial:
         result[exponent] = result.get(exponent, Fraction(0)) + coefficient
     return normalize(result)
 
-
 def subtract(left: Mapping[int, object], right: Mapping[int, object]) -> Polynomial:
     """Return left minus right."""
     a = normalize(left)
@@ -562,7 +557,6 @@ def subtract(left: Mapping[int, object], right: Mapping[int, object]) -> Polynom
     for exponent, coefficient in b.items():
         result[exponent] = result.get(exponent, Fraction(0)) - coefficient
     return normalize(result)
-
 
 def multiply(left: Mapping[int, object], right: Mapping[int, object]) -> Polynomial:
     """Return the product using coefficient convolution."""
@@ -577,7 +571,6 @@ def multiply(left: Mapping[int, object], right: Mapping[int, object]) -> Polynom
             )
     return normalize(result)
 
-
 def degree(poly: Mapping[int, object]) -> int:
     """Return the degree; the zero polynomial has no degree."""
     normalized = normalize(poly)
@@ -585,14 +578,12 @@ def degree(poly: Mapping[int, object]) -> int:
         raise ValueError("the zero polynomial has no degree in this convention")
     return max(normalized)
 
-
 def leading_coefficient(poly: Mapping[int, object]) -> Fraction:
     """Return the coefficient of the highest nonzero power."""
     normalized = normalize(poly)
     if not normalized:
         raise ValueError("the zero polynomial has no leading coefficient")
     return normalized[max(normalized)]
-
 
 def evaluate(poly: Mapping[int, object], value: object) -> Fraction:
     """Evaluate by Horner's method at an exact integer or Fraction input."""
@@ -629,26 +620,15 @@ cancellation. It is a small teaching aid, not a general computer algebra
 system or a symbolic equation solver.
 """
 
-
 from dataclasses import dataclass
 from fractions import Fraction
 from typing import Mapping
 
-
-
-
-
-
-
-
-
 Polynomial = dict[int, Fraction]
-
 
 def _scale(poly: Mapping[int, object], scalar: Fraction) -> Polynomial:
     p = normalize(poly)
     return normalize({power: coefficient * scalar for power, coefficient in p.items()})
-
 
 def _divmod_poly(dividend: Mapping[int, object], divisor: Mapping[int, object]) -> tuple[Polynomial, Polynomial]:
     """Polynomial long division over Q[x]."""
@@ -668,13 +648,11 @@ def _divmod_poly(dividend: Mapping[int, object], divisor: Mapping[int, object]) 
         remainder = poly_subtract(remainder, poly_multiply(term, divisor_n))
     return normalize(quotient), normalize(remainder)
 
-
 def _exact_divide(dividend: Mapping[int, object], divisor: Mapping[int, object]) -> Polynomial:
     quotient, remainder = _divmod_poly(dividend, divisor)
     if remainder:
         raise ArithmeticError("polynomial division was not exact")
     return quotient
-
 
 def polynomial_gcd(left: Mapping[int, object], right: Mapping[int, object]) -> Polynomial:
     """Return the monic greatest common divisor over Q[x]."""
@@ -687,7 +665,6 @@ def polynomial_gcd(left: Mapping[int, object], right: Mapping[int, object]) -> P
         return {}
     return _scale(a, Fraction(1, 1) / leading_coefficient(a))
 
-
 def _normalize_conditions(conditions: tuple[Mapping[int, object], ...]) -> tuple[Polynomial, ...]:
     normalized: list[Polynomial] = []
     for condition in conditions:
@@ -698,14 +675,12 @@ def _normalize_conditions(conditions: tuple[Mapping[int, object], ...]) -> tuple
             normalized.append(p)
     return tuple(normalized)
 
-
 @dataclass(frozen=True)
 class RationalExpression:
     """A simplified rational formula with preserved nonzero conditions."""
     numerator: Polynomial
     denominator: Polynomial
     nonzero_conditions: tuple[Polynomial, ...]
-
 
 def _from_parts(
     numerator: Mapping[int, object],
@@ -733,7 +708,6 @@ def _from_parts(
 
     return RationalExpression(num, den, all_conditions)
 
-
 def make_rational_expression(
     numerator: Mapping[int, object], denominator: Mapping[int, object]
 ) -> RationalExpression:
@@ -743,7 +717,6 @@ def make_rational_expression(
         raise ZeroDivisionError("the original denominator cannot be the zero polynomial")
     return _from_parts(numerator, den, (den,))
 
-
 def add(left: RationalExpression, right: RationalExpression) -> RationalExpression:
     num = poly_add(
         poly_multiply(left.numerator, right.denominator),
@@ -751,7 +724,6 @@ def add(left: RationalExpression, right: RationalExpression) -> RationalExpressi
     )
     den = poly_multiply(left.denominator, right.denominator)
     return _from_parts(num, den, left.nonzero_conditions + right.nonzero_conditions)
-
 
 def subtract(left: RationalExpression, right: RationalExpression) -> RationalExpression:
     num = poly_subtract(
@@ -761,12 +733,10 @@ def subtract(left: RationalExpression, right: RationalExpression) -> RationalExp
     den = poly_multiply(left.denominator, right.denominator)
     return _from_parts(num, den, left.nonzero_conditions + right.nonzero_conditions)
 
-
 def multiply(left: RationalExpression, right: RationalExpression) -> RationalExpression:
     num = poly_multiply(left.numerator, right.numerator)
     den = poly_multiply(left.denominator, right.denominator)
     return _from_parts(num, den, left.nonzero_conditions + right.nonzero_conditions)
-
 
 def divide(left: RationalExpression, right: RationalExpression) -> RationalExpression:
     """Divide by right, requiring right to be defined and nonzero."""
@@ -777,14 +747,12 @@ def divide(left: RationalExpression, right: RationalExpression) -> RationalExpre
     conditions = left.nonzero_conditions + right.nonzero_conditions + (right.numerator,)
     return _from_parts(num, den, conditions)
 
-
 def is_defined(expression: RationalExpression, value: object) -> bool:
     """Return whether an exact integer/Fraction input meets all restrictions."""
     if isinstance(value, bool) or not isinstance(value, (int, Fraction)):
         raise TypeError("evaluation input must be an integer or Fraction")
     x = Fraction(value)
     return all(poly_evaluate(condition, x) != 0 for condition in expression.nonzero_conditions)
-
 
 def evaluate(expression: RationalExpression, value: object) -> Fraction:
     """Evaluate exactly, raising ValueError outside the original domain."""
@@ -807,14 +775,6 @@ evaluate = evaluate
 is_defined = is_defined
 
 from fractions import Fraction
-
-
-
-
-
-
-
-
 
 # (x^2 - 1)/(x - 1) simplifies to x + 1, but x = 1 remains excluded.
 expression = make_rational_expression(
