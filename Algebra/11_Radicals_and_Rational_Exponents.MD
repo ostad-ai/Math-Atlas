@@ -10,7 +10,7 @@ The most important habits in this chapter are to state the real domain, distingu
 
 By the end of this chapter, a learner should be able to:
 
-- Define real $n$th roots and distinguish even-root and odd-root domains.
+- Define real roots of index $n$ and distinguish even-root and odd-root domains.
 - Interpret the principal square root correctly.
 - Simplify numerical and algebraic radicals without losing absolute values.
 - Add, subtract, multiply, and divide radicals under valid domain conditions.
@@ -20,16 +20,16 @@ By the end of this chapter, a learner should be able to:
 - Solve radical equations while checking all candidates in the original equation.
 - Use exact Python helpers for integer and rational roots, and recognize when a result is irrational.
 
-## 2. Real nth roots
+## 2. Real roots of integer index
 
-Let $n$ be a positive integer. An **$n$th root** of a real number $a$ is a real number $r$ such that $r^n=a$.
+Let $n$ be a positive integer. A real root of index $n$ of a real number $a$ is a real number $r$ such that $r^n=a$.
 
-- If $n$ is odd, every real number has exactly one real $n$th root. Negative radicands are allowed.
+- If $n$ is odd, every real number has exactly one real root of index $n$. Negative radicands are allowed.
 - If $n$ is even and $a>0$, the equation $r^n=a$ has two real solutions, one positive and one negative. The radical symbol denotes only the nonnegative one.
 - If $n$ is even and $a=0$, the equation $r^n=0$ has the single solution $r=0$.
-- If $n$ is even and $a<0$, there is no real $n$th root.
+- If $n$ is even and $a<0$, there is no real root of index $n$.
 
-For even $n$, the symbol $\sqrt[n]{a}$ means the **principal root**, the unique nonnegative real number whose $n$th power is $a$, when $a\geq0$. For odd $n$, $\sqrt[n]{a}$ denotes the unique real root for every real $a$.
+For even $n$, the symbol $\sqrt[n]{a}$ means the **principal root**, the unique nonnegative real number whose power with exponent $n$ is $a$, when $a\geq0$. For odd $n$, $\sqrt[n]{a}$ denotes the unique real root for every real $a$.
 
 ### Example 1 — Equation roots versus the radical symbol
 
@@ -223,9 +223,9 @@ Rationalizing is a matter of form and convenience; it does not make an irrationa
 
 Chapter 07 defined integer exponents. Rational exponents extend that notation to roots. Before using the definition with a negative base, first write the exponent in lowest terms.
 
-Let $r=p/q$ be a rational number in lowest terms, where $p$ is an integer and $q$ is a positive integer.
-
 ### 7.1 Positive bases
+
+Let $r=\frac{p}{q}$ be a rational number in lowest terms, where $p$ is an integer and $q$ is a positive integer.
 
 For $a>0$, define
 
@@ -317,7 +317,7 @@ $$
 a^r=t^{pn},\qquad (a^r)^s=(\sqrt[n]{t^{pn}})^m=t^{pm}=a^{rs}.
 $$
 
-For the power-of-a-product rule, let $u=\sqrt[q]{a}>0$ and $v=\sqrt[q]{b}>0$. Since $(uv)^q=ab$, uniqueness of the positive $q$th root gives
+For the power-of-a-product rule, let $u=\sqrt[q]{a}>0$ and $v=\sqrt[q]{b}>0$. Since $(uv)^q=ab$, uniqueness of the positive root of index $q$ gives
 
 $$
 (ab)^{p/q}=(uv)^p=u^p v^p=a^{p/q}b^{p/q}.
@@ -842,7 +842,7 @@ A program can check an exact example, verify a proposed rational root, or detect
 13. Evaluate $16^{-3/4}$.
 14. Evaluate $(-27)^{-2/3}$.
 15. State whether $0^{2/3}$ and $0^{-2/3}$ are defined over the reals.
-16. State whether $(-16)^{1/4}$ and $(-16)^{1/3}$ are real; evaluate the one that has an exact integer value.
+16. State whether $(-8)^{1/4}$ and $(-8)^{1/3}$ are real; evaluate the one that has an exact integer value.
 
 ### C. Radical equations
 
@@ -879,7 +879,7 @@ A program can check an exact example, verify a proposed rational root, or detect
 13. $1/8$.
 14. $1/9$.
 15. $0^{2/3}=0$ is defined; $0^{-2/3}$ is undefined.
-16. $(-16)^{1/4}$ is not real; $(-16)^{1/3}=-\sqrt[3]{16}$ is real but not an integer.
+16. $(-8)^{1/4}$ is not real; $(-8)^{1/3}=-2$.
 17. $x=4$.
 18. Candidates are $3$ and $-2$; only $x=3$ satisfies the original equation.
 19. $x=-9/5$.
@@ -905,6 +905,9 @@ A program can check an exact example, verify a proposed rational root, or detect
 - Exact computation should remain exact when possible, and irrational values should not be silently rounded.
 
 ## 17. Next chapter
+
+Chapter 12 develops quadratic equations and quadratic models, building on the factoring and equation-solving methods developed in earlier chapters.
+
 ## References and connections
 
 - Math-Atlas Foundations, Chapter 04 — Number Systems and Mathematical Structures.
