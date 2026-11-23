@@ -827,8 +827,7 @@ The computer verifies these exact coefficient calculations. The proof that the v
 - For contextual optimization, respect the feasible domain and check endpoints when necessary.
 - Keep exact radical answers exact until an approximation is explicitly needed.
 
-## 17. Next chapter
-## References and connections
+## 17. References and connections
 
 - Math-Atlas Foundations, Chapter 03 — Relations and Functions.
 - Math-Atlas Foundations, Chapter 04 — Number Systems and Mathematical Structures.
