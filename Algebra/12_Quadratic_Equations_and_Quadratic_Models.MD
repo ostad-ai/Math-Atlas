@@ -100,7 +100,7 @@ The $y$-intercept is $f(0)=-2(9)+8=-10$, so it is $(0,-10)$. To find the $x$-int
 
 The graph in **Figure 12.1** shows the downward-opening parabola, its vertex $(3,8)$, its axis of symmetry $x=3$, and its two $x$-intercepts. The intercepts are equally spaced from the axis, illustrating the symmetry described above.
 
-<img src="figures/figure_12_1_example_1.png" alt="Figure 12.1 — A downward-opening quadratic, with its vertex, symmetry axis, and intercepts." />
+<img src="figures/figure_12_1_example_1.svg" alt="Figure 12.1 — A downward-opening quadratic, with its vertex, symmetry axis, and intercepts." />
 
 ## 4. Completing the square and vertex form
 
@@ -145,7 +145,7 @@ The vertex is $(2,-5)$, the axis is $x=2$, and the graph has a minimum value of 
 
 **Figure 12.2** graphs this same function. It makes the vertex $(2,-5)$, the symmetry axis $x=2$, and the two real $x$-intercepts visible. The figure will also be useful in Example 9, which analyzes the graph from its standard form.
 
-<img src="figures/figure_12_2_examples_2_and_9.png" alt="Figure 12.2 — The graph of $2(x-2)^2-5$, showing the vertex, axis of symmetry, and intercepts." />
+<img src="figures/figure_12_2_examples_2_and_9.svg" alt="Figure 12.2 — The graph of $2(x-2)^2-5$, showing the vertex, axis of symmetry, and intercepts." />
 
 ## 5. Solving by the square-root method
 
@@ -308,7 +308,7 @@ $$
 
 **Figure 12.3** compares the three possibilities in the table: a parabola crossing the $x$-axis twice when $D>0$, touching it at the vertex when $D=0$, and not meeting it when $D<0$.
 
-<img src="figures/figure_12_3_discriminant.png" alt="Figure 12.3 — Three parabolas illustrating two, one repeated, and no real roots." />
+<img src="figures/figure_12_3_discriminant.svg" alt="Figure 12.3 — Three parabolas illustrating two, one repeated, and no real roots." />
 
 The discriminant counts **distinct real** roots, not roots counted with multiplicity. When $D=0$, the equation has one distinct real root of multiplicity two.
 
@@ -405,7 +405,7 @@ The vertex occurs at $x=10$, which lies in the feasible domain. The maximum area
 
 **Figure 12.4** shows the area function over its physical domain $0<x<20$. The highest point of the curve occurs at $x=10$, confirming the maximum-area rectangle found above.
 
-<img src="figures/figure_12_4_rectangle_area.png" alt="Figure 12.4 — Rectangle area as a function of one side length on the physical domain." />
+<img src="figures/figure_12_4_rectangle_area.svg" alt="Figure 12.4 — Rectangle area as a function of one side length on the physical domain." />
 
 ### Example 11 — Height of an idealized projectile
 
@@ -431,7 +431,7 @@ Only the positive time is physically relevant, so the modeled impact time is $2+
 
 **Figure 12.5** shows the projectile model from launch at $t=0$ until it reaches the ground. The graph highlights the maximum height at $t=2$ seconds and the positive impact time.
 
-<img src="figures/figure_12_5_projectile.png" alt="Figure 12.5 — Projectile height over the nonnegative physical time interval, through impact." />
+<img src="figures/figure_12_5_projectile.svg" alt="Figure 12.5 — Projectile height over the nonnegative physical time interval, through impact." />
 
 ### 11.1 Optimization on a restricted domain
 
