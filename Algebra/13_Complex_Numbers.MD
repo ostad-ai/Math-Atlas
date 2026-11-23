@@ -26,17 +26,13 @@ After completing this chapter, you should be able to:
 
 The **imaginary unit** is the number $i$ defined by
 
-$$
-i^2=-1.
-$$
+$i^2=-1.$
 
 Equivalently, $i$ is a square root of $-1$ in the complex number system. The symbol $\sqrt{-1}$ is sometimes used informally to motivate $i$, but the principal real square-root function from Chapter 11 is defined only for nonnegative real radicands. Here, $i$ is introduced as a new number with the defining property $i^2=-1$.
 
 A **complex number** is a number of the form
 
-$$
-z=a+bi,
-$$
+$z=a+bi,$
 where $a,b\in\mathbb R$. This is called **standard form**. The set of all complex numbers is denoted by $\mathbb C$.
 
 For $z=a+bi$:
@@ -52,9 +48,7 @@ Real numbers are included in $\mathbb C$ by identifying each real number $a$ wit
 
 Two complex numbers are equal exactly when their real parts are equal and their imaginary parts are equal:
 
-$$
-a+bi=c+di\quad\Longleftrightarrow\quad a=c\text{ and }b=d.
-$$
+$a+bi=c+di\quad\Longleftrightarrow\quad a=c\text{ and }b=d.$
 
 This follows because the standard-form representation is unique.
 
@@ -62,9 +56,7 @@ This follows because the standard-form representation is unique.
 
 Let $z=\frac{7}{3}-4i$. Then
 
-$$
-\mathrm{Re}(z)=\frac73,\qquad \mathrm{Im}(z)=-4.
-$$
+$\mathrm{Re}(z)=\frac73,\qquad \mathrm{Im}(z)=-4.$
 
 The imaginary part is $-4$, not $-4i$.
 
@@ -104,30 +96,22 @@ For negative integers this remains valid because $i\ne0$ and $i^{-1}=-i$.
 
 Since $2025=4(506)+1$,
 
-$$
-i^{2025}=i^{4(506)+1}=(i^4)^{506}i=i.
-$$
+$i^{2025}=i^{4(506)+1}=(i^4)^{506}i=i.$
 
 ### Example 4 — A negative exponent
 
 Because $i^{-1}=1/i=-i$, we have
 
-$$
-i^{-7}=i^{1}=i,
-$$
+$i^{-7}=i^{1}=i,$
 since $-7\equiv1\pmod4$.
 
 ## 4. Addition and subtraction
 
 Let $z_1=a+bi$ and $z_2=c+di$. Add or subtract corresponding real and imaginary parts:
 
-$$
-z_1+z_2=(a+c)+(b+d)i,
-$$
+$z_1+z_2=(a+c)+(b+d)i,$
 
-$$
-z_1-z_2=(a-c)+(b-d)i.
-$$
+$z_1-z_2=(a-c)+(b-d)i.$
 
 The rules follow by grouping like terms and using the distributive property.
 
@@ -135,13 +119,9 @@ The rules follow by grouping like terms and using the distributive property.
 
 For $z_1=4-3i$ and $z_2=-2+5i$,
 
-$$
-z_1+z_2=2+2i,
-$$
+$z_1+z_2=2+2i,$
 
-$$
-z_1-z_2=6-8i.
-$$
+$z_1-z_2=6-8i.$
 
 Addition and subtraction are performed component by component. Do not combine a real term with an imaginary term as though they were like terms.
 
@@ -159,9 +139,7 @@ $$
 
 Thus
 
-$$
-\boxed{(a+bi)(c+di)=(ac-bd)+(ad+bc)i.}
-$$
+$\boxed{(a+bi)(c+di)=(ac-bd)+(ad+bc)i.}$
 
 ### Example 6 — Multiply two complex numbers
 
@@ -176,9 +154,7 @@ $$
 
 ### Example 7 — Square a complex number
 
-$$
-(1-2i)^2=1-4i+4i^2=-3-4i.
-$$
+$(1-2i)^2=1-4i+4i^2=-3-4i.$
 
 The sign in the last term is negative because $i^2=-1$.
 
@@ -186,9 +162,7 @@ The sign in the last term is negative because $i^2=-1$.
 
 If $z=a+bi$, its **complex conjugate** is
 
-$$
-\overline z=a-bi.
-$$
+$\overline z=a-bi.$
 
 The conjugate changes the sign of the imaginary part and leaves the real part unchanged.
 
@@ -196,23 +170,15 @@ The conjugate changes the sign of the imaginary part and leaves the real part un
 
 For all $z,w\in\mathbb C$:
 
-$$
-\overline{z+w}=\overline z+\overline w,
-$$
+$\overline{z+w}=\overline z+\overline w,$
 
-$$
-\overline{zw}=\overline z\,\overline w,
-$$
+$\overline{zw}=\overline z\,\overline w,$
 
-$$
-\overline{\overline z}=z,
-$$
+$\overline{\overline z}=z,$
 
 and
 
-$$
-z+\overline z=2\mathrm{Re}(z).
-$$
+$z+\overline z=2\mathrm{Re}(z).$
 
 The product of a number and its conjugate is real:
 
@@ -231,9 +197,7 @@ Here $a^2+b^2\geq0$, and it is zero only when $a=b=0$.
 
 For $z=5-12i$,
 
-$$
-\overline z=5+12i,\qquad z\overline z=25+144=169.
-$$
+$\overline z=5+12i,\qquad z\overline z=25+144=169.$
 
 ### 6.2 Why conjugates help with division
 
@@ -253,9 +217,7 @@ $$
 
 Therefore,
 
-$$
-\boxed{\frac{a+bi}{c+di}=\frac{ac+bd}{c^2+d^2}+\frac{bc-ad}{c^2+d^2}i,\quad c+di\ne0.}
-$$
+$\boxed{\frac{a+bi}{c+di}=\frac{ac+bd}{c^2+d^2}+\frac{bc-ad}{c^2+d^2}i,\quad c+di\ne0.}$
 
 The denominator is positive because $c+di\ne0$ means that $c$ and $d$ are not both zero.
 
@@ -299,6 +261,10 @@ This is a geometric representation of the two real coordinates. It does not mean
 
 The conjugate $a-bi$ is the reflection of $a+bi$ across the real axis. Addition of complex numbers corresponds to vector addition of their coordinate pairs.
 
+<img src="figures/figure_13_1_complex_plane_and_conjugate.svg" />
+
+*Figure 13.1 — A complex number and its conjugate are reflections across the real axis.*
+
 ### Example 11 — Plot and reflect
 
 The number $z=-2+3i$ corresponds to $(-2,3)$. Its conjugate $-2-3i$ corresponds to $(-2,-3)$, the reflection across the horizontal real axis.
@@ -307,41 +273,37 @@ The number $z=-2+3i$ corresponds to $(-2,3)$. Its conjugate $-2-3i$ corresponds 
 
 The **modulus** of $z=a+bi$ is
 
-$$
-|z|=\sqrt{a^2+b^2}.
-$$
+$|z|=\sqrt{a^2+b^2}.$
 
 It is the distance from the origin to the point $(a,b)$ in the complex plane. The modulus is a nonnegative real number. It satisfies
 
-$$
-|z|^2=z\overline z=a^2+b^2.
-$$
+$|z|^2=z\overline z=a^2+b^2.$
 
 In particular, $|z|=0$ if and only if $z=0$.
 
 For two complex numbers $z_1$ and $z_2$, their distance is
 
-$$
-d(z_1,z_2)=|z_1-z_2|.
-$$
+$d(z_1,z_2)=|z_1-z_2|.$
+
+<img src="figures/figure_13_2_modulus_and_distance.svg" />
+
+*Figure 13.2 — Modulus is distance from the origin; the distance between two complex numbers is the length of the segment joining their points.*
 
 ### 9.1 Useful modulus properties
 
 For all $z,w\in\mathbb C$:
 
-$$
-|zw|=|z||w|,
-$$
+$|zw|=|z||w|,$
 
-$$
-|\overline z|=|z|,
-$$
+$|\overline z|=|z|,$
 
-$$
-|z+w|\leq|z|+|w|.
-$$
+$|z+w|\leq|z|+|w|.$
 
 The final inequality is the **triangle inequality**. It is consistent with the geometry of adding two vectors.
+
+<img src="figures/figure_13_3_triangle_inequality.svg" />
+
+*Figure 13.3 — The vector sum forms the third side of a triangle, so its length cannot exceed the sum of the other two side lengths. The conjugate identity applies to the whole sum: $\overline{z_1+z_2}=\overline{z_1}+\overline{z_2}$.*
 
 #### Proof of the product property
 
@@ -380,9 +342,7 @@ Both sides of $|z+w|\leq|z|+|w|$ are nonnegative, so taking nonnegative square r
 
 For $z=5-12i$,
 
-$$
-|z|=\sqrt{5^2+(-12)^2}=\sqrt{169}=13.
-$$
+$|z|=\sqrt{5^2+(-12)^2}=\sqrt{169}=13.$
 
 ### Example 13 — Find a distance
 
@@ -403,19 +363,13 @@ The quadratic formula remains valid when the coefficients are real and the discr
 
 For
 
-$$
-ax^2+bx+c=0,\qquad a,b,c\in\mathbb R,\ a\ne0,
-$$
+$ax^2+bx+c=0,\qquad a,b,c\in\mathbb R,\ a\ne0,$
 let $D=b^2-4ac$. If $D<0$, then
 
-$$
-\sqrt D=i\sqrt{-D},
-$$
+$\sqrt D=i\sqrt{-D},$
 where $\sqrt{-D}$ is the nonnegative real square root. Hence
 
-$$
-\boxed{x=\frac{-b\pm i\sqrt{-D}}{2a}.}
-$$
+$\boxed{x=\frac{-b\pm i\sqrt{-D}}{2a}.}$
 
 The two roots are nonreal complex conjugates. They are distinct because $D<0$ makes $\sqrt{-D}>0$.
 
@@ -425,9 +379,7 @@ Solve $x^2+4x+13=0$ over $\mathbb C$.
 
 Here $D=16-52=-36$. Therefore,
 
-$$
-x=\frac{-4\pm i\sqrt{36}}{2}=-2\pm3i.
-$$
+$x=\frac{-4\pm i\sqrt{36}}{2}=-2\pm3i.$
 
 The two solutions are $-2+3i$ and $-2-3i$.
 
@@ -437,9 +389,7 @@ Solve $2x^2+2x+5=0$ over $\mathbb C$.
 
 The discriminant is $D=4-40=-36$, so
 
-$$
-x=\frac{-2\pm6i}{4}=-\frac12\pm\frac32i.
-$$
+$x=\frac{-2\pm6i}{4}=-\frac12\pm\frac32i.$
 
 ### 10.1 Conjugate-pair property for real coefficients
 
@@ -447,16 +397,16 @@ $$
 
 **Proof.** Let
 
-$$
-P(x)=a_nx^n+\cdots+a_1x+a_0,
-$$
+$P(x)=a_nx^n+\cdots+a_1x+a_0,$
 where each coefficient $a_k$ is real. Since conjugation preserves sums and products,
 
-$$
-\overline{P(z)}=a_n\overline z^{\,n}+\cdots+a_1\overline z+a_0=P(\overline z).
-$$
+$\overline{P(z)}=a_n\overline z^{\,n}+\cdots+a_1\overline z+a_0=P(\overline z).$
 
 If $P(z)=0$, then $P(\overline z)=\overline0=0$. Thus the conjugate is also a root. This proof uses the fact that the coefficients are real; the result need not hold for a polynomial with nonreal coefficients. $\square$
+
+<img src="figures/figure_13_4_conjugate_roots.svg" />
+
+*Figure 13.4 — The nonreal roots of a real-coefficient quadratic occur as conjugate points reflected across the real axis.*
 
 ### Example 16 — Build a real quadratic from conjugate roots
 
@@ -644,10 +594,6 @@ def i_power(exponent: int) -> ComplexRational:
     return cycle[exponent % 4]
 
 # --- Chapter example ---
-ComplexRational = ComplexRational
-i_power = i_power
-
-from fractions import Fraction
 
 
 z = ComplexRational(Fraction(3, 2), Fraction(2))  # 3/2 + 2i
@@ -753,8 +699,7 @@ The module keeps the squared modulus exact. The modulus itself may be irrational
 - Complex numbers form a field but do not admit an order compatible with the real order and field operations.
 - The Fundamental Theorem of Algebra guarantees complex roots for nonconstant complex polynomials; Chapter 14 develops polynomial roots and multiplicity further.
 
-## 17. Next chapter
-## References and connections
+## 17. References and connections
 
 - Math-Atlas Foundations, Chapter 03 — Relations and Functions.
 - Math-Atlas Foundations, Chapter 04 — Number Systems and Mathematical Structures.
