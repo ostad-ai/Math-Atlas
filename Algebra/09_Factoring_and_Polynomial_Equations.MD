@@ -322,7 +322,7 @@ then
 $$
 x-2=0\quad\text{or}\quad x+5=0,
 $$
-so the real solution set is $\{-5,2\}$.
+so the real solution set is $\lbrace-5,2\rbrace$.
 
 ### 8.1 The equation must be equal to zero
 
@@ -350,7 +350,7 @@ x=\frac12&\quad\text{or}\quad x=3.
 \end{aligned}
 $$
 
-Both values satisfy the original equation, so the real solution set is $\{\frac12,3\}$.
+Both values satisfy the original equation, so the real solution set is $\lbrace\frac12,3\rbrace$.
 
 ### 8.3 Repeated factors and distinct solutions
 
@@ -489,7 +489,7 @@ x&=2\quad\text{or}\quad x=3.
 \end{aligned}
 $$
 
-The real solution set is $\{2,3\}$.
+The real solution set is $\lbrace2,3\rbrace$.
 
 ### Example 12 — Solve a non-monic quadratic equation
 
@@ -511,7 +511,7 @@ x(x-3)(x+3)&=0.
 \end{aligned}
 $$
 
-Therefore $x=0$, $x=3$, or $x=-3$. The real solution set is $\{-3,0,3\}$.
+Therefore $x=0$, $x=3$, or $x=-3$. The real solution set is $\lbrace-3,0,3\rbrace$.
 
 ### Example 14 — A repeated factor gives one distinct solution
 
@@ -831,12 +831,12 @@ This tool is a verification aid, not an automatic general-purpose factorizer. A 
 16. $(2x-3)(4x^2+6x+9)$.
 17. $(x+4)(x^2-4x+16)$.
 18. $x^2+16>0$ for all real $x$, so it has no real zero and no real linear factorization.
-19. $(x-2)(x-3)=0$, so the solution set is $\{2,3\}$.
-20. $\{-1,\frac{2}{3}\}$.
-21. $\{-3,0,3\}$.
+19. $(x-2)(x-3)=0$, so the solution set is $\lbrace 2,3 \rbrace$.
+20. $\lbrace -1,\frac{2}{3} \rbrace$.
+21. $\lbrace -3,0,3 \rbrace$.
 22. One distinct solution, $x=5$.
 23. $\varnothing$ over $\mathbb R$.
-24. $\{-4,0,3\}$.
+24. $\lbrace-4,0,3\rbrace$.
 25. The zero-product property applies only when the product equals zero. Here the product equals $7$; expand to $x^2+x-9=0$, whose real solutions are $\frac{-1\pm\sqrt{37}}{2}$.
 26. $(2x+5)(x-3)(x+3)$.
 
