@@ -162,12 +162,20 @@ $$
 \frac{x^2-16}{x^2+x-20}.
 $$
 
-The original denominator factors as $(x+5)(x-4)$, so $x\ne-5,4$. Then
+Factor the numerator and denominator separately:
+
+$$
+x^2-16=(x-4)(x+4),\qquad x^2+x-20=(x+5)(x-4).
+$$
+
+The original denominator is zero at $x=-5$ and $x=4$, so both values are excluded. Now cancel the common factor $x-4$:
 
 $$
 \frac{(x-4)(x+4)}{(x+5)(x-4)}
 =\frac{x+4}{x+5},\qquad x\ne-5,4.
 $$
+
+The restriction $x\ne4$ remains even though the factor $x-4$ has been cancelled.
 
 ### 4.1 What may be cancelled?
 
@@ -189,13 +197,26 @@ A numerical check such as $x=2$ already shows that $(x+3)/x$ is not $3$.
 
 ### Example 5 — A correct cancellation
 
+Simplify
+
 $$
-\frac{x^2-4}{x^2+3x+2}
-=\frac{(x-2)(x+2)}{(x+1)(x+2)}
-=\frac{x-2}{x+1},
+\frac{x^2-4}{x^2+3x+2}.
 $$
 
-where the original denominator requires $x\ne-1,-2$. Both restrictions remain after cancellation.
+First factor the numerator and denominator:
+
+$$
+x^2-4=(x-2)(x+2),\qquad x^2+3x+2=(x+1)(x+2).
+$$
+
+The original denominator requires $x\ne-1,-2$. Cancel the common factor $x+2$:
+
+$$
+\frac{(x-2)(x+2)}{(x+1)(x+2)}
+=\frac{x-2}{x+1},\qquad x\ne-1,-2.
+$$
+
+Both original restrictions remain after cancellation.
 
 ## 5. Multiplication of rational expressions
 
@@ -400,13 +421,19 @@ $$
 \frac{x+1}{x-1}=\frac{2}{x-1}.
 $$
 
-The original denominator requires $x\ne1$. Multiplying by $x-1$ on this domain gives
+The original denominator requires $x\ne1$. Since $x-1\ne0$ on this domain, multiply **both sides** by $x-1$:
+
+$$
+(x-1)\frac{x+1}{x-1}=(x-1)\frac{2}{x-1}.
+$$
+
+After cancellation,
 
 $$
 x+1=2\quad\Longrightarrow\quad x=1.
 $$
 
-But $x=1$ is excluded from the original equation. Therefore the equation has **no solution**:
+The only candidate is exactly the value excluded from the original equation. Therefore the equation has **no solution**:
 
 $$
 S=\varnothing.
@@ -422,13 +449,19 @@ $$
 \frac{x^2-1}{x-1}=x+1.
 $$
 
-The original domain is $x\ne1$. On this domain,
+The original domain is $x\ne1$. Factor the numerator:
 
 $$
-\frac{(x-1)(x+1)}{x-1}=x+1
+\frac{x^2-1}{x-1}=\frac{(x-1)(x+1)}{x-1}.
 $$
 
-is true for every admissible $x$. The solution set is therefore
+Because $x\ne1$, the common factor can be cancelled, leaving
+
+$$
+x+1=x+1.
+$$
+
+This statement is true for every admissible $x$. The solution set is therefore
 
 $$
 S=\mathbb R\setminus\lbrace 1 \rbrace.
@@ -444,7 +477,14 @@ $$
 \frac{1}{x-1}=\frac{1}{x-1}+1.
 $$
 
-The domain requires $x\ne1$. Subtracting the common rational expression from both sides gives $0=1$, which is impossible. Hence $S=\varnothing$.
+The domain requires $x\ne1$. Subtract $\dfrac{1}{x-1}$ from both sides:
+
+$$
+\frac{1}{x-1}-\frac{1}{x-1}=\frac{1}{x-1}+1-\frac{1}{x-1}
+\quad\Longrightarrow\quad 0=1.
+$$
+
+The resulting statement is impossible, so the equation has no solution: $S=\varnothing$.
 
 ## 10. Applications and modelling
 
@@ -452,36 +492,42 @@ Rational expressions naturally occur when a quantity is divided by another quant
 
 ### Example 15 — Combined work rates
 
-Worker A completes a job in $6$ hours, and worker B completes the same job in $3$ hours. Their constant rates are $1/6$ and $1/3$ job per hour. Working together, their rate is
+Worker A completes one job in $6$ hours, and worker B completes the same job in $3$ hours. Their constant rates are therefore $\dfrac16$ and $\dfrac13$ job per hour. When they work together, add their rates:
 
 $$
-\frac16+\frac13=\frac12
+ r_{\mathrm{total}}=\frac16+\frac13=\frac12
+ \quad\text{job per hour}.
 $$
 
-job per hour. The time for one job is the reciprocal rate:
+The time needed is the amount of work divided by the combined rate. For one job,
 
 $$
-T=\frac{1}{1/2}=2\text{ hours}.
+T=\frac{1\text{ job}}{\frac12\text{ job/hour}}=2\text{ hours}.
 $$
 
 The model assumes both workers maintain their stated constant rates and can work simultaneously without interference. A reciprocal is taken only after the combined rate is known to be nonzero.
 
 ### Example 16 — Average speed is not the arithmetic mean of speeds
 
-A vehicle travels equal distances at speeds $v_1>0$ and $v_2>0$. Let each distance be $d$. The total distance is $2d$, while the total time is
+A vehicle travels two equal, positive distances at speeds $v_1>0$ and $v_2>0$. Let each distance be $d$. The total distance is $2d$. The time for the first part is $d/v_1$, and the time for the second part is $d/v_2$, so the total time is
 
 $$
-\frac{d}{v_1}+\frac{d}{v_2}.
+T=\frac{d}{v_1}+\frac{d}{v_2}.
 $$
 
-Therefore the average speed is
+Average speed is total distance divided by total time:
 
 $$
-v_{\mathrm{avg}}=\frac{2d}{d/v_1+d/v_2}
-=\frac{2v_1v_2}{v_1+v_2}.
+\begin{aligned}
+v_{\mathrm{avg}}
+&=\frac{2d}{d/v_1+d/v_2}\\
+&=\frac{2d}{d\left(1/v_1+1/v_2\right)}\\
+&=\frac{2}{1/v_1+1/v_2}\\
+&=\frac{2v_1v_2}{v_1+v_2}.
+\end{aligned}
 $$
 
-This is the harmonic mean of the two speeds, not generally their arithmetic mean. The equality-distance assumption is essential; for unequal distances the model changes.
+The factor $d$ cancels because $d>0$. This is the harmonic mean of the two speeds, not generally their arithmetic mean. The equal-distance assumption is essential; for unequal distances, the total-distance and total-time expressions must be adjusted.
 
 ## 11. Exact rational-expression checks with Python
 
