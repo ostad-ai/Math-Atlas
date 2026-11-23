@@ -39,7 +39,7 @@ $$
 where $P$ and $Q$ are polynomials with real coefficients and $Q$ is not the zero polynomial. Its natural real domain is
 
 $$
-D_R=\{x\in\mathbb R:Q(x)\ne0\}.
+D_R=\lbrace x\in\mathbb R:Q(x)\ne0 \rbrace.
 $$
 
 The restriction comes from the denominator of the expression as originally given. A numerator may be zero; a denominator may not.
@@ -61,7 +61,7 @@ $$
 The denominator is zero at $x=2$ and $x=3$. Therefore,
 
 $$
-D_R=\mathbb R\setminus\{2,3\}.
+D_R=\mathbb R\setminus\lbrace 2,3 \rbrace.
 $$
 
 ### Example 2 — A numerator zero is allowed
@@ -75,7 +75,7 @@ $$
 only $x=-2$ is excluded. The value $x=4$ is allowed and makes the expression equal to zero:
 
 $$
-D_S=\mathbb R\setminus\{-2\},\qquad S(4)=0.
+D_S=\mathbb R\setminus\lbrace -2 \rbrace,\qquad S(4)=0.
 $$
 
 ### 2.1 Domain restrictions survive simplification
@@ -136,7 +136,7 @@ $$
 \frac{x^2-1}{x-1}=x+1
 $$
 
-holds for every $x\in\mathbb R\setminus\{1\}$, not for every real number as an equality of the original partially defined expressions. The polynomial identity
+holds for every $x\in\mathbb R\setminus\lbrace 1 \rbrace$, not for every real number as an equality of the original partially defined expressions. The polynomial identity
 
 $$
 x^2-1=(x-1)(x+1)
@@ -389,7 +389,7 @@ $$
 Neither value is $0$ or $1$, so both satisfy the original domain restrictions. The solution set is
 
 $$
-\left\{3-\sqrt7,\;3+\sqrt7\right\}.
+\lbrace 3-\sqrt7,\;3+\sqrt7 \rbrace.
 $$
 
 ### Example 12 — A candidate excluded by the original domain
@@ -431,7 +431,7 @@ $$
 is true for every admissible $x$. The solution set is therefore
 
 $$
-S=\mathbb R\setminus\{1\}.
+S=\mathbb R\setminus\lbrace 1 \rbrace.
 $$
 
 This is an identity on the original domain, not a statement that the original quotient is defined at $x=1$.
@@ -642,7 +642,6 @@ from typing import Mapping
 
 
 
-
 Polynomial = dict[int, Fraction]
 
 
@@ -816,6 +815,7 @@ from fractions import Fraction
 
 
 
+
 # (x^2 - 1)/(x - 1) simplifies to x + 1, but x = 1 remains excluded.
 expression = make_rational_expression(
     {2: 1, 0: -1},  # x^2 - 1
@@ -897,7 +897,7 @@ The module accepts only integer and `fractions.Fraction` coefficients and intege
 
 ## 14. Selected answers
 
-1. $\mathbb R\setminus\{3,4\}$, since $x^2-7x+12=(x-3)(x-4)$.
+1. $\mathbb R\setminus\lbrace 3,4 \rbrace$, since $x^2-7x+12=(x-3)(x-4)$.
 2. $\dfrac{x+4}{x+5}$, with $x\ne4,-5$.
 3. $\dfrac{x-2}{x+1}$, with $x\ne-2,-1$.
 4. The original denominator is zero at $x=1$; cancellation does not change the original domain.
@@ -907,11 +907,11 @@ The module accepts only integer and `fractions.Fraction` coefficients and intege
 8. $\dfrac{4x-1}{(x-1)(x+2)}$, with $x\ne1,-2$.
 9. $\dfrac{x+2}{x(x+1)}$, with $x\ne0,-1$.
 10. $\dfrac{x+1}{1-x}$, with $x\ne0,1$.
-11. $\{3-\sqrt7,\,3+\sqrt7\}$.
+11. $\lbrace 3-\sqrt7,\,3+\sqrt7 \rbrace$.
 12. No solution. Clearing the denominator gives $x=1$, but that value is excluded from the original equation.
-13. $\mathbb R\setminus\{1\}$; the equality is an identity on the original domain.
+13. $\mathbb R\setminus\lbrace 1 \rbrace$; the equality is an identity on the original domain.
 14. $\varnothing$, because the equation reduces to $0=1$ on its domain.
-15. $\left\{\dfrac{1-\sqrt5}{2},\dfrac{1+\sqrt5}{2}\right\}$; neither candidate is $0$ or $-1$.
+15. $\lbrace \dfrac{1-\sqrt5}{2},\dfrac{1+\sqrt5}{2} \rbrace$; neither candidate is $0$ or $-1$.
 18. $\dfrac{1}{1/8+1/4}=\dfrac{8}{3}$ hours.
 19. $\dfrac{2(40)(60)}{40+60}=48$ km/h, the harmonic mean for equal distances.
 20. Example: $(x^2-1)/(x-1)$ and $x+1$. Their formulas agree for $x\ne1$, but the first original expression excludes $1$ and the second does not.
