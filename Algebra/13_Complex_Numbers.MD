@@ -170,9 +170,9 @@ The conjugate changes the sign of the imaginary part and leaves the real part un
 
 For all $z,w\in\mathbb C$:
 
-$\overline{z+w}=\overline z+\overline w,$
+$\overline{\left(z+w\right)}=\overline{z}+\overline{w},$
 
-$\overline{zw}=\overline z\cdot\overline w,$
+$\overline{\left(zw\right)}=\overline{z}\overline{w},$
 
 $\overline{\overline z}=z,$
 
@@ -303,7 +303,7 @@ The final inequality is the **triangle inequality**. It is consistent with the g
 
 <img src="figures/figure_13_3_triangle_inequality.svg" />
 
-*Figure 13.3 — The vector sum forms the third side of a triangle, so its length cannot exceed the sum of the other two side lengths. The conjugate identity applies to the whole sum: $\overline{z_1+z_2}=\overline{z_1}+\overline{z_2}$.*
+*Figure 13.3 — The vector sum forms the third side of a triangle, so its length cannot exceed the sum of the other two side lengths. The conjugate identity applies to the whole sum: $\overline{\left(z_1+z_2\right)}=\overline{z_1}+\overline{z_2}$.*
 
 #### Proof of the product property
 
@@ -328,9 +328,9 @@ For any complex number $u=x+yi$, its real part satisfies $\mathrm{Re}(u)=x\leq\l
 $$
 \begin{aligned}
 |z+w|^2
-&=(z+w)\overline{z+w}\\
+&=(z+w)\overline{\left(z+w\right)}\\
 &=(z+w)(\overline z+\overline w)\\
-&=z\overline z+w\overline w+z\overline w+\overline z\,w\\
+&=z\overline z+w\overline w+z\overline w+\overline{z}w\\
 &=|z|^2+|w|^2+2\mathrm{Re}(z\overline w)\\
 &\leq |z|^2+|w|^2+2|z\overline w|\\
 &=|z|^2+|w|^2+2|z||w|\\
@@ -339,10 +339,16 @@ $$
 $$
 
 The cross terms combine because
-\[
-\overline{z\overline w}=\overline z\,w.
-\]
-Thus $z\overline w$ and $\overline z\,w$ are conjugates. For any complex number $u$, $u+\overline u=2\mathrm{Re}(u)$; apply this with $u=z\overline w$. Also, $\overline z\,w=w\overline z$ simply by the commutativity of complex multiplication. This is where that reordered product comes from; it is not an extra conjugation rule.
+
+$$
+\begin{aligned}
+\overline{\left(z\overline w\right)}
+&=\overline z\overline{\left(\overline w\right)}\\
+&=\overline{z}w.
+\end{aligned}
+$$
+
+Thus $z\overline w$ and $\overline z w$ are conjugates. For any complex number $u$, $u+\overline u=2\mathrm{Re}(u)$; apply this with $u=z\overline w$. By commutativity of complex multiplication, $\overline{z}w=w\overline{z}$.
 
 Both sides of $|z+w|\leq|z|+|w|$ are nonnegative, so taking nonnegative square roots proves the triangle inequality.
 
