@@ -170,13 +170,13 @@ The conjugate changes the sign of the imaginary part and leaves the real part un
 
 For all $z,w\in\mathbb C$:
 
-$\overline{z+w}=\overline z+\overline w$
+$\overline{(z+w)}=\overline z+\overline w,$
 
-$\overline{zw}=\overline z\overline w$
+$\overline{(zw)}=\overline z\overline w,$
 
-$\overline{\overline z}=z,$
+$\overline{(\overline z)}=z.$
 
-and
+Also,
 
 $z+\overline z=2\mathrm{Re}(z).$
 
@@ -287,7 +287,7 @@ $d(z_1,z_2)=|z_1-z_2|.$
 
 <img src="figures/figure_13_2_modulus_and_distance.svg" />
 
-*Figure 13.2 — The diagram marks the two moduli, $|z_1|$ and $|z_2|$, and the distance $|z_1-z_2|$ between the two complex points.*
+*Figure 13.2 — The diagram shows each point’s distance from the origin and the distance between the two points.*
 
 ### 9.1 Useful modulus properties
 
@@ -303,7 +303,7 @@ The final inequality is the **triangle inequality**. It is consistent with the g
 
 <img src="figures/figure_13_3_triangle_inequality.svg" />
 
-*Figure 13.3 — The vector sum forms the third side of a triangle, so its length cannot exceed the sum of the other two side lengths. The conjugate identity applies to the whole sum: $\overline{z_1+z_2}=\overline{z_1}+\overline{z_2}$.*
+*Figure 13.3 — The vectors are placed head-to-tail; their sum is the direct vector from the origin to the final endpoint.*
 
 #### Proof of the product property
 
@@ -328,9 +328,10 @@ For any complex number $u=x+yi$, its real part satisfies $\mathrm{Re}(u)=x\leq\l
 $$
 \begin{aligned}
 |z+w|^2
-&=(z+w)\overline{\left(z+w\right)}\\
+&=(z+w)\overline{(z+w)}\\
 &=(z+w)(\overline z+\overline w)\\
-&=z\overline z+w\overline w+z\overline w+\overline{z}w\\
+&=z\overline z+z\overline w+w\overline z+w\overline w\\
+&=|z|^2+|w|^2+(z\overline w+w\overline z)\\
 &=|z|^2+|w|^2+2\mathrm{Re}(z\overline w)\\
 &\leq |z|^2+|w|^2+2|z\overline w|\\
 &=|z|^2+|w|^2+2|z||w|\\
@@ -338,19 +339,18 @@ $$
 \end{aligned}
 $$
 
-The cross terms combine because
+The two cross terms are conjugates. Indeed,
 
 $$
-\overline{z\overline w}=\overline z w.
+\begin{aligned}
+\overline{(z\overline w)}
+&=\overline z\overline{(\overline w)}\\
+&=\overline z w\\
+&=w\overline z,
+\end{aligned}
 $$
 
-This follows from conjugation of a product and the double-conjugate identity:
-
-$$
-\overline{z\overline w}=\overline z\overline{\overline w}=\overline z w.
-$$
-
-Thus $z\overline w$ and $\overline z w$ are conjugates. For any complex number $u$, $u+\overline u=2\mathrm{Re}(u)$; apply this with $u=z\overline w$. The order in the second cross term may also be written as $w\overline z$ by commutativity of multiplication.
+where the last equality uses commutativity of multiplication. Thus, with $u=z\overline w$, the sum of the cross terms is $u+\overline u=2\mathrm{Re}(u)$. The inequality in the proof uses $\mathrm{Re}(u)\leq |u|$, established above, and the product property $|z\overline w|=|z||w|$.
 
 Both sides of $|z+w|\leq|z|+|w|$ are nonnegative, so taking nonnegative square roots proves the triangle inequality.
 
@@ -380,7 +380,7 @@ The quadratic formula remains valid when the coefficients are real and the discr
 For
 
 $ax^2+bx+c=0,\qquad a,b,c\in\mathbb R,\ a\ne0,$
-let $D=b^2-4ac$. If $D<0$, then
+let $D=b^2-4ac$. If $D<0$, the principal complex square root is
 
 $\sqrt D=i\sqrt{-D},$
 where $\sqrt{-D}$ is the nonnegative real square root. Hence
@@ -422,7 +422,7 @@ If $P(z)=0$, then $P(\overline z)=\overline0=0$. Thus the conjugate is also a ro
 
 <img src="figures/figure_13_4_conjugate_roots.svg" />
 
-*Figure 13.4 — The nonreal roots of a real-coefficient quadratic occur as conjugate points reflected across the real axis.*
+*Figure 13.4 — The two nonreal roots of a real-coefficient quadratic are reflections across the real axis.*
 
 ### Example 16 — Build a real quadratic from conjugate roots
 
@@ -449,7 +449,7 @@ The **Fundamental Theorem of Algebra** states that every nonconstant polynomial 
 
 ## 12. Exact complex arithmetic with Python
 
-Python's built-in `complex` type uses binary floating-point components. It is convenient for numerical work, but it is not an exact rational arithmetic system. The self-contained Python implementation in the example below represents numbers whose real and imaginary parts are rational using `Fraction`. It rejects `float` and `bool` inputs so that an approximate value is not silently treated as exact.
+The example requires Python 3.10 or later. Python's built-in `complex` type uses binary floating-point components. It is convenient for numerical work, but it is not an exact rational arithmetic system. The self-contained Python implementation in the example below represents numbers whose real and imaginary parts are rational using `Fraction`. It rejects `float` and `bool` inputs so that an approximate value is not silently treated as exact.
 
 ```python
 from __future__ import annotations
