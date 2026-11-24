@@ -168,18 +168,18 @@ The conjugate changes the sign of the imaginary part and leaves the real part un
 
 ### 6.1 Basic conjugate identities
 
-For all $z,w\in\mathbb C$, write $\operatorname{conj}(u)$ for the complex conjugate of $u$. This notation makes the scope of conjugation explicit even when it applies to a sum, product, or polynomial; for a single variable, $\operatorname{conj}(z)=\overline z$.
+For all $z,w\in\mathbb C$, write $\mathrm{conj}(u)$ for the complex conjugate of $u$. This notation makes the scope of conjugation explicit even when it applies to a sum, product, or polynomial; for a single variable, $\mathrm{conj}(z)=\overline z$.
 
 $$
-\operatorname{conj}(z+w)=\overline z+\overline w.
-$$
-
-$$
-\operatorname{conj}(zw)=\overline z\cdot\overline w.
+\mathrm{conj}(z+w)=\overline z+\overline w.
 $$
 
 $$
-\operatorname{conj}(\operatorname{conj}(z))=z.
+\mathrm{conj}(zw)=\overline z\cdot\overline w.
+$$
+
+$$
+\mathrm{conj}(\mathrm{conj}(z))=z.
 $$
 
 Also,
@@ -346,7 +346,7 @@ $$
 The two cross terms are conjugates. By the product-conjugate identity and the double-conjugate identity,
 
 $$
-\operatorname{conj}(z\cdot\overline w)=\overline z\cdot w=w\cdot\overline z.
+\mathrm{conj}(z\cdot\overline w)=\overline z\cdot w=w\cdot\overline z.
 $$
 
 The last equality uses commutativity of multiplication. Thus, with $u=z\cdot\overline w$, the sum of the cross terms is $u+\overline u=2\mathrm{Re}(u)$. The inequality in the proof uses $\mathrm{Re}(u)\leq |u|$, established above, and the product property $|z\cdot\overline w|=|z|\cdot|w|$.
@@ -415,9 +415,9 @@ $x=\frac{-2\pm6i}{4}=-\frac12\pm\frac32i.$
 $P(x)=a_nx^n+\cdots+a_1x+a_0,$
 where each coefficient $a_k$ is real. Since conjugation preserves sums and products,
 
-$\operatorname{conj}(P(z))=a_n\overline z^n+\cdots+a_1\overline z+a_0=P(\overline z).$
+$\mathrm{conj}(P(z))=a_n\overline z^n+\cdots+a_1\overline z+a_0=P(\overline z).$
 
-If $P(z)=0$, then $P(\overline z)=\operatorname{conj}(P(z))=\operatorname{conj}(0)=0$. Thus the conjugate is also a root. This proof uses the fact that the coefficients are real; the result need not hold for a polynomial with nonreal coefficients. $\square$
+If $P(z)=0$, then $P(\overline z)=\mathrm{conj}(P(z))=\mathrm{conj}(0)=0$. Thus the conjugate is also a root. This proof uses the fact that the coefficients are real; the result need not hold for a polynomial with nonreal coefficients. $\square$
 
 <img src="figures/figure_13_4_conjugate_roots.svg" />
 
