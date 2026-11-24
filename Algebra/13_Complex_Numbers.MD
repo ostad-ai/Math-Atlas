@@ -168,18 +168,18 @@ The conjugate changes the sign of the imaginary part and leaves the real part un
 
 ### 6.1 Basic conjugate identities
 
-For all $z,w\in\mathbb C$:
+For all $z,w\in\mathbb C$, write $\operatorname{conj}(u)$ for the complex conjugate of $u$. This notation makes the scope of conjugation explicit even when it applies to a sum, product, or polynomial; for a single variable, $\operatorname{conj}(z)=\overline z$.
 
 $$
-\overline{z+w}=\overline z+\overline w.
-$$
-
-$$
-\overline{zw}=\overline z\cdot\overline w.
+\operatorname{conj}(z+w)=\overline z+\overline w.
 $$
 
 $$
-\overline{\overline z}=z.
+\operatorname{conj}(zw)=\overline z\cdot\overline w.
+$$
+
+$$
+\operatorname{conj}(\operatorname{conj}(z))=z.
 $$
 
 Also,
@@ -318,7 +318,6 @@ Using conjugation of a product,
 $$
 \begin{aligned}
 |z\cdot w|^2
-&=(z\cdot w)\overline{z\cdot w}\\
 &=(z\cdot w)(\overline z\cdot\overline w)\\
 &=(z\cdot\overline z)\cdot(w\cdot\overline w)\\
 &=|z|^2\cdot|w|^2.
@@ -329,12 +328,11 @@ Both $|z\cdot w|$ and $|z|\cdot|w|$ are nonnegative, so equality of their square
 
 #### Proof of the triangle inequality
 
-For any complex number $u=x+yi$, its real part satisfies $\mathrm{Re}(u)=x\leq\lvert u\rvert$, because $x\leq\lvert x\rvert\leq\sqrt{x^2+y^2}$. Therefore,
+For any complex number $u=x+yi$, its real part satisfies $\mathrm{Re}(u)=x\leq\lvert u\rvert$, because $x\leq\lvert x\rvert\leq\sqrt{x^2+y^2}$. Using the conjugate-of-a-sum identity in expanded form, we obtain:
 
 $$
 \begin{aligned}
 |z+w|^2
-&=(z+w)\overline{z+w}\\
 &=(z+w)(\overline z+\overline w)\\
 &=z\cdot\overline z+z\cdot\overline w+w\cdot\overline z+w\cdot\overline w\\
 &=|z|^2+|w|^2+(z\cdot\overline w+w\cdot\overline z)\\
@@ -348,7 +346,7 @@ $$
 The two cross terms are conjugates. By the product-conjugate identity and the double-conjugate identity,
 
 $$
-\overline{z\cdot\overline w}=\overline z\cdot w=w\cdot\overline z.
+\operatorname{conj}(z\cdot\overline w)=\overline z\cdot w=w\cdot\overline z.
 $$
 
 The last equality uses commutativity of multiplication. Thus, with $u=z\cdot\overline w$, the sum of the cross terms is $u+\overline u=2\mathrm{Re}(u)$. The inequality in the proof uses $\mathrm{Re}(u)\leq |u|$, established above, and the product property $|z\cdot\overline w|=|z|\cdot|w|$.
@@ -417,9 +415,9 @@ $x=\frac{-2\pm6i}{4}=-\frac12\pm\frac32i.$
 $P(x)=a_nx^n+\cdots+a_1x+a_0,$
 where each coefficient $a_k$ is real. Since conjugation preserves sums and products,
 
-$\overline{P(z)}=a_n\overline z^n+\cdots+a_1\overline z+a_0=P(\overline z).$
+$\operatorname{conj}(P(z))=a_n\overline z^n+\cdots+a_1\overline z+a_0=P(\overline z).$
 
-If $P(z)=0$, then $P(\overline z)=\overline0=0$. Thus the conjugate is also a root. This proof uses the fact that the coefficients are real; the result need not hold for a polynomial with nonreal coefficients. $\square$
+If $P(z)=0$, then $P(\overline z)=\operatorname{conj}(P(z))=\operatorname{conj}(0)=0$. Thus the conjugate is also a root. This proof uses the fact that the coefficients are real; the result need not hold for a polynomial with nonreal coefficients. $\square$
 
 <img src="figures/figure_13_4_conjugate_roots.svg" />
 
@@ -581,12 +579,15 @@ class ComplexRational:
         a, b = self.real, self.imag
         if b == 0:
             return str(a)
+        # Separate a fractional coefficient from i so output such as
+        # "1/2 i" cannot be misread as 1/(2i).
+        coefficient_space = " " if b.denominator != 1 else ""
         if b == 1:
             imag_text = "i"
         elif b == -1:
             imag_text = "-i"
         else:
-            imag_text = f"{b}i"
+            imag_text = f"{b}{coefficient_space}i"
         if a == 0:
             return imag_text
         sign = "+" if b > 0 else "-"
@@ -594,7 +595,8 @@ class ComplexRational:
         if magnitude == 1:
             imag_magnitude = "i"
         else:
-            imag_magnitude = f"{magnitude}i"
+            magnitude_space = " " if magnitude.denominator != 1 else ""
+            imag_magnitude = f"{magnitude}{magnitude_space}i"
         return f"{a} {sign} {imag_magnitude}"
 
 
@@ -617,7 +619,7 @@ z = ComplexRational(Fraction(3, 2), Fraction(2))  # 3/2 + 2i
 w = ComplexRational(1, -1)                        # 1 - i
 
 print(z + w)                 # 5/2 + i
-print(z * w)                 # 7/2 + 1/2 i
+print(z * w)                 # 7/2 + 1/2 i (the coefficient 1/2 multiplies i)
 print(z / w)                 # -1/4 + 7/4 i
 print(z.conjugate())         # 3/2 - 2i
 print(z.modulus_squared())  # 25/4
