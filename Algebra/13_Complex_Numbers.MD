@@ -172,7 +172,7 @@ For all $z,w\in\mathbb C$:
 
 $\overline{z+w}=\overline z+\overline w,$
 
-$\overline{zw}=\overline z\,\overline w,$
+$\overline{zw}=\overline z\cdot\overline w,$
 
 $\overline{\overline z}=z,$
 
@@ -328,13 +328,21 @@ For any complex number $u=x+yi$, its real part satisfies $\mathrm{Re}(u)=x\leq\l
 $$
 \begin{aligned}
 |z+w|^2
-&=(z+w)\overline{(z+w)}\\
+&=(z+w)\overline{z+w}\\
+&=(z+w)(\overline z+\overline w)\\
+&=z\overline z+w\overline w+z\overline w+\overline z\,w\\
 &=|z|^2+|w|^2+2\mathrm{Re}(z\overline w)\\
 &\leq |z|^2+|w|^2+2|z\overline w|\\
 &=|z|^2+|w|^2+2|z||w|\\
 &=(|z|+|w|)^2.
 \end{aligned}
 $$
+
+The cross terms combine because
+\[
+\overline{z\overline w}=\overline z\,w.
+\]
+Thus $z\overline w$ and $\overline z\,w$ are conjugates. For any complex number $u$, $u+\overline u=2\mathrm{Re}(u)$; apply this with $u=z\overline w$. Also, $\overline z\,w=w\overline z$ simply by the commutativity of complex multiplication. This is where that reordered product comes from; it is not an extra conjugation rule.
 
 Both sides of $|z+w|\leq|z|+|w|$ are nonnegative, so taking nonnegative square roots proves the triangle inequality.
 
