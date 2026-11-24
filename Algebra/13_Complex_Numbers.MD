@@ -170,9 +170,9 @@ The conjugate changes the sign of the imaginary part and leaves the real part un
 
 For all $z,w\in\mathbb C$:
 
-$\overline{\left(z+w\right)}=\overline{z}+\overline{w},$
+$\overline{z+w}=\overline z+\overline w$
 
-$\overline{\left(zw\right)}=\overline{z}\overline{w},$
+$\overline{zw}=\overline z\overline w$
 
 $\overline{\overline z}=z,$
 
@@ -287,7 +287,7 @@ $d(z_1,z_2)=|z_1-z_2|.$
 
 <img src="figures/figure_13_2_modulus_and_distance.svg" />
 
-*Figure 13.2 — Modulus is distance from the origin; the distance between two complex numbers is the length of the segment joining their points.*
+*Figure 13.2 — The diagram marks the two moduli, $|z_1|$ and $|z_2|$, and the distance $|z_1-z_2|$ between the two complex points.*
 
 ### 9.1 Useful modulus properties
 
@@ -303,7 +303,7 @@ The final inequality is the **triangle inequality**. It is consistent with the g
 
 <img src="figures/figure_13_3_triangle_inequality.svg" />
 
-*Figure 13.3 — The vector sum forms the third side of a triangle, so its length cannot exceed the sum of the other two side lengths. The conjugate identity applies to the whole sum: $\overline{\left(z_1+z_2\right)}=\overline{z_1}+\overline{z_2}$.*
+*Figure 13.3 — The vector sum forms the third side of a triangle, so its length cannot exceed the sum of the other two side lengths. The conjugate identity applies to the whole sum: $\overline{z_1+z_2}=\overline{z_1}+\overline{z_2}$.*
 
 #### Proof of the product property
 
@@ -313,7 +313,7 @@ $$
 \begin{aligned}
 |zw|^2
 &=(zw)\overline{(zw)}\\
-&=(zw)(\overline z\,\overline w)\\
+&=(zw)(\overline z\overline w)\\
 &=(z\overline z)(w\overline w)\\
 &=|z|^2|w|^2.
 \end{aligned}
@@ -341,14 +341,16 @@ $$
 The cross terms combine because
 
 $$
-\begin{aligned}
-\overline{\left(z\overline w\right)}
-&=\overline z\overline{\left(\overline w\right)}\\
-&=\overline{z}w.
-\end{aligned}
+\overline{z\overline w}=\overline z w.
 $$
 
-Thus $z\overline w$ and $\overline z w$ are conjugates. For any complex number $u$, $u+\overline u=2\mathrm{Re}(u)$; apply this with $u=z\overline w$. By commutativity of complex multiplication, $\overline{z}w=w\overline{z}$.
+This follows from conjugation of a product and the double-conjugate identity:
+
+$$
+\overline{z\overline w}=\overline z\overline{\overline w}=\overline z w.
+$$
+
+Thus $z\overline w$ and $\overline z w$ are conjugates. For any complex number $u$, $u+\overline u=2\mathrm{Re}(u)$; apply this with $u=z\overline w$. The order in the second cross term may also be written as $w\overline z$ by commutativity of multiplication.
 
 Both sides of $|z+w|\leq|z|+|w|$ are nonnegative, so taking nonnegative square roots proves the triangle inequality.
 
@@ -414,7 +416,7 @@ $x=\frac{-2\pm6i}{4}=-\frac12\pm\frac32i.$
 $P(x)=a_nx^n+\cdots+a_1x+a_0,$
 where each coefficient $a_k$ is real. Since conjugation preserves sums and products,
 
-$\overline{P(z)}=a_n\overline z^{\,n}+\cdots+a_1\overline z+a_0=P(\overline z).$
+$\overline{P(z)}=a_n\overline z^n+\cdots+a_1\overline z+a_0=P(\overline z).$
 
 If $P(z)=0$, then $P(\overline z)=\overline0=0$. Thus the conjugate is also a root. This proof uses the fact that the coefficients are real; the result need not hold for a polynomial with nonreal coefficients. $\square$
 
@@ -443,7 +445,7 @@ The complex numbers form a field: they are closed under addition, subtraction, a
 
 However, $\mathbb C$ cannot be made into an ordered field in a way that extends the usual order on $\mathbb R$. In an ordered field every square is nonnegative. If $i$ existed in such a field, then $i^2=-1$ would have to be nonnegative, contradicting $-1<0$. Therefore expressions such as $z_1<z_2$ are not defined as a compatible order on complex numbers. The modulus gives a meaningful nonnegative size, but it is not an order on $\mathbb C$.
 
-The **Fundamental Theorem of Algebra** states that every nonconstant polynomial with complex coefficients has at least one complex root. Consequently, a degree-$n$ polynomial over $\mathbb C$ has exactly $n$ complex roots when counted with multiplicity. A proof is beyond the scope of this chapter; polynomial zeros, multiplicity, and factorization are developed further in Chapter 14.
+The **Fundamental Theorem of Algebra** states that every nonconstant polynomial with complex coefficients has at least one complex root. Consequently, every nonconstant polynomial over $\mathbb C$ of degree n has exactly n complex roots when counted with multiplicity. A proof is beyond the scope of this chapter; polynomial zeros, multiplicity, and factorization are developed further in Chapter 14.
 
 ## 12. Exact complex arithmetic with Python
 
