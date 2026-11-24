@@ -170,11 +170,17 @@ The conjugate changes the sign of the imaginary part and leaves the real part un
 
 For all $z,w\in\mathbb C$:
 
-$\overline{(z+w)}=\overline z+\overline w,$
+$$
+\overline{z+w}=\overline z+\overline w.
+$$
 
-$\overline{(zw)}=\overline z\overline w,$
+$$
+\overline{zw}=\overline z\cdot\overline w.
+$$
 
-$\overline{(\overline z)}=z.$
+$$
+\overline{\overline z}=z.
+$$
 
 Also,
 
@@ -184,7 +190,7 @@ The product of a number and its conjugate is real:
 
 $$
 \begin{aligned}
-z\overline z
+z\cdot\overline z
 &=(a+bi)(a-bi)\\
 &=a^2-(bi)^2\\
 &=a^2+b^2.
@@ -197,7 +203,7 @@ Here $a^2+b^2\geq0$, and it is zero only when $a=b=0$.
 
 For $z=5-12i$,
 
-$\overline z=5+12i,\qquad z\overline z=25+144=169.$
+$\overline z=5+12i,\qquad z\cdot\overline z=25+144=169.$
 
 ### 6.2 Why conjugates help with division
 
@@ -277,7 +283,7 @@ $|z|=\sqrt{a^2+b^2}.$
 
 It is the distance from the origin to the point $(a,b)$ in the complex plane. The modulus is a nonnegative real number. It satisfies
 
-$|z|^2=z\overline z=a^2+b^2.$
+$|z|^2=z\cdot\overline z=a^2+b^2.$
 
 In particular, $|z|=0$ if and only if $z=0$.
 
@@ -293,7 +299,7 @@ $d(z_1,z_2)=|z_1-z_2|.$
 
 For all $z,w\in\mathbb C$:
 
-$|zw|=|z||w|,$
+$|z\cdot w|=|z|\cdot|w|,$
 
 $|\overline z|=|z|,$
 
@@ -311,15 +317,15 @@ Using conjugation of a product,
 
 $$
 \begin{aligned}
-|zw|^2
-&=(zw)\overline{(zw)}\\
-&=(zw)(\overline z\overline w)\\
-&=(z\overline z)(w\overline w)\\
-&=|z|^2|w|^2.
+|z\cdot w|^2
+&=(z\cdot w)\overline{z\cdot w}\\
+&=(z\cdot w)(\overline z\cdot\overline w)\\
+&=(z\cdot\overline z)\cdot(w\cdot\overline w)\\
+&=|z|^2\cdot|w|^2.
 \end{aligned}
 $$
 
-Both $|zw|$ and $|z||w|$ are nonnegative, so equality of their squares implies $|zw|=|z||w|$.
+Both $|z\cdot w|$ and $|z|\cdot|w|$ are nonnegative, so equality of their squares implies $|z\cdot w|=|z|\cdot|w|$.
 
 #### Proof of the triangle inequality
 
@@ -328,31 +334,26 @@ For any complex number $u=x+yi$, its real part satisfies $\mathrm{Re}(u)=x\leq\l
 $$
 \begin{aligned}
 |z+w|^2
-&=(z+w)\overline{(z+w)}\\
+&=(z+w)\overline{z+w}\\
 &=(z+w)(\overline z+\overline w)\\
-&=z\overline z+z\overline w+w\overline z+w\overline w\\
-&=|z|^2+|w|^2+(z\overline w+w\overline z)\\
-&=|z|^2+|w|^2+2\mathrm{Re}(z\overline w)\\
-&\leq |z|^2+|w|^2+2|z\overline w|\\
-&=|z|^2+|w|^2+2|z||w|\\
+&=z\cdot\overline z+z\cdot\overline w+w\cdot\overline z+w\cdot\overline w\\
+&=|z|^2+|w|^2+(z\cdot\overline w+w\cdot\overline z)\\
+&=|z|^2+|w|^2+2\mathrm{Re}(z\cdot\overline w)\\
+&\leq |z|^2+|w|^2+2|z\cdot\overline w|\\
+&=|z|^2+|w|^2+2|z|\cdot|w|\\
 &=(|z|+|w|)^2.
 \end{aligned}
 $$
 
-The two cross terms are conjugates. Indeed,
+The two cross terms are conjugates. By the product-conjugate identity and the double-conjugate identity,
 
 $$
-\begin{aligned}
-\overline{(z\overline w)}
-&=\overline z\overline{(\overline w)}\\
-&=\overline z w\\
-&=w\overline z,
-\end{aligned}
+\overline{z\cdot\overline w}=\overline z\cdot w=w\cdot\overline z.
 $$
 
-where the last equality uses commutativity of multiplication. Thus, with $u=z\overline w$, the sum of the cross terms is $u+\overline u=2\mathrm{Re}(u)$. The inequality in the proof uses $\mathrm{Re}(u)\leq |u|$, established above, and the product property $|z\overline w|=|z||w|$.
+The last equality uses commutativity of multiplication. Thus, with $u=z\cdot\overline w$, the sum of the cross terms is $u+\overline u=2\mathrm{Re}(u)$. The inequality in the proof uses $\mathrm{Re}(u)\leq |u|$, established above, and the product property $|z\cdot\overline w|=|z|\cdot|w|$.
 
-Both sides of $|z+w|\leq|z|+|w|$ are nonnegative, so taking nonnegative square roots proves the triangle inequality.
+Both sides of the squared inequality $|z+w|^2\leq(|z|+|w|)^2$ are nonnegative. Taking nonnegative square roots gives $|z+w|\leq|z|+|w|$, which is the triangle inequality.
 
 ### Example 12 — Find a modulus
 
@@ -445,7 +446,7 @@ The complex numbers form a field: they are closed under addition, subtraction, a
 
 However, $\mathbb C$ cannot be made into an ordered field in a way that extends the usual order on $\mathbb R$. In an ordered field every square is nonnegative. If $i$ existed in such a field, then $i^2=-1$ would have to be nonnegative, contradicting $-1<0$. Therefore expressions such as $z_1<z_2$ are not defined as a compatible order on complex numbers. The modulus gives a meaningful nonnegative size, but it is not an order on $\mathbb C$.
 
-The **Fundamental Theorem of Algebra** states that every nonconstant polynomial with complex coefficients has at least one complex root. Consequently, every nonconstant polynomial over $\mathbb C$ of degree n has exactly n complex roots when counted with multiplicity. A proof is beyond the scope of this chapter; polynomial zeros, multiplicity, and factorization are developed further in Chapter 14.
+The **Fundamental Theorem of Algebra** states that every nonconstant polynomial with complex coefficients has at least one complex root. Consequently, every nonconstant polynomial over the complex numbers has exactly as many complex roots as its degree, counted with multiplicity. A proof is beyond the scope of this chapter; polynomial zeros, multiplicity, and factorization are developed further in Chapter 14.
 
 ## 12. Exact complex arithmetic with Python
 
@@ -664,7 +665,7 @@ The module keeps the squared modulus exact. The modulus itself may be irrational
 ### C. Conjugates, modulus, and geometry
 
 13. Find the conjugate and modulus of $z=-8+15i$.
-14. Verify that $z\overline z=|z|^2$ for $z=3-4i$.
+14. Verify that $z\cdot\overline z=|z|^2$ for $z=3-4i$.
 15. Find the distance between $z_1=-1+i$ and $z_2=2+5i$.
 16. If $z=a+bi$ and $z+\overline z=10$, what is $a$?
 17. Find $z^{-1}$ for $z=2-i$ and express it in standard form.
@@ -692,7 +693,7 @@ The module keeps the squared modulus exact. The modulus itself may be irrational
 11. $\frac12+\frac52i$.
 12. $\frac{5-i}{2i}= -\frac12-\frac52i$.
 13. $\overline z=-8-15i$ and $|z|=\sqrt{64+225}=17$.
-14. $z\overline z=(3-4i)(3+4i)=9+16=25=|z|^2$.
+14. $z\cdot\overline z=(3-4i)(3+4i)=9+16=25=|z|^2$.
 15. $|(-1+i)-(2+5i)|=|-3-4i|=5$.
 16. Since $z+\overline z=2a=10$, $a=5$.
 17. $z^{-1}=\overline z/|z|^2=(2+i)/5=\frac25+\frac15i$.
@@ -709,7 +710,7 @@ The module keeps the squared modulus exact. The modulus itself may be irrational
 - The powers of $i$ repeat with period four.
 - Addition and subtraction combine corresponding components; multiplication uses $i^2=-1$.
 - Division by a nonzero complex number is performed by multiplying by its conjugate.
-- The conjugate of $a+bi$ is $a-bi$, and $z\overline z=|z|^2$.
+- The conjugate of $a+bi$ is $a-bi$, and $z\cdot\overline z=|z|^2$.
 - The modulus $|a+bi|=\sqrt{a^2+b^2}$ is the distance from the origin in the complex plane.
 - A real quadratic with negative discriminant has two nonreal conjugate roots.
 - Complex numbers form a field but do not admit an order compatible with the real order and field operations.
