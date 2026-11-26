@@ -330,7 +330,7 @@ For a real root $r$ of multiplicity $m$, write $P(x)=(x-r)^mQ(x)$ with $Q(r)\ne0
 - Even $m$: the graph touches the axis and stays on the same side locally.
 - Larger $m$: the graph is generally flatter at the intercept.
 
-A degree - $n$ nonzero polynomial has at most $n$ distinct real zeros. Its graph can therefore have at most $n$ distinct $x$-intercepts. A degree-$n$ polynomial also has at most $n-1$ turning points; a proof of this fact uses calculus and is outside the scope of this chapter.
+A degree - $n$ nonzero polynomial has at most $n$ distinct real zeros. Its graph can therefore have at most $n$ distinct $x$-intercepts. A degree - $n$ polynomial also has at most $n-1$ turning points; a proof of this fact uses calculus and is outside the scope of this chapter.
 
 ### Example 14 — Combine roots, multiplicity, and end behavior
 
