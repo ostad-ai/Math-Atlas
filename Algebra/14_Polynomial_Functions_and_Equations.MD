@@ -76,7 +76,7 @@ These terms refer to closely related but distinct viewpoints:
 
 - “Zero” emphasizes the function value $f(r)=0$.
 - “Root” emphasizes a number solving the equation $P(x)=0$.
-- “$x$-intercept” is a point on a real-coordinate graph.
+- $x$-intercept is a point on a real-coordinate graph.
 
 A nonreal complex root is a root of the polynomial equation over $\mathbb C$, but it is not an $x$-intercept of a graph drawn in the real $xy$-plane.
 
@@ -118,7 +118,7 @@ $$
 
 The factor $Q$ contains the part of the polynomial that does not vanish at $r$. A root with multiplicity $1$ is called **simple**. A root with multiplicity greater than $1$ is called **repeated**.
 
-If a degree-$n$ polynomial is factored completely into linear factors over $\mathbb C$, the sum of the multiplicities is $n$. This is the “counted with multiplicity” language in the Fundamental Theorem of Algebra from Chapter 13.
+If a degree - $n$ polynomial is factored completely into linear factors over $\mathbb C$, the sum of the multiplicities is $n$. This is the “counted with multiplicity” language in the Fundamental Theorem of Algebra from Chapter 13.
 
 ### Example 5 — List zeros with multiplicities
 
@@ -330,7 +330,7 @@ For a real root $r$ of multiplicity $m$, write $P(x)=(x-r)^mQ(x)$ with $Q(r)\ne0
 - Even $m$: the graph touches the axis and stays on the same side locally.
 - Larger $m$: the graph is generally flatter at the intercept.
 
-A degree-$n$ nonzero polynomial has at most $n$ distinct real zeros. Its graph can therefore have at most $n$ distinct $x$-intercepts. A degree-$n$ polynomial also has at most $n-1$ turning points; a proof of this fact uses calculus and is outside the scope of this chapter.
+A degree - $n$ nonzero polynomial has at most $n$ distinct real zeros. Its graph can therefore have at most $n$ distinct $x$-intercepts. A degree-$n$ polynomial also has at most $n-1$ turning points; a proof of this fact uses calculus and is outside the scope of this chapter.
 
 ### Example 14 — Combine roots, multiplicity, and end behavior
 
@@ -748,7 +748,7 @@ The code is an exact educational helper for rational-coefficient polynomials. Nu
 | Error | Better reasoning |
 |---|---|
 | Calling a nonreal root an $x$-intercept | Only real roots appear on the real $xy$-graph. |
-| Counting distinct roots instead of multiplicity | A degree-$n$ polynomial has $n$ complex roots when counted with multiplicity. |
+| Counting distinct roots instead of multiplicity | A degree - $n$ polynomial has $n$ complex roots when counted with multiplicity. |
 | Assuming every rational-root candidate works | The Rational Root Theorem gives candidates; test each one. |
 | Using $P(a)$ as the remainder for divisor $x+a$ | Use $P(-a)$ because $x+a=x-(-a)$. |
 | Omitting zero coefficients in synthetic division | Include a coefficient for every power, even when it is zero. |
@@ -764,7 +764,7 @@ The code is an exact educational helper for rational-coefficient polynomials. Nu
 
 1. State the degree, leading coefficient, and constant term of $P(x)=-5x^8+3x^4-2x+9$.
 2. Find the real zeros and their multiplicities for $P(x)=(x+3)^2(x-1)^4$.
-3. How many complex roots does a degree-$7$ polynomial have when counted with multiplicity, assuming it is nonzero and viewed over $\mathbb C$?
+3. How many complex roots does a degree - $7$ polynomial have when counted with multiplicity, assuming it is nonzero and viewed over $\mathbb C$?
 4. Explain why $x=2i$ is not an $x$-intercept of a real graph.
 5. A real zero has multiplicity $5$. Does the graph cross or touch the axis there? Explain.
 
