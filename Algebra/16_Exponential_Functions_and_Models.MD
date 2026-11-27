@@ -450,13 +450,18 @@ $$
 
 ### Example 17 — Solve using logarithms
 
-Solve $5\cdot3^{2x-1}=45$. Divide by $5$:
+Solve $5\cdot3^{2x-1}=45$. Divide by $5$ to isolate the exponential expression, obtaining $3^{2x-1}=9$. Since $9>0$, taking natural logarithms is valid. Using the logarithm power rule:
 
 $$
-3^{2x-1}=9=3^2.
+\begin{aligned}
+\ln(3^{2x-1})&=\ln9,\\
+(2x-1)\ln3&=\ln9,\\
+2x-1&=\frac{\ln9}{\ln3}=2,\\
+x&=\frac32.
+\end{aligned}
 $$
 
-Thus $2x-1=2$ and $x=3/2$. Substitution gives $5\cdot3^2=45$, so the solution checks.
+Substitution gives $5\cdot3^{2(3/2)-1}=5\cdot3^2=45$, so the solution checks.
 
 ### Example 18 — A base that does not give an integer exponent
 
