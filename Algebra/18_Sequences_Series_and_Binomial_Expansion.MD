@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-A sequence is an ordered list of terms whose positions carry meaning. A series is the sum of terms from a sequence. This distinction is simple but fundamental: a formula for the $n$th term does not by itself give the sum of the first $n$ terms. This chapter develops arithmetic and geometric sequences, recursive descriptions, finite and infinite geometric series, sigma notation, and the Binomial Theorem.
+A sequence is an ordered list of terms whose positions carry meaning. A series is the sum of terms from a sequence. This distinction is simple but fundamental: a formula for the $n$ th term does not by itself give the sum of the first $n$ terms. This chapter develops arithmetic and geometric sequences, recursive descriptions, finite and infinite geometric series, sigma notation, and the Binomial Theorem.
 
 The chapter connects several earlier ideas. A geometric sequence is the integer-time sampling of a discrete exponential model from Chapter 16. The Binomial Theorem extends the special products studied in Chapters 08 and 09. Exact arithmetic is used whenever the data are rational; convergence statements are proved rather than inferred from numerical experiments.
 
@@ -33,7 +33,7 @@ The symbol $a_n$ denotes the term at position $n$. The first term is $a_1$, the 
 
 A formula that gives $a_n$ directly in terms of $n$ is an **explicit formula**. A rule that defines later terms from earlier terms, together with enough starting values, is a **recursive definition** or **recurrence**.
 
-A **series** is a sum of terms of a sequence. The $N$th partial sum is
+A **series** is a sum of terms of a sequence. The $N$ th partial sum is
 
 $$
 S_N=\sum_{n=1}^{N}a_n=a_1+a_2+\cdots+a_N.
@@ -266,7 +266,7 @@ $$
 $$
 **converges** to $L$ if the sequence of partial sums $S_N$ approaches the finite limit $L$ as $N\to\infty$. If no finite limit exists, the series diverges.
 
-For a geometric series with first term $a_1$ and ratio $r$, the $N$th partial sum for $r\ne1$ is
+For a geometric series with first term $a_1$ and ratio $r$, the $N$ th partial sum for $r\ne1$ is
 
 $$
 S_N=a_1\frac{1-r^N}{1-r}.
@@ -867,7 +867,7 @@ The equality check verifies this particular input. It is not a proof of the Bino
 
 ## 13. Common errors and cautions
 
-- **Confusing a term with a partial sum:** $a_N$ is the $N$th term; $S_N$ is the sum of the first $N$ terms.
+- **Confusing a term with a partial sum:** $a_N$ is the $N$ th term; $S_N$ is the sum of the first $N$ terms.
 - **Off-by-one indexing:** the formula $a_n=a_1+(n-1)d$ uses indexing from $1$. If indexing begins at $0$, write the formula consistently, such as $a_n=a_0+nd$.
 - **Calling every pattern arithmetic or geometric:** constant differences indicate arithmetic structure; constant ratios indicate geometric structure, and a ratio test must not divide by zero.
 - **Using the geometric-sum formula at $r=1$:** use $S_N=Na_1$ instead.
