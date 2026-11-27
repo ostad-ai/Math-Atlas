@@ -75,6 +75,7 @@ For
 $$
 g(x)=\frac{x+2}{x^2+1},
 $$
+
 we have $x^2+1>0$ for every real $x$. Therefore $D_g=\mathbb R$. A denominator polynomial can be nonzero as a polynomial and still have no real zeros.
 
 ## 3. Reduction and the difference between expressions and functions
