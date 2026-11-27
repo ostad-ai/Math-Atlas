@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="500.00" y="48.00" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="bold" fill="#172b4d" text-anchor="middle">Annual versus monthly compounding</text>
+<text x="500.00" y="78.00" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#64748b" text-anchor="middle">Same principal ($5,000) and nominal annual rate (4.8%); balances change at compounding dates.</text>
+<line x1="143.00" y1="120.00" x2="143.00" y2="517.00" stroke="#e7edf4" stroke-width="1"/>
+<text x="143.00" y="539.00" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="middle">0</text>
+<line x1="268.67" y1="120.00" x2="268.67" y2="517.00" stroke="#e7edf4" stroke-width="1"/>
+<text x="268.67" y="539.00" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="middle">0.5</text>
+<line x1="394.33" y1="120.00" x2="394.33" y2="517.00" stroke="#e7edf4" stroke-width="1"/>
+<text x="394.33" y="539.00" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="middle">1</text>
+<line x1="520.00" y1="120.00" x2="520.00" y2="517.00" stroke="#e7edf4" stroke-width="1"/>
+<text x="520.00" y="539.00" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="middle">1.5</text>
+<line x1="645.67" y1="120.00" x2="645.67" y2="517.00" stroke="#e7edf4" stroke-width="1"/>
+<text x="645.67" y="539.00" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="middle">2</text>
+<line x1="771.33" y1="120.00" x2="771.33" y2="517.00" stroke="#e7edf4" stroke-width="1"/>
+<text x="771.33" y="539.00" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="middle">2.5</text>
+<line x1="897.00" y1="120.00" x2="897.00" y2="517.00" stroke="#e7edf4" stroke-width="1"/>
+<text x="897.00" y="539.00" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="middle">3</text>
+<line x1="143.00" y1="494.18" x2="897.00" y2="494.18" stroke="#e7edf4" stroke-width="1"/>
+<text x="133.00" y="498.18" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="end">5,000</text>
+<line x1="143.00" y1="402.92" x2="897.00" y2="402.92" stroke="#e7edf4" stroke-width="1"/>
+<text x="133.00" y="406.92" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="end">5,200</text>
+<line x1="143.00" y1="311.66" x2="897.00" y2="311.66" stroke="#e7edf4" stroke-width="1"/>
+<text x="133.00" y="315.66" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="end">5,400</text>
+<line x1="143.00" y1="220.39" x2="897.00" y2="220.39" stroke="#e7edf4" stroke-width="1"/>
+<text x="133.00" y="224.39" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="end">5,600</text>
+<line x1="143.00" y1="129.13" x2="897.00" y2="129.13" stroke="#e7edf4" stroke-width="1"/>
+<text x="133.00" y="133.13" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#64748b" text-anchor="end">5,800</text>
+<line x1="143.00" y1="120.00" x2="143.00" y2="517.00" stroke="#475569" stroke-width="1.8"/>
+<line x1="143.00" y1="517.00" x2="897.00" y2="517.00" stroke="#475569" stroke-width="1.8"/>
+<text x="520.00" y="567.00" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#334155" text-anchor="middle">Time t (years)</text>
+<text x="96.00" y="318.50" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#334155" text-anchor="middle" transform="rotate(-90 96 318.5)">Account balance</text>
+<defs><clipPath id="plotclip"><rect x="143.00" y="120.00" width="754.00" height="397.00"/></clipPath></defs>
+<path d="M 143.00,494.18 H 394.33 V 384.67 H 645.67 V 269.89 H 897.00 V 149.61" fill="none" stroke="#dd7a2b" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#plotclip)"/>
+<path d="M 143.00,494.18 H 163.94 V 485.06 H 184.89 V 475.89 H 205.83 V 466.69 H 226.78 V 457.46 H 247.72 V 448.19 H 268.67 V 438.87 H 289.61 V 429.53 H 310.56 V 420.14 H 331.50 V 410.72 H 352.44 V 401.26 H 373.39 V 391.76 H 394.33 V 382.22 H 415.28 V 372.65 H 436.22 V 363.04 H 457.17 V 353.39 H 478.11 V 343.70 H 499.06 V 333.97 H 520.00 V 324.20 H 540.94 V 314.40 H 561.89 V 304.55 H 582.83 V 294.66 H 603.78 V 284.74 H 624.72 V 274.78 H 645.67 V 264.77 H 666.61 V 254.73 H 687.56 V 244.64 H 708.50 V 234.52 H 729.44 V 224.35 H 750.39 V 214.15 H 771.33 V 203.90 H 792.28 V 193.61 H 813.22 V 183.29 H 834.17 V 172.92 H 855.11 V 162.50 H 876.06 V 152.05 H 897.00 V 141.56" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#plotclip)"/>
+<circle cx="897.00" cy="149.61" r="5.5" fill="#ffffff" stroke="#dd7a2b" stroke-width="3"/>
+<circle cx="897.00" cy="141.56" r="5.5" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+<rect x="155" y="120" width="204" height="66" rx="9" fill="#ffffff" fill-opacity="0.93" stroke="#d9e2ec"/>
+<line x1="169" y1="137" x2="197" y2="137" stroke="#dd7a2b" stroke-width="3.5" stroke-linecap="round"/>
+<text x="207.00" y="142.00" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1f2937" text-anchor="start">Annual: $5,755.11</text>
+<line x1="169" y1="163" x2="197" y2="163" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round"/>
+<text x="207.00" y="168.00" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#1f2937" text-anchor="start">Monthly: $5,772.76</text>
+</svg>
