@@ -28,9 +28,7 @@ A linear sequence has a constant **difference** between consecutive terms. An ex
 For example, the sequence
 
 $$
-
 3,\ 7,\ 11,\ 15,\ 19,\ldots
-
 $$
 
 has common difference $4$. Its term after $n$ steps is $a_n=3+4n$.
@@ -38,9 +36,7 @@ has common difference $4$. Its term after $n$ steps is $a_n=3+4n$.
 The sequence
 
 $$
-
 3,\ 6,\ 12,\ 24,\ 48,\ldots
-
 $$
 
 has common ratio $2$. Its term after $n$ steps is $a_n=3\cdot2^n$.
@@ -56,17 +52,13 @@ A savings jar receives $5$ dollars at the end of each week, starting with no mon
 For a real base $b$ satisfying
 
 $$
-
 b>0,\qquad b\ne1,
-
 $$
 
 the expression $b^x$ is defined for every real input $x$. The resulting function
 
 $$
-
 f(x)=b^x
-
 $$
 
 is the **basic exponential function**. Its real-exponent definition is compatible with integer and rational powers and can be expressed using the natural exponential and natural logarithm as $b^x=e^{x\ln b}$. Chapter 17 develops the logarithm in detail.
@@ -108,9 +100,7 @@ For $g(x)=(0.4)^x$, the base lies between $0$ and $1$, so the function is decrea
 A basic exponential model with positive initial value is
 
 $$
-
 A(t)=A_0b^t,
-
 $$
 
 where $A_0>0$ is the initial amount, $b>0$ is the multiplicative factor per time unit, and $t$ is the number of time units. In a discrete process, $t$ is normally a nonnegative integer. The formula may be extended to real $t$ for a continuous-input mathematical model, but a real-world step process changes only at its specified steps.
@@ -122,17 +112,13 @@ where $A_0>0$ is the initial amount, $b>0$ is the multiplicative factor per time
 If the percentage growth per period is $r$, written as a decimal, then
 
 $$
-
 b=1+r.
-
 $$
 
 For example, a growth rate of $6\%$ gives $b=1.06$. If a quantity decreases by $d$ per period, where $0<d<1$, then
 
 $$
-
 b=1-d.
-
 $$
 
 A decrease of $6\%$ gives $b=0.94$, not $0.06$.
@@ -144,17 +130,13 @@ The multiplier must be applied to the current amount, not repeatedly to the orig
 A quantity grows by $4.5\%$ each month. Its monthly factor is
 
 $$
-
 b=1+0.045=1.045.
-
 $$
 
 If it begins at $800$ units, then after $n$ complete months
 
 $$
-
 A_n=800(1.045)^n.
-
 $$
 
 ### Example 4 — A percentage decrease
@@ -162,9 +144,7 @@ $$
 A machine retains $92\%$ of its value each year. Its annual factor is $0.92$, and the model is
 
 $$
-
 V_n=V_0(0.92)^n.
-
 $$
 
 The decrease is $8\%$ per year; $0.92$ is the remaining fraction.
@@ -174,9 +154,7 @@ The decrease is $8\%$ per year; $0.92$ is the remaining fraction.
 A price increases by $10\%$ and later decreases by $10\%$. The combined factor is
 
 $$
-
 1.10\times0.90=0.99.
-
 $$
 
 The final price is $99\%$ of the original price, so the net change is a decrease of $1\%$. Equal percentage increase and decrease do not cancel because the second percentage is applied to the changed amount.
@@ -186,9 +164,7 @@ The final price is $99\%$ of the original price, so the net change is a decrease
 A useful transformed form is
 
 $$
-
 g(x)=A b^{x-h}+k,
-
 $$
 
 where $b>0$, $b\ne1$, and $A\ne0$.
@@ -207,9 +183,7 @@ When $A>0$ and $b>1$, the function is increasing. When $A>0$ and $0<b<1$, it is 
 Let
 
 $$
-
 g(x)=3\cdot2^{x-1}+4.
-
 $$
 
 This is the graph of $2^x$ shifted right by $1$, stretched vertically by a factor of $3$, and shifted up by $4$. Its horizontal asymptote is $y=4$, domain is $\mathbb R$, and range is $(4,\infty)$. Its $y$-intercept is $g(0)=3\cdot2^{-1}+4=5.5$.
@@ -227,26 +201,20 @@ For $h(x)=-2(0.5)^x+7$, the horizontal asymptote is $y=7$, the domain is $\mathb
 A simple exponential model has the form
 
 $$
-
 A(t)=A_0b^t.
-
 $$
 
 The initial amount is $A(0)=A_0$. If two exact data points $(t_1,A_1)$ and $(t_2,A_2)$ are known, with positive outputs and $t_1\ne t_2$, then
 
 $$
-
 \frac{A_2}{A_1}=b^{t_2-t_1}.
-
 $$
 
 Thus
 
 $$
-
 b=\left(\frac{A_2}{A_1}\right)^{1/(t_2-t_1)},
 \qquad A_0=\frac{A_1}{b^{t_1}}.
-
 $$
 
 These equations give a model passing through the two points. With more than two observations, a model is usually estimated using a fitting method such as least squares after a suitable logarithmic transformation; measurement error and model assumptions must be considered. Two points determine a candidate exponential curve, but do not prove that a real process remains exponential.
@@ -256,17 +224,13 @@ These equations give a model passing through the two points. With more than two 
 A culture has $200$ cells at $t=0$ and $250$ cells at $t=3$ days. If an exponential model is appropriate, then
 
 $$
-
 A(t)=200b^t,\qquad 200b^3=250.
-
 $$
 
 Therefore $b^3=1.25$ and
 
 $$
-
 A(t)=200(1.25)^{t/3}.
-
 $$
 
 The factor per three days is exactly $1.25$. The per-day factor is $1.25^{1/3}$, which is generally irrational; it should not be rounded until a numerical estimate is required.
@@ -280,9 +244,7 @@ The factor per three days is exactly $1.25$. The per-day factor is $1.25^{1/3}$,
 For a fixed multiplier $b$, the amount after $n$ complete steps is
 
 $$
-
 A_n=A_0b^n,\qquad n=0,1,2,\ldots
-
 $$
 
 This is a geometric sequence, connecting the sequence work in Chapter 18 with the function model studied here. The ratio of successive terms is $A_{n+1}/A_n=b$ when the terms are nonzero.
@@ -292,9 +254,7 @@ If $b>1$, a target $T>A_0$ is reached or exceeded after the smallest integer $n$
 For $b>1$, the real-valued threshold estimate is
 
 $$
-
 n=\frac{\ln(T/A_0)}{\ln b},
-
 $$
 
 provided $T/A_0>0$. If only complete steps are allowed, take the least integer not smaller than this value and verify the inequality using the original model. Chapter 17 develops logarithms and their laws.
@@ -304,9 +264,7 @@ provided $T/A_0>0$. If only complete steps are allowed, take the least integer n
 An account begins with $500$ and grows by $5\%$ per year. The model is $A_n=500(1.05)^n$. To reach at least $700$, solve
 
 $$
-
 500(1.05)^n\ge700.
-
 $$
 
 The real threshold is $n=\ln(1.4)/\ln(1.05)\approx6.90$. Therefore the first complete year is $n=7$. Check: $A_6\approx670.05<700$ and $A_7\approx703.55\ge700$.
@@ -316,17 +274,13 @@ The real threshold is $n=\ln(1.4)/\ln(1.05)\approx6.90$. Therefore the first com
 Suppose a principal $P$ earns a nominal annual interest rate $r$, written as a decimal, compounded $m$ times per year. The rate per compounding period is $r/m$. After $n$ compounding periods,
 
 $$
-
 A=P\left(1+\frac rm\right)^n.
-
 $$
 
 For $t$ years with $mt$ complete compounding periods, the compound-interest formula is
 
 $$
-
 A(t)=P\left(1+\frac rm\right)^{mt}.
-
 $$
 
 Here $P\ge0$, $m$ is a positive integer, and $1+r/m>0$. In ordinary positive-interest examples, $r\ge0$. The operational balance changes at compounding dates; conventions for partial periods depend on the financial contract, so do not silently assume that every fractional-year interpretation is used by every institution.
@@ -334,9 +288,7 @@ Here $P\ge0$, $m$ is a positive integer, and $1+r/m>0$. In ordinary positive-int
 The effective annual rate is the actual one-year multiplier minus one:
 
 $$
-
 r_{\mathrm{eff}}=\left(1+\frac rm\right)^m-1.
-
 $$
 
 It is generally not equal to the nominal annual rate $r$ when compounding occurs more than once per year.
@@ -346,10 +298,8 @@ It is generally not equal to the nominal annual rate $r$ when compounding occurs
 A principal of $5{,}000$ earns a nominal annual rate of $4.8\%$, compounded monthly, for $3$ years. There are $36$ compounding periods, so
 
 $$
-
 A=5000\left(1+\frac{0.048}{12}\right)^{36}
   =5000(1.004)^{36}.
-
 $$
 
 The formula gives approximately $5{,}772.7$ currency units. The exact expression is preferable until a rounding rule is specified.
@@ -367,9 +317,7 @@ For the same principal and nominal rate, annual compounding gives $P(1+r)^t$, wh
 If the instantaneous relative growth rate is constant and equal to $k$, then the continuous model is
 
 $$
-
 A(t)=A_0e^{kt},
-
 $$
 
 where $A_0>0$, $t$ is measured in the chosen time unit, and $k$ has units of inverse time. The value $e$ is the natural exponential base.
@@ -381,9 +329,7 @@ where $A_0>0$, $t$ is measured in the chosen time unit, and $k$ has units of inv
 The differential equation behind the model is
 
 $$
-
 \frac{dA}{dt}=kA.
-
 $$
 
 It states that the instantaneous rate of change is proportional to the current amount. Separating variables and integrating gives $\ln A=kt+C$ when $A>0$; using $A(0)=A_0$ gives $A(t)=A_0e^{kt}$. This derivation assumes differentiability and a constant proportionality rate.
@@ -393,17 +339,13 @@ It states that the instantaneous rate of change is proportional to the current a
 A laboratory sample begins with $1{,}200$ units and follows a continuous growth rate of $3\%$ per hour. Then $k=0.03$ per hour and
 
 $$
-
 A(t)=1200e^{0.03t}.
-
 $$
 
 After $5$ hours,
 
 $$
-
 A(5)=1200e^{0.15}\approx1{,}394.2\text{ units}.
-
 $$
 
 ### Example 13 — Continuous decay
@@ -411,9 +353,7 @@ $$
 A substance begins with $160$ grams and decays continuously at a rate constant of $0.12$ per day. Its model is
 
 $$
-
 M(t)=160e^{-0.12t}.
-
 $$
 
 After $5$ days, $M(5)=160e^{-0.6}\approx87.8$ grams. The exponent is negative because the quantity decays.
@@ -427,33 +367,25 @@ After $5$ days, $M(5)=160e^{-0.6}\approx87.8$ grams. The exponent is negative be
 For continuous growth $A(t)=A_0e^{kt}$ with $k>0$, the doubling time $T_d$ satisfies
 
 $$
-
 2A_0=A_0e^{kT_d}.
-
 $$
 
 Since $A_0>0$, divide by it and take logarithms:
 
 $$
-
 T_d=\frac{\ln2}{k}.
-
 $$
 
 For continuous decay $A(t)=A_0e^{-kt}$ with $k>0$, the half-life $T_{1/2}$ satisfies
 
 $$
-
 \frac12 A_0=A_0e^{-kT_{1/2}},
-
 $$
 
 so
 
 $$
-
 T_{1/2}=\frac{\ln2}{k}.
-
 $$
 
 The same numerical form appears in both cases, but the parameter is interpreted differently: $k$ is the positive growth constant in the first formula and the positive decay constant in the second. Units of time must match the units used for $k$.
@@ -465,9 +397,7 @@ For discrete growth with factor $b>1$, the real doubling-time estimate is $\ln2/
 A continuously growing population has rate constant $k=0.08$ per year. Its doubling time is
 
 $$
-
 T_d=\frac{\ln2}{0.08}\approx8.66\text{ years}.
-
 $$
 
 This is a model-based time, not a promise that a discrete census will record exactly twice the population at that instant.
@@ -477,9 +407,7 @@ This is a model-based time, not a promise that a discrete census will record exa
 A substance has continuous decay constant $k=0.12$ per day. Its half-life is
 
 $$
-
 T_{1/2}=\frac{\ln2}{0.12}\approx5.78\text{ days}.
-
 $$
 
 The initial amount does not affect the half-life when the same constant-rate model remains valid.
@@ -495,25 +423,19 @@ An exponential equation has the unknown in an exponent. First isolate the expone
 For $b>0$, $b\ne1$, the function $b^x$ is one-to-one. Therefore, if both sides can be written with the same base, equal powers have equal exponents:
 
 $$
-
 b^{u(x)}=b^{v(x)}\quad\Longleftrightarrow\quad u(x)=v(x).
-
 $$
 
 If the bases cannot be made equal conveniently, use the inverse logarithm. For $y>0$,
 
 $$
-
 \log_b y=\frac{\ln y}{\ln b},\qquad b>0,\ b\ne1.
-
 $$
 
 Then
 
 $$
-
 b^{u}=y\quad\Longleftrightarrow\quad u=\log_b y.
-
 $$
 
 The logarithm is defined only for a positive argument. Chapter 17 develops logarithmic functions and their laws in full.
@@ -523,9 +445,7 @@ The logarithm is defined only for a positive argument. Chapter 17 develops logar
 Solve $2^{x+1}=16$. Since $16=2^4$ and the base $2$ is positive and not $1$,
 
 $$
-
 2^{x+1}=2^4\Longrightarrow x+1=4\Longrightarrow x=3.
-
 $$
 
 ### Example 17 — Solve using logarithms
@@ -533,9 +453,7 @@ $$
 Solve $5\cdot3^{2x-1}=45$. Divide by $5$:
 
 $$
-
 3^{2x-1}=9=3^2.
-
 $$
 
 Thus $2x-1=2$ and $x=3/2$. Substitution gives $5\cdot3^2=45$, so the solution checks.
@@ -545,9 +463,7 @@ Thus $2x-1=2$ and $x=3/2$. Substitution gives $5\cdot3^2=45$, so the solution ch
 Solve $2^x=5$. There is no convenient integer exponent. Since the right-hand side is positive,
 
 $$
-
 x=\log_2 5=\frac{\ln5}{\ln2}\approx2.3219.
-
 $$
 
 The decimal is an approximation; the logarithmic expression is exact.
@@ -557,9 +473,7 @@ The decimal is an approximation; the logarithmic expression is exact.
 Consider $4\cdot2^x-7=1$. Isolate the exponential term:
 
 $$
-
 4\cdot2^x=8,\qquad 2^x=2.
-
 $$
 
 The right side is positive, so taking a logarithm is valid; $x=1$. In a more general equation $A b^{u(x)}+C=D$, the quantity $(D-C)/A$ must be positive when $A\ne0$ before a real logarithm can be applied.
@@ -578,9 +492,7 @@ This is the same order-reversal idea encountered in Chapter 04, but here the rev
 Solve $3^{2x-1}\le27$. Since $27=3^3$ and the base $3>1$,
 
 $$
-
 2x-1\le3\Longrightarrow x\le2.
-
 $$
 
 ### Example 21 — Decreasing base
@@ -588,9 +500,7 @@ $$
 Solve $(1/2)^{x+1}>1/8$. Since $1/8=(1/2)^3$ and the base is between zero and one, the inequality reverses when exponents are compared:
 
 $$
-
 x+1<3\Longrightarrow x<2.
-
 $$
 
 ## 13. Modeling assumptions, units, and limitations
