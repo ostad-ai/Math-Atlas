@@ -104,9 +104,7 @@ where $b>0$, $b\ne1$, and $A\ne0$.
 
 Let
 
-$$
-g(x)=-2\log_3(x-4)+5.
-$$
+$g(x)=-2\log_3(x-4)+5$.
 
 The domain is $(4,\infty)$, the range is $\mathbb R$, and the vertical asymptote is $x=4$. The graph is shifted right by $4$, reflected vertically by the negative coefficient, stretched by a factor of $2$, and shifted up by $5$. Since $\log_3 x$ is increasing and the coefficient is negative, $g$ is decreasing.
 
@@ -116,6 +114,11 @@ $$
 -2\log_3(x-4)+5=0.
 $$
 Therefore $\log_3(x-4)=5/2$, so $x-4=3^{5/2}$ and $x=4+3^{5/2}$. The $y$-intercept does not exist because $x=0$ is outside the domain.
+
+
+<img src="figures/figure_17_1_transformed_logarithm.svg" />
+
+*Figure 17.1 — A transformed logarithmic function, its vertical asymptote, and its x-intercept.*
 
 ## 4. Logarithms and exponential functions are inverses
 
@@ -135,6 +138,11 @@ These identities express the inverse relationship. The order and domain matter: 
 
 The graphs $y=b^x$ and $y=\log_bx$ are reflections of one another across the line $y=x$. Their domains and ranges are interchanged.
 
+
+<img src="figures/figure_17_2_inverse_functions.svg" />
+
+*Figure 17.2 — Exponential and logarithmic functions are reflections across the line y = x.*
+
 ### Example 4 — Simplify inverse compositions
 
 For $b=5$,
@@ -150,6 +158,11 @@ $$
 $$
 
 only for $x-3>0$, or $x>3$.
+
+
+<img src="figures/figure_17_3_logarithm_monotonicity.svg" />
+
+*Figure 17.3 — Increasing and decreasing logarithmic functions for bases above and below one.*
 
 ## 5. The logarithm laws
 
@@ -262,6 +275,11 @@ $$
 
 The exact value is the quotient of logarithms; the decimal is an approximation.
 
+
+<img src="figures/figure_17_4_common_natural_and_base2.svg" />
+
+*Figure 17.4 — Common, natural, and base-two logarithms on the same axes.*
+
 ### Example 8 — Evaluate common and natural logarithms
 
 Since $10^3=1000$, $\log 1000=3$. Since $e^0=1$, $\ln1=0$. Since $e^1=e$, $\ln e=1$.
@@ -328,13 +346,16 @@ $$
 
 Therefore $x^2-1=2^3=8$, so $x^2=9$ and the algebraic candidates are $x=3$ and $x=-3$. Only $x=3$ satisfies the original domain. Substitution confirms that it solves the original equation; $x=-3$ is extraneous.
 
+
+<img src="figures/figure_17_5_product_equation_domain.svg" />
+
+*Figure 17.5 — The product-law equation has solution x = 3 within its original domain x > 1.*
+
 ### Example 12 — Quotient law
 
 Solve
 
-$$
-\log_3(x+5)-\log_3(x-1)=1.
-$$
+$\log_3(x+5)-\log_3(x-1)=1$.
 
 The domain is $x>1$. The quotient law gives
 
@@ -342,6 +363,11 @@ $$
 \log_3\left(\frac{x+5}{x-1}\right)=1,
 $$
 so $(x+5)/(x-1)=3$. Then $x+5=3x-3$, giving $x=4$. It is in the domain and is the solution.
+
+
+<img src="figures/figure_17_6_quotient_equation.svg" />
+
+*Figure 17.6 — The quotient-law equation intersects y = 1 at x = 4, within the domain x > 1.*
 
 ### Example 13 — A logarithmic equation with a quadratic
 
