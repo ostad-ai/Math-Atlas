@@ -10,7 +10,7 @@ $$
 f(x)=\frac{x^2-1}{x-1}
 $$
 
-has natural real domain $\mathbb R\setminus\{1\}$. On that domain its values are given by $x+1$, but the original function still has a missing point at $(1,2)$. The graph is the line $y=x+1$ with that point removed.
+has natural real domain $\mathbb R\setminus\lbrace1\rbrace$. On that domain its values are given by $x+1$, but the original function still has a missing point at $(1,2)$. The graph is the line $y=x+1$ with that point removed.
 
 This volume uses a **domain-sensitive real-function convention**: a rational function is the quotient formula together with the natural domain determined by its original denominator. Two simplified formulas that agree where both are defined need not describe the same real function if their domains differ.
 
@@ -39,7 +39,7 @@ $$
 where $P$ and $Q$ are real polynomials and $Q$ is not the zero polynomial. Its natural real domain is
 
 $$
-D_f=\{x\in\mathbb R:Q(x)\ne0\}.
+D_f=\lbracex\in\mathbb R:Q(x)\ne0\rbrace.
 $$
 
 The domain is determined by the denominator in the original representation. A zero of the numerator is allowed unless it is also a zero of the denominator. A real zero of the denominator is always excluded, even if a common factor later cancels.
@@ -63,7 +63,7 @@ $$
 Thus $x\ne3$ and $x\ne-2$, so
 
 $$
-D_f=\mathbb R\setminus\{-2,3\}.
+D_f=\mathbb R\setminus\lbrace-2,3\rbrace.
 $$
 
 The numerator may equal zero; the denominator may not.
@@ -102,6 +102,10 @@ f(x)=\frac{(x-1)(x+1)}{x-1}=x+1,\qquad x\ne1.
 $$
 
 The reduced formula has the finite value $2$ at $x=1$, but the original function is undefined there. Its graph has a **hole** at $(1,2)$.
+
+<img src="figures/figure_15_1_removable_discontinuity.svg" />
+
+*Figure 15.1 — The graph follows the line y = x + 1 but omits the point at x = 1, leaving a hole at (1, 2).*
 
 ### Example 4 — Cancellation does not always produce a hole
 
@@ -174,6 +178,10 @@ $$
 
 At $x=1$, the reduced formula has value $-1$, so there is a hole at $(1,-1)$. At $x=3$, the reduced denominator is zero while the numerator is not, so $x=3$ is a vertical asymptote.
 
+<img src="figures/figure_15_2_hole_and_vertical_asymptote.svg" />
+
+*Figure 15.2 — A single rational graph can have a removable hole at (1, −1) and a vertical asymptote at x = 3.*
+
 ### Example 7 — A vertical asymptote with one-sided signs
 
 For $h(x)=1/(x-2)$, values are negative to the left of $2$ and positive to the right. The function is undefined at $2$, and its magnitude grows without bound near that input. The vertical asymptote is $x=2$.
@@ -232,6 +240,10 @@ $$
 
 the denominator has larger degree, so the horizontal asymptote is $y=0$. But $g(0)=0$, so the graph meets (and crosses) its horizontal asymptote at the origin. An asymptote is not necessarily a line the graph never touches.
 
+<img src="figures/figure_15_3_horizontal_asymptote_crossing.svg" />
+
+*Figure 15.3 — The graph crosses its horizontal asymptote y = 0 at the origin.*
+
 ### Example 10 — Slant asymptote by division
 
 For
@@ -247,6 +259,10 @@ f(x)=x+1+\frac{2}{x-1}.
 $$
 
 The fraction term becomes small for large $\lvert x\rvert$, so the slant asymptote is $y=x+1$.
+
+<img src="figures/figure_15_4_slant_asymptote.svg" />
+
+*Figure 15.4 — The rational graph approaches the slant asymptote y = x + 1 and has a vertical asymptote at x = 1.*
 
 ### Example 11 — A higher-degree polynomial asymptote
 
@@ -288,12 +304,16 @@ $$
 g(x)=-\frac{2}{x-3}+4,
 $$
 
-the vertical asymptote is $x=3$, the horizontal asymptote is $y=4$, and the center is $(3,4)$. The domain is $\mathbb R\setminus\{3\}$. To find the $x$-intercept, solve
+the vertical asymptote is $x=3$, the horizontal asymptote is $y=4$, and the center is $(3,4)$. The domain is $\mathbb R\setminus\lbrace3\rbrace$. To find the $x$-intercept, solve
 
 $$
 -\frac{2}{x-3}+4=0
 \quad\Longrightarrow\quad x=\frac72.
 $$
+
+<img src="figures/figure_15_5_transformed_reciprocal_function.svg" />
+
+*Figure 15.5 — The transformed reciprocal graph has vertical asymptote x = 3, horizontal asymptote y = 4, and center (3, 4).*
 
 ## 8. Sign analysis of rational functions
 
@@ -357,7 +377,7 @@ x+1=2(x-2)
 \quad\Longrightarrow\quad x=5.
 $$
 
-Since $5\ne2$ and substitution into the original equation gives $6/3=2$, the solution set is $\{5\}$.
+Since $5\ne2$ and substitution into the original equation gives $6/3=2$, the solution set is $\lbrace5\rbrace$.
 
 ### Example 15 — A candidate excluded by the original domain
 
@@ -367,7 +387,7 @@ $$
 \frac{x^2-1}{x-1}=x+1.
 $$
 
-The original domain is $x\ne1$. After cancellation, the two sides agree for every admissible $x$. The solution set is therefore $\mathbb R\setminus\{1\}$, not all real numbers. The equation is an identity on its stated domain.
+The original domain is $x\ne1$. After cancellation, the two sides agree for every admissible $x$. The solution set is therefore $\mathbb R\setminus\lbrace1\rbrace$, not all real numbers. The equation is an identity on its stated domain.
 
 ### Example 16 — Clearing denominators while preserving restrictions
 
@@ -446,6 +466,10 @@ t(r)=\frac{24}{r},\qquad r>0.
 $$
 
 The model assumes equal worker productivity and no coordination overhead. The inverse relationship says that doubling the number of workers halves the idealized time; real-world constraints may make the model approximate rather than exact.
+
+<img src="figures/figure_15_6_inverse_variation_model.svg" />
+
+*Figure 15.6 — The inverse-variation model t = 24/r is decreasing for positive r; doubling r halves t.*
 
 ## 12. Exact computation with Python
 
@@ -2307,7 +2331,7 @@ assert sign_at(f, 4) == 1
 
 ## 15. Selected answers
 
-1. $\mathbb R\setminus\{-3,3\}$.
+1. $\mathbb R\setminus\lbrace-3,3\rbrace$.
 2. $\frac{x+4}{x}$, with original restrictions $x\ne0,4$.
 3. A hole at $(2,4)$.
 4. A vertical asymptote at $x=-1$.
