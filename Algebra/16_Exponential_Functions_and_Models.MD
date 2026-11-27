@@ -306,11 +306,25 @@ The formula gives approximately $5{,}772.7$ currency units. The exact expression
 
 ### Example 11 — Compare annual and monthly compounding
 
-For the same principal and nominal rate, annual compounding gives $P(1+r)^t$, while monthly compounding gives $P(1+r/12)^{12t}$ for complete years. With a positive rate, monthly compounding produces a larger balance because each period's interest begins earning interest sooner. The difference is not a change in the nominal annual rate; it is a change in the compounding frequency.
+For the same principal and nominal annual rate, annual compounding gives $P(1+r)^t$, while monthly compounding gives $P(1+r/12)^{12t}$ for complete years. Monthly compounding produces a larger balance at each year-end because interest is added monthly and begins earning interest sooner.
+
+To make the difference easier to see, compare a principal of $5{,}000$ at a nominal annual rate of $15\%$ for $3$ years. With annual compounding,
+
+$$
+A_{\mathrm{annual}}(3)=5000(1.15)^3=7604.375\approx 7604.38.
+$$
+
+With monthly compounding,
+
+$$
+A_{\mathrm{monthly}}(3)=5000\left(1+\frac{0.15}{12}\right)^{36}\approx 7819.72.
+$$
+
+Thus monthly compounding gives approximately $215.34$ more after three years. The nominal annual rate is still $15\%$ in both models; only the compounding frequency changes.
 
 <img src="figures/figure_16_4_annual_vs_monthly_compounding.svg" />
 
-*Figure 16.4 — Annual and monthly compounding at the same nominal rate.*
+*Figure 16.4 — Annual and monthly compounding at a nominal annual rate of 15%.*
 
 ## 9. Continuous growth and decay
 
