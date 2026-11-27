@@ -110,9 +110,7 @@ The domain is $(4,\infty)$, the range is $\mathbb R$, and the vertical asymptote
 
 The $x$-intercept can be found by solving
 
-$$
--2\log_3(x-4)+5=0.
-$$
+$-2\log_3(x-4)+5=0$.
 Therefore $\log_3(x-4)=5/2$, so $x-4=3^{5/2}$ and $x=4+3^{5/2}$. The $y$-intercept does not exist because $x=0$ is outside the domain.
 
 
@@ -349,7 +347,7 @@ Therefore $x^2-1=2^3=8$, so $x^2=9$ and the algebraic candidates are $x=3$ and $
 
 <img src="figures/figure_17_5_product_equation_domain.svg" />
 
-*Figure 17.5 — The product-law equation has solution x = 3 within its original domain x > 1.*
+*Figure 17.5 — The combined logarithm is defined for x < -1 and x > 1; x = -3 is extraneous for the original equation, while x = 3 is valid.*
 
 ### Example 12 — Quotient law
 
@@ -359,9 +357,7 @@ $\log_3(x+5)-\log_3(x-1)=1$.
 
 The domain is $x>1$. The quotient law gives
 
-$$
-\log_3\left(\frac{x+5}{x-1}\right)=1,
-$$
+$\log_3\left(\frac{x+5}{x-1}\right)=1$,
 so $(x+5)/(x-1)=3$. Then $x+5=3x-3$, giving $x=4$. It is in the domain and is the solution.
 
 
