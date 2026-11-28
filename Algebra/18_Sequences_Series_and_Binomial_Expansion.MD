@@ -33,11 +33,7 @@ The symbol $a_n$ denotes the term at position $n$. The first term is $a_1$, the 
 
 A formula that gives $a_n$ directly in terms of $n$ is an **explicit formula**. A rule that defines later terms from earlier terms, together with enough starting values, is a **recursive definition** or **recurrence**.
 
-A **series** is a sum of terms of a sequence. The $N$ th partial sum is
-
-$$
-S_N=\sum_{n=1}^{N}a_n=a_1+a_2+\cdots+a_N.
-$$
+A **series** is a sum of terms of a sequence. The $N$ th partial sum is $S_N=\sum_{n=1}^{N}a_n=a_1+a_2+\cdots+a_N$.
 
 The sequence $(a_n)$ and the series $\sum_{n=1}^{\infty}a_n$ are different objects. The sequence lists terms; the series asks about sums and, in the infinite case, the limit of partial sums.
 
@@ -99,12 +95,7 @@ $$
 
 ### Example 3 — Recover the common difference
 
-An arithmetic sequence has $a_4=17$ and $a_{10}=41$. Since
-
-$$
-a_{10}-a_4=(10-4)d,
-$$
-we get $24=6d$, so $d=4$. Then $a_1=a_4-3d=5$.
+An arithmetic sequence has $a_4=17$ and $a_{10}=41$. Since $a_{10}-a_4=(10-4)d$, we get $24=6d$, so $d=4$. Then $a_1=a_4-3d=5$.
 
 ### 3.1 Arithmetic sequences and linear functions
 
@@ -140,13 +131,7 @@ The formula is valid for every positive integer $N$, including a decreasing arit
 
 ### Example 4 — Sum an arithmetic sequence
 
-Find the sum of the first seven terms of $4,7,10,13,\ldots$. Here $a_1=4$, $d=3$, and
-
-$$
-a_7=4+6(3)=22.
-$$
-
-Therefore
+Find the sum of the first seven terms of $4,7,10,13,\ldots$. Here $a_1=4$, $d=3$, and $a_7=4+6(3)=22$. Therefore
 
 $$
 S_7=\frac72(4+22)=91.
@@ -154,12 +139,7 @@ $$
 
 ### Example 5 — Determine how many terms are used
 
-An arithmetic sequence begins at $12$ and has common difference $-2$. The term $-18$ occurs when
-
-$$
--18=12+(n-1)(-2),
-$$
-so $n=16$. The sum through that term is
+An arithmetic sequence begins at $12$ and has common difference $-2$. The term $-18$ occurs when $-18=12+(n-1)(-2)$, so $n=16$. The sum through that term is
 
 $$
 S_{16}=\frac{16}{2}(12-18)=-48.
@@ -196,11 +176,7 @@ The sign and size of $r$ determine the pattern:
 
 ### Example 6 — Find a geometric term
 
-For $a_1=3$ and $r=2$,
-
-$$
-a_8=3\cdot2^7=384.
-$$
+For $a_1=3$ and $r=2$, $a_8=3\cdot2^7=384$.
 
 ### Example 7 — Find a ratio from two terms
 
