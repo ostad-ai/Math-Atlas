@@ -158,6 +158,7 @@ Starting from $a_1$, repeated multiplication gives
 $$
 a_2=a_1r,\quad a_3=a_1r^2,\quad a_4=a_1r^3,
 $$
+
 so the explicit formula is
 
 $$
@@ -240,6 +241,7 @@ An infinite series is defined through its sequence of partial sums. The series
 $$
 \sum_{n=1}^{\infty}a_n
 $$
+
 **converges** to $L$ if the sequence of partial sums $S_N$ approaches the finite limit $L$ as $N\to\infty$. If no finite limit exists, the series diverges.
 
 For a geometric series with first term $a_1$ and ratio $r$, the $N$ th partial sum for $r\ne1$ is
@@ -924,7 +926,7 @@ The equality check verifies this particular input. It is not a proof of the Bino
 
 ## 16. Chapter summary
 
-A sequence is an indexed list of terms; a series is a sum of terms, and an infinite series converges only when its partial sums approach a finite limit. Arithmetic sequences have constant differences and satisfy $a_n=a_1+(n-1)d$. Their first-$N$ sum is $N(a_1+a_N)/2$. Geometric sequences multiply by a constant ratio and satisfy $a_n=a_1r^{n-1}$. Their finite sum has a separate case for $r=1$; a nonzero infinite geometric series converges exactly when $|r|<1$, with sum $a_1/(1-r)$. Sigma notation compactly represents finite sums. Binomial coefficients satisfy Pascal's identity, and the Binomial Theorem expands $(a+b)^n$ for nonnegative integer $n$. Exact computation helps check examples but does not replace the proofs.
+A sequence is an indexed list of terms; a series is a sum of terms, and an infinite series converges only when its partial sums approach a finite limit. Arithmetic sequences have constant differences and satisfy $a_n=a_1+(n-1)d$. Their first- $N$ sum is $N(a_1+a_N)/2$. Geometric sequences multiply by a constant ratio and satisfy $a_n=a_1r^{n-1}$. Their finite sum has a separate case for $r=1$; a nonzero infinite geometric series converges exactly when $|r|<1$, with sum $a_1/(1-r)$. Sigma notation compactly represents finite sums. Binomial coefficients satisfy Pascal's identity, and the Binomial Theorem expands $(a+b)^n$ for nonnegative integer $n$. Exact computation helps check examples but does not replace the proofs.
 ## 17. References and further reading
 
 - Math-Atlas Foundations, Chapter 05 — Mathematical Proof Techniques.
